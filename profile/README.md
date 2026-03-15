@@ -30,8 +30,17 @@ Our approach introduces energy-based metrics that allow developers and organizat
 
 ## Mission
 
-Build a scientific and operational foundation for the **next generation of AI governance and stability monitoring**.
-Withe paper : https://doi.org/10.5281/zenodo.19037239
+Mission
+
+Build a scientific and operational foundation for the next generation of AI governance and stability monitoring.
+
+Foundational paper  
+Thermodynamic Governance of Artificial Intelligence Systems  
+https://doi.org/10.5281/zenodo.19031860
+
+White paper  
+Law-E Thermodynamic Governance Framework  
+https://doi.org/10.5281/zenodo.19037329
 
 ---
 
