@@ -1,6 +1,15 @@
 # Neomundi
 
-Thermodynamic observability and governance for AI systems.
+## Live Sandbox
+
+Try the interactive demonstration of the Law-E runtime observability layer.
+
+→ https://neomundi-tech.github.io/neomundi-sandbox/
+
+This sandbox allows you to simulate AI outputs and observe how the Law-E stability metrics detect risky or unstable behaviors in real time.
+
+
+## Thermodynamic observability and governance for AI systems.
 
 Neomundi develops **Law-E**, a thermodynamic framework designed to monitor and regulate the stability of AI inference at runtime.
 
