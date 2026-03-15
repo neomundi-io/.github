@@ -1,12 +1,28 @@
-## Hi there 👋
+# Neomundi
 
-<!--
+Thermodynamic observability and governance for AI systems.
 
-**Here are some ideas to get you started:**
+Neomundi develops **Law-E**, a thermodynamic framework designed to monitor and regulate the stability of AI inference at runtime.
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+Our approach introduces energy-based metrics that allow developers and organizations to observe, evaluate and eventually govern AI behaviour in production environments.
+
+## Core concepts
+
+- Energy-based stability metrics for AI inference
+- Runtime observability for LLM pipelines
+- Governance mechanisms for AI systems
+- Experimental research bridging thermodynamics and AI regulation
+
+## Core repositories
+
+- **Law-E-Framework** — theoretical and conceptual foundations  
+- **neomundi-sandbox** — experimental playground and simulations  
+- **neomundi-api** — runtime observability interface (in development)
+
+## Mission
+
+Build a scientific and operational foundation for the **next generation of AI governance and stability monitoring**.
+
+---
+
+Neomundi Labs
