@@ -7,6 +7,11 @@ Try the interactive demonstration of the Law-E runtime observability layer.
 → https://neomundi-tech.github.io/neomundi-sandbox/
 
 This sandbox allows you to simulate AI outputs and observe how the Law-E stability metrics detect risky or unstable behaviors in real time.
+Request API access (early pilots)
+
+If you want to test the Law-E runtime observability API in your infrastructure, you can request a test API key.
+
+Contact: contact@neomundi.io
 
 
 ## Thermodynamic observability and governance for AI systems.
