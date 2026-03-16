@@ -45,7 +45,7 @@ Our approach introduces energy-based metrics that allow developers and organizat
 - **neomundi-api** — runtime observability interface (in development)
 
 ## Mission
-
+Law-E explores the hypothesis that artificial intelligence systems can be governed using thermodynamic stability principles.
 Build the scientific and operational foundations for the next generation of AI stability, governance, and thermodynamic control of intelligent systems. The framework is designed to evolve toward cross-domain normalization, scalable AI training architectures inspired by small-world connectivity, and future hardware-aware AI systems.
 
 ## Partnerships and Research Collaboration
