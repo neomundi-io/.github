@@ -18,7 +18,8 @@ If you want to test the Law-E runtime observability API in your infrastructure, 
 
 Contact: contact@neomundi.io
 
-Early experiments using the GOV mode reached **79% on the TruthfulQA benchmark**, indicating early potential for improving answer stability and factual consistency. Full experimental details are available in the white paper.
+Preliminary experiments with the GOV mode show promising results. Early tests reached 79% on the TruthfulQA benchmark, suggesting improved response stability and factual consistency.
+Full experimental details are available in the white paper.
 
 ## Thermodynamic observability and governance for AI systems.
 
