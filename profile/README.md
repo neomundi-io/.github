@@ -1,4 +1,9 @@
-# Neomundi
+# Neomundi - Thermodynamic AI Governance
+
+One stability law, many worlds of application.
+
+Neomundi introduces a universal thermodynamic stability framework
+for observing and governing complex AI systems at runtime.
 
 ## Live Sandbox
 
