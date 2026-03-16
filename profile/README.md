@@ -45,7 +45,7 @@ https://doi.org/10.5281/zenodo.19031860
 
 White paper  
 Law-E Thermodynamic Governance Framework  
-https://doi.org/10.5281/zenodo.19037329
+https://zenodo.org/records/19037239
 
 ---
 
