@@ -2,8 +2,8 @@
 
 One stability law, many domains of application.
 
-Neomundi introduces a universal thermodynamic stability framework
-for observing and governing complex AI systems at runtime.
+Neomundi introduces a universal thermodynamic stability core for AI systems.
+Starting with semantic observability (OBS), the framework will evolve toward governance (GOV), performance reporting, and a universal Normalizer converting physical and computational signals into thermodynamic flows readable by the stability core.
 
 ## Live Sandbox
 
@@ -18,6 +18,7 @@ If you want to test the Law-E runtime observability API in your infrastructure, 
 
 Contact: contact@neomundi.io
 
+Early experiments using the GOV mode reached **79% on the TruthfulQA benchmark**, indicating early potential for improving answer stability and factual consistency. Full experimental details are available in the white paper.
 
 ## Thermodynamic observability and governance for AI systems.
 
