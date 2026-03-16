@@ -7,7 +7,7 @@ Our goal is to explore a universal runtime layer for observing and governing AI 
 The project is developed as an experimental foundation for future AI stability standards.
 
 Neomundi introduces a universal thermodynamic stability core for AI systems.
-Starting with semantic observability (OBS), the framework will evolve toward governance (GOV), performance reporting, and a universal Normalizer converting physical and computational signals into thermodynamic flows readable by the stability core.
+Starting with semantic observability (OBS), the framework will evolve toward governance (GOV), performance reporting, and a universal Normalizer. The Normalizer converts heterogeneous physical and computational signals into thermodynamic flows interpretable by the Law-E stability core.
 
 ## Live Sandbox
 
