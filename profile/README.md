@@ -42,19 +42,15 @@ Our approach introduces energy-based metrics that allow developers and organizat
 
 ## Mission
 
-Mission
-
 Build the scientific and operational foundations for the next generation of AI stability, governance, and thermodynamic control of intelligent systems. The framework is designed to evolve toward cross-domain normalization, scalable AI training architectures inspired by small-world connectivity, and future hardware-aware AI systems.
 
 ## Research and Technical Collaboration
 
 Neomundi welcomes collaboration with researchers, engineers, and organizations interested in thermodynamic approaches to AI stability and governance.
-
 We are particularly interested in collaborations around:
 - runtime observability for AI systems
 - thermodynamic metrics for AI stability (ΔE, ESI)
 - cross-domain normalization (LLM systems, AI agents, datacenter infrastructure)
-
 If you are exploring related architectures or would like to run experiments with the Law-E framework, feel free to contact us or request API access.
 
 ## Foundational paper  
