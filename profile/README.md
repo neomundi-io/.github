@@ -2,6 +2,10 @@
 
 One stability law, many domains of application.
 
+Law-E is designed as an open thermodynamic stability framework for AI systems.
+Our goal is to explore a universal runtime layer for observing and governing AI behavior across models, agents, and infrastructure.
+The project is developed as an experimental foundation for future AI stability standards.
+
 Neomundi introduces a universal thermodynamic stability core for AI systems.
 Starting with semantic observability (OBS), the framework will evolve toward governance (GOV), performance reporting, and a universal Normalizer converting physical and computational signals into thermodynamic flows readable by the stability core.
 
