@@ -44,7 +44,7 @@ Our approach introduces energy-based metrics that allow developers and organizat
 
 Mission
 
-Build a scientific and operational foundation for the next generation of AI governance and stability monitoring.
+Build the scientific and operational foundations for the next generation of AI stability, governance, and thermodynamic control of intelligent systems. The framework is designed to evolve toward cross-domain normalization, scalable AI training architectures inspired by small-world connectivity, and future hardware-aware AI systems.
 
 Foundational paper  
 Thermodynamic Governance of Artificial Intelligence Systems  
