@@ -28,17 +28,29 @@ Instead of assuming reliability:
 ## Architecture (Simplified)
 
 LLM / AI System
+
 ↓
+
 Raw Metrics
+
 ↓
+
 Normalizer
+
 ↓
+
 Thermodynamic Flow (ΔE)
+
 ↓
+
 Aggregation
+
 ↓
+
 Stability Signal (G)
+
 ↓
+
 Governance Decision (ALLOW / FLAG / MODULATE)
 
 ---
