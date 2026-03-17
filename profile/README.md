@@ -66,6 +66,28 @@ contact@neomundi.io
 
 ---
 
+## Quickstart
+
+Send metrics to the Law-E API:
+
+```json
+{
+  "raw_metrics": {
+    "token_count": 150,
+    "latency_ms": 800,
+    "cost": 0.003,
+    "semantic_risk": 0.1
+  },
+  "mode": "OBS"
+}
+
+Example response:
+
+{
+  "decision": "ALLOW",
+  "stability_score": 0.76
+}
+
 
 ---
 ---
