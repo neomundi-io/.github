@@ -12,14 +12,18 @@ This reflects a fundamental limitation:
 
 Law-E defines a new class of measurable stability signals.
 Instead of assuming reliability:
+
 → instability becomes observable during execution
+
 → reliability is continuously evaluated
 
 ## What Law-E Does
 
 A runtime layer for AI systems:
+
 OBS mode → monitor instability signals
 GOV mode → regulate system behavior
+
 All decisions converge toward a unified governance variable:
 
 → G(x) (global stability indicator)
