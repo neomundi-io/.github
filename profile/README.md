@@ -1,83 +1,58 @@
-##  Law-E — Runtime Stability for AI Systems
+# Law-E — Runtime Stability for AI Systems
 
-From Disclaimer to Measurable Stability
+**From Disclaimer to Measurable Stability**
 
-## The Problem
-Every AI system relies on disclaimers.
+Every AI system today relies on disclaimers.
+
 This reflects a fundamental limitation:
-→ no way to measure instability at runtime
-→ failures are detected after they occur
+there is no way to measure instability at runtime.
 
-## The Shift
+Law-E introduces a new paradigm.
 
-Law-E defines a new class of measurable stability signals.
 Instead of assuming reliability:
+- instability becomes observable during execution
+- reliability is continuously measured
+- decisions become governed by a stability signal
 
-→ instability becomes observable during execution
+---
 
-→ reliability is continuously evaluated
+## What this enables
 
-## What Law-E Does
+- Real-time hallucination detection
+- Runtime AI risk scoring
+- Continuous compliance (EU AI Act ready)
+- Governable AI systems at scale
 
-A runtime layer for AI systems:
+---
 
-OBS mode → monitor instability signals
+## Live Sandbox
 
-GOV mode → regulate system behavior
+Test it now:
 
-All decisions converge toward a unified governance variable:
-
-→ G(x) (global stability indicator)
-
-## Architecture (Simplified)
-
-Runtime Signals
-→ Normalizer
-→ Thermodynamic Flow
-→ Aggregation
-→ G(x)
-→ Governance Decision
-
-##  Explore
-
-🧪 Live Sandbox
 https://neomundi-tech.github.io/neomundi-sandbox/
 
-If you want to test the Law-E runtime observability API in your infrastructure, you can request a test API key.
+To request a test API key → contact@neomundi.io
+---
 
-Contact: contact@neomundi.io
+## Documentation
 
-📄 Executive Brief
-https://github.com/neomundi-tech/neomundi-sandbox/blob/main/docs/LawE_Executive_Brief_vF.pdf
+- Executive Brief → https://raw.githubusercontent.com/neomundi-tech/neomundi-sandbox/main/docs/LawE_Executive_Brief_vF.pdf
+- Technical White Paper → https://raw.githubusercontent.com/neomundi-tech/neomundi-sandbox/main/docs/LawE_Technical_WhitePaper_vF.pdf
+- Scientific Foundation → https://zenodo.org/records/19031860
 
-📘 Technical White Paper
-https://github.com/neomundi-tech/neomundi-sandbox/blob/main/docs/LawE_Technical_WhitePaper_vF.pdf
+---
 
-🔬 Scientific Foundation (Zenodo)
-https://zenodo.org/records/19031860
+## Status
 
-##  Why It Matters
+- OBS mode: live
+- GOV mode: in development
+- Early results: ~79% instability signals detected (TruthfulQA)
 
-Law-E enables:
-runtime instability detection
-improved reliability
-auditability and traceability
-alignment with EU AI Act
+---
 
-##  Status
+## Vision
 
-OBS mode → available
-GOV mode → in development
-experimental validation → ~79% instability signals detected (TruthfulQA)
+One stability law, many domains of application.
 
-##  Engage
-
-We are onboarding a limited number of partners to:
-test runtime observability
-evaluate governance impact
-prepare compliance-ready AI systems
-Contact: contact@neomundi.io
-
-Reliability is no longer assumed. It is continuously evaluated.
-
-One stability law, many domains of application
+Reliability is no longer assumed.  
+It is continuously evaluated.
