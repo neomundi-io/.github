@@ -87,6 +87,9 @@ Example response:
   "decision": "ALLOW",
   "stability_score": 0.76
 }
+
+---
+---
 ---
 
 ## Example Use Case
