@@ -22,6 +22,7 @@ Instead of assuming reliability:
 A runtime layer for AI systems:
 
 OBS mode → monitor instability signals
+
 GOV mode → regulate system behavior
 
 All decisions converge toward a unified governance variable:
