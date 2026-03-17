@@ -87,7 +87,6 @@ Example response:
   "decision": "ALLOW",
   "stability_score": 0.76
 }
-
 ---
 
 ## Example Use Case
@@ -103,8 +102,6 @@ Result:
 reduced hallucination risk
 improved compliance readiness
 
----
-
 ## Documentation
 
 Executive Brief
@@ -116,8 +113,6 @@ https://raw.githubusercontent.com/neomundi-tech/neomundi-sandbox/main/docs/LawE_
 Scientific Foundation (Zenodo)
 https://zenodo.org/records/19031860
 
----
-
 ## Status
 
 OBS mode: live
@@ -125,18 +120,15 @@ GOV mode: in development
 Early results: ~79% instability signals detected (TruthfulQA)
 Early pilot onboarding in progress
 
----
-
 ## Vision
 
 One stability law, many domains of application.
 AI systems can be understood as informational dynamical systems.
 Law-E explores a unifying stability framework across:
-
 LLMs
 AI agents
 infrastructure
-and future AI-native systems
+future AI-native systems
 
 ---
 
