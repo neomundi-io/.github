@@ -18,8 +18,12 @@ A real-time decision layer.
 
 *proxy + streaming + risk scoring + decision*
 
+*Input → ControlTower → Output*
+
 You change nothing in your infrastructure.
 You take back control.
+
+Early pilot — limited onboarding
 ---
 
 ## Live Sandbox
