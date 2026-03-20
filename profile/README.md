@@ -5,31 +5,6 @@ Neomundi measures AI risk in real time — before it becomes a failure.
 
 ---
 
-## Quickstart
-
-### API Example
-
-```bash
-curl -X POST https://api.neomundi.io/v1/observe \
-  -H "Authorization: Bearer YOUR_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "raw_metrics": {
-      "token_count": 150,
-      "latency_ms": 800,
-      "cost_usd": 0.003,
-      "semantic_risk": 0.1
-    },
-    "mode": "OBS"
-  }'
-```
-
-Response → `{ "decision": "ALLOW", "stability_score": 0.76 }`
-
-No SDK. No config file. One endpoint. → [Request API key](mailto:contact@neomundi.io)
-
----
-
 ## Live Sandbox
 
 Test Law-E in real time via the [live sandbox](https://neomundi-tech.github.io/neomundi-sandbox/)
