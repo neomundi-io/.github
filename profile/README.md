@@ -18,12 +18,9 @@ A real-time decision layer.
 
 *proxy + streaming + risk scoring + decision*
 
-*Input → ControlTower → Output*
-
 You change nothing in your infrastructure.
 You take back control.
 
-Early pilot — limited onboarding
 ---
 
 ## Live Sandbox
@@ -32,7 +29,7 @@ Test Law-E in real time via the [live sandbox](https://neomundi-tech.github.io/n
 
 ---
 
-## What you stop before it happens
+## What it catches
 
 Neomundi monitors AI responses in real time, during generation, and detects:
 
@@ -44,8 +41,6 @@ Neomundi monitors AI responses in real time, during generation, and detects:
 ---
 
 ## Why it matters
-
-The difference between observing and controlling.
 
 | Without Law E™ | With Law E™ |
 |---|---|
