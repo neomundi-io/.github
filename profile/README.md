@@ -105,14 +105,13 @@ improved compliance readiness
 
 ## Documentation
 
-Executive Brief
-https://raw.githubusercontent.com/neomundi-tech/neomundi-sandbox/main/docs/LawE_Executive_Brief_vF.pdf
+## Documentation
 
-Technical White Paper
-https://raw.githubusercontent.com/neomundi-tech/neomundi-sandbox/main/docs/LawE_Technical_WhitePaper_vF.pdf
-
-Scientific Foundation (Zenodo)
-https://zenodo.org/records/19031860
+- [Executive Brief (PDF)](https://raw.githubusercontent.com/neomundi-tech/neomundi-sandbox/main/docs/LawE_Executive_Brief_vF.pdf)
+- 
+- [Technical White Paper (PDF)](https://raw.githubusercontent.com/neomundi-tech/neomundi-sandbox/main/docs/LawE_Technical_WhitePaper_vF.pdf)
+- 
+- [Scientific Foundation (Zenodo)](https://zenodo.org/records/19031860)
 
 ---
 
