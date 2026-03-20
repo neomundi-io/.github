@@ -1,68 +1,6 @@
-# Law-E — Runtime Stability for AI Systems
+# Law-E — Runtime AI Risk & Stability Monitoring
 
-**From Disclaimer to Measurable Stability**
-
-Every AI system today relies on disclaimers.
-
-This reflects a fundamental limitation:
-there is no way to measure instability at runtime.
-
-Law-E introduces a new paradigm.
-
-Instead of assuming reliability:
-- instability becomes observable during execution  
-- reliability is continuously evaluated  
-- decisions are governed by a stability signal  
-
----
-
-## What this enables
-
-- Real-time hallucination detection  
-- Runtime AI risk scoring  
-- Continuous compliance (EU AI Act ready)  
-- Governable AI systems at scale  
-
----
-
-## Architecture (Simplified)
-
-LLM / AI System
-
-↓
-
-Raw Metrics
-
-↓
-
-Normalizer
-
-↓
-
-Thermodynamic Flow (ΔE)
-
-↓
-
-Aggregation
-
-↓
-
-Stability Signal (G)
-
-↓
-
-Governance Decision (ALLOW / FLAG / MODULATE)
-
----
-
-## Live Sandbox
-
-Test Law-E in real time:
-
-https://neomundi-tech.github.io/neomundi-sandbox/
-
-To request API access:  
-contact@neomundi.io
+Measure AI response risk in real time — before output is finalized.
 
 ---
 
@@ -70,7 +8,8 @@ contact@neomundi.io
 
 Send metrics to the Law-E API:
 
-```json
+```
+json
 {
   "raw_metrics": {
     "token_count": 150,
@@ -89,22 +28,79 @@ Example response:
   "decision": "ALLOW",
   "stability_score": 0.76
 }
+
 ```
+
+## Live Sandbox
+
+Test Law-E in real time:
+
+https://neomundi-tech.github.io/neomundi-sandbox/
+
+To request API access:  
+contact@neomundi.io
 
 ---
 
+## What it does
+
+Neomundi monitors AI responses during generation and detects:
+
+- instability signals
+- hallucination risk
+- cost drift
+- response degradation
+
+All in real time.
+
+---
+## Why it matters
+
+Today, AI systems:
+
+- cannot quantify their reliability
+- cannot explain response instability
+- are audited after failure
+
+Neomundi enables:
+
+- real-time risk measurement
+- explainable AI outputs
+- pre-output control (OBS → GOV)
+
+---
+## Architecture
+
+LLM / AI System  
+↓  
+Raw Metrics  
+↓  
+Normalizer  
+↓  
+Aggregation  
+↓  
+Stability Score  
+↓  
+Decision Layer (ALLOW / FLAG / MODULATE)
+
+---
 ## Example Use Case
 
 A financial institution monitors LLM outputs in production.
 
 Law-E provides:
-real-time stability scoring
-detection of unstable responses
-audit-ready traceability
+- real-time stability scoring
+- detection of unstable responses
+- audit-ready traceability
+- production LLM monitoring
+- financial AI pipelines
+- compliance & audit readiness
 
 Result:
 reduced hallucination risk
 improved compliance readiness
+
+---
 
 ## Documentation
 
@@ -117,6 +113,8 @@ https://raw.githubusercontent.com/neomundi-tech/neomundi-sandbox/main/docs/LawE_
 Scientific Foundation (Zenodo)
 https://zenodo.org/records/19031860
 
+---
+
 ## Status
 
 OBS mode: live
@@ -124,10 +122,11 @@ GOV mode: in development
 Early results: ~79% instability signals detected (TruthfulQA)
 Early pilot onboarding in progress
 
+--- 
+
 ## Vision
 
-One stability law, many domains of application.
-AI systems can be understood as informational dynamical systems.
+We expose a runtime stability metric currently being normalized toward invariance.
 Law-E explores a unifying stability framework across:
 LLMs
 AI agents
