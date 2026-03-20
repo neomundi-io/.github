@@ -9,36 +9,21 @@ Neomundi measures instability before it happens.
 
 ### API Example
 
-```bash
 curl -X POST https://api.neomundi.io/v1/observe \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{
     "raw_metrics": {
       "token_count": 150,
-      "latency_ms": 200,
-      "cost_usd": 0.02,
+      "latency_ms": 800,
+      "cost_usd": 0.003,
       "semantic_risk": 0.1
     },
     "mode": "OBS"
   }'
-Example response
-{
-  "decision": "ALLOW",
-  "stability_score": 0.76
-}
-Payload format
-{
-  "raw_metrics": {
-    "token_count": number,
-    "latency_ms": number,
-    "cost_usd": number,
-    "semantic_risk": number
-  },
-  "mode": "OBS"
-}
-What it means
 
+  Response → { "decision": "ALLOW", "stability_score": 0.76 }
+  
 ```
 
 ## Live Sandbox
