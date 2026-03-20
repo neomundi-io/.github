@@ -91,11 +91,17 @@ Decision Layer (ALLOW / FLAG / MODULATE)
 AI-assisted legal response platform
 
 A law firm deploys an LLM to pre-draft client responses. Every output is measured by Law E™ before delivery.
+
 →
+
 Unstable outputs (hallucination risk > threshold) are flagged before the lawyer sees them
+
 →
+
 Each response carries a stability score — traceable, auditable, defensible
+
 →
+
 Liability doesn't disappear — it gets measured and assigned
 
 ---
