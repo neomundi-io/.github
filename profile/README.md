@@ -2,16 +2,22 @@
 
 The tools you already use can see your AI.
 They observe it. They log it. They route it.
+
 None of them govern it.
+
 Portkey transports. LangSmith analyses. Helicone logs.
 They all intervene before or after.
 Never during.
+
 Neomundi is the first to sit inside the flow —
 between your application and the AI —
 and decide before the response is released.
+
 Not monitoring. Not logging.
 A real-time decision layer.
+
 proxy + streaming + risk scoring + decision
+
 You change nothing in your infrastructure.
 You take back control.
 ---
