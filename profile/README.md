@@ -105,10 +105,6 @@ improved compliance readiness
 
 ## Documentation
 
-## Documentation
-
-## Documentation
-
 - [Executive Brief](https://github.com/neomundi-tech/neomundi-sandbox/blob/main/docs/LawE_Executive_Brief_vF.pdf)
   
 - [Technical White Paper](https://github.com/neomundi-tech/neomundi-sandbox/blob/main/docs/LawE_Technical_WhitePaper_vF.pdf)
