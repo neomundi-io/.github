@@ -1,6 +1,7 @@
 # Law-E — Runtime AI Risk & Stability Monitoring
 
-Measure AI response risk in real time — before output is finalized.
+AI systems fail silently.
+Neomundi measures instability before it happens.
 
 ---
 
