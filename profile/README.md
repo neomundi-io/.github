@@ -9,8 +9,8 @@ Portkey transports. LangSmith analyses. Helicone logs.
 They all intervene before or after.
 Never during.
 
-Neomundi is the first to sit inside the flow —
-between your application and the AI —
+Neomundi is the first to sit inside the flow -
+between your application and the AI -
 and decide before the response is released.
 
 Not monitoring. Not logging.
