@@ -1,25 +1,42 @@
 # Law-E — Runtime AI Risk & Stability Monitoring
 
-The tools you already use can see your AI.
-They observe it. They log it. They route it.
+Most tools observe AI.
 
-None of them govern it.
+They log it.
+They analyze it.
+They route it.
 
-Portkey transports. LangSmith analyses. Helicone logs.
-They all intervene before or after.
+But they don’t control it.
+
+Portkey transports.
+LangSmith analyzes.
+Helicone logs.
+
+All act before or after.
+
 Never during.
 
-Neomundi is the first to sit inside the flow —
-between your application and the AI —
-and decide before the response is released.
+Neomundi acts during execution.
 
-Not monitoring. Not logging.
+Inside the flow.
+Before the response is released.
+
+Where control is still possible.
+
+Not monitoring.
+Not logging.
+
 A real-time decision layer.
 
-proxy + streaming + risk scoring + decision
+Streaming proxy + risk scoring + decision
+In a single API call.
 
-You change nothing in your infrastructure.
-You take back control.
+You don’t change your infrastructure.
+
+You stop observing AI.
+
+You control it.
+
 ---
 
 ## Live Sandbox
@@ -28,7 +45,7 @@ Test Law-E in real time via the [live sandbox](https://neomundi-tech.github.io/n
 
 ---
 
-## What it catches
+## What you stop before it happens
 
 Neomundi monitors AI responses in real time, during generation, and detects:
 
@@ -41,6 +58,8 @@ Neomundi monitors AI responses in real time, during generation, and detects:
 
 ## Why it matters
 
+The difference between observing and controlling.
+
 | Without Law E™ | With Law E™ |
 |---|---|
 | Audited after failure | Flagged before output |
@@ -52,6 +71,8 @@ Neomundi monitors AI responses in real time, during generation, and detects:
 ## Example Use Case
 
 **AI-assisted legal response platform**
+
+Every response is evaluated before it reaches the user.
 
 A law firm deploys an LLM to pre-draft client responses. Every output is measured by Law E™ before delivery.
 
