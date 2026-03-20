@@ -1,6 +1,6 @@
 # Law-E — Runtime AI Risk & Stability Monitoring
 
-AI systems fail silently.
+AI systems fail silently.  
 Neomundi measures instability before it happens.
 
 ---
@@ -9,6 +9,7 @@ Neomundi measures instability before it happens.
 
 ### API Example
 
+```bash
 curl -X POST https://api.neomundi.io/v1/observe \
   -H "Authorization: Bearer YOUR_API_KEY" \
   -H "Content-Type: application/json" \
@@ -21,17 +22,17 @@ curl -X POST https://api.neomundi.io/v1/observe \
     },
     "mode": "OBS"
   }'
-
-  Response → { "decision": "ALLOW", "stability_score": 0.76 }
-  
 ```
+
+Response → `{ "decision": "ALLOW", "stability_score": 0.76 }`
+
+No SDK. No config file. One endpoint. → [Request API key](mailto:contact@neomundi.io)
+
+---
 
 ## Live Sandbox
 
 Test Law-E in real time via the [live sandbox](https://neomundi-tech.github.io/neomundi-sandbox/)
-
-To request API access, [contact us](mailto:contact@neomundi.io)
-
 
 ---
 
@@ -39,87 +40,50 @@ To request API access, [contact us](mailto:contact@neomundi.io)
 
 Neomundi monitors AI responses in real time, during generation, and detects:
 
-- Hallucination spikes — before output is sent  
-- Cost drift — unbounded token loops  
-- Response degradation — quality decay over sessions  
+- Hallucination spikes — before output is sent
+- Cost drift — unbounded token loops
+- Response degradation — quality decay over sessions
 - Semantic instability — risk signals within context
 
 ---
 
 ## Why it matters
 
-|       Without Law E™    |          With Law E™        |
-|           ---           |             ---             |
-| Audited after failure   | Flagged before output       |
-| Cost spikes undetected  | Drift caught in real time   |
-| Reliability assumed     | Reliability measured        |
-
-
----
-## Architecture
-
-LLM / AI System  
-↓  
-Raw Metrics  
-↓  
-Normalizer  
-↓  
-Aggregation  
-↓  
-Stability Score  
-↓  
-Decision Layer (ALLOW / FLAG / MODULATE)
+| Without Law E™ | With Law E™ |
+|---|---|
+| Audited after failure | Flagged before output |
+| Cost spikes undetected | Drift caught in real time |
+| Reliability assumed | Reliability measured |
 
 ---
+
 ## Example Use Case
 
-AI-assisted legal response platform
+**AI-assisted legal response platform**
 
 A law firm deploys an LLM to pre-draft client responses. Every output is measured by Law E™ before delivery.
 
-→
-
-Unstable outputs (hallucination risk > threshold) are flagged before the lawyer sees them
-
-→
-
-Each response carries a stability score — traceable, auditable, defensible
-
-→
-
-Liability doesn't disappear — it gets measured and assigned
+- Unstable outputs (hallucination risk > threshold) are flagged before the lawyer sees them
+- Each response carries a stability score — traceable, auditable, defensible
+- Liability doesn't disappear — it gets measured and assigned
 
 ---
 
 ## Documentation
 
 - [Executive Brief](https://github.com/neomundi-tech/neomundi-sandbox/blob/main/docs/LawE_Executive_Brief_vF.pdf)
-  
 - [Technical White Paper](https://github.com/neomundi-tech/neomundi-sandbox/blob/main/docs/LawE_Technical_WhitePaper_vF.pdf)
-  
 - [Scientific Foundation](https://zenodo.org/records/19031860)
 
 ---
 
 ## Status
 
-OBS mode: live
-GOV mode: in development
-Early results: ~79% instability signals detected (TruthfulQA)
-Early pilot onboarding in progress
-
---- 
-
-## Vision
-
-We expose a runtime stability metric currently being normalized toward invariance.
-Law-E explores a unifying stability framework across:
-LLMs
-AI agents
-infrastructure
-future AI-native systems
+| Mode | Status | Signal |
+|---|---|---|
+| OBS | 🟢 Live | 79.5% instability detection (TruthfulQA) |
+| GOV | 🟡 In development | Early pilot onboarding open |
 
 ---
 
-Reliability is no longer assumed.
-It is continuously evaluated.
+*Reliability is no longer assumed. It is continuously evaluated.*
