@@ -51,31 +51,25 @@ contact@neomundi.io
 
 ---
 
-## What it does
+## What it catches
 
-Neomundi monitors AI responses during generation and detects:
+Neomundi monitors AI responses in real time, during generation, and detects:
 
-- instability signals
-- hallucination risk
-- cost drift
-- response degradation
-
-All in real time.
+- Hallucination spikes — before output is sent  
+- Cost drift — unbounded token loops  
+- Response degradation — quality decay over sessions  
+- Semantic instability — risk signals within context
 
 ---
+
 ## Why it matters
 
-Today, AI systems:
+|       Without Law E™    |          With Law E™        |
+|           ---           |             ---             |
+| Audited after failure   | Flagged before output       |
+| Cost spikes undetected  | Drift caught in real time   |
+| Reliability assumed     | Reliability measured        |
 
-- cannot quantify their reliability
-- cannot explain response instability
-- are audited after failure
-
-Neomundi enables:
-
-- real-time risk measurement
-- explainable AI outputs
-- pre-output control (OBS → GOV)
 
 ---
 ## Architecture
