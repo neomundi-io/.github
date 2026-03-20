@@ -88,19 +88,21 @@ Decision Layer (ALLOW / FLAG / MODULATE)
 ---
 ## Example Use Case
 
-A financial institution monitors LLM outputs in production.
+AI-assisted legal response platform
 
-Law-E provides:
-- real-time stability scoring
-- detection of unstable responses
-- audit-ready traceability
-- production LLM monitoring
-- financial AI pipelines
-- compliance & audit readiness
+A law firm deploys an LLM to pre-draft client responses. Every output is measured by Law E™ before delivery.
 
-Result:
-reduced hallucination risk
-improved compliance readiness
+→
+
+Unstable outputs (hallucination risk > threshold) are flagged before the lawyer sees them
+
+→
+
+Each response carries a stability score — traceable, auditable, defensible
+
+→
+
+Liability doesn't disappear — it gets measured and assigned
 
 ---
 
