@@ -85,5 +85,9 @@ A law firm deploys an LLM to pre-draft client responses. Every output is measure
 | GOV | 🟡 In development | 79.5% instability detection (TruthfulQA) |
 
 ---
+## Local development (optional)
 
+For advanced users who want to run the API locally.
+
+---
 *Reliability is no longer assumed. It is continuously evaluated.*
