@@ -1,42 +1,25 @@
 # Law-E — Runtime AI Risk & Stability Monitoring
 
-Most tools observe AI.
+The tools you already use can see your AI.
+They observe it. They log it. They route it.
 
-They log it.
-They analyze it.
-They route it.
+None of them govern it.
 
-But they don’t control it.
-
-Portkey transports.
-LangSmith analyzes.
-Helicone logs.
-
-All act before or after.
-
+Portkey transports. LangSmith analyses. Helicone logs.
+They all intervene before or after.
 Never during.
 
-Neomundi acts during execution.
+Neomundi is the first to sit inside the flow —
+between your application and the AI —
+and decide before the response is released.
 
-Inside the flow.
-Before the response is released.
-
-Where control is still possible.
-
-Not monitoring.
-Not logging.
-
+Not monitoring. Not logging.
 A real-time decision layer.
 
-Streaming proxy + risk scoring + decision
-In a single API call.
+*proxy + streaming + risk scoring + decision*
 
-You don’t change your infrastructure.
-
-You stop observing AI.
-
-You control it.
-
+You change nothing in your infrastructure.
+You take back control.
 ---
 
 ## Live Sandbox
