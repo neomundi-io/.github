@@ -54,8 +54,6 @@ Neomundi monitors AI responses in real time, during generation, and detects:
 
 **AI-assisted legal response platform**
 
-Every response is evaluated before it reaches the user.
-
 A law firm deploys an LLM to pre-draft client responses. Every output is measured by Law E™ before delivery.
 
 - Unstable outputs (hallucination risk > threshold) are flagged before the lawyer sees them
@@ -78,11 +76,6 @@ A law firm deploys an LLM to pre-draft client responses. Every output is measure
 |---|---|---|
 | OBS | 🟢 Live | Early pilot onboarding open |
 | GOV | 🟡 In development | 79.5% instability detection (TruthfulQA) |
-
----
-## Local development (optional)
-
-For advanced users who want to run the API locally.
 
 ---
 *Reliability is no longer assumed. It is continuously evaluated.*
