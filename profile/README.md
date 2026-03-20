@@ -42,9 +42,8 @@ What it means
 
 ## Live Sandbox
 
-Test Law-E in real time via the [live sandbox](https://neomundi.tech.github.io/neomundi_sandbox/)
+Test Law-E in real time via the [live sandbox](https://neomundi-tech.github.io/neomundi_sandbox/)
 
-Test Law-E in real time via the [live sandbox](https://neomundi.tech.github.io/neomundi_sandbox/)
 
 To request API access, [contact us](mailto:contact@neomundi.io)
 
