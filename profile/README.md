@@ -26,7 +26,7 @@ curl -X POST https://api.neomundi.io/v1/observe \
   
 ```
 
-##  Live Sandbox
+## Live Sandbox
 
 Test Law-E in real time via the [live sandbox](https://neomundi-tech.github.io/neomundi-sandbox/)
 
