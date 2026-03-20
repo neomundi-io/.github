@@ -6,28 +6,37 @@ Measure AI response risk in real time — before output is finalized.
 
 ## Quickstart
 
-Send metrics to the Law-E API:
+### API Example
 
-```
-json
-{
-  "raw_metrics": {
-    "token_count": 150,
-    "latency_ms": 800,
-    "cost": 0.003,
-    "semantic_risk": 0.1
-  },
-  "mode": "OBS"
-}
-```
-
-Example response:
-
-```json
+```bash
+curl -X POST https://api.neomundi.io/v1/observe \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "raw_metrics": {
+      "token_count": 150,
+      "latency_ms": 200,
+      "cost_usd": 0.02,
+      "semantic_risk": 0.1
+    },
+    "mode": "OBS"
+  }'
+Example response
 {
   "decision": "ALLOW",
   "stability_score": 0.76
 }
+Payload format
+{
+  "raw_metrics": {
+    "token_count": number,
+    "latency_ms": number,
+    "cost_usd": number,
+    "semantic_risk": number
+  },
+  "mode": "OBS"
+}
+What it means
 
 ```
 
