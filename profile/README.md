@@ -16,7 +16,7 @@ and decide before the response is released.
 Not monitoring. Not logging.
 A real-time decision layer.
 
-*proxy + streaming + risk scoring + decision*
+*Proxy + Streaming + Risk Scoring + Decision -> in real time*
 
 You change nothing in your infrastructure.
 You take back control.
