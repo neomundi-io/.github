@@ -25,7 +25,7 @@ You take back control.
 
 ## Live Sandbox
 
-Test Law-E in real time via the [live sandbox](https://neomundi-tech.github.io/neomundi-sandbox/)
+Test Law-E in real time via the [live sandbox](https://neomundi-io.github.io/neomundi-sandbox/)
 
 ---
 
