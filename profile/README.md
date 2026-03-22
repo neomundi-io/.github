@@ -1,7 +1,9 @@
 # Law-E — Runtime AI Risk & Stability Monitoring
 
 Every AI response is a risk.
+
 Measure it. Control it. In real time.
+
 G-score = real-time risk score (0 = stable, 1 = high risk)
 
 ## Like a firewall and a guardrail for AI.
