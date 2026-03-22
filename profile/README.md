@@ -30,7 +30,7 @@ Every response gets a score.
 Every score drives a decision.
 
 You don’t just deploy AI.
-You deploy AI with proof that you governed it.
+**You deploy AI with proof that you governed it**.
 
 You change nothing in your infrastructure.
 You take back control.
