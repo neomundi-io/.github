@@ -4,7 +4,7 @@ Like a firewall and a guardrail for AI.
 
 But instead of just blocking, it measures, scores, and governs every response in real-time.
 
-Each output, each AI response is evaluated through a thermodynamic stability score (G-score) before it reaches the user.
+Every AI response is evaluated through a thermodynamic stability score (G-score) before it reaches the user.
 
 If the risk is too high, the system automatically flags or blocks it — in milliseconds.
 
