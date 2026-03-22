@@ -1,6 +1,6 @@
 # Law-E — Runtime AI Risk & Stability Monitoring
 
-**Like a firewall and a guardrail for AI.
+## Like a firewall and a guardrail for AI.
 But instead of just blocking, it measures, scores, and governs every response in real-time.
 
 Each AI response is evaluated through a thermodynamic stability score (G-score) before it reaches the user.
@@ -8,7 +8,7 @@ If the risk is too high, the system automatically flags or blocks it — in mill
 
 No code changes required. Just plug in, observe, and govern automatically.**
 
-**The tools you use today can see your AI.
+## The tools you use today can see your AI.
 They observe it. They log it. They route it.
 
 But they do not govern it.
@@ -22,7 +22,7 @@ and decides before the response is released.
 Not monitoring. Not logging.
 A real-time decision layer.**
 
-**Every uncontrolled AI response is a risk you own.
+## Every uncontrolled AI response is a risk you own.
 Hallucinations, toxic outputs, compliance violations — the liability stays with you.
 
 Law-E measures that risk before it reaches anyone.
