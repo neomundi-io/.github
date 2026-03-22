@@ -1,24 +1,39 @@
 # Law-E — Runtime AI Risk & Stability Monitoring
 
-Like a firewall and a guardrail for AI.
+**Like a firewall and a guardrail for AI.
 But instead of just blocking, it measures, scores, and governs every response in real-time.
-Every AI response is evaluated through a thermodynamic stability score (G-Score) before it reaches the user.
-If the risk is too high, the system automatically flags or blocks it in milliseconds.
-No code changes required. Just plug in, observe and govern automatically.
 
-The tools you already use can see your AI. They observe it. They log it. They route it.
-None of them govern it.
-Portkey transports. LangSmith analyses. Helicone logs. They all intervene before or after. Never during.
-Neomundi is the first to sit inside the flow - between your application and the AI - and decide before the response is released.
-Not monitoring. Not logging. A real-time decision layer.
-Proxy + Streaming + Risk Scoring + Decision → in real-time.
+Each AI response is evaluated through a thermodynamic stability score (G-score) before it reaches the user.
+If the risk is too high, the system automatically flags or blocks it — in milliseconds.
 
-Every uncontrolled AI response is a risk you own.
-Hallucinations, toxic outputs, compliance violations without governance, the liability stays with you.
-Law E™ measures that risk before it reaches anyone. Every response gets a score. Every score drives a decision.
-You don't just deploy AI. You deploy AI with proof that you governed it.
+No code changes required. Just plug in, observe, and govern automatically.**
 
-You change nothing in your infrastructure. You take back control.
+**The tools you use today can see your AI.
+They observe it. They log it. They route it.
+
+But they do not govern it.
+
+Portkey transports. LangSmith analyzes. Helicone logs.
+They act before or after. Never during.
+
+Neomundi sits inside the flow — between your application and the AI —
+and decides before the response is released.
+
+Not monitoring. Not logging.
+A real-time decision layer.**
+
+**Every uncontrolled AI response is a risk you own.
+Hallucinations, toxic outputs, compliance violations — the liability stays with you.
+
+Law-E measures that risk before it reaches anyone.
+Every response gets a score.
+Every score drives a decision.
+
+You don’t just deploy AI.
+You deploy AI with proof that you governed it.**
+
+You change nothing in your infrastructure.
+You take back control.
 
 ---
 
