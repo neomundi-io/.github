@@ -6,6 +6,9 @@ Measure it. Control it. In real time.
 
 G-score = real-time risk score (0 = stable, 1 = high risk)
 
+(( You don’t guess what your AI is doing anymore.
+You measure it — and you can prove it.)) 
+
 ## Like a firewall and a guardrail for AI.
 But instead of just blocking, it measures, scores, and governs every response in real-time.
 
