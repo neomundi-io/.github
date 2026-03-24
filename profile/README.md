@@ -97,4 +97,30 @@ A law firm deploys an LLM to pre-draft client responses. Every output is measure
 | GOV | 🟡 For early pilote | 79.5% instability detection (TruthfulQA) |
 
 ---
+
+## FAQ
+
+**1. How fast can I integrate Neomundi?**  
+In minutes. Add one API call between your app and your LLM — no SDK, no architecture change.
+
+**2. What do I get immediately?**  
+Instant visibility on every AI response: risk level, decision signal, and audit trace — in real time.
+
+**3. Does it impact performance?**  
+No. Start in OBS mode: zero enforcement, full transparency.
+
+**4. What happens when I activate GOV mode?**  
+Neomundi enforces your policies in real time — blocking or allowing responses based on your risk thresholds.
+
+**5. Why is this useful for my business?**  
+You reduce AI risk, gain auditability, and move toward compliance — without slowing down your product.
+
+**6. Do you store my data?**  
+No sensitive data is stored. Only aggregated metrics are used for reporting and optimization.
+
+**7. What’s the next step?**  
+Test the sandbox in 30 seconds.  
+If it makes sense for your use case, contact us to activate production access.
+
+---
 *Reliability is no longer assumed. It is continuously evaluated.*
