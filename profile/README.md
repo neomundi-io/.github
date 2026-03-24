@@ -20,6 +20,9 @@ Not a firewall. Not a guardrail.
 Firewalls block. Guardrails constrain.  
 Law-E measures risk and decides — in real time.
 
+User prompt → [LLM] → ⚡ Law E™ scores in <50ms → ALLOW ✅ / FLAG 🚨
+                       G-Score  |  Risk: Low  |  Drift: 0.02
+
 ---
 
 No infrastructure changes. Instant control.
