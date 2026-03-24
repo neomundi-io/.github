@@ -1,8 +1,8 @@
-## Law-E — Runtime AI Risk Control
+## Law-E, Runtime AI Risk Control
 
 Every AI response is a risk you own.
 
-Law-E sits inside the flow — between your application and the AI —
+Law-E sits inside the flow between your application and the AI
 and decides before the response is released.
 
 Each output is scored in real time. If the risk is too high, it is flagged or blocked — in milliseconds.
