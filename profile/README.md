@@ -77,7 +77,7 @@ A law firm deploys an LLM to pre-draft client responses. Every output is measure
 | Mode | Status | Signal |
 |---|---|---|
 | OBS | 🟢 Live | Early pilot onboarding open |
-| GOV | 🟡 In development | 79.5% instability detection (TruthfulQA) |
+| GOV | 🟡 For early pilote | 79.5% instability detection (TruthfulQA) |
 
 ---
 *Reliability is no longer assumed. It is continuously evaluated.*
