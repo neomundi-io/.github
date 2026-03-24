@@ -44,6 +44,9 @@ Neomundi monitors AI responses in real time, during generation, and detects:
 
 ## Why it matters
 
+Without Law-E, you discover failures after they happen.  
+With Law-E, you stop them before they reach anyone.
+
 | Without Law E™ | With Law E™ |
 |---|---|
 | Audited after failure | Flagged before output |
