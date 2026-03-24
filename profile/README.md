@@ -17,16 +17,13 @@ Not monitoring. Not logging.
 A real-time decision layer for AI.
 
 ---
-
 Not a firewall. Not a guardrail.
 
 Firewalls block. Guardrails constrain.  
 Law-E measures risk and decides — in real time.
 
 ---
-
-You change nothing in your infrastructure.
-You take back control.
+No infrastructure changes. Instant control.
 
 ---
 
