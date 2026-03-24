@@ -83,9 +83,9 @@ A law firm deploys an LLM to pre-draft client responses. Every output is measure
 
 ## Documentation
 
-- [Executive Brief](https://github.com/neomundi-tech/neomundi-sandbox/blob/main/docs/LawE_Executive_Brief_vF.pdf)
-- [Technical White Paper](https://github.com/neomundi-tech/neomundi-sandbox/blob/main/docs/LawE_Technical_WhitePaper_vF.pdf)
-- [Scientific Foundation](https://zenodo.org/records/19031860)
+- **[Executive Brief](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/LawE_Executive_Brief.pdf)**
+- **[Technical White Paper](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/LawE_Technical_WhitePaper.pdf)**
+- **[Scientific Foundation](https://zenodo.org/records/19031860)**
 
 ---
 
