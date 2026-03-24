@@ -1,5 +1,3 @@
-# Law-E — Runtime AI Risk & Stability Monitoring
-
 ## Law-E — Runtime AI Risk Control
 
 Every AI response is a risk you own.
