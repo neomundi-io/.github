@@ -21,9 +21,6 @@ Firewalls block. Guardrails constrain.
 Law-E measures risk and decides — in real time.
 
 ---
-No infrastructure changes. Instant control.
-
----
 
 No infrastructure changes. Instant control.
 
