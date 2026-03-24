@@ -25,6 +25,8 @@ No infrastructure changes. Instant control.
 
 ---
 
+No infrastructure changes. Instant control.
+
 ## Live Sandbox
 
 Test Law-E in real time via the [live sandbox](https://neomundi-io.github.io/neomundi-sandbox/)
