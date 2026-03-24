@@ -5,7 +5,7 @@ Every AI response is a risk you own.
 Law-E sits inside the flow between your application and the AI
 and decides before the response is released.
 
-Each output is scored in real time. If the risk is too high, it is flagged or blocked — in milliseconds.
+Each output is scored in real time. If the risk is too high, it is flagged or blocked - in milliseconds.
 > G-score: 0 = low risk · 1 = high risk
 
 You don't guess what your AI is doing anymore.
@@ -35,10 +35,10 @@ Test Law-E in real time via the [live sandbox](https://neomundi-io.github.io/neo
 
 Neomundi monitors AI responses in real time, during generation, and detects:
 
-- Hallucination spikes — before output is sent
-- Cost drift — unbounded token loops
-- Response degradation — quality decay over sessions
-- Semantic instability — risk signals within context
+- Hallucination spikes - before output is sent
+- Cost drift - unbounded token loops
+- Response degradation - quality decay over sessions
+- Semantic instability - risk signals within context
 
 ---
 
@@ -62,8 +62,8 @@ With Law-E, you stop them before they reach anyone.
 A law firm deploys an LLM to pre-draft client responses. Every output is measured by Law E™ before delivery.
 
 - Unstable outputs (hallucination risk > threshold) are flagged before the lawyer sees them
-- Each response carries a stability score — traceable, auditable, defensible
-- Liability doesn't disappear — it gets measured and assigned
+- Each response carries a stability score - traceable, auditable, defensible
+- Liability doesn't disappear - it gets measured and assigned
 
 ---
 
