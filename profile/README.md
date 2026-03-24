@@ -30,6 +30,21 @@ Test Law-E in real time via the [live sandbox](https://neomundi-io.github.io/neo
 
 ---
 
+## EU AI Act — built in, not bolted on
+
+Compliance is not a feature.
+It is enforced at runtime.
+
+Every response is scored, traced, and auditable — by design.
+
+OBS mode gives you continuous monitoring out of the box.  
+GOV mode enforces it in real time.
+
+You don’t prepare for compliance.  
+You deploy it.
+
+---
+
 ## What it catches
 
 Neomundi monitors AI responses in real time, during generation, and detects:
