@@ -2,19 +2,16 @@
 
 Every AI response is a risk you own.
 
-Law-E sits inside the flow — between your application and the AI —  
+Law-E sits inside the flow — between your application and the AI —
 and decides before the response is released.
 
-Each output is scored in real time (G-score).
+Each output is scored in real time. If the risk is too high, it is flagged or blocked — in milliseconds.
+> G-score: 0 = low risk · 1 = high risk
 
-(G-score: 0 = low risk · 1 = high risk)
-
-If the risk is too high, it is flagged or blocked — in milliseconds.
-
-You don’t guess what your AI is doing anymore.  
+You don't guess what your AI is doing anymore.
 You measure it. You control it. You can prove it.
 
-Not monitoring. Not logging.  
+Not monitoring. Not logging.
 A real-time decision layer for AI.
 
 ---
