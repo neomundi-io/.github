@@ -1,45 +1,29 @@
 # Law-E — Runtime AI Risk & Stability Monitoring
 
-Every AI response is a risk.
+## Law-E — Runtime AI Risk Control
 
-Measure it. Control it. In real time.
+Every AI response is a risk you own.
 
-G-score = real-time risk score (0 = stable, 1 = high risk)
-
-(( You don’t guess what your AI is doing anymore.
-You measure it — and you can prove it.)) 
-
-## Like a firewall and a guardrail for AI.
-But instead of just blocking, it measures, scores, and governs every response in real-time.
-
-Each AI response is evaluated through a thermodynamic stability score (G-score) before it reaches the user.
-If the risk is too high, the system automatically flags or blocks it — in milliseconds.
-
-No code changes required. Just plug in, observe, and govern automatically.
-
-## The tools you use today can see your AI.
-They observe it. They log it. They route it.
-
-But they do not govern it.
-
-Portkey transports. LangSmith analyzes. Helicone logs.
-They act before or after. Never during.
-
-Neomundi sits inside the flow - between your application and the AI -
+Law-E sits inside the flow — between your application and the AI —  
 and decides before the response is released.
 
-Not monitoring. Not logging.
-A real-time decision layer.**
+Each output is scored in real time (G-score).  
+If the risk is too high, it is flagged or blocked — in milliseconds.
 
-## Every uncontrolled AI response is a risk you own.
-Hallucinations, toxic outputs, compliance violations - the liability stays with you.
+You don’t guess what your AI is doing anymore.  
+You measure it. You control it. You can prove it.
 
-Law-E measures that risk before it reaches anyone.
-Every response gets a score.
-Every score drives a decision.
+Not monitoring. Not logging.  
+A real-time decision layer for AI.
 
-You don’t just deploy AI.
-**You deploy AI with proof that you governed it**.
+---
+
+Not a firewall. Not a guardrail.
+
+Firewalls block. Guardrails constrain.  
+Law-E measures risk and decides — in real time.
+
+---
 
 You change nothing in your infrastructure.
 You take back control.
