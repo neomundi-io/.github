@@ -30,8 +30,8 @@ Aucun changement d'infrastructure. Un seul appel API. Visibilité immédiate.
 
 > [Tester en direct dans le sandbox](https://simulator.neomundi.io)
 
-## Nous bloquons les réponses risquées avant même leur envoi.
-Chaque réponse est tracée, évaluée et auditable en temps réel. ##
+## Nous bloquons les réponses risquées avant même leur envoi. Chaque réponse est tracée, évaluée et auditable en temps réel.
+
 ---
 
 ## EU AI Act — intégré, pas ajouté
