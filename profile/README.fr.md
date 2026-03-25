@@ -5,6 +5,7 @@
 
 ---
 ## Votre IA se trompe. Vous le savez trop tard. Neomundi vous le dit pendant que ça se passe. ##
+Le risque de vos réponses IA n'est plus une boîte noire. Il est tracé, explicable et scoré en temps réel.
 
 Votre IA fait des erreurs. Ce n'est pas le vrai problème. Le vrai problème, c'est quand vous les découvrez.
 
@@ -127,3 +128,4 @@ Testez le sandbox en 30 secondes. Si cela correspond à votre cas d'usage, conta
 ---
 
 Le risque de vos réponses IA n'est plus une boîte noire. Il est tracé, explicable et scoré en temps réel.
+## Votre IA se trompe. Vous le savez trop tard. Neomundi vous le dit pendant que ça se passe. ##
