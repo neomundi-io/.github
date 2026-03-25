@@ -4,7 +4,7 @@
 > 🇬🇧 [Read in English](README.md)
 
 ---
-## Votre IA se trompe. Vous le savez trop tard. Neomundi vous le dit pendant que ça se passe. Le risque de vos réponses IA n'est plus une boîte noire. Il est tracé, explicable et scoré en temps réel. ##
+## Votre IA se trompe. Vous le savez trop tard. Neomundi vous le dit pendant que ça se passe.##
 
 Votre IA fait des erreurs. Ce n'est pas le vrai problème. Le vrai problème, c'est quand vous les découvrez.
 
@@ -30,6 +30,8 @@ Aucun changement d'infrastructure. Un seul appel API. Visibilité immédiate.
 
 > [Tester en direct dans le sandbox](https://simulator.neomundi.io)
 
+## Nous bloquons les réponses risquées avant même leur envoi.
+Chaque réponse est tracée, évaluée et auditable en temps réel. ##
 ---
 
 ## EU AI Act — intégré, pas ajouté
@@ -125,6 +127,8 @@ Aucune donnée sensible n'est conservée. Seules des métriques agrégées sont 
 Testez le sandbox en 30 secondes. Si cela correspond à votre cas d'usage, contactez-nous pour activer l'accès en production.
 
 ---
+
+## Le risque de vos réponses IA n'est plus une boîte noire. Il est tracé, explicable et scoré en temps réel.##
 
 Le risque de vos réponses IA n'est plus une boîte noire. Il est tracé, explicable et scoré en temps réel.
 ## Votre IA se trompe. Vous le savez trop tard. Neomundi vous le dit pendant que ça se passe. ##
