@@ -43,7 +43,7 @@ Dès que Neomundi est branché, chaque réponse reçoit un score de confiance et
 
 - Vous savez quelles réponses sont risquées
 - Vous êtes alerté en temps réel si une réponse devient dangereuse
-- Vous téléchargez votre rapport d'audit en un clic — hallucinations détectées, réponses signalées, historique complet
+- Vous téléchargez votre rapport d'audit en un clic avec hallucinations détectées, réponses signalées, historique complet
 
 Fini les 4 jours par mois passés à auditer après coup.
 
@@ -80,7 +80,7 @@ Neomundi surveille les réponses IA pendant leur génération et détecte :
 Un cabinet déploie un LLM pour pré-rédiger des réponses clients. Chaque réponse est scorée avant d'atteindre l'avocat.
 
 - Les réponses instables sont signalées avant que quiconque ne les lise
-- Chaque réponse porte un score de stabilité — traçable, auditable, défendable
+- Chaque réponse porte un score de stabilité et devient traçable, auditable, défendable
 - La responsabilité ne disparaît pas. Elle se mesure et s'attribue.
 - Moins de stress : le risque est géré, visible et maîtrisé
 - Côté client, un service premium : une preuve de conformité et de qualité de l'information
