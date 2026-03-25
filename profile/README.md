@@ -3,6 +3,7 @@
 
 > 🇫🇷 [Lire en français](README.fr.md)
 
+## Your AI makes mistakes. You find out too late. Neomundi tells you while it is happening.
 ---
 
 Your AI makes mistakes. That is not the real problem. The real problem is when you find out.
@@ -28,6 +29,8 @@ No infrastructure changes. One API call. Immediate visibility.
 **G-score: 0 = low risk · 1 = high risk**
 
 > [Test it live in the sandbox](https://simulator.neomundi.io)
+
+## We stop risky AI responses before they are sent. Every response is traced, scored, and auditable in real time.
 
 ---
 
@@ -125,4 +128,4 @@ Test the sandbox in 30 seconds. If it fits your use case, contact us to activate
 
 ---
 
-The risk of your AI responses is no longer a black box. It is traced, explainable, and scored in real time.
+## The risk of your AI responses is no longer a black box. It is traced, explainable, and scored in real time. 
