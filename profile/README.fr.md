@@ -35,7 +35,7 @@ Aucun changement d'infrastructure. Un seul appel API. Visibilité immédiate.
 
 ---
 
-## EU AI Act — intégré, pas ajouté
+## EU AI Act : intégré, pas ajouté
 
 Devenez conforme en 10 minutes. Sans changer votre architecture.
 
@@ -75,7 +75,7 @@ Neomundi surveille les réponses IA pendant leur génération et détecte :
 
 ---
 
-## Cas d'usage — cabinet d'avocats
+## Cas d'usage : cabinet d'avocats
 
 Un cabinet déploie un LLM pour pré-rédiger des réponses clients. Chaque réponse est scorée avant d'atteindre l'avocat.
 
