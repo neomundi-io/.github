@@ -4,7 +4,7 @@
 > 🇬🇧 [Read in English](README.md)
 
 ---
-## Votre IA se trompe. Vous le savez trop tard. Neomundi vous le dit pendant que ça se passe.##
+## Votre IA se trompe. Vous le savez trop tard. Neomundi vous le dit pendant que ça se passe. ##
 
 Votre IA fait des erreurs. Ce n'est pas le vrai problème. Le vrai problème, c'est quand vous les découvrez.
 
