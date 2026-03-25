@@ -3,7 +3,7 @@
 
 > 🇬🇧 [Read in English](README.md)
 
-⚡ **Votre IA se trompe. Vous le savez trop tard. Neomundi vous le dit pendant que ça se passe.**
+## ⚡ Votre IA se trompe. Vous le savez trop tard. Neomundi vous le dit pendant que ça se passe.
 
 ---
 
@@ -31,7 +31,7 @@ Aucun changement d'infrastructure. Un seul appel API. Visibilité immédiate.
 
 > [Tester en direct dans le sandbox](https://neomundi-tech.github.io/neomundi-sandbox)
 
-⚡ **Chaque réponse est tracée, évaluée et auditable en temps réel.**
+## ⚡ Chaque réponse est tracée, évaluée et auditable en temps réel.
 
 ---
 
@@ -87,7 +87,7 @@ Un cabinet déploie un LLM pour pré-rédiger des réponses clients. Chaque rép
 
 ---
 
-⚡ **Nous bloquons les réponses risquées avant même leur envoi.**
+## ⚡ Nous bloquons les réponses risquées avant même leur envoi.
 
 ## Documentation
 
@@ -151,4 +151,4 @@ Testez le sandbox en 30 secondes. Si cela correspond à votre cas d'usage, conta
 
 ---
 
-⚡ **Plus de boîte noire. Vous voyez et contrôlez le risque au moment où il se produit.**
+## ⚡ Plus de boîte noire. Vous voyez et contrôlez le risque au moment où il se produit.
