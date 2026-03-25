@@ -3,7 +3,7 @@
 
 > 🇫🇷 [Lire en français](README.fr.md)
 
-⚡ ## Your AI makes mistakes. You find out too late. Neomundi tells you while it happens.
+## ⚡ Your AI makes mistakes. You find out too late. Neomundi tells you while it happens.
 
 ---
 
@@ -31,7 +31,7 @@ No infrastructure changes. One API call. Immediate visibility.
 
 > [Test it live in the sandbox](https://neomundi-tech.github.io/neomundi-sandbox)
 
-⚡ **Every response is traced, scored, and auditable in real time.**
+## ⚡ Every response is traced, scored, and auditable in real time.
 
 ---
 
@@ -87,7 +87,7 @@ A law firm deploys an LLM to pre-draft client responses. Every response is score
 
 ---
 
-⚡ **We stop risky responses before they are sent.**
+## ⚡ We stop risky responses before they are sent.
 
 ## Documentation
 
@@ -151,4 +151,4 @@ Test the sandbox in 30 seconds. If it fits your use case, contact us to activate
 
 ---
 
-⚡ **No more black box. You see and control risk as it happens.**
+## ⚡ No more black box. You see and control risk as it happens.
