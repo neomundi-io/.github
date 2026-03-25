@@ -3,7 +3,13 @@
 
 > 🇫🇷 [Lire en français](README.fr.md)
 
-## Your AI makes mistakes. You find out too late. Neomundi tells you while it is happening.
+---
+
+⚡ Your AI makes mistakes. You find out too late. Neomundi tells you while it happens.
+⚡ Every response is traced, scored, and auditable in real time.
+⚡ We stop risky responses before they are sent.
+⚡ No more black box. You see and control risk as it happens.
+
 ---
 
 Your AI makes mistakes. That is not the real problem. The real problem is when you find out.
@@ -28,9 +34,7 @@ No infrastructure changes. One API call. Immediate visibility.
 
 **G-score: 0 = low risk · 1 = high risk**
 
-> [Test it live in the sandbox](https://simulator.neomundi.io)
-
-## We stop risky AI responses before they are sent. Every response is traced, scored, and auditable in real time.
+> Sandbox — coming live March 27
 
 ---
 
@@ -42,7 +46,7 @@ Once Neomundi is connected, every response receives a confidence score and becom
 
 - You know which responses are risky
 - You are alerted in real time if a response becomes dangerous
-- You download your audit report in one click with hallucinations detected, flagged responses, full history
+- You download your audit report in one click — hallucinations detected, flagged responses, full history
 
 No more days spent auditing after the fact.
 
@@ -72,6 +76,8 @@ Neomundi monitors AI responses during generation and detects:
 | Cost drift undetected | Drift caught in real time |
 | Reliability assumed | Reliability measured |
 
+⚡ Every response is traced, scored, and auditable in real time.
+
 ---
 
 ## Use case — law firm
@@ -79,7 +85,7 @@ Neomundi monitors AI responses during generation and detects:
 A law firm deploys an LLM to pre-draft client responses. Every response is scored before it reaches the lawyer.
 
 - Unstable responses are flagged before anyone reads them
-- Every response carries a stability score and become traceable, auditable, defensible
+- Every response carries a stability score — traceable, auditable, defensible
 - Liability does not disappear. It gets measured and assigned.
 - Less stress: risk is managed, visible, and under control
 - For the client, a premium service: proof of compliance and information quality
@@ -100,6 +106,26 @@ A law firm deploys an LLM to pre-draft client responses. Every response is score
 |---|---|---|
 | OBS | 🟢 Live | Early pilot onboarding open |
 | GOV | 🟡 Coming | 79.5% instability detection (TruthfulQA) |
+
+---
+
+## How it works
+
+```
+Your App
+    |
+    ▼
+┌─────────────────────────┐
+│        Neomundi         │
+│   G-score: 0.0 → 1.0    │
+│                         │
+│  < 0.7  →  ✅ ALLOW     │
+│  > 0.7  →  🔴 DENY      │
+└─────────────────────────┘
+    |
+    ▼
+Your AI (LLM)
+```
 
 ---
 
@@ -128,4 +154,4 @@ Test the sandbox in 30 seconds. If it fits your use case, contact us to activate
 
 ---
 
-## The risk of your AI responses is no longer a black box. It is traced, explainable, and scored in real time. 
+⚡ No more black box. You see and control risk as it happens.
