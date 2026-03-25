@@ -29,7 +29,7 @@ Aucun changement d'infrastructure. Un seul appel API. Visibilité immédiate.
 
 **G-score : 0 = risque faible · 1 = risque élevé**
 
-> [Tester en direct dans le sandbox](https://neomundi-tech.github.io/neomundi-sandbox)
+> [Tester en direct dans le sandbox](https://neomundi-io.github.io/neomundi-sandbox/)
 
 ## ⚡ Chaque réponse est tracée, évaluée et auditable en temps réel.
 
