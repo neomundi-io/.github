@@ -3,7 +3,7 @@
 
 > 🇫🇷 [Lire en français](README.fr.md)
 
-⚡ **Your AI makes mistakes. You find out too late. Neomundi tells you while it happens.**
+⚡ ### Your AI makes mistakes. You find out too late. Neomundi tells you while it happens.
 
 ---
 
