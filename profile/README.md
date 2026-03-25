@@ -35,7 +35,7 @@ No infrastructure changes. One API call. Immediate visibility.
 
 ---
 
-## EU AI Act — built in, not bolted on
+## EU AI Act : built in, not bolted on
 
 Become compliant in 10 minutes. Without changing your architecture.
 
@@ -75,7 +75,7 @@ Neomundi monitors AI responses during generation and detects:
 
 ---
 
-## Use case — law firm
+## Use case : law firm
 
 A law firm deploys an LLM to pre-draft client responses. Every response is scored before it reaches the lawyer.
 
