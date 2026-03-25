@@ -43,7 +43,7 @@ Once Neomundi is connected, every response receives a confidence score and becom
 
 - You know which responses are risky
 - You are alerted in real time if a response becomes dangerous
-- You download your audit report in one click — hallucinations detected, flagged responses, full history
+- You download your audit report in one click with hallucinations detected, flagged responses, full history
 
 No more days spent auditing after the fact.
 
@@ -80,7 +80,7 @@ Neomundi monitors AI responses during generation and detects:
 A law firm deploys an LLM to pre-draft client responses. Every response is scored before it reaches the lawyer.
 
 - Unstable responses are flagged before anyone reads them
-- Every response carries a stability score — traceable, auditable, defensible
+- Every response carries a stability score and become traceable, auditable, defensible
 - Liability does not disappear. It gets measured and assigned.
 - Less stress: risk is managed, visible, and under control
 - For the client, a premium service: proof of compliance and information quality
