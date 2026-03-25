@@ -1,128 +1,128 @@
-# Runtime AI Risk Control
-**by Neomundi**
+# Contrôle du risque IA en temps réel
+**par Neomundi**
 
-> 🇫🇷 [Lire en français](README.fr.md)
-
----
-
-Your AI makes mistakes. That is not the real problem. The real problem is when you find out.
-
-The response has already been sent. The client has already read it. At that point, it is too late.
-
-Neomundi sits between your application and your AI. Every response is analyzed while it is being generated.
-
-- Every response is traced
-- Every response is auditable
-- A score tells you when the risk of error is rising
-
-You stop discovering problems after the fact. They are detected while the response is still being written. The system triggers an alert (OBS mode) or makes a decision (GOV mode).
+> 🇬🇧 [Read in English](README.md)
 
 ---
 
-## Not a firewall. Not a guardrail.
+Votre IA fait des erreurs. Ce n'est pas le vrai problème. Le vrai problème, c'est quand vous les découvrez.
 
-Firewalls block indiscriminately. Guardrails constrain after the fact. Neomundi does something different: it measures risk continuously, alerts you, and makes a decision at the right moment.
+La réponse est déjà envoyée. Le client l'a déjà lue. Et à ce stade, il est trop tard.
 
-No infrastructure changes. One API call. Immediate visibility.
+Neomundi se place entre votre application et votre IA. Chaque réponse est analysée pendant qu'elle est générée.
 
-**G-score: 0 = low risk · 1 = high risk**
+- Chaque réponse est tracée
+- Chaque réponse est auditable
+- Un score vous indique quand le risque d'erreur augmente
 
-> [Test it live in the sandbox](https://simulator.neomundi.io)
-
----
-
-## EU AI Act — built in, not bolted on
-
-Become compliant in 10 minutes. Without changing your architecture.
-
-Once Neomundi is connected, every response receives a confidence score and becomes auditable.
-
-- You know which responses are risky
-- You are alerted in real time if a response becomes dangerous
-- You download your audit report in one click — hallucinations detected, flagged responses, full history
-
-No more days spent auditing after the fact.
-
-- **OBS mode**: continuous monitoring, no constraints on your responses
-- **GOV mode**: your policies enforced in real time
-
-You do not prepare for compliance. You deploy it.
+Vous ne découvrez plus les problèmes après coup. Ils sont détectés pendant que la réponse s'écrit encore. Le système génère une alerte (Mode OBS) ou prend une décision (Mode GOV).
 
 ---
 
-## What it catches
+## Ni pare-feu. Ni garde-fou.
 
-Neomundi monitors AI responses during generation and detects:
+Les pare-feux bloquent sans discernement. Les garde-fous contraignent après coup. Neomundi fait autre chose : il mesure le risque en continu, il vous alerte et prend une décision au bon moment.
 
-- **Hallucination spikes**: before the output is sent
-- **Cost drift**: from unbounded token loops
-- **Response degradation**: quality decay over sessions
-- **Semantic instability**: weak signals that accumulate and make the response increasingly unreliable
+Aucun changement d'infrastructure. Un seul appel API. Visibilité immédiate.
+
+**G-score : 0 = risque faible · 1 = risque élevé**
+
+> [Tester en direct dans le sandbox](https://simulator.neomundi.io)
 
 ---
 
-## Why it matters
+## EU AI Act — intégré, pas ajouté
 
-| Without Neomundi | With Neomundi |
+Devenez conforme en 10 minutes. Sans changer votre architecture.
+
+Dès que Neomundi est branché, chaque réponse reçoit un score de confiance et devient auditable.
+
+- Vous savez quelles réponses sont risquées
+- Vous êtes alerté en temps réel si une réponse devient dangereuse
+- Vous téléchargez votre rapport d'audit en un clic avec hallucinations détectées, réponses signalées, historique complet
+
+Fini les 4 jours par mois passés à auditer après coup.
+
+- **Mode OBS** : surveillance continue, sans contrainte sur vos réponses
+- **Mode GOV** : vos règles appliquées en temps réel
+
+Vous ne vous préparez pas à la conformité. Vous la déployez.
+
+---
+
+## Ce que le système détecte
+
+Neomundi surveille les réponses IA pendant leur génération et détecte :
+
+- **Les pics d'hallucination** avant que la réponse ne soit envoyée
+- **La dérive de coût** liée aux boucles de tokens non bornées
+- **La dégradation de la réponse** : baisse de qualité au fil des sessions
+- **L'instabilité sémantique** : des signaux faibles qui s'accumulent et rendent la réponse de moins en moins fiable
+
+---
+
+## Pourquoi c'est important
+
+| Sans Neomundi | Avec Neomundi |
 |---|---|
-| Problem discovered after the fact | Problem detected before output |
-| Cost drift undetected | Drift caught in real time |
-| Reliability assumed | Reliability measured |
+| Problème découvert après coup | Problème détecté avant la sortie |
+| Dérive de coût non détectée | Dérive interceptée en temps réel |
+| Fiabilité supposée | Fiabilité mesurée |
 
 ---
 
-## Use case — law firm
+## Cas d'usage — cabinet d'avocats
 
-A law firm deploys an LLM to pre-draft client responses. Every response is scored before it reaches the lawyer.
+Un cabinet déploie un LLM pour pré-rédiger des réponses clients. Chaque réponse est scorée avant d'atteindre l'avocat.
 
-- Unstable responses are flagged before anyone reads them
-- Every response carries a stability score — traceable, auditable, defensible
-- Liability does not disappear. It gets measured and assigned.
-- Less stress: risk is managed, visible, and under control
-- For the client, a premium service: proof of compliance and information quality
+- Les réponses instables sont signalées avant que quiconque ne les lise
+- Chaque réponse porte un score de stabilité — traçable, auditable, défendable
+- La responsabilité ne disparaît pas. Elle se mesure et s'attribue.
+- Moins de stress : le risque est géré, visible et maîtrisé
+- Côté client, un service premium : une preuve de conformité et de qualité de l'information
 
 ---
 
 ## Documentation
 
-- [Executive Brief](#)
-- [Technical White Paper](#)
-- [Scientific Foundation](#)
+- [Note exécutive](#)
+- [Livre blanc technique](#)
+- [Fondements scientifiques](#)
 
 ---
 
-## Status
+## Statut
 
-| Mode | Status | Signal |
+| Mode | Statut | Signal |
 |---|---|---|
-| OBS | 🟢 Live | Early pilot onboarding open |
-| GOV | 🟡 Coming | 79.5% instability detection (TruthfulQA) |
+| OBS | 🟢 En ligne | Onboarding pilote ouvert |
+| GOV | 🟡 À venir | 79,5 % de détection d'instabilité (TruthfulQA) |
 
 ---
 
-## FAQ
+## Questions fréquentes
 
-**How fast can I integrate Neomundi?**
-In minutes. One API call between your app and your LLM. No SDK, no architecture change.
+**En combien de temps puis-je intégrer Neomundi ?**
+En quelques minutes. Un seul appel API entre votre application et votre LLM. Pas de SDK, pas de changement d'architecture.
 
-**What do I get immediately?**
-Instant visibility on every AI response: risk level, decision signal, and audit trace.
+**Qu'est-ce que j'obtiens immédiatement ?**
+Une visibilité instantanée sur chaque réponse IA : niveau de risque, signal de décision et trace d'audit.
 
-**Does it impact performance?**
-No. Start in OBS mode: zero enforcement, full transparency.
+**Est-ce que cela impacte les performances ?**
+Non. Commencez en mode OBS : zéro contrainte, transparence totale.
 
-**What happens when I activate GOV mode?**
-Neomundi enforces your policies in real time, blocking or allowing responses based on your risk thresholds.
+**Que se passe-t-il quand j'active le mode GOV ?**
+Neomundi applique vos règles en temps réel, en bloquant ou autorisant les réponses selon vos seuils de risque.
 
-**Why is this useful for my business?**
-You reduce AI response risk, become auditable, and move toward compliance without slowing down your product.
+**En quoi est-ce utile pour mon activité ?**
+Vous réduisez le risque des réponses IA, vous devenez auditable et progressez vers la conformité sans ralentir votre produit.
 
-**Do you store my data?**
-No sensitive data is stored. Only aggregated metrics are used for reporting and optimization.
+**Mes données sont-elles stockées ?**
+Aucune donnée sensible n'est conservée. Seules des métriques agrégées sont utilisées pour le reporting et l'optimisation.
 
-**What is the next step?**
-Test the sandbox in 30 seconds. If it fits your use case, contact us to activate production access.
+**Quelle est la prochaine étape ?**
+Testez le sandbox en 30 secondes. Si cela correspond à votre cas d'usage, contactez-nous pour activer l'accès en production.
 
 ---
 
-The risk of your AI responses is no longer a black box. It is traced, explainable, and scored in real time.
+Le risque de vos réponses IA n'est plus une boîte noire. Il est tracé, explicable et scoré en temps réel.
