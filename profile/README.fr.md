@@ -20,7 +20,7 @@ Vous ne découvrez plus les problèmes après coup. Ils sont détectés pendant 
 
 ---
 
-## Ni pare-feu. Ni garde-fou.
+## Ni firewall. Ni guardrail.
 
 Les pare-feux bloquent sans discernement. Les garde-fous contraignent après coup. Neomundi fait autre chose : il mesure le risque en continu, il vous alerte et prend une décision au bon moment.
 
