@@ -3,8 +3,9 @@
 
 > 🇬🇧 [Read in English](README.md)
 
+⚡ **Votre IA se trompe. Vous le savez trop tard. Neomundi vous le dit pendant que ça se passe.**
+
 ---
-## Votre IA se trompe. Vous le savez trop tard. Neomundi vous le dit pendant que ça se passe.
 
 Votre IA fait des erreurs. Ce n'est pas le vrai problème. Le vrai problème, c'est quand vous les découvrez.
 
@@ -22,15 +23,15 @@ Vous ne découvrez plus les problèmes après coup. Ils sont détectés pendant 
 
 ## Ni firewall. Ni guardrail.
 
-Les pare-feux bloquent sans discernement. Les garde-fous contraignent après coup. Neomundi fait autre chose : il mesure le risque en continu, il vous alerte et prend une décision au bon moment.
+Les firewalls bloquent sans discernement. Les guardrails contraignent après coup. Neomundi fait autre chose : il mesure le risque en continu, il vous alerte et prend une décision au bon moment.
 
 Aucun changement d'infrastructure. Un seul appel API. Visibilité immédiate.
 
 **G-score : 0 = risque faible · 1 = risque élevé**
 
-> [Tester en direct dans le sandbox](https://simulator.neomundi.io)
+> [Tester en direct dans le sandbox](https://neomundi-tech.github.io/neomundi-sandbox)
 
-## Nous bloquons les réponses risquées avant même leur envoi. Chaque réponse est tracée, évaluée et auditable en temps réel.
+⚡ **Chaque réponse est tracée, évaluée et auditable en temps réel.**
 
 ---
 
@@ -42,7 +43,7 @@ Dès que Neomundi est branché, chaque réponse reçoit un score de confiance et
 
 - Vous savez quelles réponses sont risquées
 - Vous êtes alerté en temps réel si une réponse devient dangereuse
-- Vous téléchargez votre rapport d'audit en un clic avec hallucinations détectées, réponses signalées, historique complet
+- Vous téléchargez votre rapport d'audit en un clic — hallucinations détectées, réponses signalées, historique complet
 
 Fini les 4 jours par mois passés à auditer après coup.
 
@@ -57,8 +58,8 @@ Vous ne vous préparez pas à la conformité. Vous la déployez.
 
 Neomundi surveille les réponses IA pendant leur génération et détecte :
 
-- **Les pics d'hallucination** avant que la réponse ne soit envoyée
-- **La dérive de coût** liée aux boucles de tokens non bornées
+- **Les pics d'hallucination** : avant que la réponse ne soit envoyée
+- **La dérive de coût** : liée aux boucles de tokens non bornées
 - **La dégradation de la réponse** : baisse de qualité au fil des sessions
 - **L'instabilité sémantique** : des signaux faibles qui s'accumulent et rendent la réponse de moins en moins fiable
 
@@ -86,6 +87,8 @@ Un cabinet déploie un LLM pour pré-rédiger des réponses clients. Chaque rép
 
 ---
 
+⚡ **Nous bloquons les réponses risquées avant même leur envoi.**
+
 ## Documentation
 
 - [Note exécutive](#)
@@ -100,6 +103,26 @@ Un cabinet déploie un LLM pour pré-rédiger des réponses clients. Chaque rép
 |---|---|---|
 | OBS | 🟢 En ligne | Onboarding pilote ouvert |
 | GOV | 🟡 À venir | 79,5 % de détection d'instabilité (TruthfulQA) |
+
+---
+
+## Comment ça fonctionne
+
+```
+Votre application
+        |
+        ▼
+┌─────────────────────────┐
+│        Neomundi         │
+│   G-score : 0.0 → 1.0   │
+│                         │
+│  < 0.7  →  ✅ AUTORISÉ  │
+│  > 0.7  →  🔴 BLOQUÉ    │
+└─────────────────────────┘
+        |
+        ▼
+Votre IA (LLM)
+```
 
 ---
 
@@ -128,4 +151,4 @@ Testez le sandbox en 30 secondes. Si cela correspond à votre cas d'usage, conta
 
 ---
 
-## Le risque de vos réponses IA n'est plus une boîte noire. Il est tracé, explicable et scoré en temps réel.
+⚡ **Plus de boîte noire. Vous voyez et contrôlez le risque au moment où il se produit.**
