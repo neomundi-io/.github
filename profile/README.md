@@ -5,10 +5,7 @@
 
 ---
 
-⚡ Your AI makes mistakes. You find out too late. Neomundi tells you while it happens.
-⚡ Every response is traced, scored, and auditable in real time.
-⚡ We stop risky responses before they are sent.
-⚡ No more black box. You see and control risk as it happens.
+⚡ ## Your AI makes mistakes. You find out too late. Neomundi tells you while it happens.
 
 ---
 
@@ -26,7 +23,7 @@ You stop discovering problems after the fact. They are detected while the respon
 
 ---
 
-## Not a firewall. Not a guardrail.
+ Not a firewall. Not a guardrail.
 
 Firewalls block indiscriminately. Guardrails constrain after the fact. Neomundi does something different: it measures risk continuously, alerts you, and makes a decision at the right moment.
 
@@ -36,6 +33,7 @@ No infrastructure changes. One API call. Immediate visibility.
 
 > Sandbox — coming live March 27
 
+⚡ ## Every response is traced, scored, and auditable in real time.
 ---
 
 ## EU AI Act — built in, not bolted on
@@ -76,7 +74,7 @@ Neomundi monitors AI responses during generation and detects:
 | Cost drift undetected | Drift caught in real time |
 | Reliability assumed | Reliability measured |
 
-⚡ Every response is traced, scored, and auditable in real time.
+⚡ ## Every response is traced, scored, and auditable in real time.
 
 ---
 
@@ -99,7 +97,8 @@ A law firm deploys an LLM to pre-draft client responses. Every response is score
 - [Scientific Foundation](#)
 
 ---
-
+⚡ ## We stop risky responses before they are sent.
+---
 ## Status
 
 | Mode | Status | Signal |
@@ -154,4 +153,4 @@ Test the sandbox in 30 seconds. If it fits your use case, contact us to activate
 
 ---
 
-⚡ No more black box. You see and control risk as it happens.
+⚡ ## No more black box. You see and control risk as it happens.
