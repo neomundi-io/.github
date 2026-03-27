@@ -1,154 +1,90 @@
-# Contrôle du risque IA en temps réel
-**par Neomundi**
+# Neomundi — Contrôle de Stabilité IA en Temps Réel
 
 > 🇬🇧 [Read in English](README.md)
 
-## ⚡ Votre IA se trompe. Vous le savez trop tard. Neomundi vous le dit pendant que ça se passe.
+---
+
+## ⚡ Votre IA n'est pas fausse. Elle dérive.
+
+Neomundi ne vérifie pas si votre IA a raison.
+Il mesure si votre IA est stable.
+
+Chaque réponse reçoit un score.
+Quand la stabilité chute, vous le savez — avant que la réponse soit envoyée.
+
+**G-score : 0 = stable · 1 = instable**
+
+> [Tester en direct →](https://neomundi-io.github.io/neomundi-sandbox/)
 
 ---
 
-Votre IA fait des erreurs. Ce n'est pas le vrai problème. Le vrai problème, c'est quand vous les découvrez.
+## Ce qu'est la dérive
 
-La réponse est déjà envoyée. Le client l'a déjà lue. Et à ce stade, il est trop tard.
+Neomundi détecte quatre signaux en temps réel :
 
-Neomundi se place entre votre application et votre IA. Chaque réponse est analysée pendant qu'elle est générée.
+- **Contradiction interne** — la réponse se contredit elle-même
+- **Perte de précision** — la précision se dégrade en cours de réponse
+- **Dérive du sujet** — la réponse s'éloigne du fil initial
+- **Incohérence de ton** — le ton ou la logique devient inconsistant
 
-- Chaque réponse est tracée
-- Chaque réponse est auditable
-- Un score vous indique quand le risque d'erreur augmente
-
-Vous ne découvrez plus les problèmes après coup. Ils sont détectés pendant que la réponse s'écrit encore. Le système génère une alerte (Mode OBS) ou prend une décision (Mode GOV).
-
----
-
-## Ni firewall. Ni guardrail.
-
-Les firewalls bloquent sans discernement. Les guardrails contraignent après coup. Neomundi fait autre chose : il mesure le risque en continu, il vous alerte et prend une décision au bon moment.
-
-Aucun changement d'infrastructure. Un seul appel API. Visibilité immédiate.
-
-**G-score : 0 = risque faible · 1 = risque élevé**
-
-> [Tester en direct dans le sandbox](https://neomundi-io.github.io/neomundi-sandbox/)
-
-## ⚡ Chaque réponse est tracée, évaluée et auditable en temps réel.
+Aucun de ces signaux n'exige de connaître la vérité.
+Ils mesurent uniquement la cohérence.
 
 ---
 
-## EU AI Act : intégré, pas ajouté
+## Pourquoi la dérive est importante
 
-Devenez conforme en 10 minutes. Sans changer votre architecture.
+Dans nos tests (TruthfulQA), les signaux d'instabilité précèdent jusqu'à 79 % des réponses incorrectes.
 
-Dès que Neomundi est branché, chaque réponse reçoit un score de confiance et devient auditable.
-
-- Vous savez quelles réponses sont risquées
-- Vous êtes alerté en temps réel si une réponse devient dangereuse
-- Vous téléchargez votre rapport d'audit en un clic avec hallucinations détectées, réponses signalées, historique complet
-
-Fini les 4 jours par mois passés à auditer après coup.
-
-- **Mode OBS** : surveillance continue, sans contrainte sur vos réponses
-- **Mode GOV** : vos règles appliquées en temps réel
-
-Vous ne vous préparez pas à la conformité. Vous la déployez.
+Neomundi ne détecte pas la vérité.
+Il détecte la dérive qui la précède.
 
 ---
 
-## Ce que le système détecte
+## Ce que vous obtenez
 
-Neomundi surveille les réponses IA pendant leur génération et détecte :
+**Mode OBS** — chaque réponse est scorée et tracée. Rien n'est bloqué.
+Vous disposez d'une piste d'audit complète : chaque réponse, chaque score, chaque horodatage.
 
-- **Les pics d'hallucination** : avant que la réponse ne soit envoyée
-- **La dérive de coût** : liée aux boucles de tokens non bornées
-- **La dégradation de la réponse** : baisse de qualité au fil des sessions
-- **L'instabilité sémantique** : des signaux faibles qui s'accumulent et rendent la réponse de moins en moins fiable
-
----
-
-## Pourquoi c'est important
-
-| Sans Neomundi | Avec Neomundi |
-|---|---|
-| Problème découvert après coup | Problème détecté avant la sortie |
-| Dérive de coût non détectée | Dérive interceptée en temps réel |
-| Fiabilité supposée | Fiabilité mesurée |
+**Mode GOV** — quand la dérive dépasse votre seuil, la réponse est signalée ou peut être interrompue.
+Avant qu'elle n'atteigne personne.
 
 ---
 
-## Cas d'usage : cabinet d'avocats
+## L'argument audit
 
-Un cabinet déploie un LLM pour pré-rédiger des réponses clients. Chaque réponse est scorée avant d'atteindre l'avocat.
+Une réponse instable envoyée, c'est votre responsabilité.
+Une réponse instable interceptée, c'est la preuve que vous contrôlez.
 
-- Les réponses instables sont signalées avant que quiconque ne les lise
-- Chaque réponse porte un score de stabilité et devient traçable, auditable, défendable
-- La responsabilité ne disparaît pas. Elle se mesure et s'attribue.
-- Moins de stress : le risque est géré, visible et maîtrisé
-- Côté client, un service premium : une preuve de conformité et de qualité de l'information
+Neomundi transforme chaque interaction IA en un enregistrement auditable.
 
 ---
 
-## ⚡ Nous bloquons les réponses risquées avant même leur envoi.
+## Un seul appel API. Aucun changement d'infrastructure.
 
-## Documentation
-
-- [Note exécutive](#)
-- [Livre blanc technique](#)
-- [Fondements scientifiques](#)
+```bash
+curl -X POST https://api.neomundi.io/v1/observe \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -d '{"mode": "OBS", "session_id": "abc123"}'
+```
 
 ---
 
 ## Statut
 
-| Mode | Statut | Signal |
-|---|---|---|
-| OBS | 🟢 En ligne | Onboarding pilote ouvert |
-| GOV | 🟡 À venir | 79,5 % de détection d'instabilité (TruthfulQA) |
+| Mode | Statut |
+|---|---|
+| OBS | 🟢 Live — onboarding pilotes ouvert |
+| GOV | 🟡 À venir |
 
 ---
 
-## Comment ça fonctionne
+## Documentation
 
-```
-Votre application
-        |
-        ▼
-┌─────────────────────────┐
-│        Neomundi         │
-│   G-score : 0.0 → 1.0   │
-│                         │
-│  < 0.7  →  ✅ AUTORISÉ  │
-│  > 0.7  →  🔴 BLOQUÉ    │
-└─────────────────────────┘
-        |
-        ▼
-Votre IA (LLM)
-```
+- [Executive Brief](#)
+- [Technical White Paper](#)
+- [Fondation scientifique (Zenodo)](#)
 
 ---
 
-## Questions fréquentes
-
-**En combien de temps puis-je intégrer Neomundi ?**
-En quelques minutes. Un seul appel API entre votre application et votre LLM. Pas de SDK, pas de changement d'architecture.
-
-**Qu'est-ce que j'obtiens immédiatement ?**
-Une visibilité instantanée sur chaque réponse IA : niveau de risque, signal de décision et trace d'audit.
-
-**Est-ce que cela impacte les performances ?**
-Non. Commencez en mode OBS : zéro contrainte, transparence totale.
-
-**Que se passe-t-il quand j'active le mode GOV ?**
-Neomundi applique vos règles en temps réel, en bloquant ou autorisant les réponses selon vos seuils de risque.
-
-**En quoi est-ce utile pour mon activité ?**
-Vous réduisez le risque des réponses IA, vous devenez auditable et progressez vers la conformité sans ralentir votre produit.
-
-**Mes données sont-elles stockées ?**
-Aucune donnée sensible n'est conservée. Seules des métriques agrégées sont utilisées pour le reporting et l'optimisation.
-
-**Quelle est la prochaine étape ?**
-Testez le sandbox en 30 secondes. Si cela correspond à votre cas d'usage, contactez-nous pour activer l'accès en production.
-
----
-
-## ⚡ Plus de boîte noire. Vous voyez et contrôlez le risque au moment où il se produit.
+*La stabilité n'est plus supposée. Elle est mesurée.*
