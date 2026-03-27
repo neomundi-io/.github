@@ -1,47 +1,90 @@
-⚡ Your AI is not wrong.
-It is unstable.
+# Neomundi — Runtime AI Stability Monitor
 
-Neomundi measures the stability of every AI response — in real time.
+> 🇫🇷 [Lire en français](README.fr.md)
 
-We do not check if the answer is true.
-We check if it holds together.
+---
 
-A response can be false and stable.
-A response can be true and unstable.
+## ⚡ Your AI isn't wrong. It drifts.
 
-We measure coherence, contradiction, and drift as the response is generated.
+Neomundi doesn't check whether your AI is right.
+It measures whether your AI is stable.
 
-G-score: 0 = stable · 1 = unstable
+Every response gets a score.
+When stability drops, you know — before the response is sent.
 
-—
+**G-score: 0 = stable · 1 = unstable**
 
-What you get
+> [Test it live →](https://neomundi-io.github.io/neomundi-sandbox/)
 
-• A stability score for every response  
-• Detection of contradictions and semantic drift  
-• Early signals of degradation before output is sent  
-• Full traceability and auditability  
+---
 
-—
+## What drift looks like
 
-What it is not
+Neomundi detects four signals in real time:
 
-Neomundi is not a firewall.  
-Neomundi is not a fact-checker.  
-Neomundi does not judge content.  
+- **Internal contradiction** — the response contradicts itself
+- **Loss of precision** — accuracy degrades mid-response
+- **Topic drift** — the response departs from the original thread
+- **Tone inconsistency** — tone or logic becomes inconsistent
 
-It measures the internal stability of AI outputs.
+None of these require knowing the truth.
+They only require measuring coherence.
 
-—
+---
 
-OBS mode  
-Monitor stability in real time
+## Why drift matters
 
-GOV mode  
-Act on instability when needed
+In our tests (TruthfulQA), instability signals precede up to 79% of incorrect responses.
 
-—
+Neomundi doesn't detect the truth.
+It detects the drift that comes before it.
 
-One API call. No architecture change.
+---
 
-Test it in the sandbox.
+## What you get
+
+**OBS mode** — every response is scored and traced. Nothing is blocked.
+You have a full audit trail: every response, every score, every timestamp.
+
+**GOV mode** — when drift crosses your threshold, the response is flagged or can be interrupted.
+Before it reaches anyone.
+
+---
+
+## The audit argument
+
+A drifting response that was sent is your liability.
+A drifting response that was caught is your proof of control.
+
+Neomundi turns every AI interaction into an auditable record.
+
+---
+
+## One API call. No infrastructure change.
+
+```bash
+curl -X POST https://api.neomundi.io/v1/observe \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -d '{"mode": "OBS", "session_id": "abc123"}'
+```
+
+---
+
+## Status
+
+| Mode | Status |
+|---|---|
+| OBS | 🟢 Live — pilot onboarding open |
+| GOV | 🟡 Coming |
+
+---
+
+## Documentation
+
+- [Executive Brief](#)
+- [Technical White Paper](#)
+- [Scientific Foundation (Zenodo)](#)
+
+---
+
+*Stability is not assumed. It is measured.*
