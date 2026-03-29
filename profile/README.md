@@ -22,6 +22,7 @@ Your AI is not auditable. Now it is and in 10 minutes.
 ## See it in action
 
 > Real request. Real scoring. Real decision.
+> Default threshold: unstable responses are blocked when stability drops below X.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/neomundi-io/.github/main/profile/stability_score.gif" alt="Neomundi Stability Score Demo" width="800">
