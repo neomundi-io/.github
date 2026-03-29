@@ -1,90 +1,89 @@
-# Neomundi — Runtime AI Stability Monitor
+Neomundi — Real-Time AI Stability Control
+🇫🇷 Lire en français
+Your AI is not auditable. Now it is — in 10 minutes.
+Every response is measured in real time.
+You see drift before it becomes an incident.
+You can block unstable responses before they are sent.
+You have proof : PDF export of all your logs.
+Not a firewall. Not a guardrail. A real-time decision layer.
+One API call. No infrastructure changes.
+→ Try it live — No installation. No API key required.
+[GIF to insert]
 
-> 🇫🇷 [Lire en français](README.fr.md)
+What Neomundi Detects
+Neomundi detects when your AI starts to drift :
 
----
+Internal contradictions
+Loss of precision
+Topic deviation
+Global incoherence
 
-## ⚡ Your AI isn't wrong. It drifts.
+These signals do not look for truth. They measure coherence — in real time.
+Drift is visible before it becomes an error.
 
-Neomundi doesn't check whether your AI is right.
-It measures whether your AI is stable.
+Results & Validation
+Based on public benchmarks (TruthfulQA, HaluEval, MMLU, LegalBench) and internal stress tests.
+2,360 responses analyzed. 6 datasets. One question : does the stability score detect what it claims to detect ?
 
-Every response gets a score.
-When stability drops, you know — before the response is sent.
+91% true positives
+Strong correlation between stability drop and hallucination
+Zero over-detection on edge cases
 
-**G-score: 0 = stable · 1 = unstable**
+In practice : Neomundi detects drift before it reaches your users.
 
-> [Test it live →](https://neomundi-io.github.io/neomundi-sandbox/)
+Integration
+Up and running in 10 minutes. Without touching your infrastructure.
+Bring your key
+You use your own provider API key — OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, Cohere. It transits in your request and stays under your control.
+One redirection point
+You redirect your LLM calls through api.neomundi.io. That's it. No SDK to install, no code changes, no migration.
+Security
+Neomundi does not know your provider keys. Your prompts are not read or stored. Only governance metrics are recorded — stability score, decision, timestamp.
+Compatibility
+Automatic provider detection from your key :
+OpenAI · Anthropic · Google · Mistral · DeepSeek · xAI · Cohere
+bashcurl -X POST https://api.neomundi.io/v1/govern/stream \
+  -H "X-API-Key: ct_live_xxx" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "prompt": "Your prompt here",
+    "model": "gpt-4o",
+    "provider_api_key": "sk-xxx"
+  }'
+Response : real-time stability score · ALLOW / FLAG decision · PDF export on demand.
 
----
+Pilot Program
+We are selecting early adopter partners in sectors where LLM reliability is not optional : LegalTech, regulated industries, multi-LLM publishers.
+In exchange for documenting your use case : preferential conditions for life for the first partners.
+→ contact@neomundi.io
 
-## What drift looks like
+FAQ
+What is the stability score ?
+It measures the internal coherence of an LLM response in real time — not its truthfulness. Neomundi does not fact-check. It detects the drift that precedes the error.
+What data do you store ?
+Your prompts are not read or stored. Your provider API key stays under your control. Only governance metrics are recorded : score, decision, timestamp. Nothing else.
+Does it work with my LLM ?
+Yes — automatic detection from your key : OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, Cohere. If your provider is not listed, contact us.
+What is the difference with LangSmith, Portkey or Helicone ?
+These tools observe and log. Neomundi measures and intervenes during generation — before the unstable response reaches your user. We do not replace your observability stack, we add the governance layer that is missing.
+Is it compliant with the EU AI Act ?
+Neomundi contributes to the traceability and auditability requirements of the EU AI Act — complete audit trail per session : score, decision, timestamp, PDF export. The enforcement deadline is August 2026.
+What is GOV mode ?
+OBS mode scores and traces every response without intervening. GOV is the execution mode : unstable responses are blocked before delivery. Pilot partners get priority access.
 
-Neomundi detects four signals in real time:
+Roadmap — 30 days
 
-- **Internal contradiction** — the response contradicts itself
-- **Loss of precision** — accuracy degrades mid-response
-- **Topic drift** — the response departs from the original thread
-- **Tone inconsistency** — tone or logic becomes inconsistent
+Full GOV mode — blocking unstable responses before delivery
+Extended detection : drift, error, rupture in real time
+Platform interface — logs, configurable thresholds, full export
 
-None of these require knowing the truth.
-They only require measuring coherence.
+Current pilot partners get priority access.
 
----
+Documentation
 
-## Why drift matters
+Executive Brief [link coming]
+Technical White Paper [link coming]
+Scientific Foundation (Zenodo) [link coming]
 
-In our tests (TruthfulQA), instability signals precede up to 79% of incorrect responses.
 
-Neomundi doesn't detect the truth.
-It detects the drift that comes before it.
-
----
-
-## What you get
-
-**OBS mode** — every response is scored and traced. Nothing is blocked.
-You have a full audit trail: every response, every score, every timestamp.
-
-**GOV mode** — when drift crosses your threshold, the response is flagged or can be interrupted.
-Before it reaches anyone.
-
----
-
-## The audit argument
-
-A drifting response that was sent is your liability.
-A drifting response that was caught is your proof of control.
-
-Neomundi turns every AI interaction into an auditable record.
-
----
-
-## One API call. No infrastructure change.
-
-```bash
-curl -X POST https://api.neomundi.io/v1/observe \
-  -H "Authorization: Bearer YOUR_API_KEY" \
-  -d '{"mode": "OBS", "session_id": "abc123"}'
-```
-
----
-
-## Status
-
-| Mode | Status |
-|---|---|
-| OBS | 🟢 Live — pilot onboarding open |
-| GOV | 🟡 Coming |
-
----
-
-## Documentation
-
-- [Executive Brief](#)
-- [Technical White Paper](#)
-- [Scientific Foundation (Zenodo)](#)
-
----
-
-*Stability is not assumed. It is measured.*
+Stability is no longer assumed. It is measured.
