@@ -1,6 +1,6 @@
 # Neomundi — Contrôle de Stabilité IA en Temps Réel
 
-🇬🇧 [Read in English](#)
+🇬🇧 [Read in English](https://github.com/neomundi-io/.github/blob/main/profile/README.md)
 
 ---
 
