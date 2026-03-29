@@ -36,6 +36,7 @@ Your AI is not auditable. Now it is and in 10 minutes.
 [→ Try it live — No installation. No API key required.](https://neomundi-io.github.io/neomundi-sandbox/)
 ---
 
+
 ## What Neomundi Detects
 
 Neomundi detects when your AI starts to drift:
@@ -45,22 +46,19 @@ Neomundi detects when your AI starts to drift:
 - Topic deviation
 - Global incoherence
 
-These signals do not look for truth. They measure coherence — in real time.
-Drift is visible before it becomes an error.
+These signals do not look for truth. They measure coherence — in real time. Drift is visible before it becomes an error.
 
 ---
 
 ## Results & Validation
 
-Based on public benchmarks (TruthfulQA, HaluEval, MMLU, LegalBench) and internal stress tests.
+2,360 responses analyzed · 6 public datasets (TruthfulQA, HaluEval, MMLU, LegalBench)
 
-2,360 responses analyzed. 6 datasets. One question: does the stability score detect what it claims to detect?
+- 91% true positives
+- Strong correlation between stability drop and hallucination
+- Zero over-detection on edge cases
 
-- **91% true positives**
-- **Strong correlation between stability drop and hallucination**
-- **Zero over-detection on edge cases**
-
-In practice: Neomundi detects drift before it reaches your users.
+*Full graph and dataset — coming soon.*
 
 ---
 
@@ -68,19 +66,11 @@ In practice: Neomundi detects drift before it reaches your users.
 
 Up and running in 10 minutes. Without touching your infrastructure.
 
-**Bring your key**
-You use your own provider API key — OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, Cohere. It transits in your request and stays under your control.
+**Bring your key** — you use your own provider API key: OpenAI · Anthropic · Google · Mistral · DeepSeek · xAI · Cohere. It transits in your request and stays under your control.
 
-**One redirection point**
-You redirect your LLM calls through `api.neomundi.io`. No SDK to install, no code changes, no migration.
+**One redirection point** — you redirect your LLM calls through `api.neomundi.io`. No SDK to install, no code changes, no migration.
 
-**Security**
-Neomundi does not know your provider keys. Your prompts are not read or stored. Only governance metrics are recorded — stability score, decision, timestamp.
-
-**Compatibility**
-Automatic provider detection from your key:
-
-`OpenAI · Anthropic · Google · Mistral · DeepSeek · xAI · Cohere`
+**Security** — Neomundi does not know your provider keys. Your prompts are not read or stored. Only governance metrics are recorded: stability score, decision, timestamp.
 
 ```bash
 curl -X POST https://api.neomundi.io/v1/govern/stream \
@@ -93,17 +83,17 @@ curl -X POST https://api.neomundi.io/v1/govern/stream \
   }'
 ```
 
-Response: real-time stability score · ALLOW / FLAG decision · PDF export on demand.
+Response: real-time stability score · ALLOW / FLAG / BLOCK decision · PDF export on demand.
 
 ---
 
 ## Pilot Program
 
-We are selecting early adopter partners in sectors where LLM reliability is not optional: LegalTech, regulated industries, multi-LLM publishers.
+We are selecting early adopter partners in sectors where LLM reliability is not optional: LegalTech · regulated industries · multi-LLM publishers.
 
 In exchange for documenting your use case: **preferential conditions for life for the first partners.**
 
-[→ contact@neomundi.io](mailto:contact@neomundi.io)
+→ [contact@neomundi.io](mailto:contact@neomundi.io)
 
 ---
 
@@ -122,7 +112,7 @@ Yes — automatic detection from your key: OpenAI, Anthropic, Google, Mistral, D
 These tools observe and log. Neomundi measures and intervenes during generation — before the unstable response reaches your user. We do not replace your observability stack, we add the governance layer that is missing.
 
 **Is it compliant with the EU AI Act?**
-Neomundi contributes to the traceability and auditability requirements of the EU AI Act — complete audit trail per session: score, decision, timestamp, PDF export. The enforcement deadline is August 2026.
+Neomundi contributes to the traceability and auditability requirements of the EU AI Act by delivering a complete audit trail per session: score, decision, timestamp, PDF export. The enforcement deadline is August 2026.
 
 **What is GOV mode?**
 OBS mode scores and traces every response without intervening. GOV is the execution mode: unstable responses are blocked before delivery. Pilot partners get priority access.
@@ -132,18 +122,18 @@ OBS mode scores and traces every response without intervening. GOV is the execut
 ## Roadmap — 30 days
 
 - Full GOV mode — blocking unstable responses before delivery
-- Extended detection: drift, error, rupture in real time
+- Extended detection — drift, error, rupture in real time
 - Platform interface — logs, configurable thresholds, full export
 
-Current pilot partners get priority access.
+*Current pilot partners get priority access.*
 
 ---
 
 ## Documentation
 
-- Executive Brief — [link coming]
-- Technical White Paper — [link coming]
-- Scientific Foundation (Zenodo) — [link coming]
+- Executive Brief — *[link coming]*
+- Technical White Paper — *[link coming]*
+- Scientific Foundation (Zenodo) — *[link coming]*
 
 ---
 
