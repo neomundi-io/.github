@@ -7,8 +7,11 @@
 Votre IA n'est pas auditable. Maintenant, elle l'est en 10 minutes.
 
 ✅ Chaque réponse est mesurée en temps réel.
+
 ⚠️ Vous voyez la dérive avant qu'elle devienne un incident.
+
 🛑 Vous pouvez bloquer les réponses instables avant envoi.
+
 📄 Vous avez une preuve : export PDF de tous vos logs.
 
 **Pas un firewall. Pas un garde-fou. Une couche de décision en temps réel.**
