@@ -22,6 +22,7 @@ Your AI is not auditable. Now it is and in 10 minutes.
 ## See it in action
 
 > Real request. Real scoring. Real decision.
+
 > Default threshold: unstable responses are blocked when stability drops below X.
 
 <p align="center">
