@@ -1,10 +1,10 @@
-# Neomundi — Real-Time AI Stability Control
+# Neomundi - Real-Time AI Stability Control
 
 🇫🇷 [Lire en français](https://github.com/neomundi-io/.github/blob/main/profile/README.fr.md)
 
 ---
 
-Your AI is not auditable. Now it is — in 10 minutes.
+Your AI is not auditable. Now it is and in 10 minutes.
 
 Every response is measured in real time.
 You see drift before it becomes an incident.
@@ -17,7 +17,11 @@ You have proof: PDF export of all your logs.
 
 [→ Try it live — No installation. No API key required.](https://neomundi-io.github.io/neomundi-sandbox/)
 ---
+<p align="center">
+  <img src="https://raw.githubusercontent.com/neomundi-io/.github/main/profile/stability_score.gif" alt="Neomundi Stability Score Demo" width="800">
+</p>
 
+---
 ## What Neomundi Detects
 
 Neomundi detects when your AI starts to drift:
