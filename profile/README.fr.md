@@ -1,89 +1,132 @@
 # Neomundi — Contrôle de Stabilité IA en Temps Réel
 
-> 🇬🇧 [Read in English](README.md)
+🇬🇧 [Read in English](#)
 
 ---
 
-## ⚡ Votre IA n'est pas fausse. Elle dérive.
+Votre IA n'est pas auditable. Maintenant, elle l'est — en 10 minutes.
 
-Neomundi ne vérifie pas si votre IA a raison.
-Il mesure si votre IA est stable.
+Chaque réponse est mesurée en temps réel.
+Vous voyez la dérive avant qu'elle devienne un incident.
+Vous pouvez bloquer les réponses instables avant envoi.
+Vous avez une preuve : export PDF de tous vos logs.
 
-Chaque réponse reçoit un score.
-Quand la stabilité chute, vous le savez — avant que la réponse soit envoyée.
+**Pas un firewall. Pas un garde-fou. Une couche de décision en temps réel.**
 
-**G-score : 0 = stable · 1 = instable**
+**Un seul appel API. Aucun changement d'infrastructure.**
 
-> [Tester en direct →](https://neomundi-io.github.io/neomundi-sandbox/)
-
----
-
-## Ce qu'est la dérive
-
-Neomundi détecte quatre signaux en temps réel :
-
-- **Contradiction interne** — la réponse se contredit elle-même
-- **Perte de précision** — la précision se dégrade en cours de réponse
-- **Dérive du sujet** — la réponse s'éloigne du fil initial
-- **Incohérence de ton** — le ton ou la logique devient inconsistant
-
-Aucun de ces signaux n'exige de connaître la vérité.
-Ils mesurent uniquement la cohérence.
+[→ Tester en direct — Aucune installation. Aucune clef requise.](https://sandbox.neomundi.io)
 
 ---
 
-## Pourquoi la dérive est importante
+## Ce que Neomundi détecte
 
-Dans nos tests (TruthfulQA), les signaux d'instabilité précèdent jusqu'à 79 % des réponses incorrectes.
+Neomundi détecte quand votre IA commence à dériver :
 
-Neomundi ne détecte pas la vérité.
-Il détecte la dérive qui la précède.
+- Contradictions internes
+- Perte de précision
+- Sortie du sujet
+- Incohérence globale
 
----
-
-## Ce que vous obtenez
-
-**Mode OBS** — chaque réponse est scorée et tracée. Rien n'est bloqué.
-Vous disposez d'une piste d'audit complète : chaque réponse, chaque score, chaque horodatage.
-
-**Mode GOV** — quand la dérive dépasse votre seuil, la réponse est signalée ou peut être interrompue.
-Avant qu'elle n'atteigne personne.
+Ces signaux ne cherchent pas la vérité. Ils mesurent la cohérence — en temps réel.
+La dérive est visible avant qu'elle ne devienne une erreur.
 
 ---
 
-## L'argument audit
+## Résultats & Validation
 
-Une réponse instable envoyée, c'est votre responsabilité.
-Une réponse instable interceptée, c'est la preuve que vous contrôlez.
+Basé sur des benchmarks publics (TruthfulQA, HaluEval, MMLU, LegalBench) et des stress tests internes.
 
-Neomundi transforme chaque interaction IA en un enregistrement auditable.
+2 360 réponses analysées. 6 datasets. Une seule question : est-ce que le score de stabilité détecte ce qu'il prétend détecter ?
+
+- **91% de vrais positifs**
+- **Corrélation forte entre baisse de stabilité et hallucination**
+- **Aucune sur-détection sur les cas limites**
+
+En pratique : Neomundi détecte les dérives avant qu'elles n'atteignent vos utilisateurs.
 
 ---
 
-## Un seul appel API. Aucun changement d'infrastructure.
+## Intégration
+
+Opérationnel en 10 minutes. Sans toucher à votre infrastructure.
+
+**Bring your key**
+Vous utilisez votre propre clé API provider — OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, Cohere. Elle transite dans votre requête et reste sous votre contrôle.
+
+**Un seul point de redirection**
+Vous redirigez vos appels LLM via `api.neomundi.io`. Aucun SDK à installer, aucun changement de code côté LLM, aucune migration.
+
+**Sécurité**
+Neomundi ne connaît pas vos clés provider. Vos prompts ne sont pas lus ni stockés. Seules les métriques de gouvernance sont enregistrées — score de stabilité, décision, horodatage.
+
+**Compatibilité**
+Détection automatique du provider depuis votre clé :
+
+`OpenAI · Anthropic · Google · Mistral · DeepSeek · xAI · Cohere`
 
 ```bash
-curl -X POST https://api.neomundi.io/v1/observe \
-  -H "Authorization: Bearer YOUR_API_KEY" \
-  -d '{"mode": "OBS", "session_id": "abc123"}'
+curl -X POST https://api.neomundi.io/v1/govern/stream \
+  -H "X-API-Key: ct_live_xxx" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "prompt": "Votre prompt ici",
+    "model": "gpt-4o",
+    "provider_api_key": "sk-xxx"
+  }'
 ```
+
+Réponse : score de stabilité en temps réel · décision ALLOW / FLAG · export PDF sur demande.
 
 ---
 
-## Statut
+## Programme pilote
 
-| Mode | Statut |
-|---|---|
-| OBS | 🟢 Live — onboarding pilotes ouvert |
-| GOV | 🟡 À venir |
+Nous sélectionnons des partenaires early adopters dans les secteurs où la fiabilité des LLMs n'est pas une option : LegalTech, secteurs réglementés, éditeurs multi-LLM.
+
+En échange de la documentation de votre cas d'usage : **conditions préférentielles à vie pour les premiers partenaires.**
+
+[→ contact@neomundi.io](mailto:contact@neomundi.io)
+
+---
+
+## FAQ
+
+**C'est quoi le score de stabilité ?**
+Il mesure la cohérence interne d'une réponse LLM en temps réel — pas sa véracité. Neomundi ne fait pas de fact-checking. Il détecte la dérive qui précède l'erreur.
+
+**Vous stockez quoi sur mes données ?**
+Vos prompts ne sont pas lus ni stockés. Votre clé API provider reste sous votre contrôle. Seules les métriques de gouvernance sont enregistrées : score, décision, horodatage. Rien d'autre.
+
+**Ça marche avec mon LLM ?**
+Oui — détection automatique depuis votre clé : OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, Cohere. Si votre provider n'est pas listé, contactez-nous.
+
+**Quelle différence avec LangSmith, Portkey ou Helicone ?**
+Ces outils observent et logguent. Neomundi mesure et intervient pendant la génération — avant que la réponse instable atteigne votre utilisateur. Nous ne remplaçons pas votre stack d'observabilité, nous ajoutons la couche de gouvernance qui manque.
+
+**C'est conforme EU AI Act ?**
+Neomundi contribue aux exigences de traçabilité et d'auditabilité de l'EU AI Act — piste d'audit complète par session : score, décision, horodatage, export PDF. L'échéance d'application est août 2026.
+
+**C'est quoi le mode GOV ?**
+Le mode OBS score et trace chaque réponse sans intervenir. GOV est le mode d'exécution : les réponses instables sont bloquées avant diffusion. Les pilotes y ont accès en priorité.
+
+---
+
+## Roadmap — 30 jours
+
+- Mode GOV complet — blocage des réponses instables avant envoi
+- Détection étendue : dérive, erreur, rupture en temps réel
+- Interface plateforme — logs, seuils configurables, export complet
+
+Les pilotes en cours ont accès en priorité.
 
 ---
 
 ## Documentation
 
-- [Executive Brief](#)
-- [Technical White Paper](#)
-- [Fondation scientifique (Zenodo)](#)
+- Executive Brief — [lien à venir]
+- Technical White Paper — [lien à venir]
+- Fondation scientifique (Zenodo) — [lien à venir]
 
 ---
 
