@@ -6,10 +6,13 @@
 
 Your AI is not auditable. Now it is and in 10 minutes.
 
-Every response is measured in real time.
-You see drift before it becomes an incident.
-You can block unstable responses before they are sent.
-You have proof: PDF export of all your logs.
+✅ **Every response is measured in real time.**
+
+⚠️ **You see drift before it becomes an incident.**
+
+🛑 **You can block unstable responses before they are sent.**
+
+📄 **You have proof: PDF export of all your logs.**
 
 **Not a firewall. Not a guardrail. A real-time decision layer.**
 
