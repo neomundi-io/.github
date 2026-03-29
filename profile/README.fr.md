@@ -38,9 +38,6 @@ Votre IA n'est pas auditable. Maintenant, elle l'est en 10 minutes.
 [→ Tester en direct — Aucune installation. Aucune clef requise.](https://neomundi-io.github.io/neomundi-sandbox/)
 ---
 
-
----
-
 ## Ce que Neomundi détecte
 
 Neomundi détecte quand votre IA commence à dériver :
@@ -50,22 +47,19 @@ Neomundi détecte quand votre IA commence à dériver :
 - Sortie du sujet
 - Incohérence globale
 
-Ces signaux ne cherchent pas la vérité. Ils mesurent la cohérence — en temps réel.
-La dérive est visible avant qu'elle ne devienne une erreur.
+Ces signaux ne cherchent pas la vérité. Ils mesurent la cohérence — en temps réel. La dérive est visible avant qu'elle ne devienne une erreur.
 
 ---
 
 ## Résultats & Validation
 
-Basé sur des benchmarks publics (TruthfulQA, HaluEval, MMLU, LegalBench) et des stress tests internes.
+2 360 réponses analysées · 6 datasets publics (TruthfulQA, HaluEval, MMLU, LegalBench)
 
-2 360 réponses analysées. 6 datasets. Une seule question : est-ce que le score de stabilité détecte ce qu'il prétend détecter ?
+- 91% de vrais positifs
+- Corrélation forte entre baisse de stabilité et hallucination
+- Zéro sur-détection sur les cas limites
 
-- **91% de vrais positifs**
-- **Corrélation forte entre baisse de stabilité et hallucination**
-- **Aucune sur-détection sur les cas limites**
-
-En pratique : Neomundi détecte les dérives avant qu'elles n'atteignent vos utilisateurs.
+*Graphe et dataset complets — à venir.*
 
 ---
 
@@ -73,19 +67,11 @@ En pratique : Neomundi détecte les dérives avant qu'elles n'atteignent vos uti
 
 Opérationnel en 10 minutes. Sans toucher à votre infrastructure.
 
-**Bring your key**
-Vous utilisez votre propre clé API provider — OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, Cohere. Elle transite dans votre requête et reste sous votre contrôle.
+**Bring your key** — vous utilisez votre propre clé API provider : OpenAI · Anthropic · Google · Mistral · DeepSeek · xAI · Cohere. Elle transite dans votre requête et reste sous votre contrôle.
 
-**Un seul point de redirection**
-Vous redirigez vos appels LLM via `api.neomundi.io`. Aucun SDK à installer, aucun changement de code côté LLM, aucune migration.
+**Un seul point de redirection** — vous redirigez vos appels LLM via `api.neomundi.io`. Aucun SDK à installer, aucun changement de code, aucune migration.
 
-**Sécurité**
-Neomundi ne connaît pas vos clés provider. Vos prompts ne sont pas lus ni stockés. Seules les métriques de gouvernance sont enregistrées — score de stabilité, décision, horodatage.
-
-**Compatibilité**
-Détection automatique du provider depuis votre clé :
-
-`OpenAI · Anthropic · Google · Mistral · DeepSeek · xAI · Cohere`
+**Sécurité** — Neomundi ne connaît pas vos clés provider. Vos prompts ne sont pas lus ni stockés. Seules les métriques de gouvernance sont enregistrées : score, décision, horodatage.
 
 ```bash
 curl -X POST https://api.neomundi.io/v1/govern/stream \
@@ -98,33 +84,33 @@ curl -X POST https://api.neomundi.io/v1/govern/stream \
   }'
 ```
 
-Réponse : score de stabilité en temps réel · décision ALLOW / FLAG · export PDF sur demande.
+Réponse : score de stabilité en temps réel · décision ALLOW / FLAG / BLOCK · export PDF sur demande.
 
 ---
 
 ## Programme pilote
 
-Nous sélectionnons des partenaires early adopters dans les secteurs où la fiabilité des LLMs n'est pas une option : LegalTech, secteurs réglementés, éditeurs multi-LLM.
+Nous sélectionnons des partenaires early adopters dans les secteurs où la fiabilité des LLMs n'est pas une option : LegalTech · secteurs réglementés · éditeurs multi-LLM.
 
 En échange de la documentation de votre cas d'usage : **conditions préférentielles à vie pour les premiers partenaires.**
 
-[→ contact@neomundi.io](mailto:contact@neomundi.io)
+→ [contact@neomundi.io](mailto:contact@neomundi.io)
 
 ---
 
 ## FAQ
 
 **C'est quoi le score de stabilité ?**
-Il mesure la cohérence interne d'une réponse LLM en temps réel, pas sa véracité. Neomundi ne fait pas de fact-checking. Il détecte la dérive qui précède l'erreur.
+Il mesure la cohérence interne d'une réponse LLM en temps réel — pas sa véracité. Neomundi ne fait pas de fact-checking. Il détecte la dérive qui précède l'erreur.
 
 **Vous stockez quoi sur mes données ?**
 Vos prompts ne sont pas lus ni stockés. Votre clé API provider reste sous votre contrôle. Seules les métriques de gouvernance sont enregistrées : score, décision, horodatage. Rien d'autre.
 
 **Ça marche avec mon LLM ?**
-Oui détection automatique depuis votre clé : OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, Cohere. Si votre provider n'est pas listé, contactez-nous.
+Oui — détection automatique depuis votre clé : OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, Cohere. Si votre provider n'est pas listé, contactez-nous.
 
 **Quelle différence avec LangSmith, Portkey ou Helicone ?**
-Ces outils observent et logguent. Neomundi mesure et intervient pendant la génération avant que la réponse instable atteigne votre utilisateur. Nous ne remplaçons pas votre stack d'observabilité, nous ajoutons la couche de gouvernance qui manque.
+Ces outils observent et logguent. Neomundi mesure et intervient pendant la génération — avant que la réponse instable atteigne votre utilisateur. Nous ne remplaçons pas votre stack d'observabilité, nous ajoutons la couche de gouvernance qui manque.
 
 **C'est conforme EU AI Act ?**
 Neomundi contribue aux exigences de traçabilité et d'auditabilité de l'EU AI Act en livrant une piste d'audit complète par session : score, décision, horodatage, export PDF. L'échéance d'application est août 2026.
@@ -136,19 +122,19 @@ Le mode OBS score et trace chaque réponse sans intervenir. GOV est le mode d'ex
 
 ## Roadmap — 30 jours
 
-- Mode GOV complet : blocage des réponses instables avant envoi
-- Détection étendue : dérive, erreur, rupture en temps réel
-- Interface plateforme : logs, seuils configurables, export complet
+- Mode GOV complet — blocage des réponses instables avant envoi
+- Détection étendue — dérive, erreur, rupture en temps réel
+- Interface plateforme — logs, seuils configurables, export complet
 
-Les pilotes en cours ont accès en priorité.
+*Les pilotes en cours ont accès en priorité.*
 
 ---
 
 ## Documentation
 
-- Executive Brief — [lien à venir]
-- Technical White Paper — [lien à venir]
-- Fondation scientifique (Zenodo) — [lien à venir]
+- Executive Brief — *[lien à venir]*
+- Technical White Paper — *[lien à venir]*
+- Fondation scientifique (Zenodo) — *[lien à venir]*
 
 ---
 
