@@ -20,11 +20,24 @@ Votre IA n'est pas auditable. Maintenant, elle l'est en 10 minutes.
 
 **Un seul appel API. Aucun changement d'infrastructure.**
 
-[→ Tester en direct — Aucune installation. Aucune clef requise.](https://neomundi-io.github.io/neomundi-sandbox/)
 ---
+## Voir en action
+
+> Requête réelle. Score réel. Décision réelle.
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/neomundi-io/.github/main/profile/stability_score.gif" alt="Neomundi Stability Score Demo" width="800">
 </p>
+
+**Input** → scoré en temps réel
+
+**Dérive détectée** → signalée avant envoi
+
+**Décision** → ALLOW / FLAG / BLOCK
+
+[→ Tester en direct — Aucune installation. Aucune clef requise.](https://neomundi-io.github.io/neomundi-sandbox/)
+---
+
 
 ---
 
