@@ -28,7 +28,9 @@ Your AI is not auditable. Now it is and in 10 minutes.
 </p>
 
 **Input** → scored in real time
+
 **Drift detected** → flagged before output
+
 **Decision** → ALLOW / FLAG / BLOCK
 
 [→ Try it live — No installation. No API key required.](https://neomundi-io.github.io/neomundi-sandbox/)
