@@ -18,13 +18,22 @@ Your AI is not auditable. Now it is and in 10 minutes.
 
 **One API call. No infrastructure changes.**
 
-[→ Try it live — No installation. No API key required.](https://neomundi-io.github.io/neomundi-sandbox/)
 ---
+## See it in action
+
+> Real request. Real scoring. Real decision.
+
 <p align="center">
-  <img src="https://raw.githubusercontent.com/neomundi-io/.github/main/profile/stability_score.gif" alt="Neomundi Stability Score Demo" width="800">
+  <img src="./assets/stability_score.gif" alt="Neomundi Stability Score Demo" width="800">
 </p>
 
+**Input** → scored in real time
+**Drift detected** → flagged before output
+**Decision** → ALLOW / FLAG / BLOCK
+
+[→ Try it live — No installation. No API key required.](https://neomundi-io.github.io/neomundi-sandbox/)
 ---
+
 ## What Neomundi Detects
 
 Neomundi detects when your AI starts to drift:
