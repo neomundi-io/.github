@@ -16,7 +16,6 @@ You have proof: PDF export of all your logs.
 **One API call. No infrastructure changes.**
 
 [→ Try it live — No installation. No API key required.](https://neomundi-io.github.io/neomundi-sandbox/)
-
 ---
 
 ## What Neomundi Detects
