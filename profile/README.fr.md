@@ -15,8 +15,7 @@ Vous avez une preuve : export PDF de tous vos logs.
 
 **Un seul appel API. Aucun changement d'infrastructure.**
 
-[→ Tester en direct — Aucune installation. Aucune clef requise.](https://sandbox.neomundi.io)
-
+[→ Tester en direct — Aucune installation. Aucune clef requise.](https://neomundi-io.github.io/neomundi-sandbox/)
 ---
 
 ## Ce que Neomundi détecte
