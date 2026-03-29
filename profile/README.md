@@ -1,6 +1,6 @@
 # Neomundi — Real-Time AI Stability Control
 
-🇫🇷 [Lire en français](#)
+🇫🇷 [Lire en français](https://github.com/neomundi-io/.github/blob/main/profile/README.fr.md)
 
 ---
 
