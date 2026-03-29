@@ -24,7 +24,7 @@ Your AI is not auditable. Now it is and in 10 minutes.
 > Real request. Real scoring. Real decision.
 
 <p align="center">
-  <img src="./assets/stability_score.gif" alt="Neomundi Stability Score Demo" width="800">
+  <img src="https://raw.githubusercontent.com/neomundi-io/.github/main/profile/stability_score.gif" alt="Neomundi Stability Score Demo" width="800">
 </p>
 
 **Input** → scored in real time
