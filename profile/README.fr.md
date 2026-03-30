@@ -5,7 +5,7 @@
 
 ---
 
-Votre IA n'est pas auditable. Maintenant, elle l'est en 10 minutes.
+# Votre IA devient auditable en temps réel sur simple appel de l'API Neomundi.
 
 ✅ **Chaque réponse est mesurée en temps réel.**
 
