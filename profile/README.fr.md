@@ -1,5 +1,5 @@
 # Neomundi - Contrôle de Stabilité IA en Temps Réel
-Fini l'audit rétrospectif. Nous mesurons votre IA pendant qu'elle génère.
+# Fini l'audit rétrospectif. Nous mesurons votre IA pendant qu'elle génère.
 
 🇬🇧 [Read in English](https://github.com/neomundi-io/.github/blob/main/profile/README.md)
 
