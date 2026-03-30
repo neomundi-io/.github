@@ -1,5 +1,5 @@
 # NeoMundi - Gouvernance AI en temps réel 
-# Fini l'audit rétrospectif, NeoMundi décide et gouverne vos IA pendant qu'elles génèrent.
+# Fini l'audit rétrospectif, NeoMundi mesure, décide et gouverne vos IA pendant qu'elles génèrent.
 
 🇬🇧 [Read in English](https://github.com/neomundi-io/.github/blob/main/profile/README.md)
 
