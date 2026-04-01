@@ -68,11 +68,11 @@ Ces signaux ne cherchent pas la vérité. Ils mesurent la cohérence — en temp
 
 Opérationnel en 10 minutes. Sans toucher à votre infrastructure.
 
-**Bring your key** — vous utilisez votre propre clé API provider : OpenAI · Anthropic · Google · Mistral · DeepSeek · xAI · Cohere. Elle transite dans votre requête et reste sous votre contrôle.
+**Bring your key** : vous utilisez votre propre clé API provider : OpenAI · Anthropic · Google · Mistral · DeepSeek · xAI · Cohere. Elle transite dans votre requête et reste sous votre contrôle.
 
-**Un seul point de redirection** — vous redirigez vos appels LLM via `api.neomundi.io`. Aucun SDK à installer, aucun changement de code, aucune migration.
+**Un seul point de redirection** : vous redirigez vos appels LLM via : api.neomundi.io. Aucun SDK à installer, aucun changement de code, aucune migration.
 
-**Sécurité** — Neomundi ne connaît pas vos clés provider. Vos prompts ne sont pas lus ni stockés. Seules les métriques de gouvernance sont enregistrées : score, décision, horodatage.
+**Sécurité** : Neomundi ne connaît pas vos clés provider. Vos prompts ne sont pas lus ni stockés. Seules les métriques de gouvernance sont enregistrées : score, décision, horodatage.
 
 ```bash
 curl -X POST https://api.neomundi.io/v1/govern/stream \
@@ -123,9 +123,9 @@ Le mode OBS score et trace chaque réponse sans intervenir. GOV est le mode d'ex
 
 ## Roadmap — 30 jours
 
-- Mode GOV complet — blocage des réponses instables avant envoi
-- Détection étendue — dérive, erreur, rupture en temps réel
-- Interface plateforme — logs, seuils configurables, export complet
+- Mode GOV complet : blocage des réponses instables avant envoi
+- Détection étendue : dérive, erreur, rupture en temps réel
+- Interface plateforme : logs, seuils configurables, export complet
 
 *Les pilotes en cours ont accès en priorité.*
 
@@ -133,9 +133,9 @@ Le mode OBS score et trace chaque réponse sans intervenir. GOV est le mode d'ex
 
 ## Documentation
 
-- Executive Brief — *[lien à venir]*
-- Technical White Paper — *[lien à venir]*
-- Fondation scientifique (Zenodo) — *[lien à venir]*
+- Executive Brief : *[lien à venir]*
+- Technical White Paper : *[lien à venir]*
+- Fondation scientifique (Zenodo) : *[lien à venir]*
 
 ---
 
