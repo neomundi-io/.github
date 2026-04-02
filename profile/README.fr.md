@@ -95,7 +95,7 @@ curl -X POST https://api.neomundi.io/v1/govern/stream \
   }'
 ```
 
-Réponse : score de stabilité en temps réel · décision ALLOW / FLAG / BLOCK · export PDF sur demande.
+Réponse : score de stabilité en temps réel · décision ALLOW / FLAG / BLOCK · export PDF — *Real-time audit of AI behavior at runtime*
 
 ---
 
