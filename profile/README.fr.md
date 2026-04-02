@@ -9,7 +9,7 @@
 
 NeoMundi rend le comportement de vos IA mesurable, gouvernable et prouvable en temps réel 
 
-On ne vérifie pas si l'IA a raison. On mesure quand elle devient instable et que le risque surgit.
+On mesure si elle devient instable. Quand elle devient instable, le risque surgit.
 
 On passe d'un disclaimer "l'IA peut se tromper" à un système mesurable et gouverné.
 
