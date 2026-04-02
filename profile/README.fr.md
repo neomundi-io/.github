@@ -7,13 +7,13 @@
 # Votre IA devient auditable en temps réel sur simple appel de l'API Neomundi.
 # Souverain par design.
 
-NeoMundi rend le comportement de vos IA mesurable, gouvernable et prouvable en temps réel 
+- NeoMundi rend le comportement de vos IA mesurable, gouvernable et prouvable en temps réel 
 
-On mesure si elle devient instable. Quand elle devient instable, le risque surgit.
+- On mesure si elle devient instable. Quand elle devient instable, le risque surgit.
 
-On passe d'un disclaimer "l'IA peut se tromper" à un système mesurable et gouverné.
+- On passe d'un disclaimer "l'IA peut se tromper" à un système mesurable et gouverné.
 
-Pas un firewall. Pas un garde-fou. Une couche de décision en temps réel.
+- Pas un firewall. Pas un garde-fou. Une couche de décision en temps réel.
 
 **Un seul appel API. Aucun changement d'infrastructure.**
 
