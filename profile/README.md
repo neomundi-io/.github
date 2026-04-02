@@ -4,7 +4,7 @@
 
 ---
 
-# Your AI becomes auditable in real time with a single Neomundi API call.
+# Your AI isn't wrong. It's unstable.
 
 # Sovereign by design.
 
