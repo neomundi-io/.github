@@ -143,7 +143,7 @@ OBS mode scores and traces every response without intervening. GOV is the execut
 
 - Executive Brief — *[link coming]*
 - Technical White Paper — *[link coming]*
-- Scientific Foundation (Zenodo) — *[link coming]*
+- Scientific Foundation (Zenodo) :
 
 ---
 
