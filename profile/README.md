@@ -134,12 +134,11 @@ OBS mode scores and traces every response without intervening. GOV is the execut
 ---
 
 ## Roadmap — 30 days
+- Full GOV mode: blocking unstable responses before delivery — fewer tokens consumed & better responses delivered
+- Extended detection: drift, error, rupture in real time
+- Platform interface: logs, configurable thresholds, full export
 
-- Full GOV mode — blocking unstable responses before delivery
-- Extended detection — drift, error, rupture in real time
-- Platform interface — logs, configurable thresholds, full export
-
-*Current pilot partners get priority access.*
+*Current pilots get priority access.*
 
 ---
 
