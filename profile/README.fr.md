@@ -60,7 +60,7 @@ Ces signaux ne cherchent pas la vérité. Ils mesurent la cohérence en temps r�
 
 ---
 
-## Ce que Neomundi n'est pas
+## Ce que Neomundi est et n'est pas
 
 |  | Firewall | Guardrail | Prompt engineering | **Neomundi** |
 |--|--|--|--|--|
