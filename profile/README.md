@@ -51,11 +51,12 @@ These signals do not look for truth. They measure coherence in real time. Drift 
 
 2,360 responses analyzed · 6 public datasets (TruthfulQA, HaluEval, MMLU, LegalBench)
 
-- 91% true positives
+- 79.5% detection of unstable responses before delivery
+- 91% precision: less than 9% false alarms
 - Strong correlation between stability drop and hallucination
 - Zero over-detection on edge cases
 
-*Full graph and dataset : coming soon.*
+*Full graph and dataset coming soon.*
 
 ---
 
