@@ -44,7 +44,7 @@ Neomundi détecte quand votre IA commence à dériver :
 - Sortie du sujet
 - Incohérence globale
 
-Ces signaux ne cherchent pas la vérité. Ils mesurent la cohérence — en temps réel. La dérive est visible avant qu'elle ne devienne une erreur.
+Ces signaux ne cherchent pas la vérité. Ils mesurent la cohérence en temps réel. La dérive est visible avant qu'elle ne devienne une erreur.
 
 ---
 
@@ -56,7 +56,7 @@ Ces signaux ne cherchent pas la vérité. Ils mesurent la cohérence — en temp
 - Corrélation forte entre baisse de stabilité et hallucination
 - Zéro sur-détection sur les cas limites
 
-*Graphe et dataset complets — à venir.*
+*Graphe et dataset complets à venir le 02/04*
 
 ---
 
@@ -107,7 +107,7 @@ Vos prompts ne sont pas lus ni stockés. Votre clé API provider reste sous votr
 Oui — détection automatique depuis votre clé : OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, Cohere. Si votre provider n'est pas listé, contactez-nous.
 
 **Quelle différence avec LangSmith, Portkey ou Helicone ?**
-Ces outils observent et logguent. Neomundi mesure et intervient pendant la génération — avant que la réponse instable atteigne votre utilisateur. Nous ne remplaçons pas votre stack d'observabilité, nous ajoutons la couche de gouvernance qui manque.
+Ces outils observent et logguent. Neomundi mesure et intervient pendant la génération avant que la réponse instable atteigne votre utilisateur. Nous ne remplaçons pas votre stack d'observabilité, nous ajoutons la couche de gouvernance qui manque.
 
 **C'est conforme EU AI Act ?**
 Neomundi contribue aux exigences de traçabilité et d'auditabilité de l'EU AI Act en livrant une piste d'audit complète par session : score, décision, horodatage, export PDF. L'échéance d'application est août 2026.
