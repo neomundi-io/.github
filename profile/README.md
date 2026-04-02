@@ -43,7 +43,7 @@ Neomundi detects when your AI starts to drift:
 - Topic deviation
 - Global incoherence
 
-These signals do not look for truth. They measure coherence — in real time. Drift is visible before it becomes an error.
+These signals do not look for truth. They measure coherence in real time. Drift is visible before it becomes an error.
 
 ---
 
@@ -55,18 +55,18 @@ These signals do not look for truth. They measure coherence — in real time. Dr
 - Strong correlation between stability drop and hallucination
 - Zero over-detection on edge cases
 
-*Full graph and dataset — coming soon.*
+*Full graph and dataset : coming soon.*
 
 ---
 
-## What Neomundi is — and is not
+## What Neomundi is and What is not
 
 |  | Firewall | Guardrail | Prompt engineering | **Neomundi** |
 |--|--|--|--|--|
 | Acts during generation | ❌ | ❌ | ❌ | ✅ |
 | Measures stability in real time | ❌ | ❌ | ❌ | ✅ |
 | Produces an auditable proof | ❌ | ❌ | ❌ | ✅ |
-| Sovereign — data stays on your stack | ⚠️ | ⚠️ | ✅ | ✅ |
+| Sovereign : data stays on your stack | ⚠️ | ⚠️ | ✅ | ✅ |
 | No infrastructure change | ❌ | ⚠️ | ✅ | ✅ |
 
 > Neomundi defines a new category: real-time AI governance.
@@ -130,7 +130,7 @@ OBS mode scores and traces every response without intervening. GOV is the execut
 
 ---
 
-## Roadmap — 30 days
+## Roadmap : 30 days
 - Full GOV mode: blocking unstable responses before delivery — fewer tokens consumed & better responses delivered
 - Extended detection: drift, error, rupture in real time
 - Platform interface: logs, configurable thresholds, full export
@@ -141,9 +141,9 @@ OBS mode scores and traces every response without intervening. GOV is the execut
 
 ## Documentation
 
-- Executive Brief — *[link coming]*
-- Technical White Paper — *[link coming]*
-- Scientific Foundation (Zenodo) :
+- Executive Brief : *[link coming]*
+- Technical White Paper : *[link coming]*
+- Scientific Foundation (Zenodo) : [Thermodynamic Governance of AI Systems](https://doi.org/10.5281/zenodo.19385052)
 
 ---
 
