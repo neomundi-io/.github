@@ -144,7 +144,7 @@ Le mode OBS score et trace chaque réponse sans intervenir. GOV est le mode d'ex
 
 - Executive Brief : *[lien à venir]*
 - Technical White Paper : *[lien à venir]*
-   Fondation scientifique (Zenodo) : [Thermodynamic Governance of AI Systems](https://doi.org/10.5281/zenodo.19385052)
+- Fondation scientifique (Zenodo) : [Thermodynamic Governance of AI Systems](https://doi.org/10.5281/zenodo.19385052)
 
 ---
 
