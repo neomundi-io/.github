@@ -4,7 +4,7 @@
 
 ---
 
-# Votre IA devient auditable en temps réel sur simple appel de l'API Neomundi.
+# Votre IA n'est pas fausse. Elle est instable.
 # Souverain par design.
 
 - NeoMundi rend le comportement de vos IA mesurable, gouvernable et prouvable en temps réel 
