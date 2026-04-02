@@ -52,11 +52,12 @@ Ces signaux ne cherchent pas la vérité. Ils mesurent la cohérence en temps r�
 
 2 360 réponses analysées · 6 datasets publics (TruthfulQA, HaluEval, MMLU, LegalBench)
 
-- 91% de vrais positifs
+- 79,5% de détection des réponses instables avant livraison
+- 91% de précision : moins de 9% de fausses alarmes
 - Corrélation forte entre baisse de stabilité et hallucination
 - Zéro sur-détection sur les cas limites
 
-*Graphe et dataset complets à venir le 02/04*
+*Graphe et dataset complets à venir.*
 
 ---
 
