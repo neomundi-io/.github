@@ -131,9 +131,8 @@ Le mode OBS score et trace chaque réponse sans intervenir. GOV est le mode d'ex
 
 ---
 
-## Roadmap à 30 jours
-
-- Mode GOV complet : blocage des réponses instables avant envoi
+## Roadmap — 30 jours
+- Mode GOV complet : blocage des réponses instables avant envoi : moins de tokens consommés & meilleures réponses délivrées
 - Détection étendue : dérive, erreur, rupture en temps réel
 - Interface plateforme : logs, seuils configurables, export complet
 
