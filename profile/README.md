@@ -5,19 +5,16 @@
 
 ---
 
-Your AI is not auditable. Now it is and in 10 minutes.
+# Your AI becomes auditable in real time with a single Neomundi API call.
 
-✅ **Every response is measured in real time.**
+# Sovereign by design.
 
-⚠️ **You see drift before it becomes an incident.**
+- NeoMundi makes your AI behavior measurable, governable and provable in real time.
+- We don't check if the AI is right. We measure when it becomes unstable. When it becomes unstable, risk emerges.
+- From a disclaimer "AI may be wrong" to a measurable, governed system.
+- Not a firewall. Not a guardrail. A real-time decision layer.
 
-🛑 **You can block unstable responses before they are sent.**
-
-📄 **You have proof: PDF export of all your logs.**
-
-**Not a firewall. Not a guardrail. A real-time decision layer.**
-
-**One API call. No infrastructure changes.**
+**One API call. No infrastructure change.**
 
 ---
 ## See it in action
@@ -65,6 +62,20 @@ These signals do not look for truth. They measure coherence — in real time. Dr
 
 ---
 
+## What Neomundi is — and is not
+
+|  | Firewall | Guardrail | Prompt engineering | **Neomundi** |
+|--|--|--|--|--|
+| Acts during generation | ❌ | ❌ | ❌ | ✅ |
+| Measures stability in real time | ❌ | ❌ | ❌ | ✅ |
+| Produces an auditable proof | ❌ | ❌ | ❌ | ✅ |
+| Sovereign — data stays on your stack | ⚠️ | ⚠️ | ✅ | ✅ |
+| No infrastructure change | ❌ | ⚠️ | ✅ | ✅ |
+
+> Neomundi defines a new category: real-time AI governance.
+
+---
+
 ## Integration
 
 Up and running in 10 minutes. Without touching your infrastructure.
@@ -86,7 +97,7 @@ curl -X POST https://api.neomundi.io/v1/govern/stream \
   }'
 ```
 
-Response: real-time stability score · ALLOW / FLAG / BLOCK decision · PDF export on demand.
+Response: real-time stability score · ALLOW / FLAG / BLOCK decision · PDF export — *Real-time audit of AI behavior at runtime*
 
 ---
 
