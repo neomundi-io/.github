@@ -30,7 +30,7 @@
 
 **Decision** → ALLOW / FLAG / BLOCK
 
-[→ Try it live — No installation. No API key required.](https://neomundi-io.github.io/neomundi-sandbox/)
+[→ Try it live : No installation. No API key required.](https://neomundi-io.github.io/neomundi-sandbox/)
 ---
 
 
