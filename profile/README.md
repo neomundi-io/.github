@@ -142,7 +142,7 @@ OBS mode scores and traces every response without intervening. GOV is the execut
 
 ## Documentation
 
-- Executive Brief : *[link coming]*
+- Executive Brief : [NeoMundi Executive Brief EN](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Executive_Brief_EN.pdf)
 - Technical White Paper : *[link coming]*
 - Scientific Foundation (Zenodo) : [Thermodynamic Governance of AI Systems](https://doi.org/10.5281/zenodo.19385052)
 
