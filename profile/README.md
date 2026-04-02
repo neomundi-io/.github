@@ -1,5 +1,4 @@
 # Neomundi - Real-Time AI Stability Control
-# Stop auditing the past. Monitor the present.
 
 🇫🇷 [Lire en français](https://github.com/neomundi-io/.github/blob/main/profile/README.fr.md)
 
