@@ -144,7 +144,7 @@ Le mode OBS score et trace chaque réponse sans intervenir. GOV est le mode d'ex
 
 ## Documentation
 
-- Executive Brief : *[lien à venir]*
+- Executive Brief : [NeoMundi Executive Brief FR](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Executive_Brief_FR.pdf)
 - Technical White Paper : *[lien à venir]*
 - Fondation scientifique (Zenodo) : [Thermodynamic Governance of AI Systems](https://doi.org/10.5281/zenodo.19385052)
 
