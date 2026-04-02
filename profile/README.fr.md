@@ -110,7 +110,7 @@ En échange de la documentation de votre cas d'usage : **conditions préférenti
 ## FAQ
 
 **C'est quoi le score de stabilité ?**
-Il mesure la cohérence interne d'une réponse LLM en temps réel — pas sa véracité. Neomundi ne fait pas de fact-checking. Il détecte la dérive qui précède l'erreur.
+Il mesure la cohérence interne d'une réponse LLM en temps réel, pas sa véracité. Neomundi ne fait pas de fact-checking. Il détecte la dérive qui précède l'erreur.
 
 **Vous stockez quoi sur mes données ?**
 Vos prompts ne sont pas lus ni stockés. Votre clé API provider reste sous votre contrôle. Seules les métriques de gouvernance sont enregistrées : score, décision, horodatage. Rien d'autre.
@@ -129,7 +129,7 @@ Le mode OBS score et trace chaque réponse sans intervenir. GOV est le mode d'ex
 
 ---
 
-## Roadmap — 30 jours
+## Roadmap à 30 jours
 
 - Mode GOV complet : blocage des réponses instables avant envoi
 - Détection étendue : dérive, erreur, rupture en temps réel
