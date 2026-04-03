@@ -99,6 +99,19 @@ Response: real-time stability score · ALLOW / FLAG / BLOCK decision · PDF expo
 
 ---
 
+## Privacy by Design
+
+Neomundi does not read your prompts. Neomundi does not store your responses.
+
+Only governance metrics are recorded: stability score, decision, timestamp, SHA-256 hash of the request.
+
+**Your provider key** (OpenAI, Anthropic, Mistral…) transits within your request and remains under your control. It is never persisted on Neomundi's side.
+
+**What is recorded:** score · decision · regime · cost · timestamp  
+**What is never recorded:** prompt · response · provider key · personal data
+
+---
+
 ## Pilot Program
 
 We are selecting early adopter partners in sectors where LLM reliability is not optional: LegalTech · regulated industries · multi-LLM publishers.
