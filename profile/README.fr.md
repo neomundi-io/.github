@@ -100,6 +100,19 @@ Réponse : score de stabilité en temps réel · décision ALLOW / FLAG / BLOCK 
 
 ---
 
+## Confidentialité & Privacy by Design
+
+Neomundi ne lit pas vos prompts. Neomundi ne stocke pas vos réponses.
+
+Seules les métriques de gouvernance sont enregistrées : score de stabilité, décision, horodatage, hash SHA-256 de la requête.
+
+**Votre clé provider** (OpenAI, Anthropic, Mistral…) transite dans votre requête et reste sous votre contrôle. Elle n'est jamais persistée côté Neomundi.
+
+**Ce qui est enregistré :** score · décision · régime · coût · horodatage  
+**Ce qui n'est jamais enregistré :** prompt · réponse · clé provider · données personnelles
+
+---
+
 ## Programme pilote
 
 Nous sélectionnons des partenaires early adopters dans les secteurs où la fiabilité des LLMs n'est pas une option : LegalTech · secteurs réglementés · éditeurs multi-LLM.
