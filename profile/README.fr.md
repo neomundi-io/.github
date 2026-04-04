@@ -14,7 +14,9 @@
 
 ## Chaque mesure génère une trace exploitable, apportant une preuve documentée de gouvernance, alignée avec les exigences de traçabilité et de diligence de l’EU AI Act.
 
-Vous faites des audits manuels après coup. Neomundi apporte une preuve pendant la génération.
+---
+
+##  Vous faites des audits manuels après coup. Neomundi apporte une preuve pendant la génération.
 
 ---
 ## Voir en action
