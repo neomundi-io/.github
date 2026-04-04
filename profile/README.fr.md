@@ -4,8 +4,7 @@
 
 ---
 
-## Pas du monitoring. Pas des garde-fous.
-Une couche de décision pendant la génération — pas après.
+## Pas du monitoring. Pas des garde-fous. Une couche de décision pendant la génération — pas après.
 
 ---
 
