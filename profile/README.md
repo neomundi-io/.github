@@ -16,6 +16,10 @@
 
 ---
 
+## Auditing is post-process. Neomundi runs during generation.
+
+---
+
 ## See it in action
 
 > Real request. Real scoring. Real decision.
