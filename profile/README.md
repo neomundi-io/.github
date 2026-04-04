@@ -161,8 +161,9 @@ OBS mode scores and traces every response without intervening. GOV is the execut
 
 Neomundi is an invention, not a product category.
 
-**9 properties by design.**
-**6 emergent behaviors observed.**
+- **9 properties by design.**
+  
+- **6 emergent behaviors observed.**
 
 → Read the technical paper [Zenodo DOI]
 
