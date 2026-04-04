@@ -160,8 +160,9 @@ Le mode OBS score et trace chaque réponse sans intervenir. GOV est le mode d'ex
 
 Neomundi est une invention, pas une catégorie de produit.
 
-**9 propriétés by design.**
-**6 comportements émergents observés.**
+- **9 propriétés by design.**
+  
+- **6 comportements émergents observés.**
 
 ---
 
