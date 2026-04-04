@@ -1,18 +1,19 @@
 # Neomundi rend le comportement de vos IA mesurable, gouvernable et prouvable en temps réel.
 
 🇬🇧 [Read in English](https://github.com/neomundi-io/.github/blob/main/profile/README.md)
+
 ---
 
-Pas du monitoring. Pas des garde-fous.
+## Pas du monitoring. Pas des garde-fous.
 Une couche de décision pendant la génération — pas après.
 
 ---
 
-Neomundi mesure la stabilité de chaque réponse à l'inférence, détecte les dérives avant l'envoi et peut déclencher une décision en temps réel.
+## Neomundi mesure la stabilité de chaque réponse à l'inférence, détecte les dérives avant l'envoi et peut déclencher une décision en temps réel.
 
 ---
 
-Chaque mesure génère une trace exploitable, apportant une preuve documentée de gouvernance, alignée avec les exigences de traçabilité et de diligence de l'EU AI Act.
+## Chaque mesure génère une trace exploitable, apportant une preuve documentée de gouvernance, alignée avec les exigences de traçabilité et de diligence de l'EU AI Act.
 
 
 ---
