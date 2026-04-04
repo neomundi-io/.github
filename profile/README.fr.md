@@ -156,14 +156,12 @@ Le mode OBS score et trace chaque réponse sans intervenir. GOV est le mode d'ex
 
 ---
 
-## What Neomundi is
+## Ce qu'est Neomundi
 
-Neomundi is an invention, not a product category.
+Neomundi est une invention, pas une catégorie de produit.
 
-**9 properties by design.**
-**6 emergent behaviors observed.**
-
-→ Read the technical paper [Zenodo DOI]
+**9 propriétés by design.**
+**6 comportements émergents observés.**
 
 ---
 
