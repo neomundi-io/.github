@@ -1,21 +1,19 @@
-# NeoMundi - Gouvernance AI en temps réel 
+# Neomundi rend le comportement de vos IA mesurable, gouvernable et prouvable en temps réel.
 
 🇬🇧 [Read in English](https://github.com/neomundi-io/.github/blob/main/profile/README.md)
+---
+
+Pas du monitoring. Pas des garde-fous.
+Une couche de décision pendant la génération — pas après.
 
 ---
 
-# Votre IA n'est pas fausse. Elle est instable.
-# Souverain par design.
+Neomundi mesure la stabilité de chaque réponse à l'inférence, détecte les dérives avant l'envoi et peut déclencher une décision en temps réel.
 
-- NeoMundi rend le comportement de vos IA mesurable, gouvernable et prouvable en temps réel 
+---
 
-- On mesure si elle devient instable. Quand elle devient instable, le risque surgit et on la stoppe.
+Chaque mesure génère une trace exploitable, apportant une preuve documentée de gouvernance, alignée avec les exigences de traçabilité et de diligence de l'EU AI Act.
 
-- On passe d'un disclaimer "l'IA peut se tromper" à un système mesurable et gouverné.
-
-- Pas un firewall. Pas un garde-fou. Une couche de décision en temps réel.
-
-**Un seul appel API. Aucun changement d'infrastructure.**
 
 ---
 ## Voir en action
