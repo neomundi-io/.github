@@ -1,21 +1,21 @@
-# Neomundi - Real-Time AI Stability Control
+# NeoMundi makes your AI behavior measurable, governable and provable in real time.
 
 🇫🇷 [Lire en français](https://github.com/neomundi-io/.github/blob/main/profile/README.fr.md)
 
 ---
 
-# Your AI isn't wrong. It's unstable.
-
-# Sovereign by design.
-
-- NeoMundi makes your AI behavior measurable, governable and provable in real time.
-- We don't check if the AI is right. We measure when it becomes unstable. When it becomes unstable, risk emerges.
-- From a disclaimer "AI may be wrong" to a measurable, governed system.
-- Not a firewall. Not a guardrail. A real-time decision layer.
-
-**One API call. No infrastructure change.**
+## Not monitoring. Not guardrails. A decision layer active during generation — not after.
 
 ---
+
+## NeoMundi measures the stability of each response at inference time, detects drift before delivery and triggers a real-time decision when needed.
+
+---
+
+## Every measurement generates an auditable trace, providing documented proof of governance aligned with the traceability and due diligence requirements of the EU AI Act.
+
+---
+
 ## See it in action
 
 > Real request. Real scoring. Real decision.
