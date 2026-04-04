@@ -16,7 +16,7 @@
 
 ---
 
-##  Vous faites des audits manuels après coup. Neomundi apporte une preuve pendant la génération.
+##  L'audit, c'est après coup. Avec NeoMundi, c'est pendant.
 
 ---
 ## Voir en action
