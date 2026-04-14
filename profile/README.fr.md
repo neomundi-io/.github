@@ -187,7 +187,6 @@ Nous sélectionnons. Nous ne recrutons pas.
 ## Documentation
 
 - Executive Brief : [NeoMundi Executive Brief EN](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Executive_Brief_FR.pdf)
-- White Paper Technique : [Law E™ - Cadre de Gouvernance Thermodynamique v3.0 EN](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Technical_v3_EN.pdf)
 
 ---
 
