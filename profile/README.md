@@ -187,7 +187,6 @@ We select. We don't recruit.
 ## Documentation
 
 - Executive Brief: [NeoMundi Executive Brief EN](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Executive_Brief_FR.pdf)
-- Technical White Paper: [Law E™ - Thermodynamic Governance Framework v3.0 EN](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Technical_v3_EN.pdf)
 
 ---
 
