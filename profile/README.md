@@ -1,103 +1,103 @@
-# Neomundi. Le thermomètre de l'IA.
+# Neomundi. The AI thermometer.
 
-🇬🇧 [Read in English](https://github.com/neomundi-io/.github/blob/main/profile/README.md)
+🇫🇷 [Lire en français](https://github.com/neomundi-io/.github/blob/main/profile/README.fr.md)
 
-### Validation en temps réel de la stabilité des décisions au moment où elles se produisent.
-### Nous fournissons le signal.
-### Vous décidez quoi en faire.
+### Real-time validation of decision stability, as it happens.
+### We provide the signal.
+### You decide what to do with it.
 
 ---
 
-| 🟣 Agents | 🟢 Conformité | 🟡 Fine-tuning | 🔵 SLA / Infra |
+| 🟣 Agents | 🟢 Compliance | 🟡 Fine-tuning | 🔵 SLA / Infra |
 |-----------|---------------|----------------|----------------|
-| **Stopper. Relancer. Rerouteur.** | **Tracer & prouver.** | **Mesurer la dérive.** | **Prouver la continuité.** |
-| Signal de stabilité en direct, injecté dans les boucles de décision des agents. | Piste d'audit horodatée. Chaque génération scorée, chaque dérive signalée. | Quantifier les écarts comportementaux entre versions de modèles. | Supervision comportementale au-delà de la latence. Qualité de génération, mesurée. |
+| **Stop. Retry. Reroute.** | **Trace & prove.** | **Measure drift.** | **Prove continuity.** |
+| Live stability signal, injected directly into agent decision loops. | Timestamped audit trail. Every generation scored, every drift flagged. | Quantify behavioral deviations across model versions. | Behavioral monitoring beyond latency. Quality of generation, measured. |
 
-### Chaque signal pilote directement les décisions.
+### Each signal directly drives decisions.
 
-- Le signal de stabilité est le fondement de la gouvernance IA.
-- Due diligence · qualité des données de fine-tuning · audit de conformité · preuve de SLA.
+- The stability signal is the foundation of AI governance.
+- Due diligence · fine-tuning data quality · compliance audit · SLA proof.
 
-> ### Le signal rend les décisions actionnables, en temps réel.
-
----
-
-## Chaque décision IA devient mesurable, traçable et gouvernable.
-
-Chaque génération produit :
-- Score de stabilité (0 → 1)
-- Décision (ALLOW / FLAG / BLOCK)
-- Signal de dérive (horodaté)
-
-Sorties avancées :
-
-- Trace d'audit complète (exportable)  
-- Métriques d'exécution (coût, stabilité, dérive)  
-- Preuve cryptographique (hash)  
-- Jeux de données structurés (analytique, fine-tuning, conformité)
-
-> Signal réel. Scoring réel. Résultat réel.
+> ### The signal makes decisions actionable, in real time.
 
 ---
 
-## Voir en action
+## Every AI decision becomes measurable, traceable, and governable.
+
+Each generation produces:
+- Stability score (0 → 1)
+- Decision (ALLOW / FLAG / BLOCK)
+- Drift signal (timestamped)
+
+Advanced outputs:
+
+- Full audit trace (exportable)
+- Execution metrics (cost, stability, drift)
+- Cryptographic proof (hash)
+- Structured datasets (analytics, fine-tuning, compliance)
+
+> Real request. Real scoring. Real signal.
+
+---
+
+## See it in action
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/neomundi-io/.github/main/profile/stability_score.gif" alt="Neomundi Stability Score Demo" width="800">
 </p>
 
-[→ Essayer en direct : Sans installation. Sans clé API.](https://neomundi-io.github.io/neomundi-sandbox/)
+[→ Try it live: No installation. No API key required.](https://neomundi-io.github.io/neomundi-sandbox/)
 
-[→ Exemple de rapport d'audit PDF](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Audit_Report_2026-04.pdf)
+[→ Sample audit report PDF](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Audit_Report_2026-04.pdf)
 
 ---
 
-## Intégration en une ligne.
-Remplacez votre appel LLM existant par Neomundi. Votre service continue de tourner exactement comme avant, chaque réponse est désormais scorée en temps réel.
+## One-line integration.
+Replace your existing LLM call with Neomundi. Your service keeps running exactly as before — every response is now scored in real time.
 
-python
-
-### Avant
+```python
+# Before
 response = openai.chat.completions.create(...)
 
-### Après
-result = score_prompt(user_prompt)  # Neomundi appelle OpenAI pour vous
+# After
+result = score_prompt(user_prompt)  # Neomundi calls OpenAI for you
+```
 
-C'est tout.
-
----
-
-## Neomundi détecte l'instabilité avant qu'elle ne devienne visible :
-
-- Contradictions internes
-- Perte de précision
-- Dérive thématique
-- Incohérence structurelle
-
-> La dérive apparaît avant la défaillance. Nous la mesurons en temps réel.
-
-Ces signaux ne cherchent pas la vérité. Ils mesurent la cohérence en temps réel. La dérive est visible avant de devenir une erreur.
+That's it.
 
 ---
 
-## Validé sur des systèmes réels
+## Neomundi detects instability before it becomes visible:
 
-7 888 exécutions · 15 jeux de données
+- Internal contradictions
+- Loss of precision
+- Thematic drift
+- Structural inconsistency
 
-- 95,7 % dans les seuils de gouvernance  
-- 336 instabilités détectées avant livraison  
-- Coût moyen : 0,003 € par exécution  
+> Drift appears before failure. We measure it in real time.
 
-Une hallucination non détectée coûte plus de 0,003 €.
+These signals do not seek truth. They measure coherence in real time. Drift is visible before it becomes an error.
 
 ---
 
-## Déploiement en quelques minutes
+## Validated on real systems
 
-- Aucun changement d'infrastructure
-- Aucune exposition de données
-- Aucune dépendance au modèle
-- Un seul appel API
+7,888 executions · 15 datasets
+
+- 95.7% within governance thresholds
+- 336 instabilities detected before delivery
+- Average cost: €0.003 per execution
+
+One undetected hallucination costs more than €0.003.
+
+---
+
+## Deploy in minutes
+
+- No infrastructure change
+- No data exposure
+- No model dependency
+- A single API call
 
 ```bash
 curl -X POST https://api.neomundi.io/v1/govern/stream \
@@ -112,19 +112,19 @@ curl -X POST https://api.neomundi.io/v1/govern/stream \
 
 ---
 
-## Programme Pilote
+## Pilot Program
 
-Premiers pilotes ouverts
+First pilots now open.
 
-Nous sélectionnons des partenaires pour lesquels la fiabilité de l'IA est critique.
-- Juridique
-- Conformité
-- Systèmes multi-agents
+We select partners for whom AI reliability is critical.
+- Legal
+- Compliance
+- Multi-agent systems
 
-Vous obtenez :
-- Accès direct
-- Conditions préférentielles
-- Cas d'usage co-construit
+You get:
+- Direct access
+- Preferential terms
+- Co-built use case
 
 → [contact@neomundi.io](mailto:contact@neomundi.io)
 
@@ -132,70 +132,69 @@ Vous obtenez :
 
 ## FAQ
 
-**Qu'est-ce que le score de stabilité ?**
-Il mesure la cohérence interne d'une réponse LLM en temps réel — pas sa véracité. Neomundi ne vérifie pas les faits. Il détecte la dérive qui précède l'erreur.
+**What is the stability score?**
+It measures the internal coherence of an LLM response in real time — not its truthfulness. Neomundi does not fact-check. It detects the drift that precedes failure.
 
-**Quelles données stockez-vous ?**
-Vos prompts ne sont ni lus ni stockés. Votre clé API fournisseur reste sous votre contrôle. Seules les métriques de gouvernance sont enregistrées : score, décision, horodatage. Rien d'autre.
+**What data do you store?**
+Your prompts are neither read nor stored. Your provider API key stays under your control. Only governance metrics are recorded: score, decision, timestamp. Nothing else.
 
-**Fonctionne-t-il avec mon LLM ?**
-Oui — détection automatique depuis votre clé : OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, Cohere. Si votre fournisseur n'est pas listé, contactez-nous.
+**Does it work with my LLM?**
+Yes — automatic detection from your key: OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, Cohere. If your provider is not listed, contact us.
 
-**Quelle est la différence avec LangSmith, Portkey ou Helicone ?**
-Ces outils observent et journalisent. Neomundi mesure et intervient pendant la génération — avant que la réponse instable n'atteigne votre utilisateur. Nous ne remplaçons pas votre stack d'observabilité, nous y ajoutons la couche de gouvernance manquante.
+**What's the difference from LangSmith, Portkey, or Helicone?**
+Those tools observe and log. Neomundi measures and intervenes during generation — before the unstable response reaches your user. We don't replace your observability stack, we add the missing governance layer.
 
-**Est-ce conforme à l'EU AI Act ?**
-Neomundi contribue aux exigences de traçabilité et d'auditabilité de l'EU AI Act en produisant une piste d'audit complète par session : score, décision, horodatage, export PDF. L'échéance d'application est août 2026.
-
----
-
-## Roadmap : L'infrastructure est active. Elle s'industrialise.
-
-Dans 60 jours
-- Seuils configurables par client
-- Interface opérateurs pilotes
-
-Les opérateurs pilotes actuels sont prioritaires sur chaque mise à jour.
+**Is it EU AI Act compliant?**
+Neomundi contributes to the EU AI Act's traceability and auditability requirements by producing a full audit trail per session: score, decision, timestamp, PDF export. Enforcement deadline: August 2026.
 
 ---
 
-## Open Science · Reproductible · Auditable
+## Roadmap: The infrastructure is live. It's scaling.
 
-Auditabilité intégrée dès la conception. Pas une boîte noire.
+Within 60 days:
+- Configurable thresholds per client
+- Pilot operator dashboard
+
+Current pilot operators are prioritized on every update.
+
+---
+
+## Open Science · Reproducible · Auditable
+
+Auditability built in by design. Not a black box.
 
 ---
 
 ## Early Access
 
-Le signal tourne. Les données s'accumulent.
-Nombre de places limité pour les équipes qui opèrent de l'IA en production.
+The signal is running. Data is accumulating.
+Limited spots for teams operating AI in production.
 
-Vous obtenez :
-- Accès direct au signal runtime
-- Un cas d'usage co-construit sur votre système
-- Des conditions préférentielles
+You get:
+- Direct access to the runtime signal
+- A co-built use case on your system
+- Preferential terms
 
-Nous obtenons :
-- Des données réelles
-- Des contraintes réelles
-- Une validation réelle
+We get:
+- Real data
+- Real constraints
+- Real validation
 
-Nous sélectionnons. Nous ne recrutons pas.
+We select. We don't recruit.
 
 ---
 
 ## Documentation
 
-- Executive Brief : [NeoMundi Executive Brief EN](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Executive_Brief_FR.pdf)
-- White Paper Technique : [Law E™ - Cadre de Gouvernance Thermodynamique v3.0 EN](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Technical_v3_EN.pdf)
+- Executive Brief: [NeoMundi Executive Brief EN](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Executive_Brief_FR.pdf)
+- Technical White Paper: [Law E™ - Thermodynamic Governance Framework v3.0 EN](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Technical_v3_EN.pdf)
 
 ---
 
-### Mesurer le comportement de l'IA en temps réel.
-#### Si vous opérez de l'IA en production, vous avez besoin d'un signal.
-#### Agissez avant que l'instabilité n'atteigne vos utilisateurs.
+### Measuring AI behavior in real time.
+#### If you operate AI in production, you need a signal.
+#### Act before instability reaches your users.
 
 contact@neomundi.io
 
-À la vitesse de la génération. Construit pour durer.
-
+At the speed of generation. Built to last.
