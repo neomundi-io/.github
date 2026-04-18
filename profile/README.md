@@ -67,6 +67,16 @@ That's it.
 
 ---
 
+## Measurement approach
+
+Neomundi computes a real-time stability score (G) from a multivariate signal capturing semantic coherence, consistency, and structural stability during generation.
+
+This measurement is grounded in a dynamic stability framework inspired by Lyapunov principles, where variations (ΔG) reflect deviations from stable regimes.
+
+The system continuously evaluates and updates this signal at runtime, enabling immediate detection of drift and instability.
+
+---
+
 ## Neomundi detects instability before it becomes visible:
 
 - Internal contradictions
