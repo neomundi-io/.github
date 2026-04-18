@@ -67,6 +67,15 @@ C'est tout.
 
 ---
 
+## Approche de mesure
+Neomundi calcule un score de stabilité en temps réel (G) à partir d’un signal multivarié capturant la cohérence sémantique, la consistance et la stabilité structurelle pendant la génération.
+
+Cette mesure s’appuie sur un cadre de stabilité dynamique inspiré des principes de Lyapunov, où les variations (ΔG) reflètent les écarts aux régimes stables.
+
+Le système évalue et met à jour ce signal en continu au runtime, permettant une détection immédiate des dérives et des instabilités.
+
+---
+
 ## Neomundi détecte l'instabilité avant qu'elle ne devienne visible :
 
 - Contradictions internes
@@ -161,7 +170,7 @@ Les opérateurs pilotes actuels sont prioritaires sur chaque mise à jour.
 
 ## Open Science · Reproductible · Auditable
 
-Auditabilité intégrée dès la conception. Pas une boîte noire.
+Auditabilité intégrée dès la conception. Pas une boîte noire. DOI à la demande.
 
 ---
 
