@@ -171,7 +171,7 @@ Current pilot operators are prioritized on every update.
 
 ## Open Science · Reproducible · Auditable
 
-Auditability built in by design. Not a black box.
+Auditability built in by design. Not a black box. DOI on demand
 
 ---
 
