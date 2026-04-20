@@ -63,7 +63,7 @@ response = openai.chat.completions.create(...)
 result = score_prompt(user_prompt)  # Neomundi calls OpenAI for you
 ```
 
-That's it.
+See full integration guide → [neomundi-sandbox/docs/QUICKSTART](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/QUICKSTART)
 
 ---
 
