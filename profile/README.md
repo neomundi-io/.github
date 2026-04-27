@@ -155,7 +155,7 @@ NeoMundi contributes to the EU AI Act's traceability and auditability requiremen
 
 ---
 
-NeoMundi Recherche, French not-for-profit association (loi 1901), Vannes (France).
+NeoMundi Recherche, French not-for-profit association (loi 1901), Paris (France).
 Commercial activities: Louis M Sàrl, Morges (Switzerland).
 
 *At the speed of generation. Built to last.*
