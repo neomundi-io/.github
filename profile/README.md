@@ -2,7 +2,7 @@
 
 # NeoMundi. The AI thermometer.
 
-[🇫🇷 Lire en français](#neomundi-le-thermomètre-de-lia)
+[🇫🇷 Lire en français](README.fr.md)
 
 ---
 
