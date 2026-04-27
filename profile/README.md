@@ -77,8 +77,8 @@ The instrument is being refined. **Truth Module live on May 27, 2026.**
 
 ## See it in action
 
-→ [Try it live](https://neomundi.io/sandbox): no installation, no API key.
-→ [Sample audit report PDF](https://neomundi.io/sample-audit.pdf)
+→ [Try it live](https://neomundi-io.github.io/neomundi-sandbox/): no installation, no API key.
+→ [Sample audit report PDF](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Audit_Report_2026-04.pdf)
 
 ---
 
