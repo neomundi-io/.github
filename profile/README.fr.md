@@ -1,6 +1,6 @@
 # NeoMundi. Le thermomètre de l'IA.
 
-[🇬🇧 Read in English](#english-version)
+[🇬🇧 Read in English](README.md)
 
 ---
 
