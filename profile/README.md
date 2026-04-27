@@ -11,7 +11,7 @@
 We provide the signal.
 You decide what to do with it.
 
-📄 Methodology · DOI [10.5281/zenodo.19762753](https://doi.org/10.5281/zenodo.19762753) · Repo [llm-cartography](https://github.com/neomundi-io/llm-cartography)
+📄 [Executive Brief (FR)](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Executive_Brief_FR.pdf) · Methodology · DOI [10.5281/zenodo.19762753](https://doi.org/10.5281/zenodo.19762753) · Repo [llm-cartography](https://github.com/neomundi-io/llm-cartography)
 
 ---
 
@@ -134,13 +134,16 @@ NeoMundi contributes to the EU AI Act's traceability and auditability requiremen
 
 ---
 
-## Open Science · Reproducible · Auditable
+## Documentation
 
-Auditability built in by design. Not a black box.
-
-- 📄 Full versioned methodology: [llm-cartography](https://github.com/neomundi-io/llm-cartography)
-- 🔬 Reference dataset: [DOI 10.5281/zenodo.19762753](https://doi.org/10.5281/zenodo.19762753)
-- 📐 Theoretical framework (law E): [DOI 10.5281/zenodo.19385052](https://doi.org/10.5281/zenodo.19385052)
+- 📊 **Executive Brief (FR)** — synthetic overview for decision-makers
+  → [NeoMundi_Executive_Brief_FR.pdf](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Executive_Brief_FR.pdf)
+- 📐 **Full methodology** — versioned scientific specification
+  → [llm-cartography](https://github.com/neomundi-io/llm-cartography)
+- 🔬 **Reference dataset v1-2026-04-26** — Zenodo DOI
+  → [10.5281/zenodo.19762753](https://doi.org/10.5281/zenodo.19762753)
+- 📖 **Theoretical framework (law E)** — Zenodo DOI
+  → [10.5281/zenodo.19385052](https://doi.org/10.5281/zenodo.19385052)
 
 ---
 
