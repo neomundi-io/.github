@@ -1,112 +1,88 @@
-# Neomundi. Le thermomètre de l'IA.
+# NeoMundi. Le thermomètre de l'IA.
 
-🇬🇧 [Read in English](https://github.com/neomundi-io/.github/blob/main/profile/README.md)
-
-### Validation en temps réel de la stabilité des décisions au moment où elles se produisent.
-### Nous fournissons le signal.
-### Vous décidez quoi en faire.
+[🇬🇧 Read in English](#english-version)
 
 ---
+
+**Validation en temps réel de la stabilité des décisions, au moment où elles se produisent.**
+
+Nous fournissons le signal.
+Vous décidez quoi en faire.
+
+📄 Méthodologie · DOI [10.5281/zenodo.19762753](https://doi.org/10.5281/zenodo.19762753) · Repo [llm-cartography](https://github.com/neomundi-io/llm-cartography)
+
+---
+
+## Le signal runtime de stabilité.
+### Au service de la gouvernance, du fine-tuning, de la conformité et de la due diligence.
 
 | 🟣 Agents | 🟢 Conformité | 🟡 Fine-tuning | 🔵 SLA / Infra |
 |-----------|---------------|----------------|----------------|
-| **Stopper. Relancer. Rerouteur.** | **Tracer & prouver.** | **Mesurer la dérive.** | **Prouver la continuité.** |
+| **Stopper. Relancer. Rerouter.** | **Tracer & prouver.** | **Mesurer la dérive.** | **Prouver la continuité.** |
 | Signal de stabilité en direct, injecté dans les boucles de décision des agents. | Piste d'audit horodatée. Chaque génération scorée, chaque dérive signalée. | Quantifier les écarts comportementaux entre versions de modèles. | Supervision comportementale au-delà de la latence. Qualité de génération, mesurée. |
 
-### Chaque signal pilote directement les décisions.
-
-- Le signal de stabilité est le fondement de la gouvernance IA.
-- Due diligence · qualité des données de fine-tuning · audit de conformité · preuve de SLA.
-
-> ### Le signal rend les décisions actionnables, en temps réel.
+> **Votre décision, notre signal.**
 
 ---
 
-## Chaque décision IA devient mesurable, traçable et gouvernable.
+## Mesure et détection
 
-Chaque génération produit :
-- Score de stabilité (0 → 1)
-- Décision (ALLOW / FLAG / BLOCK)
-- Signal de dérive (horodaté)
+NeoMundi calcule un score de stabilité en temps réel (G) à partir d'un signal multivarié capturant la cohérence sémantique, la consistance et la stabilité structurelle pendant la génération.
 
-Sorties avancées :
+Cette mesure s'appuie sur un cadre de stabilité dynamique inspiré des principes de Lyapunov, où les variations (ΔG) reflètent les écarts aux régimes stables.
 
-- Trace d'audit complète (exportable)  
-- Métriques d'exécution (coût, stabilité, dérive)  
-- Preuve cryptographique (hash)  
-- Jeux de données structurés (analytique, fine-tuning, conformité)
+L'instrument évalue et met à jour ce signal en continu au runtime, permettant une détection immédiate des dérives et des instabilités.
 
-> Signal réel. Scoring réel. Résultat réel.
-
----
-
-## Voir en action
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/neomundi-io/.github/main/profile/stability_score.gif" alt="Neomundi Stability Score Demo" width="800">
-</p>
-
-[→ Essayer en direct : Sans installation. Sans clé API.](https://neomundi-io.github.io/neomundi-sandbox/)
-
-[→ Exemple de rapport d'audit PDF](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Audit_Report_2026-04.pdf)
-
----
-
-## Intégration en une ligne.
-Remplacez votre appel LLM existant par Neomundi. Votre service continue de tourner exactement comme avant, chaque réponse est désormais scorée en temps réel.
-
-python
-
-### Avant
-response = openai.chat.completions.create(...)
-
-### Après
-result = score_prompt(user_prompt)  # Neomundi appelle OpenAI pour vous
-
-Voir le guide d'intégration complet → [neomundi-sandbox/docs/QUICKSTART](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/QUICKSTART)
-
----
-
-## Approche de mesure
-Neomundi calcule un score de stabilité en temps réel (G) à partir d’un signal multivarié capturant la cohérence sémantique, la consistance et la stabilité structurelle pendant la génération.
-
-Cette mesure s’appuie sur un cadre de stabilité dynamique inspiré des principes de Lyapunov, où les variations (ΔG) reflètent les écarts aux régimes stables.
-
-Le système évalue et met à jour ce signal en continu au runtime, permettant une détection immédiate des dérives et des instabilités.
-
----
-
-## Neomundi détecte l'instabilité avant qu'elle ne devienne visible :
+**NeoMundi détecte l'instabilité avant qu'elle ne devienne visible :**
 
 - Contradictions internes
 - Perte de précision
 - Dérive thématique
 - Incohérence structurelle
 
-> La dérive apparaît avant la défaillance. Nous la mesurons en temps réel.
+> *La dérive apparaît avant la défaillance. Nous la mesurons en temps réel.*
+>
+> *NeoMundi ne dit pas si c'est vrai. Il dit si c'est cohérent.*
 
-Ces signaux ne cherchent pas la vérité. Ils mesurent la cohérence en temps réel. La dérive est visible avant de devenir une erreur.
+### Validé sur des systèmes réels
 
----
+**Cartographie v1-2026-04-26 — 3 904 mesures TruthfulQA × 5 services génératifs.**
 
-## Validé sur des systèmes réels
+NeoMundi n'attrape pas encore tout (≈15 % de recall), **mais quand il flag, il a raison ≈76 % du temps**. Un signal fiable sur lequel agir dès maintenant.
 
-7 888 exécutions · 15 jeux de données
+L'instrument s'affine. **Module Vérité actif le 27 mai 2026.**
 
-- 95,7 % dans les seuils de gouvernance  
-- 336 instabilités détectées avant livraison  
-- Coût moyen : 0,003 € par exécution  
-
-Une hallucination non détectée coûte plus de 0,003 €.
+📊 Métriques complètes, dataset et méthodologie : [llm-cartography](https://github.com/neomundi-io/llm-cartography).
 
 ---
 
-## Déploiement en quelques minutes
+## Chaque génération produit
 
-- Aucun changement d'infrastructure
-- Aucune exposition de données
-- Aucune dépendance au modèle
-- Un seul appel API
+**Sorties standard :**
+- Score de stabilité (0 → 1)
+- Décision (PASS / FLAG)
+- Signal de dérive (horodaté)
+
+**Sorties avancées :**
+- Trace d'audit complète (exportable)
+- Métriques d'exécution (coût, stabilité, dérive)
+- Preuve cryptographique (hash)
+- Jeux de données structurés (analytique, fine-tuning, conformité)
+
+> *Signal réel. Scoring réel. Résultat réel.*
+
+---
+
+## Voir en action
+
+→ [Essayer en direct](https://neomundi.io/sandbox) : sans installation, sans clé API.
+→ [Exemple de rapport d'audit PDF](https://neomundi.io/sample-audit.pdf)
+
+---
+
+## Intégration en une ligne
+
+**Bring Your Own Key. Full privacy.** Votre clé fournisseur reste sous votre contrôle. NeoMundi mesure le signal de stabilité de la génération sans jamais lire ni stocker le contenu de vos prompts ou réponses.
 
 ```bash
 curl -X POST https://api.neomundi.io/v1/govern/stream \
@@ -119,30 +95,28 @@ curl -X POST https://api.neomundi.io/v1/govern/stream \
   }'
 ```
 
+L'instrument est servi par la plateforme ControlTower. Préfixe de clé API : `ct_live_*`.
+
+→ [Guide d'intégration complet](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/QUICKSTART.md)
+
 ---
 
-## Programme Pilote
+## Roadmap
 
-Premiers pilotes ouverts
+L'infrastructure est active. Elle s'industrialise.
 
-Nous sélectionnons des partenaires pour lesquels la fiabilité de l'IA est critique.
-- Juridique
-- Conformité
-- Systèmes multi-agents
+- **27 mai 2026** : Module Vérité actif (vérification factuelle au-delà de la cohérence)
+- **Mai-Juin 2026** : Plateforme self-service en production
+- **Q3 2026** : Seuils configurables par client, dashboard opérateurs
 
-Vous obtenez :
-- Accès direct
-- Conditions préférentielles
-- Cas d'usage co-construit
-
-→ [contact@neomundi.io](mailto:contact@neomundi.io)
+Les opérateurs pilotes actuels sont prioritaires sur chaque mise à jour.
 
 ---
 
 ## FAQ
 
 **Qu'est-ce que le score de stabilité ?**
-Il mesure la cohérence interne d'une réponse LLM en temps réel — pas sa véracité. Neomundi ne vérifie pas les faits. Il détecte la dérive qui précède l'erreur.
+Il mesure la cohérence interne d'une réponse LLM en temps réel — pas sa véracité. NeoMundi ne vérifie pas les faits. Il détecte la dérive qui précède l'erreur.
 
 **Quelles données stockez-vous ?**
 Vos prompts ne sont ni lus ni stockés. Votre clé API fournisseur reste sous votre contrôle. Seules les métriques de gouvernance sont enregistrées : score, décision, horodatage. Rien d'autre.
@@ -151,59 +125,193 @@ Vos prompts ne sont ni lus ni stockés. Votre clé API fournisseur reste sous vo
 Oui — détection automatique depuis votre clé : OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, Cohere. Si votre fournisseur n'est pas listé, contactez-nous.
 
 **Quelle est la différence avec LangSmith, Portkey ou Helicone ?**
-Ces outils observent et journalisent. Neomundi mesure et intervient pendant la génération — avant que la réponse instable n'atteigne votre utilisateur. Nous ne remplaçons pas votre stack d'observabilité, nous y ajoutons la couche de gouvernance manquante.
+Ces outils observent et journalisent. NeoMundi mesure et signale pendant la génération — avant que la réponse instable n'atteigne votre utilisateur. Nous ne remplaçons pas votre stack d'observabilité, nous y ajoutons la couche de mesure manquante.
 
 **Est-ce conforme à l'EU AI Act ?**
-Neomundi contribue aux exigences de traçabilité et d'auditabilité de l'EU AI Act en produisant une piste d'audit complète par session : score, décision, horodatage, export PDF. L'échéance d'application est août 2026.
-
----
-
-## Roadmap : L'infrastructure est active. Elle s'industrialise.
-
-Dans 60 jours
-- Seuils configurables par client
-- Interface opérateurs pilotes
-
-Les opérateurs pilotes actuels sont prioritaires sur chaque mise à jour.
+NeoMundi contribue aux exigences de traçabilité et d'auditabilité de l'EU AI Act en produisant une piste d'audit complète par session : score, décision, horodatage, export PDF. L'échéance d'application est août 2026.
 
 ---
 
 ## Open Science · Reproductible · Auditable
 
-Auditabilité intégrée dès la conception. Pas une boîte noire. DOI à la demande.
+Auditabilité intégrée dès la conception. Pas une boîte noire.
+
+- 📄 Méthodologie complète et versionnée : [llm-cartography](https://github.com/neomundi-io/llm-cartography)
+- 🔬 Dataset de référence : [DOI 10.5281/zenodo.19762753](https://doi.org/10.5281/zenodo.19762753)
+- 📐 Cadre théorique (loi E) : [DOI 10.5281/zenodo.19385052](https://doi.org/10.5281/zenodo.19385052)
 
 ---
 
-## Early Access
+> *Mesurer le comportement de l'IA en temps réel.*
+> *Si vous opérez de l'IA en production, vous avez besoin d'un signal.*
+> *Agissez avant que l'instabilité n'atteigne vos utilisateurs.*
 
-Le signal tourne. Les données s'accumulent.
-Nombre de places limité pour les équipes qui opèrent de l'IA en production.
-
-Vous obtenez :
-- Accès direct au signal runtime
-- Un cas d'usage co-construit sur votre système
-- Des conditions préférentielles
-
-Nous obtenons :
-- Des données réelles
-- Des contraintes réelles
-- Une validation réelle
-
-Nous sélectionnons. Nous ne recrutons pas.
+`contact@neomundi.io`
 
 ---
 
-## Documentation
+NeoMundi Recherche, association loi 1901, Vannes (France).
+Activités commerciales : Louis M Sàrl, Morges (Suisse).
 
-- Executive Brief : [NeoMundi Executive Brief EN](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Executive_Brief_FR.pdf)
+*À la vitesse de la génération. Construit pour durer.*
 
 ---
 
-### Mesurer le comportement de l'IA en temps réel.
-#### Si vous opérez de l'IA en production, vous avez besoin d'un signal.
-#### Agissez avant que l'instabilité n'atteigne vos utilisateurs.
+<a id="english-version"></a>
 
-contact@neomundi.io
+# NeoMundi. The AI thermometer.
 
-À la vitesse de la génération. Construit pour durer.
+[🇫🇷 Lire en français](#neomundi-le-thermomètre-de-lia)
 
+---
+
+**Real-time validation of decision stability, as it happens.**
+
+We provide the signal.
+You decide what to do with it.
+
+📄 Methodology · DOI [10.5281/zenodo.19762753](https://doi.org/10.5281/zenodo.19762753) · Repo [llm-cartography](https://github.com/neomundi-io/llm-cartography)
+
+---
+
+## The runtime stability signal.
+### Powering AI governance, fine-tuning, compliance and due diligence.
+
+| 🟣 Agents | 🟢 Compliance | 🟡 Fine-tuning | 🔵 SLA / Infra |
+|-----------|---------------|----------------|----------------|
+| **Stop. Retry. Reroute.** | **Trace & prove.** | **Measure drift.** | **Prove continuity.** |
+| Live stability signal, injected directly into agent decision loops. | Timestamped audit trail. Every generation scored, every drift flagged. | Quantify behavioral deviations across model versions. | Behavioral monitoring beyond latency. Quality of generation, measured. |
+
+> **Your decision, our signal.**
+
+---
+
+## Measurement and detection
+
+NeoMundi computes a real-time stability score (G) from a multivariate signal capturing semantic coherence, consistency and structural stability during generation.
+
+This measurement is grounded in a dynamic stability framework inspired by Lyapunov principles, where variations (ΔG) reflect deviations from stable regimes.
+
+The instrument continuously evaluates and updates this signal at runtime, enabling immediate detection of drift and instability.
+
+**NeoMundi detects instability before it becomes visible:**
+
+- Internal contradictions
+- Loss of precision
+- Thematic drift
+- Structural inconsistency
+
+> *Drift appears before failure. We measure it in real time.*
+>
+> *NeoMundi doesn't say if it's true. It says if it's coherent.*
+
+### Validated on real systems
+
+**Cartography v1-2026-04-26 — 3,904 measurements on TruthfulQA × 5 generative services.**
+
+NeoMundi doesn't catch everything yet (~15% recall), **but when it flags, it's right ~76% of the time**. A reliable signal you can already act on.
+
+The instrument is being refined. **Truth Module live on May 27, 2026.**
+
+📊 Full metrics, dataset and methodology: [llm-cartography](https://github.com/neomundi-io/llm-cartography).
+
+---
+
+## Each generation produces
+
+**Standard outputs:**
+- Stability score (0 → 1)
+- Decision (PASS / FLAG)
+- Drift signal (timestamped)
+
+**Advanced outputs:**
+- Full audit trace (exportable)
+- Execution metrics (cost, stability, drift)
+- Cryptographic proof (hash)
+- Structured datasets (analytics, fine-tuning, compliance)
+
+> *Real signal. Real scoring. Real outcome.*
+
+---
+
+## See it in action
+
+→ [Try it live](https://neomundi.io/sandbox): no installation, no API key.
+→ [Sample audit report PDF](https://neomundi.io/sample-audit.pdf)
+
+---
+
+## One-line integration
+
+**Bring Your Own Key. Full privacy.** Your provider key stays under your control. NeoMundi measures the stability signal of generation without ever reading or storing the content of your prompts or responses.
+
+```bash
+curl -X POST https://api.neomundi.io/v1/govern/stream \
+  -H "X-API-Key: ct_live_xxx" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "prompt": "Your prompt here",
+    "model": "gpt-4o",
+    "provider_api_key": "sk-xxx"
+  }'
+```
+
+The instrument is served by the ControlTower platform. API key prefix: `ct_live_*`.
+
+→ [Full integration guide](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/QUICKSTART.md)
+
+---
+
+## Roadmap
+
+The infrastructure is live. It's scaling.
+
+- **May 27, 2026**: Truth Module live (factual verification beyond coherence)
+- **May–June 2026**: Self-service platform in production
+- **Q3 2026**: Configurable thresholds per client, operator dashboard
+
+Current pilot operators are prioritized on every update.
+
+---
+
+## FAQ
+
+**What is the stability score?**
+It measures the internal coherence of an LLM response in real time — not its truthfulness. NeoMundi does not fact-check. It detects the drift that precedes failure.
+
+**What data do you store?**
+Your prompts are neither read nor stored. Your provider API key stays under your control. Only governance metrics are recorded: score, decision, timestamp. Nothing else.
+
+**Does it work with my LLM?**
+Yes — automatic detection from your key: OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, Cohere. If your provider is not listed, contact us.
+
+**What's the difference from LangSmith, Portkey, or Helicone?**
+Those tools observe and log. NeoMundi measures and signals during generation — before the unstable response reaches your user. We don't replace your observability stack, we add the missing measurement layer.
+
+**Is it EU AI Act compliant?**
+NeoMundi contributes to the EU AI Act's traceability and auditability requirements by producing a full audit trail per session: score, decision, timestamp, PDF export. Enforcement deadline: August 2026.
+
+---
+
+## Open Science · Reproducible · Auditable
+
+Auditability built in by design. Not a black box.
+
+- 📄 Full versioned methodology: [llm-cartography](https://github.com/neomundi-io/llm-cartography)
+- 🔬 Reference dataset: [DOI 10.5281/zenodo.19762753](https://doi.org/10.5281/zenodo.19762753)
+- 📐 Theoretical framework (law E): [DOI 10.5281/zenodo.19385052](https://doi.org/10.5281/zenodo.19385052)
+
+---
+
+> *Measuring AI behavior in real time.*
+> *If you operate AI in production, you need a signal.*
+> *Act before instability reaches your users.*
+
+`contact@neomundi.io`
+
+---
+
+NeoMundi Recherche, French not-for-profit association (loi 1901), Vannes (France).
+Commercial activities: Louis M Sàrl, Morges (Switzerland).
+
+*At the speed of generation. Built to last.*
