@@ -152,7 +152,7 @@ NeoMundi contribue aux exigences de traçabilité et d'auditabilité de l'EU AI 
 
 ---
 
-NeoMundi Recherche, association loi 1901, Vannes (France).
+NeoMundi Recherche, association loi 1901, Paris (France).
 Activités commerciales : Louis M Sàrl, Morges (Suisse).
 
 *À la vitesse de la génération. Construit pour durer.*
