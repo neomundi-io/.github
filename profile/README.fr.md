@@ -105,9 +105,7 @@ L'instrument est servi par la plateforme ControlTower. Préfixe de clé API : `c
 
 L'infrastructure est active. Elle s'industrialise.
 
-- **27 mai 2026** : Module Vérité actif (vérification factuelle au-delà de la cohérence)
-- **Mai-Juin 2026** : Plateforme self-service en production
-- **Q3 2026** : Seuils configurables par client, dashboard opérateurs
+- **27 mai 2026** : Module Vérité actif (vérification factuelle au-delà de la cohérence) + Plateforme self-service en production (Seuils configurables par client, dashboard opérateurs)
 
 Les opérateurs pilotes actuels sont prioritaires sur chaque mise à jour.
 
