@@ -48,7 +48,7 @@ L'instrument évalue et met à jour ce signal en continu au runtime, permettant 
 
 **Cartographie v1-2026-04-26 — 3 904 mesures TruthfulQA × 5 services génératifs.**
 
-NeoMundi n'attrape pas encore tout (≈15 % de recall), **mais quand il flag, il a raison ≈76 % du temps**. Un signal fiable sur lequel agir dès maintenant.
+NeoMundi n'attrape pas encore tout (≈15 % de recall), **mais quand il flag, il a raison ≈76 % du temps**. Un signal fiable pour gouverner
 
 L'instrument s'affine. **Module Vérité actif le 27 mai 2026.**
 
