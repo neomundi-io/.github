@@ -71,11 +71,6 @@ L'instrument s'affine. **Module Vérité actif le 27 mai 2026.**
 
 > *Signal réel. Scoring réel. Résultat réel.*
 
----
-
-## Voir en action
-
-→ [Essayer en direct](https://neomundi.io/sandbox) : sans installation, sans clé API.
 → [Exemple de rapport d'audit PDF](https://neomundi.io/sample-audit.pdf)
 
 ---
