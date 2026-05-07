@@ -1,6 +1,9 @@
 # NeoMundi. The AI thermometer.
 
-**Continuous AI stability measurement.** Early detection of generative risk, without access to content.
+**Continuous AI stability measurement.**
+
+Early detection of generative risk, without access to content.
+
 Post-hoc or runtime, depending on criticality.
 
 We provide the signal. You decide what to do with it.
@@ -33,9 +36,9 @@ ControlTower™: a control tower for AI generation. Continuous observation, inte
 |              | **OBS** (Observatory)     | **GOV** (Governance)         |
 |--------------|---------------------------|------------------------------|
 | Purpose      | Continuous monitoring     | Active runtime control       |
-| Timing       | After generation          | During generation            |
+| Timing       | Continuous post-hoc stream | During generation            |
 | Privacy      | No content, metrics only  | Transient content, no retention, no logs |
-| Integration  | LLM calls NeoMundi (post-stream)        | NeoMundi calls LLM (BYOK runtime)          |
+| Integration  | LLM calls NeoMundi (post-stream) | NeoMundi calls LLM (BYOK runtime) |
 | Best for     | Most AI systems           | Critical workflows           |
 
 > **OBS action model.** NeoMundi emits a continuous stability signal, usable by downstream agents or orchestration layers. Block, regenerate, or escalate: the decision stays with the client.
@@ -57,8 +60,8 @@ OBS is the natural entry point for most AI systems. GOV kicks in when runtime co
 - progressive instability
 - hallucination patterns
 
-> NeoMundi doesn't say whether a response is true.
-> NeoMundi measures whether it stays stable.
+> **NeoMundi doesn't say whether a response is true.** 
+> **NeoMundi measures whether it stays stable.** 
 
 ---
 
