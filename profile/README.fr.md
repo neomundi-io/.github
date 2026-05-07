@@ -1,6 +1,9 @@
 # NeoMundi. Le thermomètre de l'IA.
 
-**Mesure continue de la stabilité des IA.** Détection précoce du risque génératif, sans accès au contenu.
+**Mesure continue de la stabilité des IA.**
+
+Détection précoce du risque génératif, sans accès au contenu.
+
 Post-hoc ou en temps réel, selon la criticité.
 
 Nous fournissons le signal. Vous décidez quoi en faire.
@@ -33,9 +36,9 @@ ControlTower™ : une tour de contrôle pour la génération d'IA. Observation c
 |                  | **OBS** (Observatoire)        | **GOV** (Gouvernance)              |
 |------------------|-------------------------------|------------------------------------|
 | Finalité         | Surveillance continue         | Contrôle actif en temps réel       |
-| Moment           | Après la génération           | Pendant la génération              |
+| Moment           | Flux continu, post-hoc        | Pendant la génération              |
 | Confidentialité  | Aucun contenu, métriques uniquement | Contenu transitoire, sans rétention ni log |
-| Intégration      | Le LLM appelle NeoMundi (post-stream)           | NeoMundi appelle le LLM (BYOK runtime)        |
+| Intégration      | Le LLM appelle NeoMundi (post-stream) | NeoMundi appelle le LLM (BYOK runtime) |
 | Adapté à         | La majorité des systèmes IA   | Workflows critiques                |
 
 > **Modèle d'action en OBS.** NeoMundi émet un signal de stabilité continu, exploitable par les agents en aval ou les couches d'orchestration. Bloquer, régénérer ou faire remonter : la décision reste au client.
@@ -57,8 +60,9 @@ OBS est le point d'entrée naturel pour la majorité des systèmes IA. GOV inter
 - instabilité progressive
 - schémas d'hallucination
 
-> NeoMundi ne dit pas si une réponse est vraie.
-> NeoMundi mesure si elle reste stable.
+> **NeoMundi ne dit pas si une réponse est vraie.
+> **NeoMundi mesure si elle reste stable.
+
 
 ---
 
