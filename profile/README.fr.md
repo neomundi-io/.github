@@ -5,19 +5,21 @@ Post-hoc ou en temps réel, selon la criticité.
 
 Nous fournissons le signal. Vous décidez quoi en faire.
 
+*Déployable au-dessus de n'importe quelle stack LLM.*
+
 <sub>EN · [Read in English](./README.md)</sub>
 
 ---
 
 ## Pourquoi c'est important
 
-Les systèmes d'IA défaillent progressivement avant de défaillir visiblement.
+Les systèmes d'IA dérivent avant d'échouer.
 
-NeoMundi mesure en continu l'instabilité pendant la génération :
+NeoMundi mesure en continu, avant que la défaillance soit visible :
 
 - dérive
-- effondrement
 - incohérence
+- effondrement
 - schémas d'hallucination
 
 En mode OBS, sans accès au contenu.
@@ -26,24 +28,37 @@ En mode OBS, sans accès au contenu.
 
 ## Deux modes de déploiement
 
-ControlTower™ est exactement ce que son nom suggère : une tour de contrôle pour la génération d'IA. Observation continue ; intervention uniquement quand nécessaire. Deux fonctions, deux modes opérationnels, une physique de mesure partagée en sous-jacent.
+ControlTower™ : une tour de contrôle pour la génération d'IA. Observation continue, intervention uniquement si nécessaire.
 
 |                  | **OBS** (Observatoire)        | **GOV** (Gouvernance)              |
 |------------------|-------------------------------|------------------------------------|
 | Finalité         | Surveillance continue         | Contrôle actif en temps réel       |
-| Moment           | Flux post-hoc                 | Pendant la génération              |
+| Moment           | Après la génération           | Pendant la génération              |
 | Confidentialité  | Métriques uniquement          | Contenu transitoire, UE uniquement |
 | Intégration      | Friction minimale             | Intégration plus profonde          |
 | Adapté à         | La majorité des systèmes IA   | Workflows critiques                |
 
-> **Modèle d'action en OBS.** En OBS, NeoMundi émet un signal de stabilité continu, exploitable par les agents en aval ou les couches d'orchestration. La décision de bloquer, régénérer ou faire remonter reste au client.
+> **Modèle d'action en OBS.** NeoMundi émet un signal de stabilité continu, exploitable par les agents en aval ou les couches d'orchestration. Bloquer, régénérer ou faire remonter : la décision reste au client.
 
 **Critère de décision : si une mauvaise sortie atteint l'utilisateur, est-elle rattrapable ?**
 
-- **Rattrapable** (alerte, modération en aval, correction au cycle suivant, satisfaction dégradée mais sans dommage durable) : OBS suffit.
-- **Non rattrapable** (conseil médical, conseil juridique servi directement à l'utilisateur final, décisions financières fiduciaires, infrastructure critique, obligation réglementaire de contrôle en amont comme l'art. 14 du règlement IA européen) : GOV est requis.
+- **Rattrapable** (alerte, modération en aval, correction au cycle suivant) : OBS suffit.
+- **Non rattrapable** (conseil médical, conseil juridique livré directement, décisions financières fiduciaires, infrastructure critique, art. 14 du règlement IA européen) : GOV est requis.
 
-OBS est notre point d'entrée et convient à la majorité des cas d'usage. GOV intervient là où le temps réel n'est pas négociable.
+OBS est le point d'entrée naturel pour la majorité des systèmes IA. GOV intervient lorsque le contrôle temps réel devient critique.
+
+---
+
+## Ce que NeoMundi détecte
+
+- contradictions internes
+- perte de cohérence
+- dérive thématique
+- instabilité progressive
+- schémas d'hallucination
+
+> NeoMundi ne dit pas si une réponse est vraie.
+> NeoMundi mesure si elle reste stable.
 
 ---
 
