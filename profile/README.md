@@ -35,7 +35,7 @@ ControlTower™: a control tower for AI generation. Continuous observation, inte
 | Purpose      | Continuous monitoring     | Active runtime control       |
 | Timing       | After generation          | During generation            |
 | Privacy      | No content, metrics only  | Transient content, no retention, no logs |
-| Integration  | Minimal friction          | Deeper integration           |
+| Integration  | LLM calls NeoMundi (post-stream)        | NeoMundi calls LLM (BYOK runtime)          |
 | Best for     | Most AI systems           | Critical workflows           |
 
 > **OBS action model.** NeoMundi emits a continuous stability signal, usable by downstream agents or orchestration layers. Block, regenerate, or escalate: the decision stays with the client.
