@@ -60,8 +60,8 @@ OBS est le point d'entrée naturel pour la majorité des systèmes IA. GOV inter
 - instabilité progressive
 - schémas d'hallucination
 
-> NeoMundi ne dit pas si une réponse est vraie.
-> NeoMundi mesure si elle reste stable.
+> **NeoMundi ne dit pas si une réponse est vraie.**
+> **NeoMundi mesure si elle reste stable.** 
 
 
 ---
