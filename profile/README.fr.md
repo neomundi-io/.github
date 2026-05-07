@@ -1,32 +1,49 @@
 # NeoMundi. Le thermomètre de l'IA.
 
-🇬🇧 [Read in English](#)
-
-La mesure de stabilité des LLM. Post-hoc ou runtime, selon le niveau de criticité.
+**Mesure continue de la stabilité des IA.**
+Post-hoc ou en temps réel, selon la criticité.
 
 Nous fournissons le signal. Vous décidez quoi en faire.
+
+<sub>EN · [Read in English](./README.md)</sub>
+
+---
+
+## Pourquoi c'est important
+
+Les systèmes d'IA défaillent progressivement avant de défaillir visiblement.
+
+NeoMundi mesure en continu l'instabilité pendant la génération :
+
+- dérive
+- effondrement
+- incohérence
+- schémas d'hallucination
+
+En mode OBS, sans accès au contenu.
 
 ---
 
 ## Deux modes de déploiement
 
-ControlTower fonctionne comme une tour de contrôle : observation continue, intervention quand c'est nécessaire. Deux fonctions, deux modes opérationnels, une même physique de mesure sous-jacente.
+ControlTower™ est exactement ce que son nom suggère : une tour de contrôle pour la génération d'IA. Observation continue ; intervention uniquement quand nécessaire. Deux fonctions, deux modes opérationnels, une physique de mesure partagée en sous-jacent.
 
-| | **OBS — Observatoire** | **GOV — Gouvernance** |
-|---|---|---|
-| **Quand** | Post-hoc, en flux continu | Runtime, pendant la génération |
-| **Données transmises** | Métriques numériques uniquement | Prompt + clé fournisseur (BYOK) |
-| **Traitement chez NeoMundi** | Mesure thermodynamique pure | Mesure + couche sémantique |
-| **Privacy** | Aucun contenu, aucune clé | Transitoire, sans rétention, jamais hors UE |
-| **Action** | Bloque la sortie ou déclenche une régénération côté agent | Contrôle pendant le stream |
-| **Friction d'intégration** | Minimale | Modérée |
+|                  | **OBS** (Observatoire)        | **GOV** (Gouvernance)              |
+|------------------|-------------------------------|------------------------------------|
+| Finalité         | Surveillance continue         | Contrôle actif en temps réel       |
+| Moment           | Flux post-hoc                 | Pendant la génération              |
+| Confidentialité  | Métriques uniquement          | Contenu transitoire, UE uniquement |
+| Intégration      | Friction minimale             | Intégration plus profonde          |
+| Adapté à         | La majorité des systèmes IA   | Workflows critiques                |
 
-**Critère de choix : un mauvais output qui atteint un utilisateur, est-il récupérable ?**
+> **Modèle d'action en OBS.** En OBS, NeoMundi émet un signal de stabilité continu, exploitable par les agents en aval ou les couches d'orchestration. La décision de bloquer, régénérer ou faire remonter reste au client.
 
-- **Récupérable** (alerte, modération aval, correction au cycle suivant, satisfaction dégradée mais pas de dommage durable) → **OBS suffit**.
-- **Non récupérable** (avis médical, conseil juridique en production directe, décision financière fiduciaire, infrastructure critique, obligation réglementaire de contrôle en amont type EU AI Act Art. 14) → **GOV est nécessaire**.
+**Critère de décision : si une mauvaise sortie atteint l'utilisateur, est-elle rattrapable ?**
 
-OBS est notre porte d'entrée et la solution adaptée à la majorité des cas d'usage. GOV s'enclenche là où le runtime est non-négociable.
+- **Rattrapable** (alerte, modération en aval, correction au cycle suivant, satisfaction dégradée mais sans dommage durable) : OBS suffit.
+- **Non rattrapable** (conseil médical, conseil juridique servi directement à l'utilisateur final, décisions financières fiduciaires, infrastructure critique, obligation réglementaire de contrôle en amont comme l'art. 14 du règlement IA européen) : GOV est requis.
+
+OBS est notre point d'entrée et convient à la majorité des cas d'usage. GOV intervient là où le temps réel n'est pas négociable.
 
 ---
 
@@ -34,21 +51,17 @@ OBS est notre porte d'entrée et la solution adaptée à la majorité des cas d'
 
 NeoMundi calcule un score de stabilité (G) à partir d'un signal multivarié capturant la cohérence sémantique, la consistance et la stabilité structurelle pendant la génération.
 
-Cette mesure s'appuie sur un cadre de stabilité dynamique inspiré des principes de Lyapunov, où les variations (ΔG) reflètent les écarts aux régimes stables.
+L'instrument évalue et met à jour le signal en continu, permettant la détection immédiate de la dérive et de l'instabilité.
 
-L'instrument évalue et met à jour le signal en continu, permettant une détection immédiate des dérives et des instabilités.
-
-NeoMundi détecte l'instabilité avant qu'elle ne devienne visible :
+NeoMundi capte l'instabilité avant qu'elle ne devienne visible :
 
 - Contradictions internes
 - Perte de précision
 - Dérive thématique
 - Incohérence structurelle
 
-> *La dérive apparaît avant la défaillance. Nous la mesurons en temps réel.*
-> *NeoMundi ne dit pas si c'est vrai. Il dit si c'est cohérent.*
+La dérive apparaît avant la défaillance. Nous la mesurons en temps réel. NeoMundi ne dit pas si c'est vrai. NeoMundi dit si c'est cohérent.
 
-La physique de la mesure est commune aux deux modes. Ce qui diffère entre OBS et GOV, c'est le canal de transit et la temporalité.
 
 ---
 
