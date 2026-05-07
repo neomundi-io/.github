@@ -82,10 +82,10 @@ L'instrument s'affine. Module Vérité actif le 27 mai 2026.
 
 | Domaine | Bénéfice | Mode |
 |---|---|---|
-| 🟣 **Agents** | Détecter la dérive, stopper, relancer, rerouter | OBS |
-| 🟢 **Conformité** | Piste d'audit horodatée, chaque génération scorée | OBS *(GOV si blocage temps réel)* |
-| 🟡 **Fine-tuning** | Quantifier les écarts entre versions de modèles | OBS |
-| 🔵 **SLA / Infra** | Supervision comportementale, qualité de génération mesurée | OBS |
+| 🟣 **Agents** | Détecter la dérive, stopper, relancer, rerouter | **OBS** · GOV runtime |
+| 🟢 **Conformité** | Piste d'audit horodatée, chaque génération scorée | **OBS** · GOV runtime |
+| 🟡 **Fine-tuning** | Quantifier les écarts entre versions de modèles | **OBS** · GOV runtime |
+| 🔵 **SLA / Infra** | Supervision comportementale, qualité de génération mesurée | **OBS** · GOV runtime |
 
 > Votre décision, notre signal.
 
