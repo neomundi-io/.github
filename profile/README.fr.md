@@ -6,8 +6,6 @@ La mesure de stabilité des LLM. Post-hoc ou runtime, selon le niveau de critici
 
 Nous fournissons le signal. Vous décidez quoi en faire.
 
-📊 [Executive Brief (FR)](#) · 🔬 Methodology · DOI [10.5281/zenodo.19762753](https://doi.org/10.5281/zenodo.19762753) · 📂 Repo [llm-cartography](https://github.com/neomundi-io/llm-cartography)
-
 ---
 
 ## Deux modes de déploiement
