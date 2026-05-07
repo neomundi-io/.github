@@ -1,6 +1,6 @@
 # NeoMundi. The AI thermometer.
 
-**Continuous AI stability measurement.**
+**Continuous AI stability measurement.** Early detection of generative risk, without access to content.
 Post-hoc or runtime, depending on criticality.
 
 We provide the signal. You decide what to do with it.
@@ -34,7 +34,7 @@ ControlTower™: a control tower for AI generation. Continuous observation, inte
 |--------------|---------------------------|------------------------------|
 | Purpose      | Continuous monitoring     | Active runtime control       |
 | Timing       | After generation          | During generation            |
-| Privacy      | Metrics only              | Transient content, EU only   |
+| Privacy      | No content, metrics only  | Transient content, no retention, no logs |
 | Integration  | Minimal friction          | Deeper integration           |
 | Best for     | Most AI systems           | Critical workflows           |
 
