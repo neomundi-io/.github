@@ -8,7 +8,7 @@ Post-hoc or runtime, depending on criticality.
 
 We provide the signal. You decide what to do with it.
 
-*Deployable in front of any LLM stack.*
+*Deployable in front of any LLM stack, agent or orchestrator.*
 
 <sub>FR · [Lire en français](./README.fr.md)</sub>
 
@@ -52,7 +52,7 @@ OBS is the natural entry point for most AI systems. GOV kicks in when runtime co
 
 ---
 
-## What NeoMundi detects
+## Detected instabilities
 
 - internal contradictions
 - loss of coherence
@@ -60,8 +60,8 @@ OBS is the natural entry point for most AI systems. GOV kicks in when runtime co
 - progressive instability
 - hallucination patterns
 
-> **NeoMundi doesn't say whether a response is true.** 
-> **NeoMundi measures whether it stays stable.** 
+> NeoMundi doesn't say whether a response is true.
+> NeoMundi measures whether it stays stable.
 
 ---
 
