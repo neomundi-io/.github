@@ -5,45 +5,60 @@ Post-hoc or runtime, depending on criticality.
 
 We provide the signal. You decide what to do with it.
 
+*Deployable in front of any LLM stack.*
+
 <sub>FR · [Lire en français](./README.fr.md)</sub>
 
 ---
 
 ## Why it matters
 
-AI systems fail progressively before they fail visibly.
+AI systems drift before they fail.
 
-NeoMundi continuously measures instability during generation:
+NeoMundi measures continuously, before failure becomes visible:
 
 - drift
-- collapse
 - inconsistency
+- collapse
 - hallucination patterns
 
-In OBS mode, this runs without access to content.
+In OBS mode, without access to content.
 
 ---
 
 ## Two deployment modes
 
-ControlTower™ is exactly what it sounds like: a control tower for AI generation. Continuous observation; intervention only when necessary. Two functions, two operational modes, one shared physics of measurement underneath.
+ControlTower™: a control tower for AI generation. Continuous observation, intervention only when necessary.
 
 |              | **OBS** (Observatory)     | **GOV** (Governance)         |
 |--------------|---------------------------|------------------------------|
 | Purpose      | Continuous monitoring     | Active runtime control       |
-| Timing       | Post-hoc stream           | During generation            |
+| Timing       | After generation          | During generation            |
 | Privacy      | Metrics only              | Transient content, EU only   |
 | Integration  | Minimal friction          | Deeper integration           |
 | Best for     | Most AI systems           | Critical workflows           |
 
-> **OBS action model.** In OBS, NeoMundi emits a continuous stability signal usable by downstream agents or orchestration layers. The block, regenerate, or escalate decision remains with the client.
+> **OBS action model.** NeoMundi emits a continuous stability signal, usable by downstream agents or orchestration layers. Block, regenerate, or escalate: the decision stays with the client.
 
 **Decision criterion: if a bad output reaches a user, is it recoverable?**
 
-- **Recoverable** (alert, downstream moderation, correction in the next cycle, degraded satisfaction but no lasting damage): OBS is enough.
-- **Unrecoverable** (medical advice, legal counsel served directly to end users, fiduciary financial decisions, critical infrastructure, regulatory obligation for upstream control such as EU AI Act Art. 14): GOV is required.
+- **Recoverable** (alert, downstream moderation, correction in the next cycle): OBS is enough.
+- **Unrecoverable** (medical advice, legal counsel delivered directly to end users, fiduciary financial decisions, critical infrastructure, EU AI Act Art. 14): GOV is required.
 
-OBS is our entry point and the right fit for the majority of use cases. GOV kicks in where runtime is non-negotiable.
+OBS is the natural entry point for most AI systems. GOV kicks in when runtime control becomes critical.
+
+---
+
+## What NeoMundi detects
+
+- internal contradictions
+- loss of coherence
+- topical drift
+- progressive instability
+- hallucination patterns
+
+> NeoMundi doesn't say whether a response is true.
+> NeoMundi measures whether it stays stable.
 
 ---
 
