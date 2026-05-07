@@ -1,6 +1,6 @@
 # NeoMundi. Le thermomètre de l'IA.
 
-**Mesure continue de la stabilité des IA.**
+**Mesure continue de la stabilité des IA.** Détection précoce du risque génératif, sans accès au contenu.
 Post-hoc ou en temps réel, selon la criticité.
 
 Nous fournissons le signal. Vous décidez quoi en faire.
@@ -34,7 +34,7 @@ ControlTower™ : une tour de contrôle pour la génération d'IA. Observation c
 |------------------|-------------------------------|------------------------------------|
 | Finalité         | Surveillance continue         | Contrôle actif en temps réel       |
 | Moment           | Après la génération           | Pendant la génération              |
-| Confidentialité  | Métriques uniquement          | Contenu transitoire, UE uniquement |
+| Confidentialité  | Aucun contenu, métriques uniquement | Contenu transitoire, sans rétention ni log |
 | Intégration      | Friction minimale             | Intégration plus profonde          |
 | Adapté à         | La majorité des systèmes IA   | Workflows critiques                |
 
