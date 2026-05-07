@@ -1,30 +1,47 @@
 # NeoMundi. The AI thermometer.
 
-🇫🇷 [Lire en français](./README.md)
-
-LLM stability measurement. Post-hoc or runtime, depending on criticality.
+**Continuous AI stability measurement.**
+Post-hoc or runtime, depending on criticality.
 
 We provide the signal. You decide what to do with it.
+
+<sub>FR · [Lire en français](./README.fr.md)</sub>
+
+---
+
+## Why it matters
+
+AI systems fail progressively before they fail visibly.
+
+NeoMundi continuously measures instability during generation:
+
+- drift
+- collapse
+- inconsistency
+- hallucination patterns
+
+In OBS mode, this runs without access to content.
 
 ---
 
 ## Two deployment modes
 
-ControlTower is exactly what it sounds like: a control tower for AI generation. Continuous observation; intervention only when necessary. Two functions, two operational modes, one shared physics of measurement underneath.
+ControlTower™ is exactly what it sounds like: a control tower for AI generation. Continuous observation; intervention only when necessary. Two functions, two operational modes, one shared physics of measurement underneath.
 
-| | **OBS — Observatory** | **GOV — Governance** |
-|---|---|---|
-| **When** | Post-hoc, continuous stream | Runtime, during generation |
-| **Data transmitted** | Numerical metrics only | Prompt + provider key (BYOK) |
-| **Processing at NeoMundi** | Pure thermodynamic measurement | Measurement + semantic layer |
-| **Privacy** | No content, no key | Transient, no retention, never outside the EU |
-| **Action** | Blocks the output or triggers regeneration on the agent side | Control during stream |
-| **Integration friction** | Minimal | Moderate |
+|              | **OBS** (Observatory)     | **GOV** (Governance)         |
+|--------------|---------------------------|------------------------------|
+| Purpose      | Continuous monitoring     | Active runtime control       |
+| Timing       | Post-hoc stream           | During generation            |
+| Privacy      | Metrics only              | Transient content, EU only   |
+| Integration  | Minimal friction          | Deeper integration           |
+| Best for     | Most AI systems           | Critical workflows           |
+
+> **OBS action model.** In OBS, NeoMundi emits a continuous stability signal usable by downstream agents or orchestration layers. The block, regenerate, or escalate decision remains with the client.
 
 **Decision criterion: if a bad output reaches a user, is it recoverable?**
 
-- **Recoverable** (alert, downstream moderation, correction in the next cycle, degraded satisfaction but no lasting damage) → **OBS is enough**.
-- **Unrecoverable** (medical advice, legal counsel served directly to end users, fiduciary financial decisions, critical infrastructure, regulatory obligation for upstream control such as EU AI Act Art. 14) → **GOV is required**.
+- **Recoverable** (alert, downstream moderation, correction in the next cycle, degraded satisfaction but no lasting damage): OBS is enough.
+- **Unrecoverable** (medical advice, legal counsel served directly to end users, fiduciary financial decisions, critical infrastructure, regulatory obligation for upstream control such as EU AI Act Art. 14): GOV is required.
 
 OBS is our entry point and the right fit for the majority of use cases. GOV kicks in where runtime is non-negotiable.
 
@@ -33,8 +50,6 @@ OBS is our entry point and the right fit for the majority of use cases. GOV kick
 ## Measurement and detection
 
 NeoMundi computes a stability score (G) from a multivariate signal capturing semantic coherence, consistency, and structural stability during generation.
-
-The measurement is grounded in a dynamic stability framework inspired by Lyapunov principles, where variations (ΔG) reflect departures from stable regimes.
 
 The instrument evaluates and updates the signal continuously, enabling immediate detection of drift and instability.
 
@@ -45,10 +60,7 @@ NeoMundi catches instability before it becomes visible:
 - Topical drift
 - Structural incoherence
 
-> *Drift appears before failure. We measure it in real time.*
-> *NeoMundi doesn't say whether it's true. It says whether it's coherent.*
-
-The physics of measurement is shared across both modes. What differs between OBS and GOV is the transit channel and the timing.
+Drift appears before failure. We measure it in real time. NeoMundi doesn't say whether it's true. It says whether it's coherent.
 
 ---
 
