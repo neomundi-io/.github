@@ -33,13 +33,13 @@ In OBS mode, without access to content.
 
 ControlTower™: a control tower for AI generation. Continuous observation, intervention only when necessary.
 
-|              | **OBS** (Observatory)     | **GOV** (Governance)         |
-|--------------|---------------------------|------------------------------|
-| Purpose      | Continuous monitoring     | Active runtime control       |
-| Timing       | Continuous post-hoc stream | During generation            |
-| Privacy      | No content, metrics only  | Transient content, no retention, no logs |
+|              | **OBS** (Observatory)         | **GOV** (Governance)             |
+|--------------|-------------------------------|----------------------------------|
+| Purpose      | Continuous monitoring         | Active runtime control           |
+| Timing       | Continuous post-hoc stream    | During generation                |
+| Privacy      | No content, metrics only      | Transient content, no retention, no logs |
 | Integration  | LLM calls NeoMundi (post-stream) | NeoMundi calls LLM (BYOK runtime) |
-| Best for     | Most AI systems           | Critical workflows           |
+| Best for     | Most AI systems               | Critical workflows               |
 
 > **OBS action model.** NeoMundi emits a continuous stability signal, usable by downstream agents or orchestration layers. Block, regenerate, or escalate: the decision stays with the client.
 
@@ -65,71 +65,51 @@ OBS is the natural entry point for most AI systems. GOV kicks in when runtime co
 
 ---
 
-## Measurement and detection
-
-NeoMundi computes a stability score (G) from a multivariate signal capturing semantic coherence, consistency, and structural stability during generation.
-
-The instrument evaluates and updates the signal continuously, enabling immediate detection of drift and instability.
-
-NeoMundi catches instability before it becomes visible:
-
-- Internal contradictions
-- Loss of precision
-- Topical drift
-- Structural incoherence
-
-Drift appears before failure. We measure it in real time. NeoMundi doesn't say whether it's true. It says whether it's coherent.
-
----
-
 ## Validated on real systems
 
-Cartography v1-2026-04-26 — 3,904 measurements on TruthfulQA × 5 generative services.
+- **5 LLM providers** tested (cartography v1-2026-04-26)
+- **3,904 generations** analyzed (TruthfulQA)
+- When NeoMundi flags, it's right **≈76% of the time** (15% current recall)
+- Early detection, before visible failure
 
-NeoMundi doesn't catch everything yet (~15% recall), **but when it flags, it's right ~76% of the time**. A reliable signal for governance.
+The instrument keeps refining. Truth module live on May 27, 2026.
 
-The instrument is sharpening. Truth Module live on May 27, 2026.
-
-📂 Full metrics, dataset, and methodology: [llm-cartography](https://github.com/neomundi-io/llm-cartography).
+📂 [Metrics, dataset, methodology](https://github.com/neomundi-io/llm-cartography)
 
 ---
 
 ## Use cases
 
-| 🟣 Agents | 🟢 Compliance | 🟡 Fine-tuning | 🔵 SLA / Infra |
-|---|---|---|---|
-| Stop. Retry. Reroute. | Trace & prove. | Measure drift. | Prove continuity. |
-| Live stability signal injected into agent decision loops. | Timestamped audit trail. Every generation scored, every drift flagged. | Quantify behavioral gaps between model versions. | Behavioral supervision beyond latency. Generation quality, measured. |
-| **Mode: OBS** | **Mode: OBS** *(GOV if real-time blocking is required)* | **Mode: OBS** | **Mode: OBS** |
+| Domain | Benefit | Mode |
+|---|---|---|
+| 🟣 **Agents** | Detect drift, stop, retry, reroute | **OBS** · GOV runtime |
+| 🟢 **Compliance** | Timestamped audit trail, every generation scored | **OBS** · GOV runtime |
+| 🟡 **Fine-tuning** | Quantify deltas between model versions | **OBS** · GOV runtime |
+| 🔵 **SLA / Infra** | Behavioral supervision, generation quality measured | **OBS** · GOV runtime |
 
 > Your decision, our signal.
 
 ---
 
-## What each generation produces
+## Every generation returns
 
-**Standard outputs**
+- **Stability score** (0 → 1)
+- **Decision** (PASS / FLAG)
+- **Drift signal** (ΔG, timestamped)
+- **Structured telemetry** (analytics, fine-tuning, compliance)
+- **Audit-ready traces** (PDF export per session)
 
-- Stability score (0 → 1)
-- Decision (PASS / FLAG)
-- Drift signal (timestamped)
-
-**Advanced outputs**
-
-- Structured datasets (analytics, fine-tuning, compliance)
-- Real signal. Real scoring. Real result.
-
-→ [Sample audit report (PDF)](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Audit_Report_2026-04.pdf)
+→ [Sample PDF audit report](#)
 
 ---
 
 ## Integration
 
-Two modes, two endpoints. Pick yours using the decision criterion above.
+Two modes, two endpoints. Choose based on the criterion above.
 
-### OBS Mode — post-hoc, metrics-only
+### OBS mode, post-hoc, metrics-only
 
-No content transmitted. No provider key. Your metrics in, your score out.
+**No content transmitted. No provider key.** Your metrics in, your score out.
 
 ```bash
 curl -X POST https://api.neomundi.io/v1/observe \
@@ -141,9 +121,9 @@ curl -X POST https://api.neomundi.io/v1/observe \
   }'
 ```
 
-### GOV Mode — runtime, control during
+### GOV mode, runtime, control during generation
 
-**Bring Your Own Key. Full privacy.** Your provider key stays under your control. NeoMundi measures the stability signal of generation without ever reading or storing the content of your prompts or responses.
+**Bring Your Own Key. Full privacy.** Your provider key stays under your control. NeoMundi measures the generation's stability signal without ever reading or storing your prompts or responses.
 
 ```bash
 curl -X POST https://api.neomundi.io/v1/govern/stream \
@@ -156,7 +136,7 @@ curl -X POST https://api.neomundi.io/v1/govern/stream \
   }'
 ```
 
-The instrument runs on the ControlTower platform. API key prefix: `ct_live_*`.
+The instrument is served by the ControlTower platform. API key prefix: `ct_live_*`.
 
 → [Full integration guide](#)
 → **[100 free requests to test both modes](https://controltower.neomundi.io/pricing)**
@@ -165,12 +145,11 @@ The instrument runs on the ControlTower platform. API key prefix: `ct_live_*`.
 
 ## Two privacy postures, both maximal
 
-| | **OBS** | **GOV** |
-|---|---|---|
-| Content (prompts, responses) | Never transmitted | Transient, no log, no retention |
-| Provider key | Never transmitted | BYOK, under your control |
-| Storage | Metrics + score only | No content stored |
-| Hosting | EU | EU |
+|                              | **OBS**                       | **GOV**                                |
+|------------------------------|-------------------------------|----------------------------------------|
+| Content (prompts, responses) | Never transmitted             | Transient, no logs, no retention       |
+| Provider key                 | Never transmitted             | BYOK, under your control               |
+| Storage                      | Metrics + score only          | Metrics + score only                   |
 
 Both modes are designed to pass DPO, CISO, or Compliance review without compromise.
 
@@ -178,35 +157,35 @@ Both modes are designed to pass DPO, CISO, or Compliance review without compromi
 
 ## Roadmap
 
-The infrastructure is live. It's scaling.
+The infrastructure is active. It's scaling to production.
 
-- **May 27, 2026**: Truth Module live (factual verification beyond coherence) + self-service platform in production (client-configurable thresholds, operator dashboard).
+- **May 27, 2026**: Truth module (factual verification beyond coherence)
+- Self-service platform in production
+- Configurable thresholds, operator dashboard
 
-Current pilot operators have priority on every update.
+Pilot operators get priority on every update.
 
 ---
 
 ## FAQ
 
-**What's the difference between OBS and GOV?**
-OBS measures post-hoc, metrics-only: no content, no provider key transits. It's the entry point, suited to most use cases. GOV measures at runtime, enriching the thermodynamic signal with a semantic layer: the stream transits through our layer for the strict duration of measurement. Use it when a bad output reaching a user is unrecoverable.
+**OBS or GOV?**
+OBS = continuous monitoring, no access to content, metrics only. GOV = control during generation, BYOK, transient content with no retention. OBS is the entry point for most cases. GOV kicks in when a bad output reaching a user isn't recoverable.
 
 **What is the stability score?**
-It measures the internal coherence of an LLM response in real time — not its truthfulness. NeoMundi doesn't verify facts; it detects the drift that precedes the error.
+It measures the internal coherence of an LLM response in real time, not its truthfulness. NeoMundi detects the drift that precedes the error.
 
 **What data do you store?**
-In OBS: no content data, neither in transit nor at rest. Only governance metrics are recorded (score, decision, timestamp).
-In GOV: your prompts are neither read nor stored. Your provider API key stays under your control. Only governance metrics are recorded.
+No content, neither in OBS nor in GOV. Only governance metrics are recorded: score, decision, timestamp. Your provider key (in GOV) stays under your control.
 
 **Does it work with my LLM?**
-In OBS: yes, any model, including local or unlisted ones (you compute metrics locally and transmit them to us).
-In GOV: OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, Cohere — automatic detection from your key. If your provider isn't listed, contact us.
+OBS: any LLM, including local or unlisted ones (you compute the metrics, we receive them). GOV: OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, Cohere, auto-detected from your key.
 
-**How is this different from LangSmith, Portkey, or Helicone?**
-Those tools observe and log. NeoMundi measures and signals — before an unstable response reaches your user (GOV) or to let your agents act before delivery (OBS). We don't replace your observability stack; we add the missing measurement layer to it.
+**How does this differ from LangSmith, Portkey, Helicone?**
+These tools observe and log after the fact. NeoMundi measures and signals during generation. We don't replace your observability stack, we add the missing measurement layer.
 
-**Is it EU AI Act compliant?**
-NeoMundi contributes to the traceability and auditability requirements of the EU AI Act by producing a complete per-session audit trail: score, decision, timestamp, PDF export. Enforcement date is August 2026.
+**EU AI Act compliant?**
+NeoMundi produces a complete audit trail per session (score, decision, timestamp, PDF export) that supports traceability and auditability requirements. Application deadline: August 2026.
 
 ---
 
@@ -214,20 +193,20 @@ NeoMundi contributes to the traceability and auditability requirements of the EU
 
 NeoMundi's GitHub ecosystem:
 
-- **[llm-cartography](https://github.com/neomundi-io/llm-cartography)** — public scientific instrument. v1 cartography, dataset, versioned methodology.
-- **controltower-quickstart** *(coming soon)* — integration examples, OBS vs GOV demo, one-click Colab notebook.
+- **[llm-cartography](https://github.com/neomundi-io/llm-cartography)**: public scientific instrument, cartography v1, dataset, versioned methodology.
+- **controltower-quickstart** *(coming soon)*: integration examples, OBS vs GOV demo, clickable Colab notebook.
 
 ---
 
 ## Documentation
 
-- 📑 **Executive Brief (FR)** — synthetic view for decision-makers → [NeoMundi_Executive_Brief_FR.pdf](#)
-- 📐 **Full methodology** — versioned scientific spec → [llm-cartography](https://github.com/neomundi-io/llm-cartography)
-- 📂 **Reference dataset v1-2026-04-26** — DOI Zenodo → [10.5281/zenodo.19762753](https://doi.org/10.5281/zenodo.19762753)
-- 🔬 **Theoretical framework (Law E)** — DOI Zenodo → [10.5281/zenodo.19385052](https://doi.org/10.5281/zenodo.19385052)
+- 📑 **Executive Brief (FR)**, synthetic view for decision-makers: [NeoMundi_Executive_Brief_FR.pdf](#)
+- 📐 **Full methodology**, versioned scientific spec: [llm-cartography](https://github.com/neomundi-io/llm-cartography)
+- 📂 **Reference dataset v1-2026-04-26**, DOI Zenodo: [10.5281/zenodo.19762753](https://doi.org/10.5281/zenodo.19762753)
+- 🔬 **Theoretical framework (Law E)**, DOI Zenodo: [10.5281/zenodo.19385052](https://doi.org/10.5281/zenodo.19385052)
 
 ---
 
-> *Measure AI behavior continuously. If you operate AI in production, you need a signal. Observe what's recoverable. Control what isn't.*
+> *Measure AI behavior continuously. If you run AI in production, you need a signal. Observe what's recoverable. Control what isn't.*
 
 📧 contact@neomundi.io
