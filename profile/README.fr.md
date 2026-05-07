@@ -148,8 +148,8 @@ L'instrument est servi par la plateforme ControlTower. Préfixe de clé API : `c
 |                              | **OBS**                       | **GOV**                                |
 |------------------------------|-------------------------------|----------------------------------------|
 | Contenu (prompts, réponses)  | Jamais transmis               | Transitoire, sans log, sans rétention  |
-| Clé fournisseur              | Jamais transmise              | BYOK, sous votre contrôle              |
-| Stockage                     | Métriques + score uniquement  | Aucun contenu stocké                   |
+| Clé fournisseur              | Jamais transmise              | BYOK            |
+| Stockage                     | Métriques + score uniquement  | Métriques + score uniquement               |
 
 Les deux modes sont conçus pour passer une revue DPO, RSSI ou Compliance sans concession.
 
