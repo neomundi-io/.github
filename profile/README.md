@@ -89,7 +89,7 @@ The instrument is sharpening. Truth Module live on May 27, 2026.
 - Structured datasets (analytics, fine-tuning, compliance)
 - Real signal. Real scoring. Real result.
 
-→ [Sample audit report (PDF)](#)
+→ [Exemple de rapport d'audit PDF](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Audit_Report_2026-04.pdf)
 
 ---
 
