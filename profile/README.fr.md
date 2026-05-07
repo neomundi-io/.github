@@ -1,39 +1,46 @@
 # NeoMundi. Le thermomètre de l'IA.
 
-[🇬🇧 Read in English](README.md)
+🇬🇧 [Read in English](#)
+
+La mesure de stabilité des LLM. Post-hoc ou runtime, selon le niveau de criticité.
+
+Nous fournissons le signal. Vous décidez quoi en faire.
+
+📊 [Executive Brief (FR)](#) · 🔬 Methodology · DOI [10.5281/zenodo.19762753](https://doi.org/10.5281/zenodo.19762753) · 📂 Repo [llm-cartography](https://github.com/neomundi-io/llm-cartography)
 
 ---
 
-**Validation en temps réel de la stabilité des décisions, au moment où elles se produisent.**
+## Deux modes de déploiement
 
-Nous fournissons le signal.
-Vous décidez quoi en faire.
+ControlTower fonctionne comme une tour de contrôle : observation continue, intervention quand c'est nécessaire. Deux fonctions, deux modes opérationnels, une même physique de mesure sous-jacente.
 
-📄 [Executive Brief (FR)](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Executive_Brief_FR.pdf) · Methodology · DOI [10.5281/zenodo.19762753](https://doi.org/10.5281/zenodo.19762753) · Repo [llm-cartography](https://github.com/neomundi-io/llm-cartography)
+| | **OBS — Observatoire** | **GOV — Gouvernance** |
+|---|---|---|
+| **Quand** | Post-hoc, en flux continu | Runtime, pendant la génération |
+| **Données transmises** | Métriques numériques uniquement | Prompt + clé fournisseur (BYOK) |
+| **Traitement chez NeoMundi** | Mesure thermodynamique pure | Mesure + couche sémantique |
+| **Privacy** | Aucun contenu, aucune clé | Transitoire, sans rétention, jamais hors UE |
+| **Action** | Bloque la sortie ou déclenche une régénération côté agent | Contrôle pendant le stream |
+| **Friction d'intégration** | Minimale | Modérée |
 
----
+**Critère de choix : un mauvais output qui atteint un utilisateur, est-il récupérable ?**
 
-## Le signal runtime de stabilité.
-### Au service de la gouvernance, du fine-tuning, de la conformité et de la due diligence.
+- **Récupérable** (alerte, modération aval, correction au cycle suivant, satisfaction dégradée mais pas de dommage durable) → **OBS suffit**.
+- **Non récupérable** (avis médical, conseil juridique en production directe, décision financière fiduciaire, infrastructure critique, obligation réglementaire de contrôle en amont type EU AI Act Art. 14) → **GOV est nécessaire**.
 
-| 🟣 Agents | 🟢 Conformité | 🟡 Fine-tuning | 🔵 SLA / Infra |
-|-----------|---------------|----------------|----------------|
-| **Stopper. Relancer. Rerouter.** | **Tracer & prouver.** | **Mesurer la dérive.** | **Prouver la continuité.** |
-| Signal de stabilité en direct, injecté dans les boucles de décision des agents. | Piste d'audit horodatée. Chaque génération scorée, chaque dérive signalée. | Quantifier les écarts comportementaux entre versions de modèles. | Supervision comportementale au-delà de la latence. Qualité de génération, mesurée. |
-
-> **Votre décision, notre signal.**
+OBS est notre porte d'entrée et la solution adaptée à la majorité des cas d'usage. GOV s'enclenche là où le runtime est non-négociable.
 
 ---
 
 ## Mesure et détection
 
-NeoMundi calcule un score de stabilité en temps réel (G) à partir d'un signal multivarié capturant la cohérence sémantique, la consistance et la stabilité structurelle pendant la génération.
+NeoMundi calcule un score de stabilité (G) à partir d'un signal multivarié capturant la cohérence sémantique, la consistance et la stabilité structurelle pendant la génération.
 
 Cette mesure s'appuie sur un cadre de stabilité dynamique inspiré des principes de Lyapunov, où les variations (ΔG) reflètent les écarts aux régimes stables.
 
-L'instrument évalue et met à jour ce signal en continu au runtime, permettant une détection immédiate des dérives et des instabilités.
+L'instrument évalue et met à jour le signal en continu, permettant une détection immédiate des dérives et des instabilités.
 
-**NeoMundi détecte l'instabilité avant qu'elle ne devienne visible :**
+NeoMundi détecte l'instabilité avant qu'elle ne devienne visible :
 
 - Contradictions internes
 - Perte de précision
@@ -41,41 +48,72 @@ L'instrument évalue et met à jour ce signal en continu au runtime, permettant 
 - Incohérence structurelle
 
 > *La dérive apparaît avant la défaillance. Nous la mesurons en temps réel.*
->
 > *NeoMundi ne dit pas si c'est vrai. Il dit si c'est cohérent.*
 
-### Validé sur des systèmes réels
+La physique de la mesure est commune aux deux modes. Ce qui diffère entre OBS et GOV, c'est le canal de transit et la temporalité.
 
-**Cartographie v1-2026-04-26 — 3 904 mesures TruthfulQA × 5 services génératifs.**
+---
 
-NeoMundi n'attrape pas encore tout (≈15 % de recall), **mais quand il flag, il a raison ≈76 % du temps**. Un signal fiable pour gouverner
+## Validé sur des systèmes réels
 
-L'instrument s'affine. **Module Vérité actif le 27 mai 2026.**
+Cartographie v1-2026-04-26 — 3 904 mesures TruthfulQA × 5 services génératifs.
 
-📊 Métriques complètes, dataset et méthodologie : [llm-cartography](https://github.com/neomundi-io/llm-cartography).
+NeoMundi n'attrape pas encore tout (≈15 % de recall), **mais quand il flag, il a raison ≈76 % du temps**. Un signal fiable pour gouverner.
+
+L'instrument s'affine. Module Vérité actif le 27 mai 2026.
+
+📂 Métriques complètes, dataset et méthodologie : [llm-cartography](https://github.com/neomundi-io/llm-cartography).
+
+---
+
+## Cas d'usage
+
+| 🟣 Agents | 🟢 Conformité | 🟡 Fine-tuning | 🔵 SLA / Infra |
+|---|---|---|---|
+| Stopper. Relancer. Rerouter. | Tracer & prouver. | Mesurer la dérive. | Prouver la continuité. |
+| Signal de stabilité en direct, injecté dans les boucles de décision des agents. | Piste d'audit horodatée. Chaque génération scorée, chaque dérive signalée. | Quantifier les écarts comportementaux entre versions de modèles. | Supervision comportementale au-delà de la latence. Qualité de génération, mesurée. |
+| **Mode : OBS** | **Mode : OBS** *(GOV si blocage temps réel exigé)* | **Mode : OBS** | **Mode : OBS** |
+
+> Votre décision, notre signal.
 
 ---
 
 ## Chaque génération produit
 
-**Sorties standard :**
+**Sorties standard**
+
 - Score de stabilité (0 → 1)
 - Décision (PASS / FLAG)
 - Signal de dérive (horodaté)
 
-**Sorties avancées :**
-- Trace d'audit complète (exportable)
-- Métriques d'exécution (coût, stabilité, dérive)
-- Preuve cryptographique (hash)
+**Sorties avancées**
+
 - Jeux de données structurés (analytique, fine-tuning, conformité)
+- Signal réel. Scoring réel. Résultat réel.
 
-> *Signal réel. Scoring réel. Résultat réel.*
-
-→ [Exemple de rapport d'audit PDF](https://neomundi.io/sample-audit.pdf)
+→ [Exemple de rapport d'audit PDF](#)
 
 ---
 
-## Intégration en une ligne
+## Intégration
+
+Deux modes, deux endpoints. Choix selon le critère de tri ci-dessus.
+
+### Mode OBS — post-hoc, metrics-only
+
+Aucun contenu transmis. Aucune clé fournisseur. Vos métriques in, votre score out.
+
+```bash
+curl -X POST https://api.neomundi.io/v1/observe \
+  -H "X-API-Key: ct_live_xxx" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "session_id": "sess_xxx",
+    "metrics": { ... }
+  }'
+```
+
+### Mode GOV — runtime, contrôle pendant
 
 **Bring Your Own Key. Full privacy.** Votre clé fournisseur reste sous votre contrôle. NeoMundi mesure le signal de stabilité de la génération sans jamais lire ni stocker le contenu de vos prompts ou réponses.
 
@@ -92,7 +130,21 @@ curl -X POST https://api.neomundi.io/v1/govern/stream \
 
 L'instrument est servi par la plateforme ControlTower. Préfixe de clé API : `ct_live_*`.
 
-→ [Guide d'intégration complet](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/QUICKSTART.md)
+→ [Guide d'intégration complet](#)
+→ **[100 requêtes gratuites pour tester les deux modes](https://controltower.neomundi.io/pricing)**
+
+---
+
+## Deux postures de privacy, les deux maximales
+
+| | **OBS** | **GOV** |
+|---|---|---|
+| Contenu (prompts, réponses) | Jamais transmis | Transitoire, sans log, sans rétention |
+| Clé fournisseur | Jamais transmise | BYOK, sous votre contrôle |
+| Stockage | Métriques + score uniquement | Aucun contenu stocké |
+| Hébergement | UE | UE |
+
+Les deux modes sont conçus pour passer une revue DPO, RSSI ou Compliance sans concession.
 
 ---
 
@@ -100,7 +152,7 @@ L'instrument est servi par la plateforme ControlTower. Préfixe de clé API : `c
 
 L'infrastructure est active. Elle s'industrialise.
 
-- **27 mai 2026** : Module Vérité actif (vérification factuelle au-delà de la cohérence) + Plateforme self-service en production (Seuils configurables par client, dashboard opérateurs)
+- **27 mai 2026** : Module Vérité actif (vérification factuelle au-delà de la cohérence) + Plateforme self-service en production (seuils configurables par client, dashboard opérateurs).
 
 Les opérateurs pilotes actuels sont prioritaires sur chaque mise à jour.
 
@@ -108,46 +160,46 @@ Les opérateurs pilotes actuels sont prioritaires sur chaque mise à jour.
 
 ## FAQ
 
+**Quelle différence entre OBS et GOV ?**
+OBS mesure post-hoc, en metrics-only : aucun contenu, aucune clé fournisseur ne transitent. C'est la porte d'entrée, adaptée à la majorité des cas d'usage. GOV mesure en runtime, en enrichissant le signal thermodynamique d'une couche sémantique : le flux transite par notre couche le temps strict de la mesure. À utiliser quand un mauvais output qui atteint un utilisateur n'est pas récupérable.
+
 **Qu'est-ce que le score de stabilité ?**
-Il mesure la cohérence interne d'une réponse LLM en temps réel — pas sa véracité. NeoMundi ne vérifie pas les faits. Il détecte la dérive qui précède l'erreur.
+Il mesure la cohérence interne d'une réponse LLM en temps réel — pas sa véracité. NeoMundi ne vérifie pas les faits, il détecte la dérive qui précède l'erreur.
 
 **Quelles données stockez-vous ?**
-Vos prompts ne sont ni lus ni stockés. Votre clé API fournisseur reste sous votre contrôle. Seules les métriques de gouvernance sont enregistrées : score, décision, horodatage. Rien d'autre.
+En OBS : aucune donnée de contenu, ni en transit ni en stockage. Seules les métriques de gouvernance sont enregistrées (score, décision, horodatage).
+En GOV : vos prompts ne sont ni lus ni stockés. Votre clé API fournisseur reste sous votre contrôle. Seules les métriques de gouvernance sont enregistrées.
 
 **Fonctionne-t-il avec mon LLM ?**
-Oui — détection automatique depuis votre clé : OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, Cohere. Si votre fournisseur n'est pas listé, contactez-nous.
+En OBS : oui, n'importe quel modèle, y compris locaux ou non listés (vous calculez les métriques en local et nous les transmettez).
+En GOV : OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, Cohere — détection automatique depuis votre clé. Si votre fournisseur n'est pas listé, contactez-nous.
 
 **Quelle est la différence avec LangSmith, Portkey ou Helicone ?**
-Ces outils observent et journalisent. NeoMundi mesure et signale pendant la génération — avant que la réponse instable n'atteigne votre utilisateur. Nous ne remplaçons pas votre stack d'observabilité, nous y ajoutons la couche de mesure manquante.
+Ces outils observent et journalisent. NeoMundi mesure et signale — avant que la réponse instable n'atteigne votre utilisateur (GOV) ou pour permettre à vos agents d'agir avant livraison (OBS). Nous ne remplaçons pas votre stack d'observabilité, nous y ajoutons la couche de mesure manquante.
 
 **Est-ce conforme à l'EU AI Act ?**
 NeoMundi contribue aux exigences de traçabilité et d'auditabilité de l'EU AI Act en produisant une piste d'audit complète par session : score, décision, horodatage, export PDF. L'échéance d'application est août 2026.
 
 ---
 
+## Repos
+
+L'écosystème GitHub de NeoMundi :
+
+- **[llm-cartography](https://github.com/neomundi-io/llm-cartography)** — instrument scientifique public. Cartographie v1, dataset, méthodologie versionnée.
+- **controltower-quickstart** *(à venir)* — exemples d'intégration, démo OBS vs GOV, notebook Colab cliquable.
+
+---
+
 ## Documentation
 
-- 📊 **Executive Brief (FR)** — vue synthétique pour décideurs
-  → [NeoMundi_Executive_Brief_FR.pdf](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Executive_Brief_FR.pdf)
-- 📐 **Méthodologie complète** — spec scientifique versionnée
-  → [llm-cartography](https://github.com/neomundi-io/llm-cartography)
-- 🔬 **Dataset de référence v1-2026-04-26** — DOI Zenodo
-  → [10.5281/zenodo.19762753](https://doi.org/10.5281/zenodo.19762753)
-- 📖 **Cadre théorique (loi E)** — DOI Zenodo
-  → [10.5281/zenodo.19385052](https://doi.org/10.5281/zenodo.19385052)
----
-
-> *Mesurer le comportement de l'IA en temps réel.*
-> *Si vous opérez de l'IA en production, vous avez besoin d'un signal.*
-> *Agissez avant que l'instabilité n'atteigne vos utilisateurs.*
-
-`contact@neomundi.io`
+- 📑 **Executive Brief (FR)** — vue synthétique pour décideurs → [NeoMundi_Executive_Brief_FR.pdf](#)
+- 📐 **Méthodologie complète** — spec scientifique versionnée → [llm-cartography](https://github.com/neomundi-io/llm-cartography)
+- 📂 **Dataset de référence v1-2026-04-26** — DOI Zenodo → [10.5281/zenodo.19762753](https://doi.org/10.5281/zenodo.19762753)
+- 🔬 **Cadre théorique (loi E)** — DOI Zenodo → [10.5281/zenodo.19385052](https://doi.org/10.5281/zenodo.19385052)
 
 ---
 
-NeoMundi Recherche, association loi 1901, Paris (France).
-Activités commerciales : Louis M Sàrl, Morges (Suisse).
+> *Mesurer le comportement de l'IA en continu. Si vous opérez de l'IA en production, vous avez besoin d'un signal. Observez ce qui est récupérable. Contrôlez ce qui ne l'est pas.*
 
-*À la vitesse de la génération. Construit pour durer.*
-
----
+📧 contact@neomundi.io
