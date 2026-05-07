@@ -35,7 +35,7 @@ ControlTower™ : une tour de contrôle pour la génération d'IA. Observation c
 | Finalité         | Surveillance continue         | Contrôle actif en temps réel       |
 | Moment           | Après la génération           | Pendant la génération              |
 | Confidentialité  | Aucun contenu, métriques uniquement | Contenu transitoire, sans rétention ni log |
-| Intégration      | Friction minimale             | Intégration plus profonde          |
+| Intégration      | Le LLM appelle NeoMundi (post-stream)           | NeoMundi appelle le LLM (BYOK runtime)        |
 | Adapté à         | La majorité des systèmes IA   | Workflows critiques                |
 
 > **Modèle d'action en OBS.** NeoMundi émet un signal de stabilité continu, exploitable par les agents en aval ou les couches d'orchestration. Bloquer, régénérer ou faire remonter : la décision reste au client.
