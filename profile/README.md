@@ -200,9 +200,7 @@ NeoMundi's GitHub ecosystem:
 
 ## Documentation
 
-- 📑 **Executive Brief (FR)**, synthetic view for decision-makers: [NeoMundi_Executive_Brief_FR.pdf](#)
-- 📐 **Full methodology**, versioned scientific spec: [llm-cartography](https://github.com/neomundi-io/llm-cartography)
-- 📂 **Reference dataset v1-2026-04-26**, DOI Zenodo: [10.5281/zenodo.19762753](https://doi.org/10.5281/zenodo.19762753)
+- 📄 [Executive Brief — EN](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/Executive_brief_EN.pdf)
 - 🔬 **Theoretical framework (Law E)**, DOI Zenodo: [10.5281/zenodo.19385052](https://doi.org/10.5281/zenodo.19385052)
 
 ---
