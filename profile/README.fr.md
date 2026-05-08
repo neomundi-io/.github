@@ -200,7 +200,7 @@ L'écosystème GitHub de NeoMundi :
 
 ## Documentation
 
-- 📑 **Executive Brief (FR)**, vue synthétique pour décideurs : [NeoMundi_Executive_Brief_FR.pdf](#)
+- 📑 **Executive Brief (FR)**, vue synthétique pour décideurs : [Executive_brief_FR.pdf](#)
 - 📐 **Méthodologie complète**, spec scientifique versionnée : [llm-cartography](https://github.com/neomundi-io/llm-cartography)
 - 📂 **Dataset de référence v1-2026-04-26**, DOI Zenodo : [10.5281/zenodo.19762753](https://doi.org/10.5281/zenodo.19762753)
 - 🔬 **Cadre théorique (loi E)**, DOI Zenodo : [10.5281/zenodo.19385052](https://doi.org/10.5281/zenodo.19385052)
