@@ -138,7 +138,7 @@ curl -X POST https://api.neomundi.io/v1/govern/stream \
 
 The instrument is served by the ControlTower platform. API key prefix: `ct_live_*`.
 
-→ [Full integration guide](#)
+→ [Quickstart](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/QUICKSTART)
 → **[100 free requests to test both modes](https://controltower.neomundi.io/pricing)**
 
 ---
