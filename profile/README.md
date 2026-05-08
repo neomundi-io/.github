@@ -201,7 +201,7 @@ NeoMundi's GitHub ecosystem:
 ## Documentation
 
 - 📄 [Executive Brief — EN](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/Executive_brief_EN.pdf)
-- 🔬 [Cadre théorique (Loi E) — FR](https://doi.org/10.5281/zenodo.19385052)
+- 🔬 [Theoretical framework (Law E) — EN](https://doi.org/10.5281/zenodo.19385052)
 
 ---
 
