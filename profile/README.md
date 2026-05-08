@@ -99,7 +99,7 @@ The instrument keeps refining. Truth module live on May 27, 2026.
 - **Structured telemetry** (analytics, fine-tuning, compliance)
 - **Audit-ready traces** (PDF export per session)
 
-→ [Sample PDF audit report](#)
+→ [Sample audit report (PDF)](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Audit_Report_2026-04.pdf)
 
 ---
 
