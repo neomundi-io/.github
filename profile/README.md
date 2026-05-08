@@ -189,15 +189,6 @@ NeoMundi produces a complete audit trail per session (score, decision, timestamp
 
 ---
 
-## Repositories
-
-NeoMundi's GitHub ecosystem:
-
-- **[llm-cartography](https://github.com/neomundi-io/llm-cartography)**: public scientific instrument, cartography v1, dataset, versioned methodology.
-- **controltower-quickstart** *(coming soon)*: integration examples, OBS vs GOV demo, clickable Colab notebook.
-
----
-
 ## Documentation
 
 - 📄 [Executive Brief — EN](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/Executive_brief_EN.pdf)
