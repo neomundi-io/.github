@@ -189,15 +189,6 @@ NeoMundi produit une piste d'audit complète par session (score, décision, horo
 
 ---
 
-## Repos
-
-L'écosystème GitHub de NeoMundi :
-
-- **[llm-cartography](https://github.com/neomundi-io/llm-cartography)** : instrument scientifique public, cartographie v1, dataset, méthodologie versionnée.
-- **controltower-quickstart** *(à venir)* : exemples d'intégration, démo OBS vs GOV, notebook Colab cliquable.
-
----
-
 ## Documentation
 
 - 📄 [Executive Brief — FR](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/Executive_brief_FR.pdf)
