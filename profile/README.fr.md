@@ -99,7 +99,7 @@ L'instrument s'affine. Module Vérité actif le 27 mai 2026.
 - **Télémétrie structurée** (analytique, fine-tuning, conformité)
 - **Traces auditables** (export PDF par session)
 
-→ [Exemple de rapport d'audit PDF](#)
+→ [Exemple de rapport d'audit PDF](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Audit_Report_2026-04.pdf)
 
 ---
 
