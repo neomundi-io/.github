@@ -61,6 +61,9 @@ GOV intervient lorsque la gouvernance runtime et l’orchestration temps réel d
 - GOV · Couche d’orchestration de gouvernance runtime  
   https://github.com/neomundi-io/neomundi-gov
 
+- Définitions des signaux de télémétrie runtime (G / ΔG)  
+  https://github.com/neomundi-io/runtime-telemetry-signals
+
 ---
 
 ## Signaux d’instabilité observables
