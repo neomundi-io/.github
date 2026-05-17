@@ -53,6 +53,14 @@ Observabilité continue en OBS. Orchestration runtime en GOV lorsque l’interve
 OBS est le point d’entrée naturel pour la majorité des systèmes IA.  
 GOV intervient lorsque la gouvernance runtime et l’orchestration temps réel deviennent critiques.
 
+### Couches d’architecture
+
+- OBS · Couche d’observabilité de gouvernance  
+  https://github.com/neomundi-io/neomundi-obs
+
+- GOV · Couche d’orchestration de gouvernance runtime  
+  https://github.com/neomundi-io/neomundi-gov
+
 ---
 
 ## Signaux d’instabilité observables
