@@ -62,6 +62,9 @@ GOV is intended for situations where runtime governance and real-time orchestrat
 
 - GOV orchestration layer:
   https://github.com/neomundi-io/neomundi-gov
+  
+- Runtime telemetry signal definitions (G / ΔG):
+  https://github.com/neomundi-io/runtime-telemetry-signals
 
 ---
 
