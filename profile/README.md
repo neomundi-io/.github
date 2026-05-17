@@ -55,6 +55,14 @@ OBS is the natural entry point for most AI systems.
 
 GOV is intended for situations where runtime governance and real-time orchestration become critical.
 
+### Related Repositories
+
+- OBS observability layer:
+  https://github.com/neomundi-io/neomundi-obs
+
+- GOV orchestration layer:
+  https://github.com/neomundi-io/neomundi-gov
+
 ---
 
 ## Observable Instability Signals
