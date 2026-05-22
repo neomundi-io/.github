@@ -1,13 +1,14 @@
 # NeoMundi. Le thermomètre de l’IA.
 
-Observabilité de gouvernance runtime pour les systèmes d’IA générative.
+Observabilité et gouvernance runtime pour les systèmes d’IA générative.
 
-Détection précoce de signaux d’instabilité générative, sans accès au contenu.
+NeoMundi produit des signaux exploitables pendant ou après la génération afin d’aider les systèmes, agents et opérateurs à détecter les instabilités, qualifier les risques et décider quoi faire.
 
-OBS pour l’observabilité de gouvernance.
-GOV pour l’orchestration runtime lorsque l’intervention devient critique.
+OBS observe après génération.  
+GOV gouverne pendant l’exécution.
 
-Nous fournissons le signal. Vous décidez quoi en faire.
+Nous fournissons le signal.  
+Vous gardez l’autorité de décision.
 
 Déployable au-dessus des stacks LLM, agents et couches d’orchestration.
 
@@ -81,57 +82,60 @@ C’est le rôle du NeoMundi Runtime Governance Framework : rendre les comportem
 
 ## Deux modes de déploiement
 
-ControlTower™ : une tour de contrôle pour la gouvernance des systèmes d’IA générative.  
-Observabilité continue en OBS. Orchestration runtime en GOV lorsque l’intervention devient critique.
+ControlTower™ agit comme une tour de contrôle pour la gouvernance des systèmes d’IA générative.
+
+OBS fournit une observabilité de gouvernance après génération.  
+GOV fournit une orchestration runtime lorsque l’intervention pendant l’exécution devient critique.
 
 |                  | **OBS** (Observabilité)                          | **GOV** (Gouvernance)                          |
 |------------------|--------------------------------------------------|------------------------------------------------|
 | Finalité         | Observabilité de gouvernance                     | Orchestration de gouvernance runtime           |
 | Moment           | Post-exécution / observabilité continue          | Pendant la génération                          |
 | Confidentialité  | Aucun contenu, métriques uniquement              | Contenu transitoire, sans rétention ni log     |
-| Intégration      | Le LLM appelle NeoMundi (post-stream)            | NeoMundi appelle le LLM (BYOK runtime)         |
+| Intégration      | Le système appelle ControlTower après génération | ControlTower appelle le LLM en runtime (BYOK)  |
 | Adapté à         | La majorité des systèmes IA                      | Workflows critiques                            |
 
-> **Modèle d'action en OBS.** NeoMundi produit des signaux d’observabilité de gouvernance exploitables par les agents en aval ou les couches d’orchestration. Bloquer, régénérer ou faire remonter : la décision reste au client.
+> **Modèle d’action en OBS.** ControlTower produit des signaux d’observabilité de gouvernance exploitables par les agents en aval ou les couches d’orchestration. Bloquer, régénérer ou faire remonter : la décision reste au client.
 
-**Critère de décision : si une mauvaise sortie atteint l'utilisateur, est-elle rattrapable ?**
+**Critère de décision : si une mauvaise sortie atteint l’utilisateur, est-elle rattrapable ?**
 
-- **Rattrapable** (alerte, modération en aval, correction au cycle suivant) : OBS suffit.
-- **Non rattrapable** (conseil médical, conseil juridique livré directement, décisions financières fiduciaires, infrastructure critique, art. 14 du règlement IA européen) : GOV devient nécessaire.
+- **Rattrapable** : alerte, modération en aval, correction au cycle suivant → OBS suffit.
+- **Non rattrapable** : conseil médical, conseil juridique livré directement, décision financière fiduciaire, infrastructure critique, supervision humaine renforcée → GOV devient nécessaire.
 
 OBS est le point d’entrée naturel pour la majorité des systèmes IA.  
 GOV intervient lorsque la gouvernance runtime et l’orchestration temps réel deviennent critiques.
 
-### Couches d’architecture
+---
 
-- OBS · Couche d’observabilité de gouvernance  
-  https://github.com/neomundi-io/neomundi-obs
+## Cas d’usage
 
-- GOV · Couche d’orchestration de gouvernance runtime  
-  https://github.com/neomundi-io/neomundi-gov
+Ces usages peuvent mobiliser des niveaux différents de profondeur : signal simple, métriques avancées, auditabilité renforcée ou reporting de conformité.
 
-- Définitions des signaux de télémétrie runtime (G / ΔG)  
-  https://github.com/neomundi-io/runtime-telemetry-signals
+| Usage | Ce que NeoMundi apporte | Mode naturel |
+|---|---|---|
+| 🟣 **Agents** | Signaux runtime pour observer les dérives, rerouter, escalader ou relancer selon la politique d’orchestration | **OBS** · GOV runtime |
+| 🟡 **Fine-tuning** | Métriques informationnelles pour comparer les écarts comportementaux entre versions de modèles, prompts ou datasets | **OBS** |
+| 🟢 **Conformité** | Piste d’audit horodatée, décisions de gouvernance, rapports et traçabilité des générations | **OBS** · GOV runtime |
+| 🔵 **SLA / Infra** | Supervision comportementale des générations, détection de dégradation et documentation des incidents runtime | **OBS** · GOV runtime |
+
+> Votre décision, notre signal.
 
 ---
 
-## Signaux d’instabilité observables
+## Types de signaux observables
 
-NeoMundi produit des signaux d’observabilité de gouvernance associés notamment à :
+NeoMundi ne détermine pas seul si une réponse est vraie.
 
-- contradictions internes,
-- pertes de cohérence,
-- dérives thématiques,
-- instabilités progressives,
-- schémas associés aux hallucinations.
+Il produit des signaux runtime permettant d’observer des variations de stabilité, des pertes de cohérence, des dérives progressives, des ruptures de régime ou des schémas compatibles avec des hallucinations.
 
-> NeoMundi ne détermine pas si une réponse est vraie.
-> NeoMundi produit des signaux permettant d’observer si elle reste comportementalement stable.
+Ces signaux ne sont pas des preuves absolues.  
+Ils rendent les générations IA plus observables, interprétables, traçables et gouvernables.
 
 ---
 
 ## Validé sur des systèmes réels
 
+La surface publique documente les concepts, les signaux et les contrats méthodologiques.
 Les évaluations actuelles ont été réalisées principalement en mode GOV, dans des configurations runtime contrôlées.
 
 - **5 fournisseurs LLM** testés (cartographie v1-2026-04-26)
@@ -139,36 +143,34 @@ Les évaluations actuelles ont été réalisées principalement en mode GOV, dan
 - Lorsque NeoMundi FLAG, le signal est confirmé dans **≈76 % des cas** (recall actuel ≈15 %)
 - Mise en évidence précoce de signaux d’instabilité avant que les problèmes deviennent visibles
 
-L’instrument s’affine progressivement.
-
-Module de validation factuelle prévu le 27 mai 2026.
+La validation opérationnelle se poursuit à travers des audits indépendants, des pilotes terrain et des analyses contrôlées.
 
 📂 [Métriques, dataset, méthodologie](https://github.com/neomundi-io/llm-cartography)
 
----
 
-## Cas d'usage
-
-| Domaine | Bénéfice | Mode |
-|---|---|---|
-| 🟣 **Agents** | Observer les dérives, rerouter, escalader ou relancer selon la politique runtime | **OBS** · GOV runtime |
-| 🟢 **Conformité** | Piste d’audit horodatée, signaux de gouvernance associés aux générations | **OBS** · GOV runtime |
-| 🟡 **Fine-tuning** | Observer les écarts comportementaux entre versions de modèles | **OBS** · GOV runtime |
-| 🔵 **SLA / Infra** | Observabilité comportementale et supervision runtime des générations | **OBS** · GOV runtime |
-
-> Votre décision, notre signal.
 
 ---
 
 ## Artefacts et signaux produits
 
-Selon le mode OBS ou GOV, NeoMundi peut produire notamment :
+Selon le mode OBS ou GOV, NeoMundi peut produire plusieurs familles d’artefacts d’observabilité et de gouvernance.
 
-- **État de stabilité gouvernance** (normalisé de 0 → 1)
-- **Décision de gouvernance** (PASS / FLAG)
-- **Signaux de variation runtime** (ΔG, horodatés)
-- **Télémétrie structurée** (analytique, conformité, supervision runtime)
-- **Traces auditables** (exports et reporting par session)
+Ces artefacts ne constituent pas des vérités absolues.  
+Ils servent à rendre les générations IA observables, interprétables, traçables et gouvernables.
+
+NeoMundi peut notamment produire :
+
+- **État de stabilité de gouvernance** : signal normalisé associé à une génération ou un segment d’exécution.
+- **Variation runtime de stabilité** : ΔG, variation observée entre plusieurs fenêtres d’exécution.
+- **Métriques informationnelles** : volumétrie, densité volumétrique, énergie informationnelle, densité informationnelle.
+- **Indice composite** : ESI, lecture synthétique multidimensionnelle de gouvernance.
+- **Décisions de gouvernance** : ALLOW, FLAG, BLOCK ou états équivalents selon la politique appliquée.
+- **Télémétrie structurée** : événements, timestamps, identifiants de requête, signaux associés.
+- **Traces auditables** : exports, rapports, journaux et artefacts de reporting selon le mode et le niveau d’intégration.
+
+> Un signal observe.  
+> Une décision oriente l’action.  
+> L’interprétation reste contextuelle.
 
 → [Exemple de rapport d'audit PDF](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Audit_Report_2026-04.pdf)
 
@@ -176,121 +178,87 @@ Selon le mode OBS ou GOV, NeoMundi peut produire notamment :
 
 ## Intégration
 
-Deux modes, deux endpoints.  
-Le choix dépend du niveau de criticité et du besoin de gouvernance runtime.
+Ajoutez une couche de signal runtime à vos agents, applications LLM ou systèmes d’orchestration en quelques minutes.
 
-### Mode OBS · post-exécution · metrics-only
+Un appel API permet à votre système de recevoir des signaux exploitables pour observer, décider, relancer, rerouter, escalader ou documenter une génération IA.
 
-**Aucun contenu transmis. Aucune clé fournisseur.**  
-Vos métriques en entrée, vos signaux de gouvernance en sortie.
+Selon le niveau de criticité, vous pouvez commencer avec OBS, tester GOV, puis configurer progressivement vos seuils, vos politiques d’action et vos exports depuis ControlTower™.
 
-```bash
-curl -X POST https://api.neomundi.io/v1/observe \
-  -H "X-API-Key: ct_live_xxx" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "session_id": "sess_xxx",
-    "metrics": { ... }
-  }'
-```
+### Ce que l’intégration apporte
 
-### Mode GOV · runtime · orchestration pendant la génération
+- **OBS** : observabilité post-hoc, métriques uniquement, sans contenu transmis.
+- **GOV** : orchestration runtime pendant la génération, avec clé provider côté client, BYOK.
+- **Signaux runtime** : stabilité, variation, régime, décision de gouvernance.
+- **Auditabilité** : timestamps, traces, exports, rapports.
+- **Interopérabilité** : signaux exploitables par agents, orchestrateurs et couches de contrôle.
+- **Déploiement souverain possible** : installation dédiée, image Docker, environnement contrôlé selon les besoins
 
-**Bring Your Own Key. Full privacy.**  
-Votre clé fournisseur reste sous votre contrôle.
-
-NeoMundi traite le flux générationnel en runtime afin de produire des signaux de gouvernance et d’orchestration, sans rétention ni journalisation des prompts ou réponses.
-
-```bash
-curl -X POST https://api.neomundi.io/v1/govern/stream \
-  -H "X-API-Key: ct_live_xxx" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "prompt": "Your prompt here",
-    "model": "gpt-4o",
-    "provider_api_key": "sk-xxx"
-  }'
-```
-
-L’instrument est servi par la plateforme ControlTower™.  
-Préfixe des clés API : `ct_live_*`.
-
-
-→ [Démarrage rapide](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/QUICKSTART)
-→ **[100 requêtes gratuites pour tester les deux modes](https://controltower.neomundi.io/pricing)**
-
----
-
-## Deux postures de confidentialité, adaptées aux deux modes
-
-|                              | **OBS**                                  | **GOV**                                       |
-|------------------------------|------------------------------------------|-----------------------------------------------|
-| Contenu (prompts, réponses)  | Jamais transmis                          | Flux transitoire, sans journalisation ni rétention |
-| Clé fournisseur              | Jamais transmise                         | BYOK                                           |
-| Stockage                     | Métriques et artefacts de gouvernance uniquement | Métriques et artefacts de gouvernance uniquement |
-
-Les deux modes sont conçus selon une approche privacy-by-design compatible avec les exigences DPO, RSSI et compliance modernes.
-
----
-
-## Roadmap
-
-L’infrastructure est active. Elle poursuit son industrialisation.
-
-- **27 mai 2026** : Couche de validation factuelle expérimentale
-- Plateforme self-service en production
-- Seuils configurables et dashboard opérateurs
-- Structuration progressive de la télémétrie runtime (OBS / GOV)
-
-Les opérateurs pilotes restent prioritaires sur les évolutions de la plateforme.
+- [Quickstart API & Sandbox NeoMundi](https://github.com/neomundi-io/neomundi-sandbox)  
+  Documentation de démarrage, exemples d’intégration et accès aux ressources de test.
 
 ---
 
 ## FAQ
 
 **OBS ou GOV ?**  
-OBS = observabilité de gouvernance post-exécution, sans transmission de contenu, métriques uniquement.  
-GOV = orchestration runtime pendant la génération, BYOK, flux transitoire sans journalisation ni rétention.
+
+OBS est le mode d’observabilité post-exécution : ControlTower™ reçoit des métriques ou artefacts d’observation, sans transmission de contenu sémantique complet.
+
+GOV est le mode de gouvernance runtime : ControlTower™ intervient pendant la génération, avec clé fournisseur côté client, traitement transitoire du flux, sans journalisation ni rétention des prompts ou réponses.
 
 OBS est le point d’entrée naturel pour la majorité des systèmes IA.  
-GOV intervient lorsqu’un mauvais output atteignant un utilisateur devient non rattrapable.
+GOV devient pertinent lorsqu’un mauvais output atteignant l’utilisateur serait difficilement rattrapable.
 
 ---
 
-**Qu'est-ce que l’état de stabilité gouvernance ?**  
-Il représente un état normalisé de stabilité comportementale observé pendant ou après une génération LLM.  
-NeoMundi ne mesure pas la vérité d’une réponse, mais produit des signaux permettant d’observer certaines variations et instabilités comportementales.
+**Qu’est-ce que l’état de stabilité de gouvernance ?**  
+
+Il s’agit d’un état normalisé associé à la stabilité comportementale observée pendant ou après une génération IA.
+
+NeoMundi ne prétend pas déterminer seul si une réponse est vraie.  
+NeoMundi produit des signaux permettant d’observer certaines variations, instabilités, dérives ou transitions comportementales.
 
 ---
 
-**Quelles données stockez-vous ?**  
-OBS : aucun contenu transmis.  
-GOV : flux transitoire traité en runtime, sans journalisation ni rétention des prompts ou réponses.
+**Quelles données sont stockées ?**  
 
-Seules les métriques et artefacts de gouvernance sont conservés : état de stabilité, décision, horodatage et reporting associé.
+En mode OBS : aucun contenu sémantique complet n’est transmis.
 
-Votre clé fournisseur (mode GOV) reste sous votre contrôle.
+En mode GOV : le flux est traité de manière transitoire pendant l’exécution, sans journalisation ni rétention des prompts ou réponses.
+
+Seuls les métriques, signaux et artefacts de gouvernance peuvent être conservés : état de stabilité, décision, horodatage, identifiants techniques et reporting associé.
+
+La clé fournisseur utilisée en mode GOV reste sous le contrôle du client.
 
 ---
 
 **Fonctionne-t-il avec mon LLM ?**  
-OBS : tout LLM, y compris local ou non listé (vous produisez les métriques, NeoMundi reçoit les artefacts associés).  
-GOV : OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, Cohere, avec détection automatique via votre clé fournisseur.
+
+OBS peut être utilisé avec tout système IA capable de transmettre des métriques ou artefacts d’observation à ControlTower™.
+
+GOV est conçu pour fonctionner avec des providers LLM compatibles via une logique BYOK, selon les intégrations disponibles.
 
 ---
 
 **Quelle différence avec LangSmith, Portkey ou Helicone ?**  
-Ces outils observent et journalisent principalement les workflows et exécutions applicatives.  
-NeoMundi ajoute une couche complémentaire d’observabilité et de gouvernance runtime orientée signaux comportementaux et télémétrie gouvernance.
 
-Nous ne remplaçons pas votre stack d’observabilité ; nous ajoutons une couche de gouvernance runtime.
+Ces outils sont principalement centrés sur l’observabilité applicative, le tracing, les logs, les coûts, les workflows et les performances.
+
+NeoMundi ajoute une couche complémentaire de gouvernance runtime orientée signaux : stabilité, variation, densité informationnelle, décisions de gouvernance et auditabilité.
+
+NeoMundi ne remplace pas votre stack d’observabilité.  
+NeoMundi ajoute une couche de mesure et de gouvernance comportementale.
 
 ---
 
-**Conforme à l’EU AI Act ?**  
-NeoMundi produit des artefacts de gouvernance exploitables pour la traçabilité, l’auditabilité et le reporting runtime : état de stabilité, décisions de gouvernance, horodatage et exports associés.
+**NeoMundi couvre-t-il certaines exigences de l’EU AI Act by design ?**
 
-Ces éléments peuvent contribuer aux exigences de supervision et de traçabilité prévues par l’EU AI Act (application progressive à partir d’août 2026).
+NeoMundi ne remplace pas une démarche complète de conformité.
+
+En revanche, ControlTower™ contribue by design à certaines exigences de gouvernance IA : contrôle runtime, journalisation, traçabilité, supervision et auditabilité.
+
+Les artefacts produits, signaux de stabilité, décisions de gouvernance, horodatages, identifiants techniques, exports et rapports, peuvent soutenir la documentation, le suivi et la maîtrise des risques des systèmes IA.
+
 
 ---
 
@@ -301,6 +269,8 @@ Ces éléments peuvent contribuer aux exigences de supervision et de traçabilit
 
 ---
 
-> *Mesurer le comportement de l'IA en continu. Si vous opérez de l'IA en production, vous avez besoin d'un signal. Observez ce qui est récupérable. Contrôlez ce qui ne l'est pas.*
+*Mesurer le comportement de l’IA en continu.  
+Si vous opérez de l’IA en production, vous avez besoin d’un signal.  
+Observez ce qui est récupérable. Contrôlez ce qui ne l’est pas.*
 
-📧 contact@neomundi.io
+contact@neomundi.io
