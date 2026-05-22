@@ -15,18 +15,67 @@ Déployable au-dessus des stacks LLM, agents et couches d’orchestration.
 
 ---
 
-## Pourquoi c'est important
+## NeoMundi Runtime Governance Framework
 
-Les systèmes d’IA dérivent avant que les problèmes deviennent visibles.
+NeoMundi évolue du thermomètre au spectromètre : d’un signal runtime de stabilité vers une mesure multidimensionnelle du comportement des systèmes IA pendant leur exécution.
 
-NeoMundi produit des signaux d’observabilité de gouvernance permettant de détecter précocement :
+Un signal de gouvernance runtime doit pouvoir répondre à trois exigences minimales : être observable, interprétable et interopérable.
 
-- dérives comportementales,
-- incohérences,
-- pertes de stabilité,
-- schémas associés aux hallucinations.
+Le NeoMundi Runtime Governance Framework organise ces exigences autour de plusieurs dépôts méthodologiques publics dédiés à l’observabilité, aux métriques informationnelles, à l’interprétation, à l’interopérabilité et à la gouvernance runtime des systèmes IA.
 
-En mode OBS, sans accès au contenu.
+Ensemble, ces dépôts constituent les fondations minimales d’une infrastructure de gouvernance IA industrialisable : mesurer, interpréter, transmettre, décider, tracer.
+
+### Core repositories
+
+- [`neomundi-obs`](https://github.com/neomundi-io/neomundi-obs)  
+  Couche OBS : observabilité post-hoc, sans orchestration runtime.
+
+- [`neomundi-gov`](https://github.com/neomundi-io/neomundi-gov)  
+  Couche GOV : gouvernance runtime et orchestration pendant la génération.
+
+- [`runtime-telemetry-signals`](https://github.com/neomundi-io/runtime-telemetry-signals)  
+  Définitions publiques des signaux de télémétrie runtime, notamment G, ΔG et les états de gouvernance.
+
+- [`informational-metrics`](https://github.com/neomundi-io/informational-metrics)  
+  Notes méthodologiques publiques sur la volumétrie, la densité volumétrique, l’énergie informationnelle et la densité informationnelle.
+
+- [`energy-stability-index`](https://github.com/neomundi-io/energy-stability-index)  
+  Documentation conceptuelle publique de l’Energy Stability Index comme indicateur composite de gouvernance.
+
+- [`runtime-interoperability-contract`](https://github.com/neomundi-io/runtime-interoperability-contract)  
+  Sémantique minimale d’interopérabilité entre les couches de mesure, d’orchestration et d’ancrage de preuve.
+
+- [`interpretation-contract`](https://github.com/neomundi-io/interpretation-contract)  
+  Frontières méthodologiques d’interprétation des signaux, métriques et décisions de gouvernance.
+
+- `validity-and-grounding` *(planned)*  
+  Futur dépôt dédié aux principes de validité, de grounding, de détection d’hallucination et aux limites des signaux de preuve.
+
+L'objectif n'est pas d'établir une vérité absolue.
+
+L'objectif est de rendre le comportement de génération de l'IA observable, interprétable, interopérable, auditable et gouvernable en temps réel.
+
+---
+
+## Pourquoi c’est important
+
+Un signal de gouvernance n’a de valeur que s’il peut être compris, transmis, interprété et utilisé par un système réel.
+
+La difficulté n’est pas seulement de produire un score.  
+La difficulté est de produire un signal exploitable dans une infrastructure de gouvernance : lisible par une machine, interprétable par un humain, traçable par un audit, et actionnable par une couche d’orchestration.
+
+NeoMundi construit ses signaux selon cette exigence industrielle :
+
+- observabilité : le signal décrit une surface mesurable ;
+- interprétabilité : le signal déclare ce qu’il signifie et ce qu’il ne signifie pas ;
+- interopérabilité : le signal peut circuler entre couches indépendantes ;
+- gouvernabilité : le signal peut soutenir une décision sans s’y substituer ;
+- auditabilité : le signal peut être documenté, horodaté et relu après exécution.
+
+Un signal isolé n’est pas une infrastructure.  
+Un signal spécifié, contextualisé et interopérable peut devenir une brique de gouvernance.
+
+C’est le rôle du NeoMundi Runtime Governance Framework : rendre les comportements génératifs observables, interprétables et gouvernables avant que les dérives ne deviennent invisibles, irréversibles ou coûteuses.
 
 ---
 
