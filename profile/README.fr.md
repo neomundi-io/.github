@@ -26,7 +26,9 @@ Le NeoMundi Runtime Governance Framework organise ces exigences autour de plusie
 
 Ensemble, ces dépôts constituent les fondations minimales d’une infrastructure de gouvernance IA industrialisable : mesurer, interpréter, transmettre, décider, tracer.
 
-### Core repositories
+---
+
+### Dépôts principaux - Core repositories
 
 - [`neomundi-obs`](https://github.com/neomundi-io/neomundi-obs)  
   Couche OBS : observabilité post-hoc, sans orchestration runtime.
@@ -35,7 +37,7 @@ Ensemble, ces dépôts constituent les fondations minimales d’une infrastructu
   Couche GOV : gouvernance runtime et orchestration pendant la génération.
 
 - [`runtime-telemetry-signals`](https://github.com/neomundi-io/runtime-telemetry-signals)  
-  Définitions publiques des signaux de télémétrie runtime, notamment G, ΔG et les états de gouvernance.
+  Définitions publiques des signaux de télémétrie runtime, incluant G, ΔG et les états de gouvernance.
 
 - [`informational-metrics`](https://github.com/neomundi-io/informational-metrics)  
   Notes méthodologiques publiques sur la volumétrie, la densité volumétrique, l’énergie informationnelle et la densité informationnelle.
@@ -47,10 +49,13 @@ Ensemble, ces dépôts constituent les fondations minimales d’une infrastructu
   Sémantique minimale d’interopérabilité entre les couches de mesure, d’orchestration et d’ancrage de preuve.
 
 - [`interpretation-contract`](https://github.com/neomundi-io/interpretation-contract)  
-  Frontières méthodologiques d’interprétation des signaux, métriques et décisions de gouvernance.
+  Frontières méthodologiques pour l’interprétation des signaux, des métriques et des décisions de gouvernance.
 
-- `validity-and-grounding` *(planned)*  
-  Futur dépôt dédié aux principes de validité, de grounding, de détection d’hallucination et aux limites des signaux de preuve.
+- [`validity-and-grounding`](https://github.com/neomundi-io/validity-and-grounding)  
+  Documentation méthodologique publique sur la validité, l’ancrage, la détection d’hallucination et les limites des signaux liés à la preuve.
+
+- [`Boundary_Tension_contract`](https://github.com/neomundi-io/Boundary_Tension_contract)  
+  Dépôt de recherche conceptuelle consacré aux signaux de tension aux frontières dans les systèmes IA runtime.
 
 L'objectif n'est pas d'établir une vérité absolue.
 
