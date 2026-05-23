@@ -49,8 +49,11 @@ Together, these repositories form the minimal foundations of an industrializable
 - [`interpretation-contract`](https://github.com/neomundi-io/interpretation-contract)  
   Methodological boundaries for interpreting signals, metrics and governance decisions.
 
-- `validity-and-grounding` *(planned)*  
-  Future repository dedicated to validity, grounding, hallucination detection and the boundaries of proof-related signals.
+- [`validity-and-grounding`](https://github.com/neomundi-io/validity-and-grounding)  
+  Public methodological documentation on validity, grounding, hallucination detection and the boundaries of proof-related signals.
+
+- [`Boundary_Tension_contract`](https://github.com/neomundi-io/Boundary_Tension_contract)  
+  Conceptual research repository dedicated to boundary tension signals in runtime AI systems.
 
 The objective is not to establish absolute truth.
 
