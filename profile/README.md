@@ -14,6 +14,7 @@ OBS first. GOV when ready.
 
 We provide the signal.  
 You keep decision authority.
+Call the instrument. Observe when your AI drifts. Set your thresholds. Govern in real time.
 
 Deployable above LLM stacks, agents and orchestration layers.
 
@@ -182,6 +183,21 @@ NeoMundi can notably produce:
 > Interpretation remains contextual.
 
 ---
+
+## Why NeoMundi is easy to test
+
+NeoMundi does not require teams to migrate their stack or expose their full observability pipeline.
+
+A first test only requires:
+
+1. One API call
+2. The client’s own LLM provider key
+3. OBS mode enabled
+4. No prompt/output storage by NeoMundi
+5. Optional configurable thresholds for GOV mode later
+
+You can start by observing the signal, compare it with your own outputs, then decide whether to activate governance thresholds.
+Call the instrument. Observe when your AI drifts. Set your thresholds. Govern in real time.
 
 ## Integration
 
