@@ -177,8 +177,6 @@ NeoMundi peut notamment produire :
 > Une décision oriente l’action.  
 > L’interprétation reste contextuelle.
 
-→ [Exemple de rapport d'audit PDF](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Audit_Report_2026-04.pdf)
-
 ---
 
 ## Intégration
