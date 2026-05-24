@@ -222,6 +222,21 @@ Depending on the level of criticality, you can start with OBS, test GOV, then pr
 
 ---
 
+Call the instrument. Observe the drift. Set your thresholds. Govern.
+
+NeoMundi starts in OBS mode: it measures runtime stability without enforcing decisions.
+Teams can watch drift patterns, compare signals with their own evaluations, and tune thresholds safely.
+
+When ready, they can activate GOV mode to flag, review, or block responses according to their own governance rules.
+
+No migration.
+No content storage.
+Your provider key.
+Your thresholds.
+Your governance.
+
+---
+
 ## FAQ
 
 **OBS or GOV?**  
