@@ -29,7 +29,7 @@ Together, these repositories form the minimal foundations of an industrializable
 
 ### Main repositories - Core repositories
 
-- [`neomundi-signal-adaptation-framework`](https://github.com/neomundi-io/neomundi-signal-adaptation-framework)  
+- [`neomundi-signal-adaptation-framework`](https://github.com/neomundi-io/neomundi-signal-adaptation-framework/blob/main/README_EN.md)  
   SAL layer: conceptual entry point of the framework, where heterogeneous sources are adapted into a canonical state measurable by NeoMundi.
 
 - [`runtime-telemetry-signals`](https://github.com/neomundi-io/runtime-telemetry-signals)  
