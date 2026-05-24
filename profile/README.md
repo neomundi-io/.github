@@ -174,8 +174,6 @@ NeoMundi can notably produce:
 > A decision guides action.  
 > Interpretation remains contextual.
 
-→ [Sample audit report (PDF)](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/NeoMundi_Audit_Report_2026-04.pdf)
-
 ---
 
 ## Integration
