@@ -2,7 +2,8 @@
 
 Runtime observability and governance for generative AI systems.
 
-NeoMundi produces actionable signals during or after generation to help systems, agents and operators detect instability, qualify risk and decide what to do.
+NeoMundi produces runtime governance signals and artifacts.  
+The client system, configured policy, or responsible operator retains decision authority.
 
 OBS observes after generation.  
 GOV governs during execution.
