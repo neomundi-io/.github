@@ -10,6 +10,8 @@ One API call, BYOK, observability & privacy first, no content storage, configura
 OBS observes after generation.  
 GOV governs during execution.
 
+OBS first. GOV when ready.
+
 We provide the signal.  
 You keep decision authority.
 
