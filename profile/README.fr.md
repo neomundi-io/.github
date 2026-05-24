@@ -2,7 +2,8 @@
 
 Observabilité et gouvernance runtime pour les systèmes d’IA générative.
 
-NeoMundi produit des signaux exploitables pendant ou après la génération afin d’aider les systèmes, agents et opérateurs à détecter les instabilités, qualifier les risques et décider quoi faire.
+NeoMundi produit des signaux de gouvernance runtime et des artefacts d’audit.  
+L’autorité de décision reste entre les mains du système client, de la politique configurée ou de l’opérateur responsable.
 
 OBS observe après génération.  
 GOV gouverne pendant l’exécution.
