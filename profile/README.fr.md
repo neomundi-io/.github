@@ -31,11 +31,8 @@ Ensemble, ces dépôts constituent les fondations minimales d’une infrastructu
 
 ### Dépôts principaux - Core repositories
 
-- [`neomundi-obs`](https://github.com/neomundi-io/neomundi-obs)  
-  Couche OBS : observabilité post-hoc, sans orchestration runtime.
-
-- [`neomundi-gov`](https://github.com/neomundi-io/neomundi-gov)  
-  Couche GOV : gouvernance runtime et orchestration pendant la génération.
+- [`neomundi-signal-adaptation-framework`](https://github.com/neomundi-io/neomundi-signal-adaptation-framework)  
+  Couche SAL : point d’entrée architectural pour adapter des sources hétérogènes vers un état canonique mesurable par NeoMundi.
 
 - [`runtime-telemetry-signals`](https://github.com/neomundi-io/runtime-telemetry-signals)  
   Définitions publiques des signaux de télémétrie runtime, incluant G, ΔG et les états de gouvernance.
@@ -44,7 +41,10 @@ Ensemble, ces dépôts constituent les fondations minimales d’une infrastructu
   Notes méthodologiques publiques sur la volumétrie, la densité volumétrique, l’énergie informationnelle et la densité informationnelle.
 
 - [`energy-stability-index`](https://github.com/neomundi-io/energy-stability-index)  
-  Documentation conceptuelle publique de l’Energy Stability Index comme indicateur composite de gouvernance.
+  Documentation conceptuelle de l’Energy Stability Index comme indicateur composite de gouvernance.
+
+- [`validity-and-grounding`](https://github.com/neomundi-io/validity-and-grounding)  
+  Documentation méthodologique publique sur la validité, l’ancrage, la détection d’hallucination et les limites des signaux liés à la preuve.
 
 - [`runtime-interoperability-contract`](https://github.com/neomundi-io/runtime-interoperability-contract)  
   Sémantique minimale d’interopérabilité entre les couches de mesure, d’orchestration et d’ancrage de preuve.
@@ -52,10 +52,13 @@ Ensemble, ces dépôts constituent les fondations minimales d’une infrastructu
 - [`interpretation-contract`](https://github.com/neomundi-io/interpretation-contract)  
   Frontières méthodologiques pour l’interprétation des signaux, des métriques et des décisions de gouvernance.
 
-- [`validity-and-grounding`](https://github.com/neomundi-io/validity-and-grounding)  
-  Documentation méthodologique publique sur la validité, l’ancrage, la détection d’hallucination et les limites des signaux liés à la preuve.
+- [`neomundi-obs`](https://github.com/neomundi-io/neomundi-obs)  
+  Couche OBS : observabilité post-hoc, sans orchestration runtime.
 
-- [`Boundary_Tension_contract`](https://github.com/neomundi-io/Boundary_Tension_contract)  
+- [`neomundi-gov`](https://github.com/neomundi-io/neomundi-gov)  
+  Couche GOV : gouvernance runtime et orchestration pendant la génération.
+
+- [`Boundary Tension contract`](https://github.com/neomundi-io/Boundary_Tension_contract)  
   Dépôt de recherche conceptuelle consacré aux signaux de tension aux frontières dans les systèmes IA runtime.
 
 L'objectif n'est pas d'établir une vérité absolue.
