@@ -2,8 +2,9 @@
 
 Runtime observability and governance for generative AI systems.
 
-NeoMundi produces runtime governance signals and artifacts.  
+NeoMundi produces runtime governance signals and artifacts. 
 The client system, configured policy, or responsible operator retains decision authority.
+A runtime signal layer for AI teams who want to measure before they enforce.
 
 One API call, BYOK, observability & privacy first, no content storage, configurable governance later.
 
