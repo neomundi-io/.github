@@ -49,6 +49,9 @@ Ensemble, ces dépôts constituent les fondations minimales d’une infrastructu
 - [`runtime-interoperability-contract`](https://github.com/neomundi-io/runtime-interoperability-contract)  
   Sémantique minimale d’interopérabilité entre les couches de mesure, d’orchestration et d’ancrage de preuve.
 
+- [`neomundi-io-data-protection`](https://github.com/neomundi-io/neomundi-io-data-protection)  
+  Documentation publique de l’architecture privacy NeoMundi : minimisation des données, BYOK, absence de stockage des contenus, modes de traitement OBS/GOV et notes de préparation DPA.
+
 - [`interpretation-contract`](https://github.com/neomundi-io/interpretation-contract)  
   Frontières méthodologiques pour l’interprétation des signaux, des métriques et des décisions de gouvernance.
 
