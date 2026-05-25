@@ -1,23 +1,19 @@
 # NeoMundi. The AI thermometer.
 
-Runtime observability and governance for generative AI systems.
+Runtime observability and governance signals for generative AI systems.
 
-NeoMundi produces runtime governance signals and artifacts. 
-The client system, configured policy, or responsible operator retains decision authority.
-A runtime signal layer for AI teams who want to measure before they enforce.
+NeoMundi is a runtime signal layer deployable above LLM stacks, agents, and orchestration systems.
 
-One API call, BYOK, observability & privacy first, no content storage, configurable governance later.
+It helps AI teams measure instability, drift, and governance-relevant signals before enforcing policies.
 
-OBS observes after generation.  
-GOV governs during execution.
+One API call. BYOK. Privacy first. No content storage.
+
+We provide the signal.  
+Your system, policy, or responsible operator keeps decision authority.
 
 OBS first. GOV when ready.
 
-We provide the signal.  
-You keep decision authority.
-Call the instrument. Observe when your AI drifts. Set your thresholds. Govern in real time.
-
-Deployable above LLM stacks, agents and orchestration layers.
+Call the instrument. Observe the drift. Configure your thresholds. Govern in real time.
 
 <sub>FR · [Lire en français](./README.fr.md)</sub>
 
