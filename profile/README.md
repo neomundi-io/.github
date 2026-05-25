@@ -46,6 +46,9 @@ Together, these repositories form the minimal foundations of an industrializable
 - [`validity-and-grounding`](https://github.com/neomundi-io/validity-and-grounding)  
   Public methodological documentation on validity, grounding, hallucination detection and the limits of proof-related signals.
 
+- [`neomundi-io-data-protection`](https://github.com/neomundi-io/neomundi-io-data-protection)  
+  Privacy architecture, data minimization, BYOK, no-content-storage principles and OBS/GOV processing modes for the NeoMundi runtime measurement instrument.
+
 - [`runtime-interoperability-contract`](https://github.com/neomundi-io/runtime-interoperability-contract)  
   Minimal interoperability semantics between measurement, orchestration and proof-anchoring layers.
 
