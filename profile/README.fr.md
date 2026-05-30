@@ -39,18 +39,6 @@ Ensemble, ces dépôts constituent les fondations minimales d’une infrastructu
 
 ---
 
-## NeoMundi Runtime Governance Framework
-
-NeoMundi évolue du thermomètre au spectromètre : d’un signal runtime de stabilité vers une mesure multidimensionnelle du comportement des systèmes IA pendant leur exécution.
-
-Un signal de gouvernance runtime doit pouvoir répondre à trois exigences minimales : être observable, interprétable et interopérable.
-
-Le NeoMundi Runtime Governance Framework organise ces exigences autour de plusieurs dépôts méthodologiques publics dédiés à l’observabilité, aux métriques informationnelles, à l’interprétation, à l’interopérabilité et à la gouvernance runtime des systèmes IA.
-
-Ensemble, ces dépôts constituent les fondations minimales d’une infrastructure de gouvernance IA industrialisable : mesurer, interpréter, transmettre, décider, tracer.
-
----
-
 ### Dépôts principaux - Core repositories
 
 - [`neomundi-signal-adaptation-framework`](https://github.com/neomundi-io/neomundi-signal-adaptation-framework)  
