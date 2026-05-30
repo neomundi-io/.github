@@ -1,27 +1,25 @@
-# NeoMundi. The AI thermometer.
+<sub>FR · [Lire en français](./README.fr.md)</sub>
 
-Runtime observability and governance signals for generative AI systems.
+### NeoMundi. The AI thermometer.
 
-NeoMundi is a runtime signal layer deployable above LLM stacks, agents, and orchestration systems.
+Real-time observability and governance signals for generative AI systems.
+
+NeoMundi is a real-time signal layer deployable above LLM stacks, agents, and orchestration systems.
 
 It helps AI teams measure instability, drift, and governance-relevant signals before enforcing policies.
 
-One API call. BYOK. Privacy first. No content storage.
-Self-hosted Llama available for selected governance functions.
-A sovereign inference path for stronger privacy, resilience and operational control.
+One API call. BYOK. Privacy first. No content storage. Self-hosted Llama available for selected governance functions. A sovereign inference path for stronger privacy, resilience and operational control.
 
-We provide the signal.  
+We provide the signal.
 Your system, policy, or responsible operator keeps decision authority.
 
 OBS first. GOV when ready.
 
-Call the instrument. Observe the drift. Configure your thresholds. Govern in real time.
-
-<sub>FR · [Lire en français](./README.fr.md)</sub>
+Call the instrument. Observe the drift. Configure your thresholds. Govern in real time
 
 ---
 
-## ## NeoMundi Real-Time Governance Framework
+### NeoMundi Real-Time Governance Framework
 
 NeoMundi is evolving from thermometer to spectrometer: from a real-time stability signal toward a multidimensional measurement layer for AI system behavior during execution.
 
@@ -29,16 +27,15 @@ The framework now includes a self-hosted Llama inference path for selected gover
 
 This strengthens three core requirements of industrial AI governance:
 
-* **privacy**, by reducing unnecessary exposure of sensitive data;
-* **resilience**, by limiting dependency on external inference services;
-* **operational sovereignty**, by enabling selected governance functions to run on infrastructure controlled by NeoMundi.
+privacy, by reducing unnecessary exposure of sensitive data;
+resilience, by limiting dependency on external inference services;
+operational sovereignty, by enabling selected governance functions to run on infrastructure controlled by NeoMundi.
 
 A real-time governance signal must meet three minimal requirements: it must be observable, interpretable and interoperable.
 
-The NeoMundi Runtime Governance Framework organizes these requirements across several public methodological repositories dedicated to observability, informational metrics, interpretation, interoperability and real-time governance for AI systems.
+The NeoMundi Real-Time Governance Framework organizes these requirements across several public methodological repositories dedicated to observability, informational metrics, interpretation, interoperability and real-time governance for AI systems.
 
 Together, these repositories form the minimal foundations of an industrializable AI governance infrastructure: measure, interpret, transmit, decide, trace.
-
 
 ### Main repositories - Core repositories
 
