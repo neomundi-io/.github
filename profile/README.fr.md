@@ -10,7 +10,7 @@ Elle aide les équipes IA à mesurer l’instabilité, la dérive et les signaux
 
 > **Un appel API. BYOK. Protection des données par conception. Aucun stockage des contenus.**
 
-**Llama auto-hébergé est disponible pour certaines fonctions de gouvernance.**
+**Llama auto-hébergé est disponible.**
 Une voie d’inférence souveraine pour renforcer la confidentialité, la résilience et la maîtrise opérationnelle.
 
 Nous fournissons le signal.
