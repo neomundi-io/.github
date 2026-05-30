@@ -182,15 +182,52 @@ Ils rendent les générations IA plus observables, interprétables, traçables e
 
 ## Validé sur des systèmes réels
 
-La surface publique documente les concepts, les signaux et les contrats méthodologiques.
-Les évaluations actuelles ont été réalisées principalement en mode GOV, dans des configurations runtime contrôlées.
+La surface publique documente les concepts, les signaux et les contrats méthodologiques. L’instrument a déjà été testé sur plusieurs campagnes contrôlées portant sur des services d’IA générative accessibles par API.
 
-- **5 fournisseurs LLM** testés (cartographie v1-2026-04-26)
-- **3 904 générations** analysées (TruthfulQA)
-- Lorsque NeoMundi FLAG, le signal est confirmé dans **≈76 % des cas** (recall actuel ≈15 %)
-- Mise en évidence précoce de signaux d’instabilité avant que les problèmes deviennent visibles
+### Plus de 10 000 générations analysées
 
-La validation opérationnelle se poursuit à travers des audits indépendants, des pilotes terrain et des analyses contrôlées.
+* **Campagne 1** : 5 providers LLM testés, **3 904 générations analysées**
+  Cartographie `v1-2026-04-26`
+* **Campagne 2** : 8 providers LLM anonymisés testés, **6 256 générations analysées**
+  Cohorte TruthfulQA `v2-2026-05-17`
+* **Corpus cumulé** : **10 160 générations analysées**
+
+### Un signal FLAG précis et directement exploitable
+
+> **Quand NeoMundi déclenche un FLAG, le signal est confirmé dans environ 76 % des cas.**
+
+Cette précision est restée stable sur les deux campagnes :
+
+* **Campagne 1** : 437 FLAG déclenchés, dont **331 réponses problématiques confirmées**
+  Précision : **75,7 %**
+* **Campagne 2** : environ 394 FLAG déclenchés, dont **environ 301 réponses problématiques confirmées**
+  Précision : **≈ 76,4 %**
+* **Cumul** : environ **831 FLAG**, dont **632 réponses problématiques confirmées**
+  Précision cumulée : **≈ 76 %**
+
+### Impact opérationnel potentiel
+
+En mode **GOV**, un FLAG peut être utilisé pour :
+
+* interrompre la livraison d’une réponse ;
+* déclencher une revue humaine ;
+* régénérer la sortie ;
+* rerouter la requête vers un autre modèle ;
+* appliquer une politique métier spécifique.
+
+> **Sur le corpus cumulé, environ 632 réponses problématiques auraient pu être interceptées avant livraison en mode GOV.**
+
+En mode **OBS**, ces signaux restent disponibles pour la supervision, la traçabilité, l’analyse de dérive et l’amélioration continue.
+
+### Une calibration conservatrice
+
+NeoMundi ne prétend pas détecter toutes les erreurs.
+
+L’instrument privilégie aujourd’hui la précision du signal sur la couverture exhaustive :
+
+> **Mieux vaut flagger moins, mais flagger juste, que saturer les équipes avec des faux positifs.**
+
+Ces résultats constituent une première validation opérationnelle. Ils seront consolidés par les audits en cours, les campagnes d’observation continue et les pilotes terrain.
 
 📂 [Métriques, dataset, méthodologie](https://github.com/neomundi-io/llm-cartography)
 
