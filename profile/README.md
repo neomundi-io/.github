@@ -7,6 +7,8 @@ NeoMundi is a runtime signal layer deployable above LLM stacks, agents, and orch
 It helps AI teams measure instability, drift, and governance-relevant signals before enforcing policies.
 
 One API call. BYOK. Privacy first. No content storage.
+Self-hosted Llama available for selected governance functions.
+A sovereign inference path for stronger privacy, resilience and operational control.
 
 We provide the signal.  
 Your system, policy, or responsible operator keeps decision authority.
@@ -19,15 +21,24 @@ Call the instrument. Observe the drift. Configure your thresholds. Govern in rea
 
 ---
 
-## NeoMundi Runtime Governance Framework
+## ## NeoMundi Real-Time Governance Framework
 
-NeoMundi is evolving from thermometer to spectrometer: from a runtime stability signal toward a multidimensional measurement layer for AI system behavior during execution.
+NeoMundi is evolving from thermometer to spectrometer: from a real-time stability signal toward a multidimensional measurement layer for AI system behavior during execution.
 
-A runtime governance signal must meet three minimal requirements: it must be observable, interpretable and interoperable.
+The framework now includes a self-hosted Llama inference path for selected governance functions.
 
-The NeoMundi Runtime Governance Framework organizes these requirements across several public methodological repositories dedicated to observability, informational metrics, interpretation, interoperability and runtime governance for AI systems.
+This strengthens three core requirements of industrial AI governance:
+
+* **privacy**, by reducing unnecessary exposure of sensitive data;
+* **resilience**, by limiting dependency on external inference services;
+* **operational sovereignty**, by enabling selected governance functions to run on infrastructure controlled by NeoMundi.
+
+A real-time governance signal must meet three minimal requirements: it must be observable, interpretable and interoperable.
+
+The NeoMundi Runtime Governance Framework organizes these requirements across several public methodological repositories dedicated to observability, informational metrics, interpretation, interoperability and real-time governance for AI systems.
 
 Together, these repositories form the minimal foundations of an industrializable AI governance infrastructure: measure, interpret, transmit, decide, trace.
+
 
 ### Main repositories - Core repositories
 
