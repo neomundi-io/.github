@@ -27,9 +27,9 @@ Le cadre inclut désormais une voie d’inférence Llama auto-hébergée pour ce
 
 Cette évolution renforce trois exigences fondamentales de la gouvernance industrielle de l’IA :
 
-confidentialité, en réduisant l’exposition inutile des données sensibles ;
-résilience, en limitant la dépendance aux services d’inférence externes ;
-souveraineté opérationnelle, en permettant à certaines fonctions de gouvernance de s’exécuter sur une infrastructure maîtrisée par NeoMundi.
+- **confidentialité**, en réduisant l’exposition inutile des données sensibles ;
+- **résilience**, en limitant la dépendance aux services d’inférence externes ;
+- **souveraineté opérationnelle**, en permettant à certaines fonctions de gouvernance de s’exécuter sur une infrastructure maîtrisée par NeoMundi.
 
 Un signal de gouvernance en temps réel doit répondre à trois exigences minimales : il doit être observable, interprétable et interopérable.
 
