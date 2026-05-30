@@ -10,8 +10,8 @@ Elle aide les équipes IA à mesurer l’instabilité, la dérive et les signaux
 
 > **Un appel API. BYOK. Protection des données par conception. Aucun stockage des contenus.**
 
-**Llama auto-hébergé est disponible.**
-Une voie d’inférence souveraine pour renforcer la confidentialité, la résilience et la maîtrise opérationnelle.
+**Llama auto-hébergé comme juge dans un pipeline d’inférence souverain.**
+Une voie renforcée pour la confidentialité, la résilience et la maîtrise opérationnelle.
 
 Nous fournissons le signal.
 **Votre système, votre politique ou l’opérateur responsable conserve l’autorité de décision.**
@@ -26,7 +26,7 @@ OBS d’abord. GOV lorsque vous êtes prêt.
 
 NeoMundi évolue **du thermomètre vers le spectromètre** : d’un signal de stabilité en temps réel vers une couche de mesure multidimensionnelle du comportement des systèmes d’IA pendant leur exécution.
 
-> **Le cadre inclut désormais une voie d’inférence Llama auto-hébergée pour certaines fonctions de gouvernance.**
+> **Le cadre inclut désormais un juge Llama auto-hébergé dans un pipeline d’inférence souverain.**
 
 Cette évolution renforce trois exigences fondamentales de la gouvernance industrielle de l’IA :
 
@@ -36,12 +36,11 @@ Cette évolution renforce trois exigences fondamentales de la gouvernance indust
 
 Un signal de gouvernance en temps réel doit répondre à trois exigences minimales :
 
-> **être observable, interprétable et interopérable.**
+> **Être observable, interprétable et interopérable.**
 
 Le cadre NeoMundi de gouvernance en temps réel organise ces exigences à travers plusieurs dépôts méthodologiques publics consacrés à l’observabilité, aux métriques informationnelles, à l’interprétation, à l’interopérabilité et à la gouvernance en temps réel des systèmes d’IA.
 
 > **Mesurer. Interpréter. Transmettre. Décider. Tracer.**
-
 
 ---
 
