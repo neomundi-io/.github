@@ -27,9 +27,9 @@ The framework now includes a self-hosted Llama inference path for selected gover
 
 This strengthens three core requirements of industrial AI governance:
 
-privacy, by reducing unnecessary exposure of sensitive data;
-resilience, by limiting dependency on external inference services;
-operational sovereignty, by enabling selected governance functions to run on infrastructure controlled by NeoMundi.
+- **privacy**, by reducing unnecessary exposure of sensitive data;
+- **resilience**, by limiting dependency on external inference services;
+- **operational sovereignty**, by enabling selected governance functions to run on infrastructure controlled by NeoMundi.
 
 A real-time governance signal must meet three minimal requirements: it must be observable, interpretable and interoperable.
 
