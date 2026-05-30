@@ -1,21 +1,47 @@
 EN · [Read in English](./README.md)
 
-## NeoMundi. Le thermomètre de l’IA.
+# NeoMundi. Le thermomètre de l’IA.
 
-Observabilité en temps réel et signaux de gouvernance pour les systèmes d’IA générative.
+**Observabilité en temps réel et signaux de gouvernance pour les systèmes d’IA générative.**
 
 NeoMundi est une couche de signal en temps réel déployable au-dessus des stacks LLM, des agents et des systèmes d’orchestration.
 
 Elle aide les équipes IA à mesurer l’instabilité, la dérive et les signaux pertinents pour la gouvernance avant d’appliquer leurs politiques.
 
-Un appel API. BYOK. Protection des données par conception. Aucun stockage des contenus. Llama auto-hébergé disponible pour certaines fonctions de gouvernance. Une voie d’inférence souveraine pour renforcer la confidentialité, la résilience et la maîtrise opérationnelle.
+> **Un appel API. BYOK. Protection des données par conception. Aucun stockage des contenus.**
+
+**Llama auto-hébergé est disponible pour certaines fonctions de gouvernance.**
+Une voie d’inférence souveraine pour renforcer la confidentialité, la résilience et la maîtrise opérationnelle.
 
 Nous fournissons le signal.
-Votre système, votre politique ou l’opérateur responsable conserve l’autorité de décision.
+**Votre système, votre politique ou l’opérateur responsable conserve l’autorité de décision.**
 
 OBS d’abord. GOV lorsque vous êtes prêt.
 
-Appelez l’instrument. Observez la dérive. Configurez vos seuils. Gouvernez en temps réel.
+*Appelez l’instrument. Observez la dérive. Configurez vos seuils. Gouvernez en temps réel.*
+
+---
+
+## Cadre NeoMundi de gouvernance en temps réel
+
+NeoMundi évolue **du thermomètre vers le spectromètre** : d’un signal de stabilité en temps réel vers une couche de mesure multidimensionnelle du comportement des systèmes d’IA pendant leur exécution.
+
+> **Le cadre inclut désormais une voie d’inférence Llama auto-hébergée pour certaines fonctions de gouvernance.**
+
+Cette évolution renforce trois exigences fondamentales de la gouvernance industrielle de l’IA :
+
+* **confidentialité**, en réduisant l’exposition inutile des données sensibles ;
+* **résilience**, en limitant la dépendance aux services d’inférence externes ;
+* **souveraineté opérationnelle**, en permettant à certaines fonctions de gouvernance de s’exécuter sur une infrastructure maîtrisée par NeoMundi.
+
+Un signal de gouvernance en temps réel doit répondre à trois exigences minimales :
+
+> **être observable, interprétable et interopérable.**
+
+Le cadre NeoMundi de gouvernance en temps réel organise ces exigences à travers plusieurs dépôts méthodologiques publics consacrés à l’observabilité, aux métriques informationnelles, à l’interprétation, à l’interopérabilité et à la gouvernance en temps réel des systèmes d’IA.
+
+> **Mesurer. Interpréter. Transmettre. Décider. Tracer.**
+
 
 ---
 
