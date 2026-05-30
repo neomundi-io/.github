@@ -159,18 +159,54 @@ They make AI generations more observable, interpretable, traceable and governabl
 
 ## Validated on Real Systems
 
-Current evaluations have been conducted primarily in GOV mode, within controlled runtime configurations.
+The public surface documents the concepts, signals and methodological contracts. The instrument has already been tested through several controlled campaigns involving generative AI services accessible via API.
 
-- 5 LLM providers tested (cartography v1-2026-04-26)
-- 3,904 generations analyzed (TruthfulQA)
-- When NeoMundi FLAGs, the signal is confirmed in ≈76% of cases (current recall ≈15%)
-- Early surfacing of instability signals before problems become visible
+### More than 10,000 generations analyzed
 
-The instrument continues to evolve progressively.
+* **Campaign 1**: 5 LLM providers tested, **3,904 generations analyzed**
+  Cartography `v1-2026-04-26`
+* **Campaign 2**: 8 anonymized LLM providers tested, **6,256 generations analyzed**
+  TruthfulQA cohort `v2-2026-05-17`
+* **Cumulative corpus**: **10,160 generations analyzed**
 
-Experimental factual validation layer planned for May 27, 2026.
+### A precise and directly actionable FLAG signal
 
-📂 [Metrics, dataset, methodology](https://github.com/neomundi-io/llm-cartography)
+> **When NeoMundi triggers a FLAG, the signal is confirmed in approximately 76% of cases.**
+
+This level of precision remained stable across both campaigns:
+
+* **Campaign 1**: 437 FLAG events, including **331 confirmed problematic responses**
+  Precision: **75.7%**
+* **Campaign 2**: approximately 394 FLAG events, including **approximately 301 confirmed problematic responses**
+  Precision: **≈ 76.4%**
+* **Cumulative total**: approximately **831 FLAG events**, including **632 confirmed problematic responses**
+  Cumulative precision: **≈ 76%**
+
+### Potential operational impact
+
+In **GOV** mode, a FLAG can be used to:
+
+* stop a response before delivery;
+* trigger human review;
+* regenerate the output;
+* reroute the request to another model;
+* apply a domain-specific policy.
+
+> **Across the cumulative corpus, approximately 632 problematic responses could have been intercepted before delivery in GOV mode.**
+
+In **OBS** mode, these signals remain available for supervision, traceability, drift analysis and continuous improvement.
+
+### Conservative calibration
+
+NeoMundi does not claim to detect every error.
+
+The instrument currently prioritizes signal precision over exhaustive coverage:
+
+> **It is better to flag fewer responses accurately than to overwhelm teams with false positives.**
+
+These results represent an initial operational validation. They will be consolidated through ongoing audits, continuous observation campaigns and field pilots.
+
+📂 [Metrics, datasets and methodology](https://github.com/neomundi-io/llm-cartography)
 
 ---
 
