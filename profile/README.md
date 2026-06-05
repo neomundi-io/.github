@@ -1,12 +1,12 @@
 <sub>FR · [Lire en français](./README.fr.md)</sub>
 
-# NeoMundi. The AI thermometer.
+# NeoMundi
 
-**Real-time observability and governance signals for generative AI systems.**
+**Real-time diagnostic and control instrument for AI system behavior.**
 
-NeoMundi is a real-time signal layer deployable above LLM stacks, agents and orchestration systems.
+Reduce risk. Improve operational control.
 
-It helps AI teams measure instability, drift and governance-relevant signals before enforcing policies.
+NeoMundi provides continuous auditability, traceability, and operational evidence for AI systems and autonomous agents.
 
 > **One API call. BYOK. Privacy by design. No content storage.**
 
