@@ -1,6 +1,6 @@
 <sub>FR · [Lire en français](./README.fr.md)</sub>
 
-# NeoMundi
+## NeoMundi
 
 **Real-time diagnostic and control instrument for AI system behavior.**
 
@@ -8,15 +8,15 @@ Reduce risk. Improve operational control.
 
 NeoMundi provides continuous auditability, traceability, and operational evidence for AI systems and autonomous agents.
 
-> **One API call. BYOK. Privacy by design. No content storage.**
+- One API call
+- BYOK: privacy by design
+- No prompt or completion storage
+- Self-hosted Llama judge within a sovereign inference pipeline
+- Operator-controlled thresholds and decision authority
 
-**Self-hosted Llama judge within a sovereign inference pipeline.**
-A stronger path for privacy, resilience and operational control.
+We provide the signal. Your system, policy layer, or responsible operator keeps decision authority.
 
-We provide the signal.
-**Your system, policy or responsible operator keeps decision authority.**
-
-OBS first. GOV when ready.
+**OBS first. GOV when ready.**
 
 *Call the instrument. Observe the drift. Configure your thresholds. Govern in real time.*
 
