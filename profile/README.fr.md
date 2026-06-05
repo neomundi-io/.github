@@ -1,22 +1,22 @@
 EN · [Read in English](./README.md)
 
-# NeoMundi. Le thermomètre de l’IA.
+## NeoMundi
 
-**Observabilité en temps réel et signaux de gouvernance pour les systèmes d’IA générative.**
+**Instrument de diagnostic et de pilotage en temps réel des comportements des systèmes IA.**
 
-NeoMundi est une couche de signal en temps réel déployable au-dessus des stacks LLM, des agents et des systèmes d’orchestration.
+Réduire le risque. Améliorer la maîtrise opérationnelle.
 
-Elle aide les équipes IA à mesurer l’instabilité, la dérive et les signaux pertinents pour la gouvernance avant d’appliquer leurs politiques.
+NeoMundi fournit une auditabilité, une traçabilité et des preuves opérationnelles continues pour les systèmes IA et les agents autonomes.
 
-> **Un appel API. BYOK. Protection des données par conception. Aucun stockage des contenus.**
+- Un seul appel API
+- BYOK : confidentialité dès la conception
+- Aucun stockage des prompts ni des réponses
+- Juge Llama auto-hébergé au sein d’une chaîne d’inférence souveraine
+- Seuils configurables et autorité de décision conservée par l’opérateur
 
-**Llama auto-hébergé comme juge dans un pipeline d’inférence souverain.**
-Une voie renforcée pour la confidentialité, la résilience et la maîtrise opérationnelle.
+Nous fournissons le signal. Votre système, votre couche de règles ou l’opérateur responsable conserve l’autorité de décision.
 
-Nous fournissons le signal.
-**Votre système, votre politique ou l’opérateur responsable conserve l’autorité de décision.**
-
-OBS d’abord. GOV lorsque vous êtes prêt.
+**OBS d’abord. GOV lorsque vous êtes prêt.**
 
 *Appelez l’instrument. Observez la dérive. Configurez vos seuils. Gouvernez en temps réel.*
 
