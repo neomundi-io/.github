@@ -1,231 +1,119 @@
 <sub>FR · [Lire en français](./README.fr.md)</sub>
 
-## NeoMundi
+# NeoMundi
 
-**Real-time diagnostic and control instrument for AI system behavior.**
+## Real-time diagnostic and control instrument for AI behavior
 
-Reduce risk. Improve operational control.
+**Reduce risk. Improve operational control.**
 
-NeoMundi provides continuous auditability, traceability, and operational evidence for AI systems and autonomous agents.
+NeoMundi provides a behavioral measurement layer for generative AI systems and autonomous agents.
 
-- One API call
-- BYOK: privacy by design
-- No prompt or completion storage
-- Self-hosted Llama judge within a sovereign inference pipeline
-- Operator-controlled thresholds and decision authority
+The instrument produces actionable signals to observe drift, document incidents, trigger enhanced supervision and support governance policies adapted to the level of criticality.
 
-We provide the signal. Your system, policy layer, or responsible operator keeps decision authority.
+**Your decision, our signal.**
 
-**OBS first. GOV when ready.**
-
-*Call the instrument. Observe the drift. Configure your thresholds. Govern in real time.*
+[Access the sandbox](https://controltower.neomundi.io/welcome) · [Discover NeoMundi](https://neomundi.io)
 
 ---
 
-## NeoMundi Real-Time Governance Framework
+## What NeoMundi does in 30 seconds
 
-NeoMundi is evolving **from thermometer to spectrometer**: from a real-time stability signal toward a multidimensional measurement layer for AI system behavior during execution.
+NeoMundi enables you to:
 
-> **The framework now includes a self-hosted Llama judge within a sovereign inference pipeline.**
+- observe stability variations and regime shifts during or after a generation;
+- produce structured, timestamped and auditable runtime signals;
+- detect certain outputs requiring enhanced attention;
+- support actions such as an alert, human review, regeneration or rerouting;
+- keep decision-making authority with the operator, their system or their policy layer.
 
-This strengthens three core requirements of industrial AI governance:
+NeoMundi does not claim to determine on its own whether an answer is true.
 
-* **privacy**, by reducing unnecessary exposure of sensitive data;
-* **resilience**, by limiting dependency on external inference services;
-* **operational sovereignty**, by enabling selected governance functions to run on infrastructure controlled by NeoMundi.
+The objective is more operational:
 
-A real-time governance signal must meet three minimal requirements:
-
-> **It must be observable, interpretable and interoperable.**
-
-The NeoMundi Real-Time Governance Framework organizes these requirements across several public methodological repositories dedicated to observability, informational metrics, interpretation, interoperability and real-time governance for AI systems.
-
-> **Measure. Interpret. Transmit. Decide. Trace.**
-
-### Main repositories - Core repositories
-
-- [`neomundi-signal-adaptation-framework`](https://github.com/neomundi-io/neomundi-signal-adaptation-framework/blob/main/README_EN.md)  
-  SAL layer: conceptual entry point of the framework, where heterogeneous sources are adapted into a canonical state measurable by NeoMundi.
-
-- [`runtime-telemetry-signals`](https://github.com/neomundi-io/runtime-telemetry-signals)  
-  Public definitions of runtime telemetry signals, including G, ΔG and governance states.
-
-- [`informational-metrics`](https://github.com/neomundi-io/informational-metrics)  
-  Public methodological notes on volumetry, volumetric density, informational energy and informational density.
-
-- [`energy-stability-index`](https://github.com/neomundi-io/energy-stability-index)  
-  Conceptual documentation of the Energy Stability Index as a composite governance indicator.
-
-- [`validity-and-grounding`](https://github.com/neomundi-io/validity-and-grounding)  
-  Public methodological documentation on validity, grounding, hallucination detection and the limits of proof-related signals.
-
-- [`neomundi-io-data-protection`](https://github.com/neomundi-io/neomundi-io-data-protection)  
-  Privacy architecture, data minimization, BYOK, no-content-storage principles and OBS/GOV processing modes for the NeoMundi runtime measurement instrument.
-
-- [`runtime-interoperability-contract`](https://github.com/neomundi-io/runtime-interoperability-contract)  
-  Minimal interoperability semantics between measurement, orchestration and proof-anchoring layers.
-
-- [`interpretation-contract`](https://github.com/neomundi-io/interpretation-contract)  
-  Methodological boundaries for interpreting signals, metrics and governance decisions.
-
-- [`neomundi-obs`](https://github.com/neomundi-io/neomundi-obs)  
-  OBS layer: post-hoc observability, without runtime orchestration.
-
-- [`neomundi-gov`](https://github.com/neomundi-io/neomundi-gov)  
-  GOV layer: runtime governance and orchestration during generation.
-
-- [`Boundary Tension contract`](https://github.com/neomundi-io/Boundary_Tension_contract)  
-  Conceptual research repository dedicated to boundary tension signals in runtime AI systems.
-The objective is not to establish absolute truth.
-
-The objective is to make AI generation behavior observable, interpretable, interoperable, auditable and governable at runtime.
+> make generative behavior observable, interpretable, interoperable, traceable and governable.
 
 ---
 
-## Why It Matters
+## Why it matters
 
-A governance signal has value only if it can be understood, transmitted, interpreted and used by a real system.
+Generative AI systems are increasingly integrated into real-world workflows: autonomous agents, business assistance, compliance, support, infrastructure, healthcare, legal services and finance.
 
-The challenge is not just to produce a score.  
-The challenge is to produce a signal that can operate inside a governance infrastructure: readable by a machine, interpretable by a human, traceable by an audit, and actionable by an orchestration layer.
+Yet an answer can be fluent and plausible while still being unstable, insufficiently grounded or inappropriate for the context.
 
-NeoMundi builds its signals according to this industrial requirement:
+The challenge is therefore not merely to produce a score.
 
-- observability: the signal describes a measurable surface;
-- interpretability: the signal declares what it means and what it does not mean;
-- interoperability: the signal can circulate across independent layers;
-- governability: the signal can support a decision without replacing it;
-- auditability: the signal can be documented, timestamped and reviewed after execution.
+The challenge is to produce a signal that is:
 
-An isolated signal is not an infrastructure.  
-A specified, contextualized and interoperable signal can become a governance building block.
+- readable by a machine;
+- understandable by a human;
+- usable by an orchestration layer;
+- documentable after execution;
+- actionable without automatically transferring decision-making authority to the instrument.
 
-This is the role of the NeoMundi Runtime Governance Framework: making generative behaviors observable, interpretable and governable before drift becomes invisible, irreversible or costly.
+An isolated signal is not an infrastructure.
 
----
-
-## Two Deployment Modes
-
-ControlTower™ acts as a control tower for the governance of generative AI systems.
-
-OBS provides governance observability after generation.  
-GOV provides runtime orchestration when intervention during execution becomes critical.
-
-|                  | **OBS** (Observability)                          | **GOV** (Governance)                          |
-|------------------|--------------------------------------------------|-----------------------------------------------|
-| Purpose          | Governance observability                         | Runtime governance orchestration              |
-| Moment           | Post-execution / continuous observability        | During generation                             |
-| Confidentiality  | No content, metrics only                         | Transient content, with no retention or logs  |
-| Integration      | The system calls ControlTower after generation   | ControlTower calls the LLM at runtime (BYOK)  |
-| Best suited for  | Most AI systems                                  | Critical workflows                            |
-
-> **OBS action model.** ControlTower produces governance observability signals that can be used by downstream agents or orchestration layers. Block, regenerate or escalate: the decision remains with the client.
-
-**Decision criterion: if a bad output reaches the user, can it be recovered?**
-
-- **Recoverable**: alert, downstream moderation, correction in the next cycle → OBS is enough.
-- **Non-recoverable**: medical advice, legal advice delivered directly, fiduciary financial decisions, critical infrastructure, reinforced human oversight → GOV becomes necessary.
-
-OBS is the natural entry point for most AI systems.  
-GOV applies when runtime governance and real-time orchestration become critical.
+A specified, contextualized and interoperable signal can become a building block for governance.
 
 ---
 
-## Use Cases
+## OBS first. GOV when you are ready.
 
-These use cases may require different levels of depth: simple signal, advanced metrics, reinforced auditability or compliance reporting.
+NeoMundi offers two integration modes depending on the system's level of criticality.
 
-| Use Case | What NeoMundi Provides | Natural Mode |
-|---|---|---|
-| 🟣 **Agents** | Runtime signals to observe drift, reroute, escalate or retry according to the orchestration policy | **OBS** · GOV runtime |
-| 🟡 **Fine-tuning** | Informational metrics to compare behavioral gaps across model versions, prompts or datasets | **OBS** |
-| 🟢 **Compliance** | Timestamped audit trail, governance decisions, reports and generation traceability | **OBS** · GOV runtime |
-| 🔵 **SLA / Infra** | Behavioral supervision of generations, degradation detection and runtime incident documentation | **OBS** · GOV runtime |
+|                    | OBS — Privacy-first snapshot                               | GOV — Real-time governance                                  |
+| ------------------ | ---------------------------------------------------------- | ----------------------------------------------------------- |
+| **Principle**      | Your system calls NeoMundi after a generation              | NeoMundi calls the LLM during execution                     |
+| **Objective**      | Observe, compare and document                               | Supervise and govern in real time                           |
+| **Timing**         | After generation                                            | During generation                                           |
+| **Data processed** | Snapshot limited to the data required for analysis          | Stream processed transiently                                |
+| **Signals**        | Stability state, alerts and auditable traces                | Stability state, `ΔG`, alerts and governance decisions      |
+| **Retention**      | No storage of prompts or responses                          | No storage of prompts or responses                          |
+| **Natural fit**    | Most AI systems                                             | Critical or difficult-to-recover workflows                  |
 
-> Your decision, our signal.
+### The right decision criterion
+
+> If a poor output reaches the user, can it be recovered from?
+
+**If yes**, OBS is generally the natural starting point.
+
+Your system sends a snapshot to NeoMundi to observe behavior, detect certain drifts and retain an actionable trace.
+
+**If no**, GOV becomes relevant.
+
+NeoMundi enters the execution loop, calls the LLM, tracks the evolution of the signal in real time and enables an enhanced supervision policy.
+
+In both cases, NeoMundi provides the signal.
+
+Your system, your policy layer or the responsible operator retains decision-making authority.
 
 ---
 
-## Types of Observable Signals
+## What NeoMundi observes
 
-NeoMundi does not determine on its own whether an answer is true.
+NeoMundi produces signals to observe certain behaviors during or after generation:
 
-It produces runtime signals that help observe stability variations, coherence losses, progressive drift, regime breaks, or patterns compatible with hallucinations.
+- stability variations;
+- losses of coherence;
+- progressive drift;
+- regime shifts;
+- patterns compatible with certain problematic outputs;
+- informational variations across generations, models, prompts or versions.
 
-These signals are not absolute proofs.  
+These signals are not absolute proof.
+
 They make AI generations more observable, interpretable, traceable and governable.
 
----
+### Families of signals and artifacts
 
-## Validated on Real Systems
+Depending on the integration mode and the maturity level of the deployment, NeoMundi can produce:
 
-The public surface documents the concepts, signals and methodological contracts. The instrument has already been tested through several controlled campaigns involving generative AI services accessible via API.
-
-### More than 10,000 generations analyzed
-
-* **Campaign 1**: 5 LLM providers tested, **3,904 generations analyzed**
-  Cartography `v1-2026-04-26`
-* **Campaign 2**: 8 anonymized LLM providers tested, **6,256 generations analyzed**
-  TruthfulQA cohort `v2-2026-05-17`
-* **Cumulative corpus**: **10,160 generations analyzed**
-
-### A precise and directly actionable FLAG signal
-
-> **When NeoMundi triggers a FLAG, the signal is confirmed in approximately 76% of cases.**
-
-This level of precision remained stable across both campaigns:
-
-* **Campaign 1**: 437 FLAG events, including **331 confirmed problematic responses**
-  Precision: **75.7%**
-* **Campaign 2**: approximately 394 FLAG events, including **approximately 301 confirmed problematic responses**
-  Precision: **≈ 76.4%**
-* **Cumulative total**: approximately **831 FLAG events**, including **632 confirmed problematic responses**
-  Cumulative precision: **≈ 76%**
-
-### Potential operational impact
-
-In **GOV** mode, a FLAG can be used to:
-
-* stop a response before delivery;
-* trigger human review;
-* regenerate the output;
-* reroute the request to another model;
-* apply a domain-specific policy.
-
-> **Across the cumulative corpus, approximately 632 problematic responses could have been intercepted before delivery in GOV mode.**
-
-In **OBS** mode, these signals remain available for supervision, traceability, drift analysis and continuous improvement.
-
-### Conservative calibration
-
-NeoMundi does not claim to detect every error.
-
-The instrument currently prioritizes signal precision over exhaustive coverage:
-
-> **It is better to flag fewer responses accurately than to overwhelm teams with false positives.**
-
-These results represent an initial operational validation. They will be consolidated through ongoing audits, continuous observation campaigns and field pilots.
-
-📂 [Metrics, datasets and methodology](https://github.com/neomundi-io/llm-cartography)
-
----
-
-## Produced Artifacts and Signals
-
-Depending on the OBS or GOV mode, NeoMundi can produce several families of observability and governance artifacts.
-
-These artifacts are not absolute truths.  
-They are designed to make AI generations observable, interpretable, traceable and governable.
-
-NeoMundi can notably produce:
-
-- **Governance stability state**: a normalized signal associated with a generation or execution segment.
-- **Runtime stability variation**: ΔG, the observed variation across several execution windows.
-- **Informational metrics**: volumetry, volumetric density, informational energy, informational density.
-- **Composite index**: ESI, a multidimensional synthetic governance reading.
-- **Governance decisions**: ALLOW, FLAG, BLOCK or equivalent states according to the applied policy.
-- **Structured telemetry**: events, timestamps, request identifiers and associated signals.
-- **Auditable traces**: exports, reports, logs and reporting artifacts depending on the mode and integration level.
+- **governance stability state**: a normalized state associated with a generation or execution window;
+- **runtime stability variation**: evolution of the signal across several observation windows;
+- **FLAG**: a conservative signal indicating that an output requires enhanced attention;
+- **informational metrics**: complementary measurements related to the informational structure of generations;
+- **governance decisions**: states such as `ALLOW`, `FLAG`, `BLOCK` or equivalents according to the client's policy;
+- **structured telemetry**: events, timestamps, technical identifiers and associated signals;
+- **auditable traces**: exports, reports and reporting artifacts depending on the level of integration.
 
 > A signal observes.  
 > A decision guides action.  
@@ -233,130 +121,242 @@ NeoMundi can notably produce:
 
 ---
 
-## Why NeoMundi is easy to test
+## Initial experimental results
 
-NeoMundi does not require teams to migrate their stack or expose their full observability pipeline.
+NeoMundi has been tested through several controlled campaigns covering generative AI services accessible through APIs.
 
-A first test only requires:
+### Cumulative corpus
 
-1. One API call
-2. The client’s own LLM provider key
-3. OBS mode enabled
-4. No prompt/output storage by NeoMundi
-5. Optional configurable thresholds for GOV mode later
+| Campaign | Scope | Generations analyzed |
+|---|---:|---:|
+| Mapping v1 — 2026-04-26 | 5 LLM providers | 3,904 |
+| TruthfulQA cohort v2 — 2026-05-17 | 8 anonymized LLM providers | 6,256 |
+| **Total** |  | **10,160** |
 
-You can start by observing the signal, compare it with your own outputs, then decide whether to activate governance thresholds.
-Call the instrument. Observe when your AI drifts. Set your thresholds. Govern in real time.
+### Observed precision of the FLAG signal
 
-## Integration
+When a `FLAG` was triggered, a problematic output was confirmed in approximately **76%** of cases across the cumulative corpus.
 
-Add a runtime signal layer to your agents, LLM applications or orchestration systems in minutes.
+| Campaign | FLAGs triggered | Confirmed problematic outputs | Observed precision |
+|---|---:|---:|---:|
+| Mapping v1 — 2026-04-26 | 437 | 331 | 75.7% |
+| TruthfulQA cohort v2 — 2026-05-17 | ≈ 394 | ≈ 301 | ≈ 76.4% |
+| **Cumulative total** | **≈ 831** | **≈ 632** | **≈ 76%** |
 
-A single API call allows your system to receive actionable signals to observe, decide, retry, reroute, escalate or document an AI generation.
+### How to read these results correctly
 
-Depending on the level of criticality, you can start with OBS, test GOV, then progressively configure your thresholds, action policies and exports from ControlTower™.
+NeoMundi does not claim to detect every error.
 
-### What the Integration Provides
+The instrument currently prioritizes signal precision over exhaustive coverage:
 
-- **OBS**: post-hoc observability, metrics only, with no content transmitted.
-- **GOV**: runtime orchestration during generation, with the client-side provider key, BYOK.
-- **Runtime signals**: stability, variation, regime, governance decision.
-- **Auditability**: timestamps, traces, exports, reports.
-- **Interoperability**: signals usable by agents, orchestrators and control layers.
-- **Sovereign deployment possible**: dedicated installation, Docker image, controlled environment depending on integration needs.
+> it is better to flag fewer outputs usefully than to overwhelm teams with false positives.
 
-- [Quickstart API & NeoMundi Sandbox](https://github.com/neomundi-io/neomundi-sandbox)  
-  Getting started documentation, integration examples and access to test resources.
+These results constitute an initial operational validation.
+
+They must be read with their limitations: dependence on the corpus, the providers tested, the selected thresholds and the human or instrumental confirmation protocol.
+
+Consolidation continues through observation campaigns, methodological audits and field pilots.
 
 ---
 
-## Call the instrument. Observe the drift. Set your thresholds. Govern.
+## Use cases
 
-NeoMundi starts in OBS mode: it measures runtime stability without enforcing decisions.
-Teams can watch drift patterns, compare signals with their own evaluations, and tune thresholds safely.
+| Use case | What NeoMundi provides | Natural mode |
+|---|---|---|
+| **Autonomous agents** | Observe drift and trigger escalation, retry or rerouting according to the selected policy | OBS · GOV |
+| **Compliance and audit** | Produce timestamped traces, document signals and support supervision | OBS · GOV |
+| **Fine-tuning and evaluation** | Compare behavioral differences across models, prompts, datasets or versions | OBS |
+| **SLA and AI infrastructure** | Detect certain behavioral degradations and document incidents | OBS · GOV |
+| **Sensitive workflows** | Strengthen supervision when an incorrect output would be difficult to recover from | GOV |
 
-When ready, they can activate GOV mode to flag, review, or block responses according to their own governance rules.
+NeoMundi does not replace your observability stack.
 
-No migration.
-No content storage.
-Your provider key.
-Your thresholds.
-Your governance.
+NeoMundi adds a complementary behavioral measurement and governance layer.
+
+---
+
+## Integration and privacy
+
+NeoMundi is designed to integrate progressively with LLM applications, agents, orchestrators and business systems.
+
+### Integration principles
+
+- one API call to get started;
+- a **BYOK** approach depending on the mode and configuration;
+- no storage of prompts or responses;
+- configurable thresholds according to client policies;
+- decision-making authority retained by the operator;
+- exports and auditable traces depending on the level of integration;
+- dedicated deployment or controlled environment according to requirements.
+
+### Operational sovereignty
+
+NeoMundi uses a **self-hosted semantic judge** to analyze certain AI-generated responses.
+
+This judge runs on infrastructure controlled by NeoMundi, without depending on an external service for this critical function.
+
+This architecture serves three objectives:
+
+- **privacy**: limit the exposure of sensitive data;
+- **resilience**: reduce dependence on external services;
+- **operational sovereignty**: retain control over analysis and processing.
+
+---
+
+## Product status
+
+NeoMundi is evolving in stages to clearly distinguish what can be demonstrated today, what is offered through pilot programs and what belongs to the industrialization roadmap.
+
+| Status | Meaning |
+|---|---|
+| **Available now** | Public sandbox, initial observation surfaces, signal demonstrations and methodological documentation |
+| **Supported pilot** | Progressive integration, calibration, supervision, exports and policies adapted to the client's context |
+| **Product roadmap** | Extended metrics, advanced runtime orchestration, dedicated deployments and industrialized governance policies |
+
+This progression makes it possible to start with observation and increase the level of control when the business context requires it.
+
+---
+
+## From thermometer to spectrometer
+
+NeoMundi is evolving from a stability signal into a multidimensional measurement layer for AI behavior during execution.
+
+The objective is not to multiply scores.
+
+The objective is to build an infrastructure capable of:
+
+1. measuring;
+2. interpreting;
+3. transmitting;
+4. deciding according to an explicit policy;
+5. tracing what occurred.
+
+The public NeoMundi framework progressively documents the signals, contracts and methodological boundaries required for this infrastructure.
+
+---
+
+## Main repositories — Core repositories
+
+NeoMundi is progressively publishing the methodological foundations of its approach.
+
+Each repository documents a specific function: measuring AI behavior, checking certain responses, interpreting signals correctly, transmitting results, protecting data or deploying the OBS and GOV modes.
+
+### Measure AI behavior
+
+- [`neomundi-signal-adaptation-framework`](https://github.com/neomundi-io/neomundi-signal-adaptation-framework/blob/main/README_EN.md)  
+  Explains how to transform different data sources into a common format so that they can be compared and measured.
+
+- [`runtime-telemetry-signals`](https://github.com/neomundi-io/runtime-telemetry-signals)  
+  Documents the signals used to monitor AI behavior during operation, including its stability level and how this signal evolves over time.
+
+- [`informational-metrics`](https://github.com/neomundi-io/informational-metrics)  
+  Presents the metrics used to analyze the quantity, structure and informational density of generated responses.
+
+- [`energy-stability-index`](https://github.com/neomundi-io/energy-stability-index)  
+  Documents a composite index designed to summarize several dimensions of stability. This index is part of NeoMundi's development roadmap.
+
+### Check certain responses
+
+- [`validity-and-grounding`](https://github.com/neomundi-io/validity-and-grounding)  
+  Documents the self-hosted semantic judge used to identify certain hallucination risks, as well as the validity module used to check a response against reference information or documents.
+
+### Understand what the signals mean
+
+- [`interpretation-contract`](https://github.com/neomundi-io/interpretation-contract)  
+  Clarifies what NeoMundi signals allow you to conclude, what they do not prove on their own and which decisions remain the responsibility of the client or operator.
+
+- [`Boundary Tension contract`](https://github.com/neomundi-io/Boundary_Tension_contract)  
+  Explores situations where the boundary of responsibility must be clearly defined: between an AI that generates a response, a signal that raises an alert and a human or system that decides to act.
+
+### Transmit results to other systems
+
+- [`runtime-interoperability-contract`](https://github.com/neomundi-io/runtime-interoperability-contract)  
+  Defines a common format for transmitting NeoMundi signals between measurement tools, agents, client applications and supervision systems.
+
+### Protect data
+
+- [`neomundi-io-data-protection`](https://github.com/neomundi-io/neomundi-io-data-protection)  
+  Documents the data protection principles: minimization of processed information, BYOK, no storage of prompts or responses, and preparation of contractual frameworks.
+
+### Observe, then govern
+
+- [`neomundi-obs`](https://github.com/neomundi-io/neomundi-obs)  
+  Presents OBS mode: your system calls NeoMundi after a generation and sends a snapshot limited to the data required for analysis. This privacy-first mode makes it possible to observe and document AI behavior without placing NeoMundi in the execution loop.
+
+- [`neomundi-gov`](https://github.com/neomundi-io/neomundi-gov)  
+  Presents GOV mode: NeoMundi calls the LLM during execution, analyzes the stream in real time and tracks the evolution of the `ΔG` signal in particular. Prompts and responses are processed transiently, without retention.
+
+---
+
+The objective is not to establish absolute truth from a single score.
+
+The objective is to make AI behavior easier to measure, check, understand, transmit, document and govern.
 
 ---
 
 ## FAQ
 
-**OBS or GOV?**  
+### Does NeoMundi determine whether an answer is true or false?
 
-OBS is the post-execution observability mode: ControlTower™ receives metrics or observation artifacts, without transmission of full semantic content.
+No.
 
-GOV is the runtime governance mode: ControlTower™ intervenes during generation, with the provider key remaining on the client side, transient stream processing, and no logging or retention of prompts or responses.
+NeoMundi produces signals to observe certain variations, instabilities, drifts or behavioral transitions.
 
-OBS is the natural entry point for most AI systems.  
-GOV becomes relevant when a bad output reaching the user would be difficult to recover from.
+These signals support decision-making. They do not replace business context, human supervision or specialized verification mechanisms when these are required.
 
----
+### What is the difference between OBS and GOV?
 
-**What is the governance stability state?**  
+**OBS** enables observation, documentation and improvement after generation or through continuous supervision.
 
-It is a normalized state associated with the behavioral stability observed during or after an AI generation.
+**GOV** enters the runtime chain when an incorrect output would be difficult to recover from.
 
-NeoMundi does not claim to determine on its own whether an answer is true.  
-NeoMundi produces signals that help observe certain variations, instabilities, drifts or behavioral transitions.
+OBS is generally the natural starting point.
 
----
+GOV increases the level of control when the context requires it.
 
-**What data is stored?**  
+### What data is stored?
 
-In OBS mode: no full semantic content is transmitted.
+NeoMundi is designed according to a data-minimization principle.
 
-In GOV mode: the stream is processed transiently during execution, with no logging or retention of prompts or responses.
+Prompts and responses are not stored.
 
-Only governance metrics, signals and artifacts may be retained: stability state, decision, timestamp, technical identifiers and associated reporting.
+Depending on the selected mode, only metrics, signals, technical events, required identifiers, timestamps and reporting artifacts may be retained.
 
-The provider key used in GOV mode remains under the client’s control.
+### Does NeoMundi work with my LLM?
 
----
+OBS is designed to be compatible with systems capable of sending the expected observation artifacts.
 
-**Does it work with my LLM?**  
+GOV follows a progressive integration approach depending on providers, workflows and levels of criticality.
 
-OBS can be used with any AI system capable of sending metrics or observation artifacts to ControlTower™.
+### How is NeoMundi different from LangSmith, Portkey or Helicone?
 
-GOV is designed to work with compatible LLM providers through a BYOK logic, depending on available integrations.
+These tools primarily focus on application observability: logs, tracing, costs, workflows and performance.
 
----
+NeoMundi adds a complementary layer focused on behavioral measurement and governance: stability, variation, runtime signals, interpretation, auditability and supervision policies.
 
-**How is this different from LangSmith, Portkey or Helicone?**  
-
-These tools are mainly focused on application observability, tracing, logs, costs, workflows and performance.
-
-NeoMundi adds a complementary runtime governance layer oriented around signals: stability, variation, informational density, governance decisions and auditability.
-
-NeoMundi does not replace your observability stack.  
-NeoMundi adds a behavioral measurement and governance layer.
-
----
-
-**Does NeoMundi cover certain EU AI Act requirements by design?**
+### Does NeoMundi cover certain EU AI Act requirements?
 
 NeoMundi does not replace a complete compliance process.
 
-However, ControlTower™ contributes by design to certain AI governance requirements: runtime control, logging, traceability, supervision and auditability.
+The instrument can contribute to certain governance practices: logging, traceability, supervision, documentation, signal monitoring and auditability.
 
-The produced artifacts, stability signals, governance decisions, timestamps, technical identifiers, exports and reports, can support documentation, monitoring and risk management for AI systems.
-
----
-
-## Documentation
-
-- 📄 [Executive Brief — EN](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/Executive_brief_EN.pdf)
-- 🔬 [Theoretical framework (Law E) — EN](https://doi.org/10.5281/zenodo.19385052)
+Legal relevance depends on the system concerned, its risk level and the context of use.
 
 ---
 
-*Measure AI behavior continuously.  
-If you operate AI in production, you need a signal.  
-Observe what can be recovered. Control what cannot.*
+## Resources
+
+- [NeoMundi Sandbox](https://controltower.neomundi.io/welcome)
+- [NeoMundi Website](https://neomundi.io)
+- [Executive Brief — FR](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/Executive_brief_FR.pdf)
+- [Theoretical Framework (Law E) — FR](https://doi.org/10.5281/zenodo.19385052)
+
+---
+
+## Contact
+
+Do you operate AI systems in production, autonomous agents or sensitive workflows?
+
+**Measure what can be recovered. Control what cannot.**
 
 contact@neomundi.io
