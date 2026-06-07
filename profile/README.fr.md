@@ -239,56 +239,59 @@ Le cadre public NeoMundi documente progressivement les signaux, contrats et fron
 
 NeoMundi publie progressivement les fondations méthodologiques de son approche.
 
-Chaque dépôt documente une partie précise du système : mesure, interprétation, protection des données ou gouvernance runtime.
+Chaque dépôt documente une fonction précise : mesurer les comportements IA, vérifier certaines réponses, interpréter correctement les signaux, transmettre les résultats, protéger les données ou déployer les modes OBS et GOV.
 
 ### Mesurer les comportements IA
 
 * [`neomundi-signal-adaptation-framework`](https://github.com/neomundi-io/neomundi-signal-adaptation-framework)
-  Définit comment transformer différentes sources de données en signaux comparables et mesurables.
+  Explique comment transformer différentes sources de données en un format commun afin de pouvoir les comparer et les mesurer.
 
 * [`runtime-telemetry-signals`](https://github.com/neomundi-io/runtime-telemetry-signals)
-  Documente les principaux signaux utilisés pour suivre le comportement d’une IA pendant son exécution.
+  Documente les signaux utilisés pour suivre le comportement d’une IA pendant son fonctionnement, notamment son niveau de stabilité et l’évolution de ce signal dans le temps.
 
 * [`informational-metrics`](https://github.com/neomundi-io/informational-metrics)
-  Présente les métriques utilisées pour analyser la structure et la densité informationnelle des réponses.
+  Présente les métriques utilisées pour analyser la quantité, la structure et la densité informationnelle des réponses générées.
 
 * [`energy-stability-index`](https://github.com/neomundi-io/energy-stability-index)
-  Décrit un indice composite destiné à résumer plusieurs dimensions de stabilité.
+  Documente un indice composite destiné à résumer plusieurs dimensions de stabilité. Cet indice fait partie de la trajectoire d’évolution de NeoMundi.
 
-### Interpréter les signaux avec prudence
+### Vérifier certaines réponses
 
 * [`validity-and-grounding`](https://github.com/neomundi-io/validity-and-grounding)
-  Précise ce que les signaux peuvent indiquer, ce qu’ils ne prouvent pas et comment traiter les risques d’hallucination.
+  Documente le juge sémantique auto-hébergé utilisé pour repérer certains risques d’hallucination, ainsi que le module de validité permettant de vérifier une réponse par rapport à des informations ou à des documents de référence.
+
+### Comprendre ce que signifient les signaux
 
 * [`interpretation-contract`](https://github.com/neomundi-io/interpretation-contract)
-  Définit les règles d’interprétation pour éviter de tirer des conclusions excessives à partir d’un signal isolé.
+  Précise ce que les signaux produits par NeoMundi permettent de conclure, ce qu’ils ne prouvent pas à eux seuls et quelles décisions restent sous la responsabilité du client ou de l’opérateur.
 
 * [`Boundary Tension contract`](https://github.com/neomundi-io/Boundary_Tension_contract)
-  Explore certains signaux de tension observables lorsqu’un système IA approche de zones d’instabilité.
+  Explore les situations où la frontière de responsabilité doit être clairement définie : entre une IA qui génère une réponse, un signal qui alerte et un humain ou un système qui décide d’agir.
 
-### Faire circuler les informations entre les systèmes
+### Transmettre les résultats aux autres systèmes
 
 * [`runtime-interoperability-contract`](https://github.com/neomundi-io/runtime-interoperability-contract)
-  Définit un langage commun pour transmettre les signaux entre les outils de mesure, les systèmes clients et les couches de gouvernance.
+  Définit un format commun pour transmettre les signaux NeoMundi entre les outils de mesure, les agents, les applications clientes et les systèmes de supervision.
 
 ### Protéger les données
 
 * [`neomundi-io-data-protection`](https://github.com/neomundi-io/neomundi-io-data-protection)
-  Documente les principes de protection des données : minimisation, BYOK, absence de stockage des prompts et réponses, et préparation des cadres contractuels.
+  Documente les principes de protection des données : minimisation des informations traitées, BYOK, absence de stockage des prompts et réponses, et préparation des cadres contractuels.
 
 ### Observer puis gouverner
 
 * [`neomundi-obs`](https://github.com/neomundi-io/neomundi-obs)
-  Présente le mode OBS : observer les signaux après génération ou en supervision continue.
+  Présente le mode OBS : votre système appelle NeoMundi après une génération et lui transmet un snapshot limité aux données nécessaires à l’analyse. Ce mode privacy-first permet d’observer et de documenter les comportements IA sans placer NeoMundi dans la boucle d’exécution.
 
 * [`neomundi-gov`](https://github.com/neomundi-io/neomundi-gov)
-  Présente le mode GOV : utiliser les signaux pendant l’exécution lorsque le niveau de risque exige une supervision renforcée.
+  Présente le mode GOV : NeoMundi appelle le LLM pendant l’exécution, analyse le flux en temps réel et suit notamment l’évolution du signal `ΔG`. Les prompts et réponses sont traités de manière transitoire, sans rétention.
 
 ---
 
 L’objectif n’est pas d’établir une vérité absolue à partir d’un score unique.
 
-L’objectif est de rendre les comportements IA plus faciles à observer, à comprendre, à documenter et à gouverner.
+L’objectif est de rendre les comportements IA plus faciles à mesurer, à vérifier, à comprendre, à transmettre, à documenter et à gouverner.
+
 
 ---
 
