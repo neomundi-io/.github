@@ -10,7 +10,7 @@ L’instrument produit des signaux exploitables pour observer les dérives, docu
 
 **Votre décision, notre signal.**
 
-[Accéder au sandbox](https://controltower.neomundi.io/welcome) · [Découvrir NeoMundi](https://neomundi.io) · [Nous contacter](mailto:contact@neomundi.io)
+[Accéder au sandbox](https://controltower.neomundi.io/welcome) · [Découvrir NeoMundi](https://neomundi.io)
 
 ---
 
