@@ -338,13 +338,24 @@ These tools primarily focus on application observability: logs, tracing, costs, 
 
 NeoMundi adds a complementary layer focused on behavioral measurement and governance: stability, variation, runtime signals, interpretation, auditability and supervision policies.
 
-### Does NeoMundi cover certain EU AI Act requirements?
+### Does NeoMundi cover certain EU AI Act and GDPR requirements?
 
-NeoMundi does not replace a complete compliance process.
+NeoMundi does not replace a complete compliance process, legal analysis or regulatory certification.
 
-The instrument can contribute to certain governance practices: logging, traceability, supervision, documentation, signal monitoring and auditability.
+However, ControlTower covers several technical capabilities that are directly useful for EU AI Act and GDPR compliance efforts:
 
-Legal relevance depends on the system concerned, its risk level and the context of use.
+* continuous monitoring of AI-system behaviour;
+* control of the risk associated with generated responses;
+* operational traceability;
+* auditability;
+* actionable signals supporting human oversight;
+* evidence useful for incident documentation;
+* a privacy-first architecture based on data minimisation and the absence of prompt and response storage.
+
+The legal relevance depends on the system concerned, its intended use, its level of risk and the organisation’s role.
+
+➡️ [Consult the detailed mapping of NeoMundi capabilities for the EU AI Act and GDPR](https://github.com/neomundi-io/ai-act-rgpd/blob/main/README_EN.md)
+
 
 ---
 
