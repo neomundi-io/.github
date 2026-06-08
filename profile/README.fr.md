@@ -1,3 +1,9 @@
+## 🌐 Choisissez votre langue
+
+**[🇫🇷 Français](README.fr.md)** · **[🇬🇧 Read the English version](README.md)**
+
+---
+
 # NeoMundi
 
 ## Instrument de diagnostic et de pilotage en temps réel des comportements IA
