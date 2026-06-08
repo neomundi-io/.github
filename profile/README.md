@@ -1,4 +1,7 @@
 <sub>FR · [Lire en français](./README.fr.md)</sub>
+🌐 **Languages:** [Français](README.md) · [English](README_EN.md)
+
+---
 
 # NeoMundi
 
