@@ -1,4 +1,6 @@
-<sub>FR · [Lire en français](./README.fr.md)</sub>
+## 🌐 Choose your language
+
+**[🇬🇧 English](README.md)** · **[🇫🇷 Lire la version française](README.fr.md)**
 
 ---
 
