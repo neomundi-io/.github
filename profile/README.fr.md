@@ -341,13 +341,24 @@ Ces outils sont principalement centrés sur l’observabilité applicative : log
 
 NeoMundi ajoute une couche complémentaire orientée mesure et gouvernance comportementale : stabilité, variation, signaux runtime, interprétation, auditabilité et politiques de supervision.
 
-### NeoMundi couvre-t-il certaines exigences de l’EU AI Act ?
+### NeoMundi couvre-t-il certaines exigences de l’EU AI Act et du RGPD ?
 
-NeoMundi ne remplace pas une démarche complète de conformité.
+NeoMundi ne remplace pas une démarche complète de conformité, une analyse juridique ni une certification réglementaire.
 
-L’instrument peut contribuer à certaines pratiques de gouvernance : journalisation, traçabilité, supervision, documentation, suivi de signaux et auditabilité.
+ControlTower couvre néanmoins plusieurs capacités techniques directement utiles aux démarches IA Act et RGPD :
 
-La pertinence juridique dépend du système concerné, de son niveau de risque et du cadre d’utilisation.
+* monitoring continu du comportement des systèmes IA ;
+* contrôle du risque des réponses générées ;
+* traçabilité opérationnelle ;
+* auditabilité ;
+* signaux exploitables pour la supervision humaine ;
+* éléments de preuve utiles à la documentation des incidents ;
+* architecture privacy-first fondée sur la minimisation des données et l’absence de stockage des prompts et réponses.
+
+La pertinence juridique dépend du système concerné, de son usage, de son niveau de risque et du rôle de l’organisation.
+
+➡️ [Consulter le mapping détaillé des capacités NeoMundi pour l’IA Act et le RGPD](https://github.com/neomundi-io/ai-act-rgpd)
+
 
 ---
 
