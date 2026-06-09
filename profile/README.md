@@ -363,7 +363,7 @@ The legal relevance depends on the system concerned, its intended use, its level
 
 - [NeoMundi Sandbox](https://controltower.neomundi.io/welcome)
 - [NeoMundi Website](https://neomundi.io)
-- [Executive Brief — FR](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/Executive_brief_FR.pdf)
+- [Executive Brief — FR](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/Executive_brief_EN.pdf)
 - [Theoretical Framework (Law E) — FR](https://doi.org/10.5281/zenodo.19385052)
 
 ---
