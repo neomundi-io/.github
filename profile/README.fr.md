@@ -366,7 +366,7 @@ La pertinence juridique dépend du système concerné, de son usage, de son nive
 
 - [Sandbox NeoMundi](https://controltower.neomundi.io/welcome)
 - [Site NeoMundi](https://neomundi.io)
-- [Executive Brief — FR](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/Executive_brief_FR.pdf)
+- [Executive Brief — EN](https://raw.githubusercontent.com/neomundi-io/neomundi-sandbox/main/NeoMundi_Executive_Brief_2026_EN.pdf)
 - [Cadre théorique (Loi E) — FR](https://doi.org/10.5281/zenodo.19385052)
 
 ---
