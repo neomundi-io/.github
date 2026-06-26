@@ -382,7 +382,9 @@ NeoMundi is a member of the NVIDIA Inception program.
 
 The NeoMundi AI Observatory is supported by sovereign infrastructure partners, including Infomaniak.
 
-[Insert Infomaniak logo here only if its use has been explicitly approved.]
+<img src="https://raw.githubusercontent.com/neomundi-io/neomundi-ai-observatory/main/logos/ecosystem/logo_infomaniak.png"
+     alt="Infomaniak"
+     width="150">
 
 These relationships support the development and operation of independent AI measurement, auditability and runtime governance capabilities. They do not imply endorsement of NeoMundi’s research findings, measurements or interpretations by the organisations named above.
 
