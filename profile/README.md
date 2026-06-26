@@ -364,10 +364,29 @@ The legal relevance depends on the system concerned, its intended use, its level
 
 ➡️ [Consult the detailed mapping of NeoMundi capabilities for the EU AI Act and GDPR](https://github.com/neomundi-io/ai-act-rgpd/blob/main/README_EN.md)
 
+##  Ecosystem & Infrastructure Support
+
+NeoMundi develops its work through an open ecosystem of technical, research, governance and infrastructure contributors.
+
+### NVIDIA Inception
+
+NeoMundi is a member of the NVIDIA Inception program.
+
+[Insert official NVIDIA Inception member badge here — unchanged and smaller than the NeoMundi logo.]
+
+© 2025 NVIDIA, the NVIDIA logo, and NVIDIA Inception are trademarks and/or registered trademarks of NVIDIA Corporation in the U.S. and other countries.
+
+### Infrastructure support
+
+The NeoMundi AI Observatory is supported by sovereign infrastructure partners, including Infomaniak.
+
+[Insert Infomaniak logo here only if its use has been explicitly approved.]
+
+These relationships support the development and operation of independent AI measurement, auditability and runtime governance capabilities. They do not imply endorsement of NeoMundi’s research findings, measurements or interpretations by the organisations named above.
 
 ---
 
-## Resources
+ Resources
 
 * [NeoMundi Sandbox](https://controltower.neomundi.io/welcome)
 * [NeoMundi Website](https://neomundi.io)
