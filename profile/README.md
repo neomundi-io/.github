@@ -372,7 +372,9 @@ NeoMundi develops its work through an open ecosystem of technical, research, gov
 
 NeoMundi is a member of the NVIDIA Inception program.
 
-[Insert official NVIDIA Inception member badge here — unchanged and smaller than the NeoMundi logo.]
+<img src="https://raw.githubusercontent.com/neomundi-io/neomundi-sandbox/main/nvidia-inception-program-badge-rgb-for-screen.png"
+     alt="NeoMundi is a member of the NVIDIA Inception program"
+     width="180">
 
 © 2025 NVIDIA, the NVIDIA logo, and NVIDIA Inception are trademarks and/or registered trademarks of NVIDIA Corporation in the U.S. and other countries.
 
