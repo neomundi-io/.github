@@ -368,7 +368,7 @@ The legal relevance depends on the system concerned, its intended use, its level
 
 NeoMundi develops its work through an open ecosystem of technical, research, governance and infrastructure contributors.
 
-### NVIDIA Inception
+### NVIDIA Inception Program
 
 NeoMundi is a member of the NVIDIA Inception program.
 
