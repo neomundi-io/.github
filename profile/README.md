@@ -193,13 +193,13 @@ NeoMundi is designed to integrate progressively with LLM applications, agents, o
 - exports and auditable traces depending on the level of integration;
 - dedicated deployment or controlled environment according to requirements.
 
-## LLM provider integration
+### LLM provider integration
 
 NeoMundi can be integrated with supported LLM providers through a governed runtime API.
 
 Use the provider integration guide to connect your existing provider account, configure your model, manage API keys securely and start streaming governed requests through ControlTowerAI.
 
-➡️ [Read the LLM Provider Integration Guide](docs/en/llm-provider-integration.md)
+➡️ Read the LLM Provider Integration Guide
 
 ### Operational sovereignty
 
