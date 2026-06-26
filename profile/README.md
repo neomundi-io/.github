@@ -199,7 +199,7 @@ NeoMundi can be integrated with supported LLM providers through a governed runti
 
 Use the provider integration guide to connect your existing provider account, configure your model, manage API keys securely and start streaming governed requests through ControlTowerAI.
 
-➡️ Read the LLM Provider Integration Guide
+➡️ [Read the LLM Provider Integration Guide](https://github.com/neomundi-io/controltowerai-docs/blob/main/providers.md)
 
 ### Operational sovereignty
 
