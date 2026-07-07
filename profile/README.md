@@ -7,7 +7,7 @@
 # NeoMundi
 
 ## From AI observability to behavioral metrology
-Real-time measurement of AI behavior for governance and operational control.
+** Real-time measurement of AI behavior for governance and operational control.**
 
 **Reduce risk. Improve operational control.**
 
