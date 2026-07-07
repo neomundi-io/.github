@@ -6,17 +6,18 @@
 
 # NeoMundi
 
-## Real-time diagnostic and control instrument for AI behavior
+## From AI observability to behavioral metrology
+## Real-time measurement of AI behavior for governance and operational control.
 
 **Reduce risk. Improve operational control.**
 
-NeoMundi provides a behavioral measurement layer for generative AI systems and autonomous agents.
+NeoMundi provides an observability and behavioral metrology layer for generative AI systems and autonomous agents.
 
-The instrument produces actionable signals to observe drift, document incidents, trigger enhanced supervision and support governance policies adapted to the level of criticality.
+The instrument produces actionable signals to observe drift, detect regime changes, document incidents, trigger enhanced supervision, and support governance decisions adapted to the level of criticality.
 
 **Your decision, our signal.**
 
-[Access the sandbox](https://controltower.neomundi.io/welcome) · [Discover NeoMundi](https://neomundi.io)
+[Access the sandbox](https://controltower.neomundi.io/welcome)
 
 ---
 
