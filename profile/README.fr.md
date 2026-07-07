@@ -6,17 +6,18 @@
 
 # NeoMundi
 
-## Instrument de diagnostic et de pilotage en temps réel des comportements IA
+## De l’observabilité des IA à la métrologie comportementale
+**Mesure en temps réel du comportement des IA pour la gouvernance et le pilotage opérationnel.**
 
-**Réduire le risque. Améliorer la maîtrise opérationnelle.**
+**Réduire le risque. Améliorer le contrôle opérationnel.**
 
-NeoMundi fournit une couche de mesure comportementale pour les systèmes d’IA générative et les agents autonomes.
+NeoMundi fournit une couche d’observabilité et de métrologie comportementale pour les systèmes d’IA générative et les agents autonomes.
 
-L’instrument produit des signaux exploitables pour observer les dérives, documenter les incidents, déclencher une supervision renforcée et soutenir des politiques de gouvernance adaptées au niveau de criticité.
+L’instrument produit des signaux actionnables pour observer les dérives, détecter les changements de régime, documenter les incidents, déclencher une supervision renforcée et soutenir des décisions de gouvernance adaptées au niveau de criticité.
 
 **Votre décision, notre signal.**
 
-[Accéder au sandbox](https://controltower.neomundi.io/welcome) · [Découvrir NeoMundi](https://neomundi.io)
+[Accéder au sandbox](https://controltower.neomundi.io/welcome)
 
 ---
 
