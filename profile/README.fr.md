@@ -402,6 +402,7 @@ Ces relations soutiennent le développement et l’exploitation de capacités in
 * [NeoMundi Website](https://neomundi.io)
 * [Executive Brief — FR](https://github.com/neomundi-io/neomundi-sandbox/blob/main/NeoMundi_Executive_Brief_2026_FR.pdf)
 * [Executive Brief — EN](https://github.com/neomundi-io/neomundi-sandbox/blob/main/NeoMundi_Executive_Brief_2026_EN.pdf)
+* [AI Observability & Behavioral Metrology — FR / EN](https://zenodo.org/records/21250268)
 * [Theoretical Framework (Law E) — FR](https://doi.org/10.5281/zenodo.19385052)
 
 ---
