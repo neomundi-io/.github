@@ -113,13 +113,41 @@ They must be interpreted in context and according to the policy of the system co
 
 ## Experimental validation
 
-NeoMundi has now produced and analyzed **more than 200,000 observations** across measurement campaigns, barometers, mappings, experiments and field pilots.
+NeoMundi has now produced and analyzed **more than 200,000 observations** across longitudinal measurement campaigns, barometers, mappings, controlled experiments and field pilots.
 
-These experiments span multiple models, providers, protocols and execution configurations and contribute to the study of stability, behavioral variability, regime changes and signal actionability.
+The current observational program covers **12 AI systems** across heterogeneous providers, models, protocols and execution configurations.
 
-### Initial FLAG signal validation campaigns
+These experiments contribute to the study of:
 
-The initial campaigns used specifically to evaluate the precision of the `FLAG` signal represented a cumulative corpus of **10,160 generations**.
+- behavioral stability and variability;
+- regime changes and longitudinal drift;
+- reproducibility of measurement signals;
+- actionability of the signals and scores produced;
+- interoperability across heterogeneous AI infrastructures.
+
+➡️ [NeoMundi AI Observatory](https://github.com/neomundi-io/neomundi-ai-observatory)  
+➡️ [NeoMundi Research Observatory](https://neomundi.org/en/home)
+
+### Consolidating the measurement framework
+
+NeoMundi's experimental program does not rely on a single validation axis.
+
+In addition to longitudinal observation, dedicated work on **reproducibility** and **actionability** is being used to progressively consolidate the measurement framework.
+
+The objective is to establish whether the signals produced are not only observable, but also:
+
+1. repeatable under comparable conditions;
+2. sensitive to meaningful behavioral changes;
+3. interpretable within explicit methodological boundaries;
+4. usable by operators, governance layers and independent infrastructures.
+
+This work contributes to the progressive validation of NeoMundi's signals, metrics and derived scores.
+
+---
+
+### Initial FLAG signal validation corpus
+
+Earlier controlled campaigns used specifically to evaluate the precision of the `FLAG` signal represented a cumulative corpus of **10,160 generations**.
 
 | Campaign | Scope | Generations analyzed |
 |---|---:|---:|
@@ -127,13 +155,27 @@ The initial campaigns used specifically to evaluate the precision of the `FLAG` 
 | TruthfulQA cohort v2 — 2026-05-17 | 8 anonymized LLM providers | 6,256 |
 | **Total** | | **10,160** |
 
-When a `FLAG` was triggered, a problematic output was confirmed in approximately **76% of cases** across this corpus.
+When a `FLAG` was triggered, a problematic output was confirmed in approximately **76% of cases** across this validation corpus.
 
 | Campaign | FLAGs triggered | Confirmed problematic outputs | Observed precision |
 |---|---:|---:|---:|
 | Mapping v1 — 2026-04-26 | 437 | 331 | 75.7% |
 | TruthfulQA cohort v2 — 2026-05-17 | ≈ 394 | ≈ 301 | ≈ 76.4% |
 | **Cumulative total** | **≈ 831** | **≈ 632** | **≈ 76%** |
+
+### How to read these results
+
+NeoMundi does not claim to detect every error.
+
+The instrument currently prioritizes signal precision over exhaustive coverage:
+
+> it is better to flag fewer outputs usefully than to overwhelm operators with false positives.
+
+The `FLAG` results represent one early validation axis within a broader metrological program.
+
+They must be interpreted within their methodological limits, including dependence on the corpus, providers, thresholds and confirmation protocols used.
+
+Validation is progressively strengthened through **longitudinal observation, reproducibility studies, actionability studies, methodological audits, independent articulations and field pilots**.
 
 ### How to read these results
 
