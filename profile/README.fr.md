@@ -24,57 +24,57 @@ Ses signaux peuvent alimenter de multiples usages — observation, détection de
 
 ## Ce que fait NeoMundi en 30 secondes
 
-NeoMundi permet de :
+NeoMundi fournit une **couche fondamentale de mesure du comportement des IA en cours d’exécution**.
 
-- observer les variations de stabilité et les ruptures de régime pendant ou après une génération ;
+Elle permet notamment de :
+
+- mesurer la stabilité, la variabilité et les changements de régime ;
 - produire des signaux runtime structurés, horodatés et auditables ;
-- détecter certaines sorties nécessitant une attention renforcée ;
-- soutenir des actions telles qu’une alerte, une revue humaine, une régénération ou un reroutage ;
-- conserver l’autorité de décision du côté de l’opérateur, de son système ou de sa couche de règles.
+- détecter certaines situations nécessitant une attention renforcée ;
+- alimenter des usages de supervision, d’audit, d’orchestration ou de gouvernance ;
+- transmettre ces signaux à des infrastructures indépendantes via des interfaces interopérables.
 
-NeoMundi ne prétend pas déterminer seul si une réponse est vraie.
+**Une mesure fondamentale. Plusieurs usages. Plusieurs infrastructures.**
 
-L’objectif est plus opérationnel :
-
-> rendre le comportement génératif observable, interprétable, interopérable, traçable et gouvernable.
+NeoMundi fournit le signal.  
+L’opérateur, son système ou sa couche de règles conserve l’autorité de décision.
 
 ---
 
 ## Pourquoi c’est important
 
-Les systèmes d’IA générative sont de plus en plus intégrés à des workflows réels : agents autonomes, assistance métier, conformité, support, infrastructure, santé, juridique ou finance.
+Les systèmes d’IA générative sont désormais intégrés à des workflows réels : agents autonomes, assistance métier, infrastructure, conformité, support, santé, juridique ou finance.
 
-Or une réponse peut être fluide, plausible et pourtant instable, insuffisamment fondée ou inadaptée au contexte.
+Une réponse peut être fluide et plausible tout en présentant une instabilité, une dérive, une rupture de régime ou une insuffisance de fondement.
 
-La difficulté n’est donc pas uniquement de produire un score.
+Le besoin n’est donc pas seulement de produire davantage de logs ou de scores.
 
-La difficulté est de produire un signal :
+Il est de produire une **mesure exploitable** :
 
 - lisible par une machine ;
-- compréhensible par un humain ;
-- exploitable par une couche d’orchestration ;
-- documentable après exécution ;
-- utilisable sans transférer automatiquement l’autorité de décision à l’instrument.
+- interprétable par un humain ;
+- transmissible à une infrastructure tierce ;
+- traçable dans le temps ;
+- utilisable pour déclencher une action selon une politique explicite.
 
-Un signal isolé n’est pas une infrastructure.
-
-Un signal spécifié, contextualisé et interopérable peut devenir une brique de gouvernance.
+> Un signal isolé est une donnée.  
+> Un signal mesuré, contextualisé et interopérable peut devenir une brique de décision.
 
 ---
 
-## OBS d’abord. GOV lorsque vous êtes prêt.
+## OBS d’abord. GOV lorsque le contexte l’exige.
 
-NeoMundi propose deux modes d’intégration selon le niveau de criticité du système.
+NeoMundi propose deux modes d’intégration selon le niveau de criticité du système et le moment auquel la mesure doit intervenir.
 
-|                      | OBS — Snapshot privacy-first                        | GOV — Gouvernance temps réel                                 |
-| -------------------- | --------------------------------------------------- | ------------------------------------------------------------ |
-| **Principe**         | Votre système appelle NeoMundi après une génération | NeoMundi appelle le LLM pendant l’exécution                  |
-| **Objectif**         | Observer, comparer et documenter                    | Superviser et gouverner en temps réel                        |
-| **Moment**           | Après génération                                    | Pendant la génération                                        |
-| **Données traitées** | Snapshot limité aux données nécessaires à l’analyse | Flux traité de manière transitoire                           |
-| **Signaux**          | État de stabilité, alertes, traces auditables       | État de stabilité, `ΔG`, alertes et décisions de gouvernance |
-| **Rétention**        | Aucun stockage des prompts ni des réponses          | Aucun stockage des prompts ni des réponses                   |
-| **Usage naturel**    | La majorité des systèmes IA                         | Workflows critiques ou difficilement rattrapables            |
+| | **OBS — Snapshot privacy-first** | **GOV — Gouvernance temps réel** |
+|---|---|---|
+| **Principe** | Votre système appelle NeoMundi après une génération | NeoMundi intervient dans la boucle d’exécution |
+| **Objectif** | Observer, comparer et documenter | Superviser et gouverner en temps réel |
+| **Moment** | Après génération | Pendant la génération |
+| **Données traitées** | Snapshot limité aux données nécessaires à l’analyse | Flux traité de manière transitoire |
+| **Signaux** | État de stabilité, alertes et traces auditables | État de stabilité, `ΔG`, alertes et signaux de gouvernance |
+| **Rétention** | Aucun stockage des prompts ni des réponses | Aucun stockage des prompts ni des réponses |
+| **Usage naturel** | La majorité des systèmes IA | Workflows critiques ou difficilement rattrapables |
 
 ### Le bon critère de décision
 
@@ -82,67 +82,50 @@ NeoMundi propose deux modes d’intégration selon le niveau de criticité du sy
 
 **Si oui**, OBS constitue généralement le point d’entrée naturel.
 
-Votre système envoie un snapshot à NeoMundi afin d’observer les comportements, détecter certaines dérives et conserver une trace exploitable.
+Votre système envoie un snapshot à NeoMundi afin de mesurer certains comportements, détecter des variations et conserver une trace exploitable.
 
 **Si non**, GOV devient pertinent.
 
-NeoMundi intervient dans la boucle d’exécution, appelle le LLM, suit l’évolution du signal en temps réel et permet d’appliquer une politique de supervision renforcée.
-
-Dans les deux cas, NeoMundi fournit le signal.
-
-Votre système, votre couche de règles ou l’opérateur responsable conserve l’autorité de décision.
-
+NeoMundi intervient dans la boucle d’exécution, suit l’évolution du signal en temps réel et permet à une politique de supervision de réagir pendant l’exécution.
 
 ---
 
-## Ce que NeoMundi observe
+## Signaux et artefacts de mesure
 
-NeoMundi produit des signaux permettant d’observer certains comportements pendant ou après la génération :
+Selon le mode d’intégration, NeoMundi peut produire notamment :
 
-- variations de stabilité ;
-- pertes de cohérence ;
-- dérives progressives ;
-- ruptures de régime ;
-- schémas compatibles avec certaines sorties problématiques ;
-- variations informationnelles entre générations, modèles, prompts ou versions.
-
-Ces signaux ne constituent pas des preuves absolues.
-
-Ils servent à rendre les générations IA plus observables, interprétables, traçables et gouvernables.
-
-### Familles de signaux et d’artefacts
-
-Selon le mode d’intégration et le niveau de maturité du déploiement, NeoMundi peut produire :
-
-- **état de stabilité de gouvernance** : état normalisé associé à une génération ou à une fenêtre d’exécution ;
-- **variation runtime de stabilité** : évolution du signal entre plusieurs fenêtres d’observation ;
-- **FLAG** : signal conservateur indiquant qu’une sortie mérite une attention renforcée ;
-- **métriques informationnelles** : mesures complémentaires liées à la structure informationnelle des générations ;
-- **décisions de gouvernance** : états tels que `ALLOW`, `FLAG`, `BLOCK` ou équivalents selon la politique du client ;
+- **stabilité comportementale** : état normalisé associé à une génération ou à une fenêtre d’exécution ;
+- **variation de stabilité** : évolution du signal entre plusieurs fenêtres d’observation ;
+- **changements de régime** : transitions observables dans le comportement du système ;
+- **signaux de cohérence** : indications relatives à l’évolution de la cohérence au cours de l’exécution ;
+- **métriques informationnelles** : mesures complémentaires liées à la structure et à la densité informationnelles des générations ;
+- **FLAG** : signal conservateur indiquant qu’une sortie nécessite une attention renforcée ;
 - **télémétrie structurée** : événements, timestamps, identifiants techniques et signaux associés ;
-- **traces auditables** : exports, rapports et artefacts de reporting selon le niveau d’intégration.
+- **traces auditables** : exports, rapports et artefacts permettant de documenter ce qui s’est produit.
 
-> Un signal observe.  
-> Une décision oriente l’action.  
-> L’interprétation reste contextuelle.
+Ces signaux ne constituent pas, isolément, une preuve absolue de vérité, d’erreur ou de conformité.
+
+Ils doivent être interprétés dans leur contexte et selon la politique du système qui les consomme.
 
 ---
 
-## Premiers résultats expérimentaux
+## Validation expérimentale
 
-NeoMundi a été testé sur plusieurs campagnes contrôlées portant sur des services d’IA générative accessibles par API.
+NeoMundi a désormais produit et analysé **plus de 200 000 observations** à travers ses campagnes de mesure, baromètres, cartographies, expérimentations et pilotes.
 
-### Corpus cumulé
+Ces travaux couvrent plusieurs modèles, providers, protocoles et configurations d’exécution et contribuent à étudier la stabilité, la variabilité comportementale, les changements de régime et l’actionnabilité des signaux produits.
+
+### Premières campagnes de validation du signal FLAG
+
+Les premières campagnes utilisées pour évaluer spécifiquement la précision du signal `FLAG` représentaient un corpus cumulé de **10 160 générations**.
 
 | Campagne | Périmètre | Générations analysées |
 |---|---:|---:|
 | Cartographie v1 — 2026-04-26 | 5 providers LLM | 3 904 |
 | Cohorte TruthfulQA v2 — 2026-05-17 | 8 providers LLM anonymisés | 6 256 |
-| **Total** |  | **10 160** |
+| **Total** | | **10 160** |
 
-### Précision observée du signal FLAG
-
-Lorsqu’un `FLAG` a été déclenché, une sortie problématique a été confirmée dans environ **76 %** des cas sur le corpus cumulé.
+Lorsqu’un `FLAG` a été déclenché, une sortie problématique a été confirmée dans environ **76 % des cas** sur ce corpus.
 
 | Campagne | FLAG déclenchés | Sorties problématiques confirmées | Précision observée |
 |---|---:|---:|---:|
@@ -154,101 +137,100 @@ Lorsqu’un `FLAG` a été déclenché, une sortie problématique a été confir
 
 NeoMundi ne prétend pas détecter toutes les erreurs.
 
-L’instrument privilégie aujourd’hui la précision du signal sur la couverture exhaustive :
+L’instrument privilégie aujourd’hui la précision du signal sur une couverture exhaustive :
 
 > mieux vaut signaler moins, mais signaler utilement, que saturer les équipes avec des faux positifs.
 
-Ces résultats constituent une première validation opérationnelle.
+Ces résultats constituent une première validation expérimentale et opérationnelle.
 
-Ils doivent être lus avec leurs limites : dépendance au corpus, aux providers testés, aux seuils retenus et au protocole de confirmation humaine ou instrumentale.
+Ils doivent être interprétés avec leurs limites : dépendance au corpus, aux providers testés, aux seuils retenus et aux protocoles de confirmation utilisés.
 
-La consolidation se poursuit à travers les campagnes d’observation, les audits méthodologiques et les pilotes terrain.
+La consolidation se poursuit à travers les campagnes longitudinales, les audits méthodologiques, les articulations expérimentales et les pilotes terrain.
 
 ---
 
 ## Cas d’usage
 
-| Usage | Ce que NeoMundi apporte | Mode naturel |
+Une même couche de mesure peut alimenter plusieurs usages sans imposer l’infrastructure qui les exploite.
+
+| Usage | Ce que les signaux NeoMundi peuvent apporter | Mode naturel |
 |---|---|---|
-| **Agents autonomes** | Observer les dérives, déclencher une escalade, une relance ou un reroutage selon la politique retenue | OBS · GOV |
+| **Agents autonomes** | Observer certaines dérives et alimenter des mécanismes d’escalade, de relance ou de reroutage | OBS · GOV |
 | **Conformité et audit** | Produire des traces horodatées, documenter les signaux et soutenir la supervision | OBS · GOV |
 | **Fine-tuning et évaluation** | Comparer les écarts comportementaux entre modèles, prompts, datasets ou versions | OBS |
 | **SLA et infrastructure IA** | Détecter certaines dégradations comportementales et documenter les incidents | OBS · GOV |
 | **Workflows sensibles** | Renforcer la supervision lorsqu’une sortie erronée serait difficilement rattrapable | GOV |
 
-NeoMundi ne remplace pas votre stack d’observabilité.
+**Ces usages dérivent d’une même couche de mesure. NeoMundi n’impose pas l’infrastructure qui les exploite.**
 
-NeoMundi ajoute une couche complémentaire de mesure et de gouvernance comportementale.
+Des launchers, orchestrateurs, systèmes de gouvernance, infrastructures de preuve ou applications métier peuvent consommer les signaux NeoMundi tout en conservant leur propre fonction et leur autorité décisionnelle.
 
 ---
 
-## Intégration et confidentialité
+## Intégration et interopérabilité
 
-NeoMundi est conçu pour s’intégrer progressivement à des applications LLM, agents, orchestrateurs ou systèmes métier.
+NeoMundi est conçu pour s’articuler avec des applications LLM, agents, orchestrateurs, couches de gouvernance et systèmes métier existants.
 
 ### Principes d’intégration
 
-- un appel API pour démarrer ;
+- intégration progressive à partir d’un appel API ;
 - approche **BYOK** selon le mode et la configuration ;
 - aucun stockage des prompts ni des réponses ;
-- seuils configurables selon les politiques du client ;
-- conservation de l’autorité de décision par l’opérateur ;
+- seuils et politiques configurables selon le contexte ;
+- séparation entre autorité de mesure et autorité de décision ;
 - exports et traces auditables selon le niveau d’intégration ;
-- déploiement dédié ou environnement contrôlé selon les besoins.
+- possibilité d’articuler les signaux avec des infrastructures externes ;
+- déploiements dédiés ou environnements contrôlés selon les besoins.
 
 ### Intégration des providers LLM
 
-NeoMundi peut être intégré aux principaux providers LLM via une API de gouvernance runtime.
+NeoMundi peut être intégré aux providers LLM pris en charge via ses interfaces runtime.
 
-Consultez le guide d’intégration pour connecter votre compte provider existant, configurer votre modèle, gérer vos clés API de manière sécurisée et commencer à transmettre des requêtes gouvernées en streaming via ControlTowerAI.
+Le guide d’intégration explique comment connecter un compte provider existant, configurer un modèle, gérer les clés API et transmettre des requêtes à travers ControlTowerAI.
 
 ➡️ [Read the LLM Provider Integration Guide](https://github.com/neomundi-io/controltowerai-docs/blob/main/providers.md)
 
-### Souveraineté opérationnelle
+### Interopérabilité
 
-NeoMundi utilise un **juge sémantique auto-hébergé** pour analyser certaines réponses générées par les IA.
+NeoMundi vise à rendre ses signaux exploitables par des systèmes indépendants sans leur imposer une architecture, une politique ou un mécanisme de gouvernance particulier.
 
-Ce juge fonctionne sur une infrastructure maîtrisée par NeoMundi, sans dépendre d’un service externe pour cette fonction critique.
+Le contrat d’interopérabilité runtime documente les principes minimaux permettant de transmettre et interpréter ces signaux entre couches indépendantes.
 
-Cette architecture vise trois objectifs :
+➡️ [Contrat d’interopérabilité runtime](https://github.com/neomundi-io/runtime-interoperability-contract/blob/main/README_FR.md)
 
-* **confidentialité** : limiter l’exposition des données sensibles ;
-* **résilience** : réduire la dépendance à des services externes ;
-* **souveraineté opérationnelle** : garder la maîtrise de l’analyse et du traitement.
+---
 
+## Confidentialité et souveraineté opérationnelle
+
+NeoMundi applique un principe de minimisation des données traitées.
+
+Les prompts et réponses ne sont pas stockés.
+
+Selon le mode d’intégration, seules les informations nécessaires à la mesure, à la traçabilité ou au fonctionnement des politiques associées peuvent être conservées.
+
+NeoMundi utilise également un **juge sémantique auto-hébergé** pour certaines analyses.
+
+Ce composant fonctionne sur une infrastructure maîtrisée par NeoMundi afin de limiter la dépendance à des services externes pour cette fonction.
+
+Cette architecture poursuit trois objectifs :
+
+- **confidentialité** : limiter l’exposition des données ;
+- **résilience** : réduire certaines dépendances externes ;
+- **souveraineté opérationnelle** : conserver la maîtrise de l’analyse et du traitement.
 
 ---
 
 ## État du produit
 
-NeoMundi évolue par étapes afin de distinguer clairement ce qui est démontrable aujourd’hui, ce qui est proposé dans le cadre des pilotes et ce qui relève de la trajectoire d’industrialisation.
+NeoMundi évolue progressivement afin de distinguer clairement ce qui est disponible aujourd’hui, ce qui peut être expérimenté dans le cadre de pilotes et ce qui relève encore de l’industrialisation.
 
 | Statut | Signification |
 |---|---|
-| **Disponible maintenant** | Sandbox public, premières surfaces d’observation, démonstration des signaux et documentation méthodologique |
-| **Pilote accompagné** | Intégration progressive, calibration, supervision, exports et politiques adaptées au contexte client |
-| **Trajectoire produit** | Extension des métriques, orchestration runtime avancée, déploiements dédiés et industrialisation des politiques de gouvernance |
+| **Disponible maintenant** | Sandbox public, premières surfaces de mesure, signaux runtime et documentation méthodologique |
+| **Pilote accompagné** | Intégration progressive, calibration, supervision, exports et politiques adaptées au contexte |
+| **Trajectoire produit** | Extension des métriques, interopérabilité renforcée, orchestration runtime avancée et déploiements dédiés |
 
-Cette progression permet de commencer par l’observation, puis d’augmenter le niveau de contrôle lorsque le contexte métier le justifie.
-
----
-
-## Du thermomètre au spectromètre
-
-NeoMundi évolue d’un signal de stabilité vers une couche de mesure multidimensionnelle des comportements IA pendant leur exécution.
-
-L’objectif n’est pas de multiplier les scores.
-
-L’objectif est de construire une infrastructure capable de :
-
-1. mesurer ;
-2. interpréter ;
-3. transmettre ;
-4. décider selon une politique explicite ;
-5. tracer ce qui s’est produit.
-
-Le cadre public NeoMundi documente progressivement les signaux, contrats et frontières méthodologiques nécessaires à cette infrastructure.
-
+Cette progression permet de commencer par la mesure, puis d’articuler progressivement les usages et niveaux de gouvernance nécessaires au contexte opérationnel.
 ---
 
 ## Dépôts principaux — Core repositories
