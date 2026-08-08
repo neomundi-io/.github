@@ -18,16 +18,7 @@ Ses signaux peuvent alimenter de multiples usages — observation, détection de
 
 **Votre système. Vos décisions. Notre signal.**
 
-<p align="center">
-
-[**Reference Framework**](https://zenodo.org/records/21821522) ·
-[**Executive Brief**](LINK_EXECUTIVE_BRIEF) ·
-[**AI Observatory**](https://github.com/neomundi-io/neomundi-ai-observatory) ·
-[**Launchers & Use Cases**](#use-cases) ·
-[**Interoperability**](https://github.com/neomundi-io/runtime-interoperability-contract) ·
-[**Sandbox**](https://controltower.neomundi.io/welcome)
-
-</p>
+[**Cadre de référence**](https://zenodo.org/records/21821522) · [**Executive Brief**](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/Executive_brief_FR.pdf) · [**Observatoire IA NeoMundi**](https://github.com/neomundi-io/neomundi-ai-observatory/blob/main/README.fr.md) · **Launchers & cas d’usage** · [**Interopérabilité**](https://github.com/neomundi-io/runtime-interoperability-contract/blob/main/README_FR.md) · [**Sandbox**](https://controltower.neomundi.io/welcome)
 
 ---
 
