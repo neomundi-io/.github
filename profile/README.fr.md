@@ -111,13 +111,39 @@ Ils doivent être interprétés dans leur contexte et selon la politique du syst
 
 ## Validation expérimentale
 
-NeoMundi a désormais produit et analysé **plus de 200 000 observations** à travers ses campagnes de mesure, baromètres, cartographies, expérimentations et pilotes.
+NeoMundi a désormais produit et analysé **plus de 200 000 observations** à travers ses campagnes longitudinales de mesure, baromètres, cartographies, expérimentations contrôlées et pilotes terrain.
 
-Ces travaux couvrent plusieurs modèles, providers, protocoles et configurations d’exécution et contribuent à étudier la stabilité, la variabilité comportementale, les changements de régime et l’actionnabilité des signaux produits.
+Le programme d’observation actuel couvre **12 systèmes d’IA**, répartis entre différents providers, modèles, protocoles et configurations d’exécution.
 
-### Premières campagnes de validation du signal FLAG
+Ces travaux contribuent notamment à étudier :
 
-Les premières campagnes utilisées pour évaluer spécifiquement la précision du signal `FLAG` représentaient un corpus cumulé de **10 160 générations**.
+- la stabilité et la variabilité comportementales ;
+- les changements de régime et les dérives longitudinales ;
+- la reproductibilité des signaux de mesure ;
+- l’actionnabilité des signaux et scores produits ;
+- leur interopérabilité avec des infrastructures d’IA hétérogènes.
+
+➡️ [Observatoire IA NeoMundi](https://github.com/neomundi-io/neomundi-ai-observatory/blob/main/README.fr.md)  
+➡️ [Observatoire de recherche NeoMundi](https://neomundi.org/)
+
+### Consolidation du cadre de mesure
+
+Le programme expérimental NeoMundi ne repose pas sur un seul axe de validation.
+
+En complément de l’observation longitudinale, des travaux dédiés à la **reproductibilité** et à l’**actionnabilité** contribuent progressivement à consolider le cadre de mesure.
+
+L’objectif est d’établir si les signaux produits sont non seulement observables, mais également :
+
+1. reproductibles dans des conditions comparables ;
+2. sensibles à des changements comportementaux significatifs ;
+3. interprétables dans des limites méthodologiques explicites ;
+4. exploitables par des opérateurs, des couches de gouvernance et des infrastructures indépendantes.
+
+Ces travaux contribuent à la validation progressive des signaux, métriques et scores dérivés produits par NeoMundi.
+
+### Corpus initial de validation du signal FLAG
+
+Les premières campagnes contrôlées utilisées spécifiquement pour évaluer la précision du signal `FLAG` représentaient un corpus cumulé de **10 160 générations**.
 
 | Campagne | Périmètre | Générations analysées |
 |---|---:|---:|
@@ -125,7 +151,7 @@ Les premières campagnes utilisées pour évaluer spécifiquement la précision 
 | Cohorte TruthfulQA v2 — 2026-05-17 | 8 providers LLM anonymisés | 6 256 |
 | **Total** | | **10 160** |
 
-Lorsqu’un `FLAG` a été déclenché, une sortie problématique a été confirmée dans environ **76 % des cas** sur ce corpus.
+Lorsqu’un `FLAG` a été déclenché, une sortie problématique a été confirmée dans environ **76 % des cas** sur ce corpus de validation.
 
 | Campagne | FLAG déclenchés | Sorties problématiques confirmées | Précision observée |
 |---|---:|---:|---:|
@@ -133,19 +159,19 @@ Lorsqu’un `FLAG` a été déclenché, une sortie problématique a été confir
 | Cohorte TruthfulQA v2 — 2026-05-17 | ≈ 394 | ≈ 301 | ≈ 76,4 % |
 | **Total cumulé** | **≈ 831** | **≈ 632** | **≈ 76 %** |
 
-### Lecture correcte de ces résultats
+### Comment lire ces résultats
 
 NeoMundi ne prétend pas détecter toutes les erreurs.
 
 L’instrument privilégie aujourd’hui la précision du signal sur une couverture exhaustive :
 
-> mieux vaut signaler moins, mais signaler utilement, que saturer les équipes avec des faux positifs.
+> mieux vaut signaler moins, mais signaler utilement, que saturer les opérateurs avec des faux positifs.
 
-Ces résultats constituent une première validation expérimentale et opérationnelle.
+Les résultats du `FLAG` constituent un premier axe de validation au sein d’un programme métrologique plus large.
 
-Ils doivent être interprétés avec leurs limites : dépendance au corpus, aux providers testés, aux seuils retenus et aux protocoles de confirmation utilisés.
+Ils doivent être interprétés dans leurs limites méthodologiques, notamment leur dépendance au corpus, aux providers, aux seuils et aux protocoles de confirmation utilisés.
 
-La consolidation se poursuit à travers les campagnes longitudinales, les audits méthodologiques, les articulations expérimentales et les pilotes terrain.
+La validation est progressivement renforcée par **l’observation longitudinale, les études de reproductibilité, les travaux sur l’actionnabilité, les audits méthodologiques, les articulations indépendantes et les pilotes terrain**.
 
 ---
 
