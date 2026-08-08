@@ -143,8 +143,6 @@ The objective is to establish whether the signals produced are not only observab
 
 This work contributes to the progressive validation of NeoMundi's signals, metrics and derived scores.
 
----
-
 ### Initial FLAG signal validation corpus
 
 Earlier controlled campaigns used specifically to evaluate the precision of the `FLAG` signal represented a cumulative corpus of **10,160 generations**.
@@ -176,20 +174,6 @@ The `FLAG` results represent one early validation axis within a broader metrolog
 They must be interpreted within their methodological limits, including dependence on the corpus, providers, thresholds and confirmation protocols used.
 
 Validation is progressively strengthened through **longitudinal observation, reproducibility studies, actionability studies, methodological audits, independent articulations and field pilots**.
-
-### How to read these results
-
-NeoMundi does not claim to detect every error.
-
-The instrument currently prioritizes signal precision over exhaustive coverage:
-
-> it is better to flag fewer outputs usefully than to overwhelm teams with false positives.
-
-These results constitute an initial experimental and operational validation.
-
-They must be interpreted within their limitations, including dependence on the corpus, providers tested, selected thresholds and confirmation protocols.
-
-Consolidation continues through longitudinal measurement campaigns, methodological audits, experimental articulations and field pilots.
 
 ---
 
