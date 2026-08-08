@@ -177,50 +177,63 @@ La validation est progressivement renforcée par **l’observation longitudinale
 
 ## Cas d’usage
 
-Une même couche de mesure peut alimenter plusieurs usages sans imposer l’infrastructure qui les exploite.
+Une même couche de mesure peut alimenter de multiples usages sans imposer l’infrastructure qui les exploite.
 
-| Usage | Ce que les signaux NeoMundi peuvent apporter | Mode naturel |
+| Usage | Ce que les signaux NeoMundi rendent possible | Mode de mesure |
 |---|---|---|
-| **Agents autonomes** | Observer certaines dérives et alimenter des mécanismes d’escalade, de relance ou de reroutage | OBS · GOV |
-| **Conformité et audit** | Produire des traces horodatées, documenter les signaux et soutenir la supervision | OBS · GOV |
-| **Fine-tuning et évaluation** | Comparer les écarts comportementaux entre modèles, prompts, datasets ou versions | OBS |
-| **SLA et infrastructure IA** | Détecter certaines dégradations comportementales et documenter les incidents | OBS · GOV |
-| **Workflows sensibles** | Renforcer la supervision lorsqu’une sortie erronée serait difficilement rattrapable | GOV |
+| **Agents autonomes** | Détecter certaines variations ou dérives afin qu’un orchestrateur puisse déclencher une escalade, une relance ou un reroutage | OBS · GOV |
+| **Conformité et audit** | Produire des mesures horodatées et des traces exploitables pour documenter le comportement d’un système | OBS · GOV |
+| **Évaluation et comparaison** | Comparer les comportements entre modèles, prompts, datasets, versions ou configurations | OBS |
+| **Infrastructure IA et SLA** | Identifier certaines dégradations comportementales et documenter leur évolution dans le temps | OBS · GOV |
+| **Workflows sensibles** | Fournir des signaux runtime pouvant alimenter une supervision renforcée ou une politique externe de contrôle | GOV |
+| **Monitoring longitudinal** | Mesurer l’évolution d’un système dans le temps et identifier des changements de régime ou de profil comportemental | OBS |
+| **Recherche et métrologie** | Produire des observations comparables pour étudier stabilité, variabilité, reproductibilité et transitions comportementales | OBS |
 
-**Ces usages dérivent d’une même couche de mesure. NeoMundi n’impose pas l’infrastructure qui les exploite.**
+**Ces usages dérivent d’une même couche de mesure.**
 
-Des launchers, orchestrateurs, systèmes de gouvernance, infrastructures de preuve ou applications métier peuvent consommer les signaux NeoMundi tout en conservant leur propre fonction et leur autorité décisionnelle.
+NeoMundi n’impose ni l’application, ni l’orchestrateur, ni la politique qui exploite ses signaux.
+
+Des launchers, agents, systèmes de gouvernance, infrastructures de preuve, outils d’audit ou applications métier peuvent consommer les signaux NeoMundi tout en conservant leur propre architecture, leur fonction et leur autorité décisionnelle.
+
+> **Une mesure fondamentale. Plusieurs usages. Plusieurs infrastructures.**
 
 ---
 
 ## Intégration et interopérabilité
 
-NeoMundi est conçu pour s’articuler avec des applications LLM, agents, orchestrateurs, couches de gouvernance et systèmes métier existants.
+NeoMundi est conçu comme une couche indépendante pouvant s’articuler avec des applications LLM, agents, orchestrateurs, plateformes d’observabilité, systèmes de gouvernance et infrastructures métier existantes.
 
 ### Principes d’intégration
 
-- intégration progressive à partir d’un appel API ;
-- approche **BYOK** selon le mode et la configuration ;
+- intégration progressive via API ;
+- compatibilité avec plusieurs modèles, providers et architectures ;
+- approche **BYOK** lorsque le mode d’intégration le permet ;
+- minimisation des données transmises ;
 - aucun stockage des prompts ni des réponses ;
-- seuils et politiques configurables selon le contexte ;
-- séparation entre autorité de mesure et autorité de décision ;
-- exports et traces auditables selon le niveau d’intégration ;
-- possibilité d’articuler les signaux avec des infrastructures externes ;
-- déploiements dédiés ou environnements contrôlés selon les besoins.
+- production de signaux et artefacts structurés ;
+- séparation entre **autorité de mesure** et **autorité de décision** ;
+- possibilité pour des infrastructures externes de consommer et interpréter les signaux ;
+- déploiements contrôlés ou dédiés selon les besoins.
+
+NeoMundi n’a pas vocation à remplacer les infrastructures existantes.
+
+La couche de mesure peut au contraire être utilisée par des systèmes indépendants qui conservent leurs propres fonctions de logging, orchestration, gouvernance, preuve ou contrôle.
 
 ### Intégration des providers LLM
 
-NeoMundi peut être intégré aux providers LLM pris en charge via ses interfaces runtime.
+Les interfaces runtime NeoMundi permettent d’articuler la mesure avec les providers et modèles pris en charge.
 
-Le guide d’intégration explique comment connecter un compte provider existant, configurer un modèle, gérer les clés API et transmettre des requêtes à travers ControlTowerAI.
+Le guide d’intégration documente la connexion aux providers, la configuration des modèles et la gestion des clés nécessaires aux modes d’intégration concernés.
 
-➡️ [Read the LLM Provider Integration Guide](https://github.com/neomundi-io/controltowerai-docs/blob/main/providers.md)
+➡️ [LLM Provider Integration Guide](https://github.com/neomundi-io/controltowerai-docs/blob/main/providers.md)
 
 ### Interopérabilité
 
-NeoMundi vise à rendre ses signaux exploitables par des systèmes indépendants sans leur imposer une architecture, une politique ou un mécanisme de gouvernance particulier.
+L’interopérabilité constitue un principe central de l’architecture NeoMundi.
 
-Le contrat d’interopérabilité runtime documente les principes minimaux permettant de transmettre et interpréter ces signaux entre couches indépendantes.
+L’objectif est qu’un signal de mesure puisse être produit par une couche, transmis à une autre, interprété dans un cadre explicite puis utilisé par une infrastructure indépendante — sans transfert implicite d’autorité entre ces différentes fonctions.
+
+Le **Runtime Interoperability Contract** documente la sémantique minimale permettant cette articulation entre couches indépendantes.
 
 ➡️ [Contrat d’interopérabilité runtime](https://github.com/neomundi-io/runtime-interoperability-contract/blob/main/README_FR.md)
 
@@ -232,31 +245,31 @@ NeoMundi applique un principe de minimisation des données traitées.
 
 Les prompts et réponses ne sont pas stockés.
 
-Selon le mode d’intégration, seules les informations nécessaires à la mesure, à la traçabilité ou au fonctionnement des politiques associées peuvent être conservées.
+Selon le mode d’intégration, seules les informations nécessaires à la mesure, à la traçabilité et à la production des artefacts associés peuvent être conservées.
 
 NeoMundi utilise également un **juge sémantique auto-hébergé** pour certaines analyses.
 
-Ce composant fonctionne sur une infrastructure maîtrisée par NeoMundi afin de limiter la dépendance à des services externes pour cette fonction.
+Ce composant fonctionne sur une infrastructure maîtrisée par NeoMundi afin de limiter la dépendance à des services externes pour cette fonction de mesure.
 
 Cette architecture poursuit trois objectifs :
 
 - **confidentialité** : limiter l’exposition des données ;
-- **résilience** : réduire certaines dépendances externes ;
-- **souveraineté opérationnelle** : conserver la maîtrise de l’analyse et du traitement.
+- **résilience** : réduire les dépendances externes critiques ;
+- **souveraineté opérationnelle** : conserver la maîtrise de la chaîne de mesure et de traitement.
 
 ---
 
 ## État du produit
 
-NeoMundi évolue progressivement afin de distinguer clairement ce qui est disponible aujourd’hui, ce qui peut être expérimenté dans le cadre de pilotes et ce qui relève encore de l’industrialisation.
+NeoMundi distingue clairement la couche de mesure disponible aujourd’hui, les intégrations expérimentées avec des partenaires et les éléments encore en cours d’industrialisation.
 
 | Statut | Signification |
 |---|---|
-| **Disponible maintenant** | Sandbox public, premières surfaces de mesure, signaux runtime et documentation méthodologique |
-| **Pilote accompagné** | Intégration progressive, calibration, supervision, exports et politiques adaptées au contexte |
-| **Trajectoire produit** | Extension des métriques, interopérabilité renforcée, orchestration runtime avancée et déploiements dédiés |
+| **Disponible maintenant** | API et surfaces de mesure, signaux runtime, sandbox, documentation méthodologique et premières interfaces d’intégration |
+| **Pilotes et articulations** | Intégration avec des agents, orchestrateurs, infrastructures de gouvernance, systèmes de preuve et applications indépendantes |
+| **Industrialisation** | Extension du domaine de mesure, consolidation des métriques, interopérabilité standardisée, performances et options de déploiement |
 
-Cette progression permet de commencer par la mesure, puis d’articuler progressivement les usages et niveaux de gouvernance nécessaires au contexte opérationnel.
+La trajectoire consiste à renforcer progressivement **la mesure elle-même et sa capacité à être consommée par des infrastructures hétérogènes**, plutôt qu’à centraliser les usages dans NeoMundi.
 ---
 
 ## Dépôts principaux — Core repositories
