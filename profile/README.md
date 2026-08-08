@@ -340,57 +340,97 @@ The objective is to make AI behavior easier to measure, check, understand, trans
 
 No.
 
-NeoMundi produces signals to observe certain variations, instabilities, drifts or behavioral transitions.
+NeoMundi measures certain aspects of AI system behavior, including stability, variability, drift, regime changes and related signals.
 
-These signals support decision-making. They do not replace business context, human supervision or specialized verification mechanisms when these are required.
+These measurements can help identify outputs requiring enhanced attention, but they do not constitute, on their own, proof of truth, error or compliance.
+
+Interpretation remains contextual and may be complemented by specialized verification mechanisms, business rules or human supervision.
 
 ### What is the difference between OBS and GOV?
 
-**OBS** enables observation, documentation and improvement after generation or through continuous supervision.
+**OBS** measures system behavior after generation or across successive observations.
 
-**GOV** enters the runtime chain when an incorrect output would be difficult to recover from.
+It is generally the simplest integration mode and the natural starting point for most systems.
 
-OBS is generally the natural starting point.
+**GOV** enables certain measurements to be performed during execution when the context requires closer supervision.
 
-GOV increases the level of control when the context requires it.
+In both cases, NeoMundi produces the measurement and associated signals.
+
+The application, orchestrator, external policy layer or operator retains decision authority.
 
 ### What data is stored?
 
-NeoMundi is designed according to a data-minimization principle.
+NeoMundi follows a data-minimization principle.
 
 Prompts and responses are not stored.
 
-Depending on the selected mode, only metrics, signals, technical events, required identifiers, timestamps and reporting artifacts may be retained.
+Depending on the integration mode, only metrics, signals, technical events, required identifiers, timestamps and artifacts necessary for measurement, traceability or audit may be retained.
 
-### Does NeoMundi work with my LLM?
+### Does NeoMundi work with my LLM or infrastructure?
 
-OBS is designed to be compatible with systems capable of sending the expected observation artifacts.
+NeoMundi is designed to be independent of any specific model or provider.
 
-GOV follows a progressive integration approach depending on providers, workflows and levels of criticality.
+The measurement layer can progressively articulate with different models, providers, agents, orchestrators and AI infrastructures.
 
-### How is NeoMundi different from LangSmith, Portkey or Helicone?
+**OBS** can be used when a system is able to transmit the artifacts required for measurement.
 
-These tools primarily focus on application observability: logs, tracing, costs, workflows and performance.
+**GOV** requires deeper runtime integration and depends on the providers, architectures and workflows involved.
 
-NeoMundi adds a complementary layer focused on behavioral measurement and governance: stability, variation, runtime signals, interpretation, auditability and supervision policies.
+The objective is to enable heterogeneous infrastructures to consume NeoMundi signals while retaining their own architecture and function.
 
-### Does NeoMundi cover certain EU AI Act and GDPR requirements?
+### How is NeoMundi different from LangSmith, Portkey, Helicone or other observability platforms?
+
+These platforms primarily cover application observability functions such as logs, traces, costs, latency, workflows and operational performance.
+
+NeoMundi focuses on a complementary domain: **the measurement of AI system behavior**.
+
+The NeoMundi layer aims in particular to make the following measurable and comparable:
+
+- behavioral stability;
+- variability;
+- certain forms of drift;
+- regime changes;
+- certain coherence signals;
+- informational metrics;
+- their evolution over time.
+
+NeoMundi is therefore not intended to replace an observability stack.
+
+Its signals can instead be consumed by observability platforms, orchestrators, governance systems or other independent infrastructures.
+
+### Is NeoMundi a governance system?
+
+NeoMundi provides a **measurement layer that can feed governance mechanisms**, but measurement and decision-making remain distinct functions.
+
+A NeoMundi signal can, for example, be used by an external system to:
+
+- trigger an alert;
+- request human review;
+- regenerate an output;
+- reroute a request;
+- apply a control policy.
+
+The final decision remains with the system, policy or operator consuming the signal.
+
+### Does NeoMundi address certain EU AI Act and GDPR requirements?
 
 NeoMundi does not replace a complete compliance process, legal analysis or regulatory certification.
 
-However, ControlTower covers several technical capabilities that are directly useful for EU AI Act and GDPR compliance efforts:
+The measurement layer and associated tools can nevertheless provide several technical capabilities that may support compliance efforts, including:
 
-* continuous monitoring of AI-system behaviour;
-* control of the risk associated with generated responses;
-* operational traceability;
-* auditability;
-* actionable signals supporting human oversight;
-* evidence useful for incident documentation;
-* a privacy-first architecture based on data minimisation and the absence of prompt and response storage.
+- monitoring AI system behavior over time;
+- traceability of observations and signals;
+- documentation of certain variations or incidents;
+- production of auditable artifacts;
+- actionable signals supporting human oversight;
+- minimization of processed data;
+- absence of prompt and response storage in the relevant modes.
 
-The legal relevance depends on the system concerned, its intended use, its level of risk and the organisation’s role.
+Regulatory relevance depends on the system concerned, its intended use, its level of risk and the role of the organization deploying it.
 
-➡️ [Consult the detailed mapping of NeoMundi capabilities for the EU AI Act and GDPR](https://github.com/neomundi-io/ai-act-rgpd/blob/main/README_EN.md)
+➡️ [View the detailed mapping of NeoMundi capabilities for the EU AI Act and GDPR](https://github.com/neomundi-io/ai-act-rgpd)
+
+---
 
 ##  Ecosystem & Infrastructure Support
 
@@ -415,17 +455,6 @@ The NeoMundi AI Observatory is supported by sovereign infrastructure partners, i
      width="150">
 
 These relationships support the development and operation of independent AI measurement, auditability and runtime governance capabilities. They do not imply endorsement of NeoMundi’s research findings, measurements or interpretations by the organisations named above.
-
----
-
- Resources
-
-* [NeoMundi Sandbox](https://controltower.neomundi.io/welcome)
-* [NeoMundi Website](https://neomundi.io)
-* [Executive Brief — FR](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/Executive_brief_FR.pdf)
-* [Executive Brief — EN](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/Executive_brief_EN.pdf)
-* [AI Observability & Behavioral Metrology — FR / EN](https://zenodo.org/records/21250268)
-* [Theoretical Framework (Law E) — FR](https://doi.org/10.5281/zenodo.19385052)
 
 ---
 
