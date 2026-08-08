@@ -20,16 +20,7 @@ Its signals can support multiple uses — observation, drift detection, audit, g
 
 ---
 
-<p align="center">
-
-[**Reference Framework**](https://zenodo.org/records/21821522) ·
-[**Executive Brief**](LINK_EXECUTIVE_BRIEF) ·
-[**AI Observatory**](https://github.com/neomundi-io/neomundi-ai-observatory) ·
-[**Launchers & Use Cases**](#use-cases) ·
-[**Interoperability**](https://github.com/neomundi-io/runtime-interoperability-contract) ·
-[**Sandbox**](https://controltower.neomundi.io/welcome)
-
-</p>
+[**Reference Framework**](https://zenodo.org/records/21821522) · [**Executive Brief**](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/Executive_brief_EN.pdf) · [**AI Observatory**](https://github.com/neomundi-io/neomundi-ai-observatory) · **Launchers & Use Cases** · [**Interoperability**](https://github.com/neomundi-io/runtime-interoperability-contract) · [**Sandbox**](https://controltower.neomundi.io/welcome)
 
 ---
 
