@@ -18,7 +18,30 @@ Its signals can support multiple uses — observation, drift detection, audit, g
 
 **Your system. Your decisions. Our signal.**
 
-[**Reference Framework**](https://zenodo.org/records/21821522) · [**Executive Brief**](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/Executive_brief_EN.pdf) · [**AI Observatory**](https://github.com/neomundi-io/neomundi-ai-observatory) · **Launchers & Use Cases** · [**Interoperability**](https://github.com/neomundi-io/runtime-interoperability-contract) · [**Sandbox**](https://controltower.neomundi.io/welcome)
+---
+
+## NeoMundi Resources
+
+[**Reference Framework**](https://zenodo.org/records/21821522)  
+Foundational architecture and conceptual framework for NeoMundi runtime metrology.
+
+[**Metrology Validation**](https://github.com/neomundi-io/neomundi-metrology-validation)  
+Experimental validation, calibration, reproducibility and evidence framework for NeoMundi measurement signals.
+
+[**Executive Brief**](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/Executive_brief_EN.pdf)  
+Concise overview of NeoMundi’s positioning, measurement layer and operational model.
+
+[**AI Observatory**](https://github.com/neomundi-io/neomundi-ai-observatory)  
+Public observations, barometers, mappings and longitudinal analysis of AI behavior at runtime.
+
+**Launchers & Use Cases**  
+Reference implementations and operational uses built around NeoMundi measurement signals.
+
+[**Interoperability**](https://github.com/neomundi-io/runtime-interoperability-contract)  
+Open interoperability contract for exchanging NeoMundi runtime measurement signals with independent infrastructures.
+
+[**Sandbox**](https://controltower.neomundi.io/welcome)  
+Access the NeoMundi measurement environment and test the runtime measurement layer.
 
 ---
 
