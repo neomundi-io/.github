@@ -270,6 +270,7 @@ NeoMundi distingue clairement la couche de mesure disponible aujourd’hui, les 
 | **Industrialisation** | Extension du domaine de mesure, consolidation des métriques, interopérabilité standardisée, performances et options de déploiement |
 
 La trajectoire consiste à renforcer progressivement **la mesure elle-même et sa capacité à être consommée par des infrastructures hétérogènes**, plutôt qu’à centraliser les usages dans NeoMundi.
+
 ---
 
 ## Dépôts principaux — Core repositories
@@ -460,6 +461,6 @@ Ces relations soutiennent le développement et l’exploitation de capacités in
 
 Vous opérez des systèmes IA en production, des agents autonomes ou des workflows sensibles ?
 
-**Mesurez ce qui est récupérable. Contrôlez ce qui ne l’est pas.**
+**Mesurez le comportement des IA. Construisez sur le signal.**
 
 [contact@neomundi.io](mailto:contact@neomundi.io)
