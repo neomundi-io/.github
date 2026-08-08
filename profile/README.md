@@ -1,6 +1,6 @@
 ## 🌐 Choose your language
 
-**[🇬🇧 English](README.md)** · **[🇫🇷 Lire la version française](README.fr.md)**
+[**🇬🇧 English**](https://github.com/neomundi-io/.github/blob/main/profile/README.md) · [**🇫🇷 Lire la version française**](https://github.com/neomundi-io/.github/blob/main/profile/README.fr.md)
 
 ---
 
@@ -17,8 +17,6 @@ Its signals can support multiple uses — observation, drift detection, audit, g
 **One fundamental measurement layer. Multiple uses. Multiple infrastructures.**
 
 **Your system. Your decisions. Our signal.**
-
----
 
 [**Reference Framework**](https://zenodo.org/records/21821522) · [**Executive Brief**](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/Executive_brief_EN.pdf) · [**AI Observatory**](https://github.com/neomundi-io/neomundi-ai-observatory) · **Launchers & Use Cases** · [**Interoperability**](https://github.com/neomundi-io/runtime-interoperability-contract) · [**Sandbox**](https://controltower.neomundi.io/welcome)
 
@@ -432,7 +430,7 @@ Regulatory relevance depends on the system concerned, its intended use, its leve
 
 ---
 
-##  Ecosystem & Infrastructure Support
+## Ecosystem & Infrastructure Support
 
 NeoMundi develops its work through an open ecosystem of technical, research, governance and infrastructure contributors.
 
@@ -462,6 +460,6 @@ These relationships support the development and operation of independent AI meas
 
 Do you operate AI systems in production, autonomous agents or sensitive workflows?
 
-**Measure what can be recovered. Control what cannot.**
+**Measure AI behavior. Build on the signal.**
 
-contact@neomundi.io
+[contact@neomundi.io](mailto:contact@neomundi.io)
