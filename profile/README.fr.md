@@ -338,57 +338,95 @@ L’objectif est de rendre les comportements IA plus faciles à mesurer, à vér
 
 Non.
 
-NeoMundi produit des signaux permettant d’observer certaines variations, instabilités, dérives ou transitions comportementales.
+NeoMundi mesure certains aspects du comportement des systèmes d’IA : stabilité, variabilité, dérive, changements de régime et autres signaux associés.
 
-Ces signaux soutiennent la décision. Ils ne remplacent ni le contexte métier, ni la supervision humaine, ni les mécanismes spécialisés de vérification lorsque ceux-ci sont nécessaires.
+Ces mesures peuvent contribuer à identifier des sorties nécessitant une attention renforcée, mais elles ne constituent pas à elles seules une preuve de vérité, d’erreur ou de conformité.
+
+L’interprétation reste contextuelle et peut être complétée par des mécanismes spécialisés de vérification, des règles métier ou une supervision humaine.
 
 ### Quelle différence entre OBS et GOV ?
 
-**OBS** permet d’observer, documenter et améliorer après génération ou en supervision continue.
+**OBS** mesure le comportement d’un système après génération ou à travers des observations successives.
 
-**GOV** intervient dans la chaîne runtime lorsqu’une sortie erronée serait difficilement rattrapable.
+Il constitue généralement le mode d’intégration le plus simple et le point d’entrée naturel pour la majorité des systèmes.
 
-OBS constitue généralement le point d’entrée naturel.
+**GOV** permet d’effectuer certaines mesures pendant l’exécution lorsque le contexte nécessite une supervision plus rapprochée.
 
-GOV augmente le niveau de contrôle lorsque le contexte l’exige.
+Dans les deux cas, NeoMundi produit la mesure et les signaux associés.
+
+L’application, l’orchestrateur, la politique externe ou l’opérateur conserve l’autorité de décision.
 
 ### Quelles données sont stockées ?
 
-NeoMundi est conçu selon un principe de minimisation des données.
+NeoMundi applique un principe de minimisation des données.
 
 Les prompts et réponses ne sont pas stockés.
 
-Selon le mode retenu, seuls les métriques, signaux, événements techniques, identifiants nécessaires, timestamps et artefacts de reporting peuvent être conservés.
+Selon le mode d’intégration, seuls les métriques, signaux, événements techniques, identifiants nécessaires, timestamps et artefacts requis pour la mesure, la traçabilité ou l’audit peuvent être conservés.
 
-### NeoMundi fonctionne-t-il avec mon LLM ?
+### NeoMundi fonctionne-t-il avec mon LLM ou mon infrastructure ?
 
-OBS est conçu pour être compatible avec des systèmes capables de transmettre les artefacts d’observation attendus.
+NeoMundi est conçu pour être indépendant d’un modèle ou d’un provider particulier.
 
-GOV suit une logique d’intégration progressive selon les providers, workflows et niveaux de criticité.
+La couche de mesure peut s’articuler progressivement avec différents modèles, providers, agents, orchestrateurs et infrastructures d’IA.
 
-### Quelle différence avec LangSmith, Portkey ou Helicone ?
+**OBS** peut être utilisé lorsqu’un système est capable de transmettre les artefacts nécessaires à la mesure.
 
-Ces outils sont principalement centrés sur l’observabilité applicative : logs, tracing, coûts, workflows et performance.
+**GOV** nécessite une intégration runtime plus profonde et dépend des providers, architectures et workflows concernés.
 
-NeoMundi ajoute une couche complémentaire orientée mesure et gouvernance comportementale : stabilité, variation, signaux runtime, interprétation, auditabilité et politiques de supervision.
+L’objectif est que des infrastructures hétérogènes puissent consommer les signaux NeoMundi tout en conservant leur propre architecture et leur fonction.
+
+### Quelle différence avec LangSmith, Portkey, Helicone ou d’autres plateformes d’observabilité ?
+
+Ces plateformes couvrent principalement des fonctions d’observabilité applicative telles que les logs, traces, coûts, latences, workflows ou performances opérationnelles.
+
+NeoMundi se concentre sur un domaine complémentaire : **la mesure du comportement des systèmes d’IA**.
+
+La couche NeoMundi vise notamment à rendre mesurables et comparables :
+
+- la stabilité comportementale ;
+- la variabilité ;
+- certaines dérives ;
+- les changements de régime ;
+- certains signaux de cohérence ;
+- des métriques informationnelles ;
+- leur évolution dans le temps.
+
+NeoMundi n’a donc pas vocation à remplacer une stack d’observabilité.
+
+Ses signaux peuvent au contraire être consommés par des plateformes d’observabilité, des orchestrateurs, des systèmes de gouvernance ou d’autres infrastructures indépendantes.
+
+### NeoMundi est-il un système de gouvernance ?
+
+NeoMundi fournit une **couche de mesure pouvant alimenter des mécanismes de gouvernance**, mais la mesure et la décision restent deux fonctions distinctes.
+
+Un signal NeoMundi peut par exemple être utilisé par un système externe pour :
+
+- déclencher une alerte ;
+- demander une revue humaine ;
+- relancer une génération ;
+- rerouter une requête ;
+- appliquer une politique de contrôle.
+
+La décision finale appartient au système, à la politique ou à l’opérateur qui consomme le signal.
 
 ### NeoMundi couvre-t-il certaines exigences de l’EU AI Act et du RGPD ?
 
-NeoMundi ne remplace pas une démarche complète de conformité, une analyse juridique ni une certification réglementaire.
+NeoMundi ne remplace ni une démarche complète de conformité, ni une analyse juridique, ni une certification réglementaire.
 
-ControlTower couvre néanmoins plusieurs capacités techniques directement utiles aux démarches IA Act et RGPD :
+La couche de mesure et les outils associés peuvent néanmoins fournir plusieurs capacités techniques utiles à des démarches de conformité, notamment :
 
-* monitoring continu du comportement des systèmes IA ;
-* contrôle du risque des réponses générées ;
-* traçabilité opérationnelle ;
-* auditabilité ;
-* signaux exploitables pour la supervision humaine ;
-* éléments de preuve utiles à la documentation des incidents ;
-* architecture privacy-first fondée sur la minimisation des données et l’absence de stockage des prompts et réponses.
+- suivi du comportement des systèmes d’IA dans le temps ;
+- traçabilité des observations et signaux ;
+- documentation de certaines variations ou incidents ;
+- production d’artefacts auditables ;
+- signaux exploitables pour la supervision humaine ;
+- minimisation des données traitées ;
+- absence de stockage des prompts et réponses dans les modes concernés.
 
-La pertinence juridique dépend du système concerné, de son usage, de son niveau de risque et du rôle de l’organisation.
+La pertinence réglementaire dépend du système, de son usage, de son niveau de risque et du rôle de l’organisation qui le déploie.
 
-➡️ [Consulter le mapping détaillé des capacités NeoMundi pour l’IA Act et le RGPD](https://github.com/neomundi-io/ai-act-rgpd)
+➡️ [Consulter le mapping détaillé des capacités NeoMundi pour l’AI Act et le RGPD](https://github.com/neomundi-io/ai-act-rgpd)
 
 ---
 
