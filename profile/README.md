@@ -6,18 +6,28 @@
 
 # NeoMundi
 
-## From AI observability to behavioral metrology
-**Real-time measurement of AI behavior for governance and operational control.**
+## Common measurement layer for heterogeneous AI infrastructures
 
-**Reduce risk. Improve operational control.**
+**Real-time measurement of AI behavior at runtime.**
 
-NeoMundi provides an observability and behavioral metrology layer for generative AI systems and autonomous agents.
+NeoMundi measures behavioral variability, stability and regime changes across AI systems, models and infrastructures.
 
-The instrument produces actionable signals to observe drift, detect regime changes, document incidents, trigger enhanced supervision, and support governance decisions adapted to the level of criticality.
+Its signals can be consumed by external systems, governance layers, launchers and independent infrastructures while each retains its own architecture, function and decision authority.
 
-**Your decision, our signal.**
+**Your system. Your decisions. Our signal.**
 
-[Access the sandbox](https://controltower.neomundi.io/welcome)
+---
+
+<p align="center">
+
+[**Reference Framework**](https://zenodo.org/records/21821522) ·
+[**Executive Brief**](LINK_EXECUTIVE_BRIEF) ·
+[**AI Observatory**](https://github.com/neomundi-io/neomundi-ai-observatory) ·
+[**Launchers & Use Cases**](#use-cases) ·
+[**Interoperability**](https://github.com/neomundi-io/runtime-interoperability-contract) ·
+[**Sandbox**](https://controltower.neomundi.io/welcome)
+
+</p>
 
 ---
 
