@@ -181,48 +181,61 @@ Validation is progressively strengthened through **longitudinal observation, rep
 
 A single measurement layer can support multiple use cases without imposing the infrastructure that consumes it.
 
-| Use case | What NeoMundi signals can provide | Natural mode |
+| Use case | What NeoMundi signals can enable | Measurement mode |
 |---|---|---|
-| **Autonomous agents** | Observe certain drifts and feed escalation, retry or rerouting mechanisms | OBS · GOV |
-| **Compliance and audit** | Produce timestamped traces, document signals and support supervision | OBS · GOV |
-| **Fine-tuning and evaluation** | Compare behavioral differences across models, prompts, datasets or versions | OBS |
-| **SLA and AI infrastructure** | Detect certain behavioral degradations and document incidents | OBS · GOV |
-| **Sensitive workflows** | Strengthen supervision when an incorrect output would be difficult to recover from | GOV |
+| **Autonomous agents** | Detect certain variations or drifts so that an orchestrator can trigger escalation, retry or rerouting mechanisms | OBS · GOV |
+| **Compliance and audit** | Produce timestamped measurements and actionable traces to document system behavior | OBS · GOV |
+| **Evaluation and comparison** | Compare behavioral differences across models, prompts, datasets, versions or configurations | OBS |
+| **AI infrastructure and SLA** | Identify certain behavioral degradations and document their evolution over time | OBS · GOV |
+| **Sensitive workflows** | Provide runtime signals that can feed enhanced supervision or an external control policy | GOV |
+| **Longitudinal monitoring** | Measure how a system evolves over time and identify regime changes or behavioral profile shifts | OBS |
+| **Research and metrology** | Produce comparable observations to study stability, variability, reproducibility and behavioral transitions | OBS |
 
-**These uses derive from the same measurement layer. NeoMundi does not impose the infrastructure that consumes it.**
+**These uses derive from the same measurement layer.**
 
-Launchers, orchestrators, governance systems, evidence infrastructures and business applications can consume NeoMundi signals while retaining their own function and decision authority.
+NeoMundi does not impose the application, orchestrator or policy that consumes its signals.
+
+Launchers, agents, governance systems, evidence infrastructures, audit tools and business applications can consume NeoMundi signals while retaining their own architecture, function and decision authority.
+
+> **One fundamental measurement layer. Multiple uses. Multiple infrastructures.**
 
 ---
 
 ## Integration and interoperability
 
-NeoMundi is designed to articulate with existing LLM applications, agents, orchestrators, governance layers and business systems.
+NeoMundi is designed as an independent layer that can articulate with existing LLM applications, agents, orchestrators, observability platforms, governance systems and business infrastructures.
 
 ### Integration principles
 
-- progressive integration starting with a single API call;
-- **BYOK** approach depending on mode and configuration;
+- progressive integration through APIs;
+- compatibility with multiple models, providers and architectures;
+- **BYOK** approach where supported by the integration mode;
+- minimization of transmitted data;
 - no storage of prompts or responses;
-- configurable thresholds and policies according to context;
-- separation between measurement authority and decision authority;
-- exports and auditable traces depending on integration level;
-- ability to articulate signals with external infrastructures;
-- dedicated deployments or controlled environments according to requirements.
+- production of structured signals and artifacts;
+- separation between **measurement authority** and **decision authority**;
+- ability for external infrastructures to consume and interpret signals;
+- controlled or dedicated deployments according to requirements.
+
+NeoMundi is not intended to replace existing infrastructures.
+
+Instead, the measurement layer can be consumed by independent systems that retain their own logging, orchestration, governance, evidence or control functions.
 
 ### LLM provider integration
 
-NeoMundi can be integrated with supported LLM providers through its runtime interfaces.
+NeoMundi runtime interfaces enable the measurement layer to articulate with supported LLM providers and models.
 
-The integration guide explains how to connect an existing provider account, configure a model, manage API keys and transmit requests through ControlTowerAI.
+The integration guide documents provider connectivity, model configuration and API key management for the relevant integration modes.
 
-➡️ [Read the LLM Provider Integration Guide](https://github.com/neomundi-io/controltowerai-docs/blob/main/providers.md)
+➡️ [LLM Provider Integration Guide](https://github.com/neomundi-io/controltowerai-docs/blob/main/providers.md)
 
 ### Interoperability
 
-NeoMundi aims to make its signals usable by independent systems without imposing a specific architecture, policy or governance mechanism.
+Interoperability is a core principle of the NeoMundi architecture.
 
-The Runtime Interoperability Contract documents the minimal principles required to transmit and interpret these signals across independent layers.
+The objective is for a measurement signal to be produced by one layer, transmitted to another, interpreted within an explicit framework and then consumed by an independent infrastructure — without implicitly transferring authority between these different functions.
+
+The **Runtime Interoperability Contract** documents the minimal semantics required for this articulation between independent layers.
 
 ➡️ [Runtime Interoperability Contract](https://github.com/neomundi-io/runtime-interoperability-contract)
 
@@ -234,31 +247,31 @@ NeoMundi follows a data-minimization principle.
 
 Prompts and responses are not stored.
 
-Depending on the integration mode, only information required for measurement, traceability or associated policy operation may be retained.
+Depending on the integration mode, only the information required for measurement, traceability and the production of associated artifacts may be retained.
 
 NeoMundi also uses a **self-hosted semantic judge** for certain analyses.
 
-This component runs on infrastructure controlled by NeoMundi in order to limit dependence on external services for this function.
+This component runs on infrastructure controlled by NeoMundi in order to limit dependence on external services for this measurement function.
 
 This architecture serves three objectives:
 
 - **privacy**: limit data exposure;
-- **resilience**: reduce certain external dependencies;
-- **operational sovereignty**: retain control over analysis and processing.
+- **resilience**: reduce critical external dependencies;
+- **operational sovereignty**: retain control over the measurement and processing chain.
 
 ---
 
 ## Product status
 
-NeoMundi is evolving progressively in order to clearly distinguish what is available today, what can be explored through supported pilots and what still belongs to the industrialization roadmap.
+NeoMundi clearly distinguishes between the measurement layer available today, integrations being experimented with alongside partners, and components still undergoing industrialization.
 
 | Status | Meaning |
 |---|---|
-| **Available now** | Public sandbox, initial measurement surfaces, runtime signals and methodological documentation |
-| **Supported pilot** | Progressive integration, calibration, supervision, exports and policies adapted to the operational context |
-| **Product roadmap** | Extended metrics, stronger interoperability, advanced runtime orchestration and dedicated deployments |
+| **Available now** | Measurement APIs and surfaces, runtime signals, sandbox, methodological documentation and initial integration interfaces |
+| **Pilots and articulations** | Integration with agents, orchestrators, governance infrastructures, evidence systems and independent applications |
+| **Industrialization** | Extension of the measurement domain, consolidation of metrics, standardized interoperability, performance improvements and deployment options |
 
-This progression makes it possible to begin with measurement and progressively articulate the uses and levels of governance required by the operational context.
+The trajectory is to progressively strengthen **the measurement itself and its ability to be consumed by heterogeneous infrastructures**, rather than centralizing downstream use cases within NeoMundi.
 
 ---
 
