@@ -6,13 +6,15 @@
 
 # NeoMundi
 
-## Common measurement layer for heterogeneous AI infrastructures
+## Fundamental measurement layer for AI behavior
 
-**Real-time measurement of AI behavior at runtime.**
+**A common measurement layer from which multiple uses can derive and around which heterogeneous AI infrastructures can articulate.**
 
-NeoMundi measures behavioral variability, stability and regime changes across AI systems, models and infrastructures.
+NeoMundi measures behavioral variability, stability and regime changes in AI systems at runtime.
 
-Its signals can be consumed by external systems, governance layers, launchers and independent infrastructures while each retains its own architecture, function and decision authority.
+Its signals can support multiple uses — observation, drift detection, audit, governance, orchestration and control — while being consumed by independent infrastructures that retain their own architecture, function and decision authority.
+
+**One fundamental measurement layer. Multiple uses. Multiple infrastructures.**
 
 **Your system. Your decisions. Our signal.**
 
