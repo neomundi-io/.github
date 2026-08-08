@@ -6,18 +6,28 @@
 
 # NeoMundi
 
-## De l’observabilité des IA à la métrologie comportementale
-**Mesure en temps réel du comportement des IA pour la gouvernance et le pilotage opérationnel.**
+## Couche fondamentale de mesure du comportement des IA
 
-**Réduire le risque. Améliorer le contrôle opérationnel.**
+**Une couche de mesure commune à partir de laquelle de multiples usages peuvent dériver et autour de laquelle des infrastructures hétérogènes peuvent s’articuler.**
 
-NeoMundi fournit une couche d’observabilité et de métrologie comportementale pour les systèmes d’IA générative et les agents autonomes.
+NeoMundi mesure en temps réel la variabilité comportementale, la stabilité et les changements de régime des systèmes d’IA.
 
-L’instrument produit des signaux actionnables pour observer les dérives, détecter les changements de régime, documenter les incidents, déclencher une supervision renforcée et soutenir des décisions de gouvernance adaptées au niveau de criticité.
+Ses signaux peuvent alimenter de multiples usages — observation, détection de dérive, audit, gouvernance, orchestration, contrôle — tout en étant consommés par des infrastructures indépendantes qui conservent leur propre architecture, leur fonction et leur autorité décisionnelle.
 
-**Votre décision, notre signal.**
+**Une mesure fondamentale. Plusieurs usages. Plusieurs infrastructures.**
 
-[Accéder au sandbox](https://controltower.neomundi.io/welcome)
+**Votre système. Vos décisions. Notre signal.**
+
+<p align="center">
+
+[**Reference Framework**](https://zenodo.org/records/21821522) ·
+[**Executive Brief**](LINK_EXECUTIVE_BRIEF) ·
+[**AI Observatory**](https://github.com/neomundi-io/neomundi-ai-observatory) ·
+[**Launchers & Use Cases**](#use-cases) ·
+[**Interoperability**](https://github.com/neomundi-io/runtime-interoperability-contract) ·
+[**Sandbox**](https://controltower.neomundi.io/welcome)
+
+</p>
 
 ---
 
