@@ -34,8 +34,11 @@ Présentation synthétique du positionnement de NeoMundi, de sa couche de mesure
 [**Observatoire des IA**](https://github.com/neomundi-io/neomundi-ai-observatory)  
 Observations publiques, baromètres, cartographies et analyses longitudinales du comportement des IA en runtime.
 
-**Launchers & cas d’usage**  
-Implémentations de référence et usages opérationnels construits autour des signaux de mesure NeoMundi.
+**Launchers**  
+Implémentations de référence permettant de déployer des workflows opérationnels autour des signaux de mesure NeoMundi.
+
+[**Cas d’usage**](https://github.com/neomundi-io/neomundi-use-cases)  
+Pilotes documentés, articulations expérimentales et intégrations opérationnelles utilisant les signaux de mesure NeoMundi.
 
 [**Interopérabilité**](https://github.com/neomundi-io/runtime-interoperability-contract)  
 Contrat ouvert d’interopérabilité permettant l’échange des signaux de mesure runtime NeoMundi avec des infrastructures indépendantes.
