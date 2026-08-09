@@ -34,7 +34,7 @@ Concise overview of NeoMundi’s positioning, measurement layer and operational 
 [**AI Observatory**](https://github.com/neomundi-io/neomundi-ai-observatory)  
 Public observations, barometers, mappings and longitudinal analysis of AI behavior at runtime.
 
-**Launchers**  
+[**Launchers**](https://github.com/neomundi-io/neomundi-launchers)  
 Reference implementations for deploying concrete operational workflows around NeoMundi measurement signals.
 
 [**Use Cases**](https://github.com/neomundi-io/neomundi-use-cases)  
