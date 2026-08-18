@@ -31,7 +31,7 @@ Semantic definitions, measurement boundaries, reproducibility, traceability and 
 [**Metrology Validation**](https://github.com/neomundi-io/neomundi-metrology-validation)
 Experimental validation, calibration, reproducibility and evidence framework for NeoMundi measurement signals.
 
-[**Measurement Interoperability — EN**](https://github.com/neomundi-io/neomundi-measurement-interoperability/tree/main)
+[**Measurement Interoperability**](https://github.com/neomundi-io/neomundi-measurement-interoperability/tree/main)
 Signed, versioned and independently verifiable interoperability for transporting NeoMundi runtime measurement signals across independent infrastructures.
 
 [**Executive Brief**](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/Executive_brief_EN.pdf)
