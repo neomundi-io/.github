@@ -31,6 +31,9 @@ Définitions sémantiques, frontières de mesure, reproductibilité, traçabilit
 [**Validation métrologique**](https://github.com/neomundi-io/neomundi-metrology-validation)
 Validation expérimentale, calibration, reproductibilité et cadre de preuve des signaux de mesure NeoMundi.
 
+[**Interopérabilité de mesure**](https://github.com/neomundi-io/neomundi-measurement-interoperability/blob/main/README_FR.md)
+Interopérabilité signée, versionnée et vérifiable indépendamment pour transporter les signaux de mesure runtime NeoMundi entre infrastructures indépendantes.
+
 [**Synthèse exécutive**](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/Executive_brief_EN.pdf)
 Présentation concise du positionnement de NeoMundi, de sa couche de mesure et de son modèle opérationnel.
 
@@ -43,11 +46,9 @@ Implémentations de référence permettant de déployer des workflows opération
 [**Cas d’usage**](https://github.com/neomundi-io/neomundi-use-cases)
 Pilotes documentés, articulations expérimentales et intégrations opérationnelles utilisant les signaux de mesure NeoMundi.
 
-[**Interopérabilité**](https://github.com/neomundi-io/runtime-interoperability-contract)
-Contrat d’interopérabilité ouvert permettant l’échange des signaux de mesure runtime NeoMundi avec des infrastructures indépendantes.
-
 [**Sandbox**](https://controltower.neomundi.io/welcome)
 Accédez à l’environnement de mesure NeoMundi et testez la couche de mesure runtime.
+
 
 ---
 
