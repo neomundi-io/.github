@@ -22,33 +22,46 @@ Its signals can support multiple uses — observation, drift detection, audit, g
 
 ## NeoMundi Resources
 
-[**Reference Framework**](https://zenodo.org/records/21821522)
-Foundational architecture and conceptual framework for NeoMundi runtime metrology.
+### 1. Connect the Measurement Layer
 
-[**Metric Contract & Measurement Reference**](https://github.com/neomundi-io/neomundi-metric-contract)
-Semantic definitions, measurement boundaries, reproducibility, traceability and portability of NeoMundi runtime measurement signals.
+[**Universal Measurement Interface**](https://github.com/neomundi-io/neomundi-measurement-interoperability/tree/main)  
+Connect NeoMundi measurement signals to your infrastructure through a signed, versioned and independently verifiable interoperability contract.
 
-[**Metrology Validation**](https://github.com/neomundi-io/neomundi-metrology-validation)
-Experimental validation, calibration, reproducibility and evidence framework for NeoMundi measurement signals.
+---
 
-[**Measurement Interoperability**](https://github.com/neomundi-io/neomundi-measurement-interoperability/tree/main)
-Signed, versioned and independently verifiable interoperability for transporting NeoMundi runtime measurement signals across independent infrastructures.
+### 2. Try It in Practice
 
-[**Executive Brief**](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/Executive_brief_EN.pdf)
-Concise overview of NeoMundi’s positioning, measurement layer and operational model.
+[**Use Cases**](https://github.com/neomundi-io/neomundi-use-cases)  
+Documented pilots, production-oriented experiments and operational integrations using NeoMundi measurement signals.
 
-[**AI Observatory**](https://github.com/neomundi-io/neomundi-ai-observatory)
-Public observations, barometers, mappings and longitudinal analysis of AI behavior at runtime.
-
-[**Launchers**](https://github.com/neomundi-io/neomundi-launchers)
+[**Launchers**](https://github.com/neomundi-io/neomundi-launchers)  
 Reference implementations for deploying concrete operational workflows around NeoMundi measurement signals.
 
-[**Use Cases**](https://github.com/neomundi-io/neomundi-use-cases)
-Documented pilots, experimental articulations and operational integrations using NeoMundi measurement signals.
-
-[**Sandbox**](https://controltower.neomundi.io/welcome)
+[**Sandbox**](https://controltower.neomundi.io/welcome)  
 Access the NeoMundi measurement environment and test the runtime measurement layer.
 
+---
+
+### 3. Metrology, Methodology & Evidence
+
+[**Metric Contract & Measurement Reference**](https://github.com/neomundi-io/neomundi-metric-contract)  
+Semantic definitions, measurement boundaries, reproducibility, traceability and portability of NeoMundi runtime measurement signals.
+
+[**Metrology Validation**](https://github.com/neomundi-io/neomundi-metrology-validation)  
+Experimental validation, calibration, reproducibility and evidence framework for NeoMundi measurement signals.
+
+[**AI Observatory**](https://github.com/neomundi-io/neomundi-ai-observatory)  
+Public observations, barometers, mappings and longitudinal analysis of AI behavior at runtime.
+
+---
+
+### 4. Understand NeoMundi
+
+[**Executive Brief**](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/Executive_brief_EN.pdf)  
+Concise overview of NeoMundi’s positioning, measurement layer and operational model.
+
+[**Reference Framework**](https://zenodo.org/records/21821522)  
+Foundational architecture and conceptual framework for NeoMundi runtime metrology.
 
 ---
 
