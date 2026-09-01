@@ -25,7 +25,10 @@ Ses signaux peuvent alimenter de multiples usages — observation, détection de
 ### 1. Connecter la couche de mesure
 
 [**Interface universelle de mesure**](https://github.com/neomundi-io/neomundi-measurement-interoperability/tree/main)  
-Connectez les signaux de mesure NeoMundi à votre infrastructure grâce à un contrat d’interopérabilité signé, versionné et vérifiable indépendamment.
+Connectez les signaux de mesure NeoMundi à votre infrastructure grâce à un contrat d’interopérabilité signé, versionné et vérifiable de manière indépendante.
+
+[**Démonstrateur d’interopérabilité en direct → interop.neomundi.org**](https://interop.neomundi.org/)  
+Explorez une démonstration en direct de la manière dont les signaux de mesure NeoMundi peuvent être exposés, échangés et consommés par des infrastructures IA indépendantes via la couche universelle d’interopérabilité.
 
 ---
 
