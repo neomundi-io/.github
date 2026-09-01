@@ -27,6 +27,9 @@ Its signals can support multiple uses — observation, drift detection, audit, g
 [**Universal Measurement Interface**](https://github.com/neomundi-io/neomundi-measurement-interoperability/tree/main)  
 Connect NeoMundi measurement signals to your infrastructure through a signed, versioned and independently verifiable interoperability contract.
 
+[**Live Interoperability Demonstrator → interop.neomundi.org**](https://interop.neomundi.org/)  
+Explore a live demonstration of how NeoMundi measurement signals can be exposed, exchanged and consumed by independent AI infrastructures through the universal interoperability layer.
+
 ---
 
 ### 2. Try It in Practice
