@@ -53,6 +53,9 @@ Semantic definitions, measurement boundaries, reproducibility, traceability and 
 [**Metrology Validation**](https://github.com/neomundi-io/neomundi-metrology-validation)  
 Experimental validation, calibration, reproducibility and evidence framework for NeoMundi measurement signals.
 
+[**G-score Reproducibility & Invariance Study — Mission 2**](https://github.com/neomundi-io/G-score-reproducibility-study)  
+Exploratory empirical study of G-score stability, reproducibility and potential invariance across 33,600 observations, 12 AI models, 7 measurement campaigns and 4 prompts. Results constitute an initial characterization rather than definitive scientific validation.
+
 [**AI Observatory**](https://github.com/neomundi-io/neomundi-ai-observatory)  
 Public observations, barometers, mappings and longitudinal analysis of AI behavior at runtime.
 
