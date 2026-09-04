@@ -47,14 +47,17 @@ Accédez à l’environnement de mesure NeoMundi et testez directement la couche
 
 ### 3. Métrologie, méthodologie et preuves
 
-[**Metric Contract & Measurement Reference**](https://github.com/neomundi-io/neomundi-metric-contract)  
+[**Contrat métrique et référentiel de mesure**](https://github.com/neomundi-io/neomundi-metric-contract)  
 Définitions sémantiques, frontières de mesure, reproductibilité, traçabilité et portabilité des signaux de mesure runtime NeoMundi.
 
-[**Metrology Validation**](https://github.com/neomundi-io/neomundi-metrology-validation)  
-Validation expérimentale, calibration, reproductibilité et cadre de preuve associés aux signaux de mesure NeoMundi.
+[**Validation métrologique**](https://github.com/neomundi-io/neomundi-metrology-validation)  
+Validation expérimentale, étalonnage, reproductibilité et cadre de preuve associés aux signaux de mesure NeoMundi.
+
+[**Étude de reproductibilité et d’invariance du G-score — Mission 2**](https://github.com/neomundi-io/G-score-reproducibility-study)  
+Étude empirique exploratoire de la stabilité, de la reproductibilité et de l’invariance potentielle du G-score, menée sur 33 600 observations, 12 modèles d’IA, 7 campagnes de mesure et 4 prompts. Les résultats constituent une première caractérisation et non une validation scientifique définitive.
 
 [**Observatoire IA**](https://github.com/neomundi-io/neomundi-ai-observatory)  
-Observations publiques, baromètres, cartographies et analyses longitudinales du comportement des IA en runtime.
+Observations publiques, baromètres, cartographies et analyses longitudinales du comportement des IA en production.
 
 ---
 
