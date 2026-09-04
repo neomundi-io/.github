@@ -35,10 +35,10 @@ Explore a live demonstration of how NeoMundi measurement signals can be exposed,
 ### 2. Try It in Practice
 
 [**Use Cases**](https://github.com/neomundi-io/neomundi-use-cases)  
-Documented pilots, production-oriented experiments and operational integrations using NeoMundi measurement signals.
+Documented pilots, production-oriented experiments, and operational integrations using NeoMundi measurement signals.
 
-[**Launchers**](https://github.com/neomundi-io/neomundi-launchers)  
-Reference implementations for deploying concrete operational workflows around NeoMundi measurement signals.
+[**NeoMundi Products**](https://github.com/neomundi-io/NeoMundi-Products)  
+Productized applications and reference implementations that turn NeoMundi measurement signals into concrete operational workflows.
 
 [**Sandbox**](https://controltower.neomundi.io/welcome)  
 Access the NeoMundi measurement environment and test the runtime measurement layer.
