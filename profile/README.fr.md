@@ -32,16 +32,16 @@ Explorez une démonstration en direct de la manière dont les signaux de mesure 
 
 ---
 
-### 2. Essayer en pratique
+### 2. Essayer facilement
 
 [**Cas d’usage**](https://github.com/neomundi-io/neomundi-use-cases)  
 Pilotes documentés, expérimentations orientées production et intégrations opérationnelles utilisant les signaux de mesure NeoMundi.
 
-[**Launchers**](https://github.com/neomundi-io/neomundi-launchers)  
-Implémentations de référence permettant de déployer des workflows opérationnels concrets autour des signaux de mesure NeoMundi.
+[**Produits NeoMundi**](https://github.com/neomundi-io/NeoMundi-Products)  
+Applications produit et implémentations de référence qui transforment les signaux de mesure NeoMundi en workflows opérationnels concrets.
 
 [**Sandbox**](https://controltower.neomundi.io/welcome)  
-Accédez à l’environnement de mesure NeoMundi et testez directement la couche de mesure runtime.
+Accédez à l’environnement de mesure NeoMundi et testez la couche de mesure runtime.
 
 ---
 
