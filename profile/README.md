@@ -16,7 +16,7 @@ This independent, timestamped and comparable signal provides the context needed 
 
 ### Connect to the signal
 
-[**NeoMundi Runtime Measurement →**](https://github.com/neomundi-io/neomundi-runtime-measurement)
+[**NeoMundi Runtime Measurement layer →**](https://github.com/neomundi-io/neomundi-runtime-measurement)
 
 **One API call · No infrastructure replacement · Privacy-first · BYOK**
 
