@@ -6,17 +6,19 @@
 
 # NeoMundi
 
-## Fundamental measurement layer for AI behavior
+## The missing measurement context for AI behavior at runtime
 
-**A common measurement layer from which multiple uses can derive and around which heterogeneous AI infrastructures can articulate.**
+NeoMundi measures the behavioral state of an AI system at a specific point in time, within a defined measurement framework.
 
-NeoMundi measures behavioral variability, stability and regime changes in AI systems at runtime.
+This independent, timestamped and comparable signal provides the context needed to interpret observations, detections, audits, diagnoses, benchmarks, insurance assessments and evidence records — without replacing the infrastructures that produce them.
 
-Its signals can support multiple uses — observation, drift detection, audit, governance, orchestration and control — while being consumed by independent infrastructures that retain their own architecture, function and decision authority.
+**Your system. Your decisions. Our measurement signal.**
 
-**One fundamental measurement layer. Multiple uses. Multiple infrastructures.**
+### Connect to the signal
 
-**Your system. Your decisions. Our signal.**
+[**NeoMundi Runtime Measurement →**](https://github.com/neomundi-io/neomundi-runtime-measurement)
+
+**One API call · No infrastructure replacement · Privacy-first · BYOK**
 
 ---
 
