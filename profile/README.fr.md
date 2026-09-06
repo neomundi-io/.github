@@ -6,17 +6,19 @@
 
 # NeoMundi
 
-## Couche fondamentale de mesure du comportement des IA
+## Le contexte de mesure manquant pour interpréter le comportement des IA à l’exécution
 
-**Une couche de mesure commune à partir de laquelle de multiples usages peuvent dériver et autour de laquelle des infrastructures hétérogènes peuvent s’articuler.**
+NeoMundi mesure l’état comportemental d’un système d’IA à un instant précis, au sein d’un cadre de mesure défini.
 
-NeoMundi mesure en temps réel la variabilité comportementale, la stabilité et les changements de régime des systèmes d’IA.
+Ce signal indépendant, horodaté et comparable fournit le contexte nécessaire pour interpréter les observations, détections, audits, diagnostics, comparaisons, évaluations assurantielles et éléments de preuve — sans remplacer les infrastructures qui les produisent.
 
-Ses signaux peuvent alimenter de multiples usages — observation, détection de dérive, audit, gouvernance, orchestration, contrôle — tout en étant consommés par des infrastructures indépendantes qui conservent leur propre architecture, leur fonction et leur autorité décisionnelle.
+**Votre système. Vos décisions. Notre signal de mesure.**
 
-**Une mesure fondamentale. Plusieurs usages. Plusieurs infrastructures.**
+### Branchez-vous au signal
 
-**Votre système. Vos décisions. Notre signal.**
+[**Couche de mesure à l’exécution NeoMundi →**](https://github.com/neomundi-io/neomundi-runtime-measurement)
+
+**Un appel API · Aucun remplacement d’infrastructure · Confidentialité dès la conception · Vos propres clés**
 
 ---
 
