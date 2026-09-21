@@ -7,14 +7,27 @@
 
 # NeoMundi
 
-## The independent measurement layer for AI systems at runtime
+## Measure AI behavior at runtime. Turn the signal into operational value.
 
 NeoMundi transforms each observed AI execution into a structured, timestamped,
 versioned and interoperable measurement object.
 
-The signal can be consumed by products, observability platforms, audit systems,
-governance infrastructures, insurers and research programs without transferring
-decision authority to NeoMundi.
+The same independent signal can support:
+
+- **operational steering and supervision**;
+- **observability and drift detection**;
+- **audit and traceability**;
+- **compliance evidence and human oversight**;
+- **risk and insurance assessment**;
+- **model, prompt and workflow comparison**;
+- **governance, orchestration and external control systems**;
+- **research and longitudinal observation**.
+
+NeoMundi integrates with products and infrastructures already responsible for
+these functions. It provides the measurement context; the consuming system
+retains its rules, interpretation and decision authority.
+
+**Integrate once. Strengthen multiple downstream uses.**
 
 > **One measurement primitive. Multiple applications. Multiple infrastructures.**
 >
@@ -30,6 +43,8 @@ decision authority to NeoMundi.
 | Understand signal semantics | [Metric Contract →](https://github.com/neomundi-io/neomundi-metric-contract) |
 | Exchange measurement records | [Measurement Interoperability →](https://github.com/neomundi-io/neomundi-measurement-interoperability) |
 | Inspect scientific evidence | [Metrology Validation →](https://github.com/neomundi-io/neomundi-metrology-validation) |
+| Explore pilots and operational uses | [NeoMundi Use Cases →](https://github.com/neomundi-io/neomundi-use-cases) |
+| Review the compliance capability mapping | [EU AI Act & GDPR mapping →](https://github.com/neomundi-io/ai-act-rgpd) |
 | Explore longitudinal observations | [AI Observatory →](https://github.com/neomundi-io/neomundi-ai-observatory) |
 
 ---
