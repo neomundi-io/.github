@@ -37,7 +37,7 @@ retains its rules, interpretation and decision authority.
 
 | Your objective | Entry point |
 |---|---|
-| Create an account and API key | [Open the NeoMundi platform →](https://controlotower.neomundi.io/welcome) |
+| Create an account and API key | [Open the NeoMundi platform →](https://controltower.neomundi.io/welcome) |
 | Integrate runtime measurement | [Runtime Measurement Layer →](https://github.com/neomundi-io/neomundi-runtime-measurement) |
 | Run evaluation campaigns | [AI Periscope →](https://github.com/neomundi-io/neomundi-ai-periscope) |
 | Understand signal semantics | [Metric Contract →](https://github.com/neomundi-io/neomundi-metric-contract) |
