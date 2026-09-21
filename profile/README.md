@@ -7,237 +7,177 @@
 
 # NeoMundi
 
-## Measure AI behavior at runtime. Keep control of what happens next.
+## The independent measurement layer for AI systems at runtime
 
-NeoMundi provides an independent runtime measurement layer for AI systems.
-It turns an observed execution into a structured, timestamped and comparable
-measurement signal that can be consumed by existing audit, observability,
-governance, insurance and decision systems.
+NeoMundi transforms each observed AI execution into a structured, timestamped,
+versioned and interoperable measurement object.
 
-NeoMundi provides the measurement. Your systems retain their infrastructure,
-rules and decision authority.
+The signal can be consumed by products, observability platforms, audit systems,
+governance infrastructures, insurers and research programs without transferring
+decision authority to NeoMundi.
 
+> **One measurement primitive. Multiple applications. Multiple infrastructures.**
+>
 > **Your system. Your decisions. Our measurement signal.**
 
-### Start measuring
+### Start here
 
-1. **Create your account and NeoMundi API key**  
-   [Open the NeoMundi platform →](https://controlotower.neomundi.io/welcome)
-
-2. **Connect your system to the measurement API**  
-   [Follow the Runtime Measurement Quickstart →](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/QUICKSTART.md)
-
-3. **Use the signal in your own infrastructure**  
-   [Read the interoperability contract →](https://github.com/neomundi-io/neomundi-measurement-interoperability)
-
-**One measurement API · Existing infrastructure preserved · Machine-readable output**
-
-**Privacy by design · NeoMundi and provider keys remain separate**
+| Your objective | Entry point |
+|---|---|
+| Create an account and API key | [Open the NeoMundi platform →](https://controlotower.neomundi.io/welcome) |
+| Integrate runtime measurement | [Runtime Measurement Layer →](https://github.com/neomundi-io/neomundi-runtime-measurement) |
+| Run evaluation campaigns | [AI Periscope →](https://github.com/neomundi-io/neomundi-ai-periscope) |
+| Understand signal semantics | [Metric Contract →](https://github.com/neomundi-io/neomundi-metric-contract) |
+| Exchange measurement records | [Measurement Interoperability →](https://github.com/neomundi-io/neomundi-measurement-interoperability) |
+| Inspect scientific evidence | [Metrology Validation →](https://github.com/neomundi-io/neomundi-metrology-validation) |
+| Explore longitudinal observations | [AI Observatory →](https://github.com/neomundi-io/neomundi-ai-observatory) |
 
 ---
 
-## Two products, one measurement primitive
-
-### Product 01 — Runtime Measurement Layer
-
-[**Explore the Runtime Measurement Layer →**](https://github.com/neomundi-io/neomundi-runtime-measurement)
-
-The technical foundation of the NeoMundi ecosystem. It produces structured
-runtime measurements with explicit semantics, provenance, traceability,
-versioning and integration boundaries.
-
-Use it when you want to connect an existing AI system directly to the NeoMundi
-measurement signal.
-
-### Product 02 — AI Periscope
-
-[**Explore AI Periscope →**](https://github.com/neomundi-io/neomundi-ai-periscope)
-
-AI Periscope uses the same measurement primitive to build reproducible
-measurement campaigns, baselines, comparisons, datasets, manifests and
-decision-ready reports.
-
-Use it when you want to evaluate or compare models, prompts, configurations or
-business workflows under documented conditions.
-
----
-
-## How the ecosystem fits together
+## Architecture
 
 ~~~text
-AI System or Evaluation Campaign
-                │
-                ▼
-NeoMundi Runtime Measurement Layer
-                │
-                ▼
-Structured Measurement Signal
-                │
-        ┌───────┼────────┐
-        ▼       ▼        ▼
- Metric Contract   Metrology Validation
-        │       │        │
-        └───────┼────────┘
-                ▼
-   Interoperable Measurement Contract
-                │
-                ▼
-Customer Systems · AI Periscope · Observatory · Use Cases
+MEASURE
+Runtime Measurement Layer
+        │
+        ▼
+DEFINE + VALIDATE
+Metric Contract · Metrology Validation
+        │
+        ▼
+TRANSPORT
+Versioned Interoperability Contract
+        │
+        ▼
+APPLY + OBSERVE
+AI Periscope · Partner Systems · Use Cases · Observatory
 ~~~
 
 **Measurement ≠ Interpretation ≠ Policy ≠ Execution**
 
-NeoMundi measures. The consuming system interprets, governs and acts.
+This separation is the organizing principle of the NeoMundi ecosystem.
 
 ---
 
-## Core documentation
+## Product layer
 
-### Measure
+### Product 01 — Runtime Measurement Layer
 
-[**Runtime Measurement Layer**](https://github.com/neomundi-io/neomundi-runtime-measurement)  
-API integration, measurement signals, traceability, versioning and consumer
-boundaries. This is the technical entry point and the centre of the ecosystem.
+[**Documentation and Quickstart →**](https://github.com/neomundi-io/neomundi-runtime-measurement)
 
-### Define
+The foundational technical product. It measures observable AI behavior under
+declared conditions and produces structured records with explicit semantics,
+provenance, traceability and versions.
 
-[**Metric Contract & Measurement Reference**](https://github.com/neomundi-io/neomundi-metric-contract)  
-Definitions, scope, limits and admissible interpretation of NeoMundi
-measurement signals.
+### Product 02 — AI Periscope
 
-### Validate
+[**Product repository →**](https://github.com/neomundi-io/neomundi-ai-periscope)
 
-[**Metrology Validation**](https://github.com/neomundi-io/neomundi-metrology-validation)  
-Calibration, reproducibility, controls, sensitivity, limitations and the
-evidence supporting measurement claims.
+The campaign and evaluation product. It organizes runtime measurements into
+reproducible baselines, comparisons, datasets, manifests and reports for models,
+prompts, configurations and business workflows.
 
-[**G-score Reproducibility Study**](https://github.com/neomundi-io/G-score-reproducibility-study)  
-An exploratory study of conditional G-score reproducibility across 33,600
-observations, 12 AI models, 7 campaigns and 4 prompts. Its results are an
-initial characterization, not definitive scientific validation.
-
-### Transport
-
-[**Measurement Interoperability**](https://github.com/neomundi-io/neomundi-measurement-interoperability)  
-Public, versioned JSON contract for exchanging measurement records between
-independent systems while preserving provenance, integrity and responsibility
-boundaries.
-
-[**Live interoperability demonstrator →**](https://interop.neomundi.org/)
+Both products use the same measurement primitive.
 
 ---
 
-## Products, pilots and public observation
+## Trust layer
 
-### Products
+| Function | Canonical source | Purpose |
+|---|---|---|
+| Define | [Metric Contract](https://github.com/neomundi-io/neomundi-metric-contract) | Signal meaning, scope, limits and admissible interpretation |
+| Validate | [Metrology Validation](https://github.com/neomundi-io/neomundi-metrology-validation) | Calibration, reproducibility, controls, limitations and claims |
+| Transport | [Measurement Interoperability](https://github.com/neomundi-io/neomundi-measurement-interoperability) | Versioned JSON exchange, provenance, integrity and consumer boundaries |
 
-[**NeoMundi Products**](https://github.com/neomundi-io/NeoMundi-Products)  
-Product catalogue and navigation hub. Detailed technical documentation remains
-in each canonical repository.
+[**Explore the live interoperability demonstrator →**](https://interop.neomundi.org/)
 
-[**AI Periscope**](https://github.com/neomundi-io/neomundi-ai-periscope)  
-Reproducible measurement campaigns, baselines, comparisons and reports.
+Public interoperability exposes the measurement interface. It does not require
+publication of proprietary implementations, formulas or decision mechanisms.
 
-### Pilots and evidence
+---
 
-[**NeoMundi Use Cases**](https://github.com/neomundi-io/neomundi-use-cases)  
-Documented pilots and interoperability experiments showing how independent
-systems consume NeoMundi measurements while retaining their own architecture
-and decision authority.
+## Evidence and public observation
 
-A pilot demonstrates an articulation under documented conditions. It is not a
-universal certification.
+### Metrology and reproducibility
+
+[**G-score Reproducibility Study →**](https://github.com/neomundi-io/G-score-reproducibility-study)
+
+An exploratory empirical study across 33,600 observations, 12 AI models, 7
+campaigns and 4 prompts. The study characterizes conditional reproducibility
+and observed regime changes within its documented conditions.
 
 ### Observatory
 
-[**NeoMundi AI Observatory**](https://github.com/neomundi-io/neomundi-ai-observatory)  
-Public longitudinal observation of AI system behavior under repeated and
-documented conditions.
+[**NeoMundi AI Observatory →**](https://github.com/neomundi-io/neomundi-ai-observatory)
+
+The Observatory builds a longitudinal record of AI system behavior through
+repeated, timestamped and documented observations.
 
 [**Research Observatory →**](https://neomundi.org/en/home) ·
 [**AI Weather →**](https://weather.controltowerai.io)
 
-The Observatory produces observations. Metrology Validation qualifies the
-measurement.
+> **The Observatory observes. Metrology Validation qualifies the instrument.**
+
+### Use cases
+
+[**Documented pilots and integrations →**](https://github.com/neomundi-io/neomundi-use-cases)
+
+Use cases show how independent infrastructures can consume the same measurement
+signal for audit, orchestration, governance, insurance, diagnosis or evidence
+while retaining their own rules and authority.
+
+A documented pilot is evidence of an articulation under stated conditions, not
+a universal certification.
 
 ---
 
-## What the signal can support
+## Status model
 
-The same measurement primitive can contribute to:
+NeoMundi distinguishes what is available, specialized, experimental and
+historical.
 
-- runtime observation and longitudinal monitoring;
-- behavioral comparison and drift detection;
-- audit and evidence records;
-- diagnosis and decision support;
-- external governance and control mechanisms;
-- insurance and risk assessment;
-- model, prompt and workflow evaluation.
+| Status | Meaning |
+|---|---|
+| **Available** | Public product, contract, documentation or active observation surface |
+| **Specialized** | A narrower metric, study, governance resource or supporting component |
+| **Experimental** | Active research that is not a canonical product capability |
+| **Historical** | Earlier material retained for traceability while canonical content is consolidated elsewhere |
 
-These applications remain responsible for their own thresholds, policies,
-decisions and actions.
-
-A NeoMundi measurement does not, by itself, prove truth, safety, compliance or
-admissibility.
+No experimental signal, composite index or research concept should be treated
+as a decision engine or as proof of truth, safety, compliance or admissibility.
 
 ---
 
-## Measurement principles
+## Ecosystem map
 
-- **Contextual:** a measurement describes an observation under declared
-  conditions at a specific point in time.
-- **Traceable:** identifiers, timestamps, versions and provenance connect the
-  signal to the observation that produced it.
-- **Comparable:** explicit schema, metric and normalization versions preserve
-  interpretability over time.
-- **Interoperable:** structured records can be exchanged with independent
-  infrastructures.
-- **Non-decisional:** the consuming system retains interpretation, policy and
-  execution authority.
-- **Data-minimizing:** integrations should exchange only the elements required
-  for measurement and traceability.
-
----
-
-## Repository map
-
-The repositories below do not all have the same status. Canonical repositories
-define the current public architecture; specialized and experimental
-repositories document narrower work; legacy repositories preserve earlier
-stages of the framework.
-
-### Canonical entry points
+### Available and canonical
 
 - [Runtime Measurement Layer](https://github.com/neomundi-io/neomundi-runtime-measurement)
+- [AI Periscope](https://github.com/neomundi-io/neomundi-ai-periscope)
 - [Metric Contract](https://github.com/neomundi-io/neomundi-metric-contract)
 - [Metrology Validation](https://github.com/neomundi-io/neomundi-metrology-validation)
 - [Measurement Interoperability](https://github.com/neomundi-io/neomundi-measurement-interoperability)
-- [AI Periscope](https://github.com/neomundi-io/neomundi-ai-periscope)
-- [AI Observatory](https://github.com/neomundi-io/neomundi-ai-observatory)
 - [Products](https://github.com/neomundi-io/NeoMundi-Products)
 - [Use Cases](https://github.com/neomundi-io/neomundi-use-cases)
+- [AI Observatory](https://github.com/neomundi-io/neomundi-ai-observatory)
 
-### Specialized measurement and research
+### Specialized evidence and metrics
 
+- [G-score Reproducibility Study](https://github.com/neomundi-io/G-score-reproducibility-study)
 - [Informational Metrics](https://github.com/neomundi-io/informational-metrics)
 - [Energy Stability Index](https://github.com/neomundi-io/energy-stability-index)
 - [Validity & Grounding](https://github.com/neomundi-io/validity-and-grounding)
-- [G-score Reproducibility Study](https://github.com/neomundi-io/G-score-reproducibility-study)
-- [Signal Adaptation Framework](https://github.com/neomundi-io/neomundi-signal-adaptation-framework)
-
-These repositories document specialized or experimental work. They should not
-be interpreted as autonomous decision engines or as universally validated
-product capabilities.
-
-### Governance and data protection
-
 - [Data Protection](https://github.com/neomundi-io/neomundi-io-data-protection)
 - [EU AI Act & GDPR mapping](https://github.com/neomundi-io/ai-act-rgpd)
 
-These resources may support governance and compliance work. They do not replace
-legal analysis, a complete compliance process or regulatory certification.
+### Experimental research
 
-### Earlier framework repositories
+- [Signal Adaptation Framework](https://github.com/neomundi-io/neomundi-signal-adaptation-framework)
+
+Experimental work extends the research program but does not redefine the public
+product contract until it is implemented, validated and versioned.
+
+### Historical and consolidation references
 
 - [Runtime Telemetry Signals](https://github.com/neomundi-io/runtime-telemetry-signals)
 - [Interpretation Contract](https://github.com/neomundi-io/interpretation-contract)
@@ -246,15 +186,44 @@ legal analysis, a complete compliance process or regulatory certification.
 - [NeoMundi OBS](https://github.com/neomundi-io/neomundi-obs)
 - [NeoMundi GOV](https://github.com/neomundi-io/neomundi-gov)
 
-These repositories preserve earlier or specialized formulations. The canonical
-sources for current integration, semantics and interoperability are the Runtime
-Measurement Layer, Metric Contract and Measurement Interoperability repositories.
+Current semantics, integration and interoperability should be read from the
+canonical repositories above.
 
 ---
 
-## Learn more
+## Founding doctrine
 
-- [NeoMundi website](https://neomundi.io)
+- Measure before interpreting.
+- Repeat before generalizing.
+- Separate observation from causal attribution.
+- Never confuse stability with truth.
+- Never confuse a signal with a verdict.
+- Separate measurement authority from decision authority.
+
+---
+
+## Privacy and responsibility
+
+NeoMundi integrations follow a data-minimization approach and are designed to
+exchange only the elements required for measurement, traceability and the
+relevant integration mode.
+
+The consuming organization remains responsible for:
+
+- its provider access and keys;
+- its thresholds and policies;
+- its interpretation of the signal;
+- its operational decisions and actions;
+- its legal, regulatory and sector-specific obligations.
+
+---
+
+## Explore NeoMundi
+
+- [NeoMundi](https://neomundi.io)
+- [Products](https://github.com/neomundi-io/NeoMundi-Products)
+- [Research Observatory](https://neomundi.org/en/home)
+- [AI Weather](https://weather.controltowerai.io)
 - [Executive Brief](https://github.com/neomundi-io/neomundi-sandbox/blob/main/docs/Executive_brief_EN.pdf)
 - [Reference Framework](https://zenodo.org/records/21821522)
 - [Provider integration guide](https://github.com/neomundi-io/controltowerai-docs/blob/main/providers.md)
@@ -263,10 +232,8 @@ Measurement Layer, Metric Contract and Measurement Interoperability repositories
 
 ## Contact
 
-Do you operate AI systems in production, autonomous agents or sensitive
-workflows?
+Building or operating AI systems in production?
 
-**Measure AI behavior. Build on the signal.**
+**Measure the behavior. Preserve the context. Build on the signal.**
 
 [contact@neomundi.io](mailto:contact@neomundi.io)
-
