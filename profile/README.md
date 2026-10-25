@@ -11,7 +11,7 @@ preserve the measurement context, and examine the evidence.**
 
 [![Start here: Station](https://img.shields.io/badge/Start_here-Station-0f766e?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public)
 [![Build: integrations](https://img.shields.io/badge/Build-Integrations-2563eb?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public/blob/main/START_HERE.md)
-[![Explore: evidence](https://img.shields.io/badge/Explore-Evidence-8b5cf6?style=flat-square)](https://github.com/neomundi-io/neomundi-metrology-validation)
+[![Explore: evidence](https://img.shields.io/badge/Explore-Evidence-8b5cf6?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public/blob/main/EVIDENCE.md)
 [![Join: pilots](https://img.shields.io/badge/Join-Pilots-a16207?style=flat-square)](mailto:contact@neomundi.io)
 
 **[Station](https://github.com/neomundi-io/neomundi-station-public)** ·
@@ -54,16 +54,16 @@ defines the exchange contract. These are distinct from Station's internal record
 
 ## See the evidence
 
-[Metrology Validation](https://github.com/neomundi-io/neomundi-metrology-validation) ·
-[Documented use cases](https://github.com/neomundi-io/neomundi-use-cases) ·
-[Reproducibility study](https://github.com/neomundi-io/G-score-reproducibility-study)
+[**Explore all evidence →**](https://github.com/neomundi-io/neomundi-station-public/blob/main/EVIDENCE.md)
 
-[AI Weather](https://github.com/neomundi-io/neomundi-ai-weather) ·
-[AI Observatory](https://github.com/neomundi-io/neomundi-ai-observatory) ·
-[AI Periscope](https://github.com/neomundi-io/neomundi-ai-periscope)
+[Pilots](https://github.com/neomundi-io/neomundi-use-cases) ·
+[Observatory](https://github.com/neomundi-io/neomundi-ai-observatory) ·
+[Metrology and methods](https://github.com/neomundi-io/neomundi-metrology-validation) ·
+[Historical work](https://github.com/neomundi-io/neomundi-station-public/blob/main/ARCHIVES.md)
 
-Each program and study retains its own protocol, provenance and limits.
-Historical results are not presented as Station results.
+Pilot work, accumulated observations and methodological work form our evidence base.
+Each source retains its protocol and limits. Earlier publications remain accessible;
+future experiments will be organized around Station.
 
 ## Our direction
 
