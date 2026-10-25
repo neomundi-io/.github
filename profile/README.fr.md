@@ -11,7 +11,7 @@ conditions déclarées, conserver le contexte de mesure et examiner les preuves.
 
 [![Commencer : Station](https://img.shields.io/badge/Commencer-Station-0f766e?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public)
 [![Développer : intégrations](https://img.shields.io/badge/D%C3%A9velopper-Int%C3%A9grations-2563eb?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public/blob/main/START_HERE.fr.md)
-[![Explorer : preuves](https://img.shields.io/badge/Explorer-Preuves-8b5cf6?style=flat-square)](https://github.com/neomundi-io/neomundi-metrology-validation)
+[![Explorer : preuves](https://img.shields.io/badge/Explorer-Preuves-8b5cf6?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public/blob/main/EVIDENCE.fr.md)
 [![Participer : pilotes](https://img.shields.io/badge/Participer-Pilotes-a16207?style=flat-square)](mailto:contact@neomundi.io)
 
 **[Station](https://github.com/neomundi-io/neomundi-station-public/blob/main/README.fr.md)** ·
@@ -56,16 +56,17 @@ définit le contrat d'échange. Ils sont distincts des schémas internes de Stat
 
 ## Examiner les preuves
 
-[Metrology Validation](https://github.com/neomundi-io/neomundi-metrology-validation) ·
-[Cas d'usage documentés](https://github.com/neomundi-io/neomundi-use-cases) ·
-[Étude de reproductibilité](https://github.com/neomundi-io/G-score-reproducibility-study)
+[**Explorer toutes les preuves →**](https://github.com/neomundi-io/neomundi-station-public/blob/main/EVIDENCE.fr.md)
 
-[Météo des IA](https://github.com/neomundi-io/neomundi-ai-weather) ·
-[Observatoire IA](https://github.com/neomundi-io/neomundi-ai-observatory) ·
-[AI Periscope](https://github.com/neomundi-io/neomundi-ai-periscope)
+[Pilotes](https://github.com/neomundi-io/neomundi-use-cases/blob/main/README_FR.md) ·
+[Observatoire](https://github.com/neomundi-io/neomundi-ai-observatory/blob/main/README.fr.md) ·
+[Métrologie et méthodes](https://github.com/neomundi-io/neomundi-metrology-validation/blob/main/README_FR.md) ·
+[Travaux historiques](https://github.com/neomundi-io/neomundi-station-public/blob/main/ARCHIVES.fr.md)
 
-Chaque programme et chaque étude conserve son protocole, sa provenance et ses
-limites. Les résultats historiques ne sont pas présentés comme des résultats de Station.
+Les pilotes, les observations accumulées et les travaux méthodologiques
+constituent notre base de preuves. Chaque source garde son protocole et ses limites.
+Les anciennes publications restent accessibles ; les futures expériences
+seront organisées autour de Station.
 
 ## Notre direction
 
