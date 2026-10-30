@@ -6,25 +6,24 @@
 
 ### When AI responds, NeoMundi measures.
 
-**Station is our flagship: observe AI responses under declared conditions,
-preserve the measurement context, and examine the evidence.**
+**Choose the path that matches your need: use Station to observe and experiment,
+or Runtime Measurement to measure and integrate in your own systems.**
 
-[![Start here: Station](https://img.shields.io/badge/Start_here-Station-0f766e?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public)
-[![Build: integrations](https://img.shields.io/badge/Build-Integrations-2563eb?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public/blob/main/START_HERE.md)
-[![Explore: evidence](https://img.shields.io/badge/Explore-Evidence-8b5cf6?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public/blob/main/EVIDENCE.md)
-[![Join: pilots](https://img.shields.io/badge/Join-Pilots-a16207?style=flat-square)](mailto:contact@neomundi.io)
+[![Observe & Experiment: Station](https://img.shields.io/badge/Observe_%26_Experiment-Station-0f766e?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public)
+[![Measure & Integrate: Runtime](https://img.shields.io/badge/Measure_%26_Integrate-Runtime-2563eb?style=flat-square)](https://github.com/neomundi-io/neomundi-runtime-measurement)
+[![Evidence & Use Cases](https://img.shields.io/badge/Evidence_%26_Use_Cases-Pilots-8b5cf6?style=flat-square)](https://github.com/neomundi-io/neomundi-use-cases)
+[![Create an Account](https://img.shields.io/badge/Create_an_Account-ControlTower-a16207?style=flat-square)](https://controltower.neomundi.io/welcome)
 
-**[Station](https://github.com/neomundi-io/neomundi-station-public)** ·
-[Start here](https://github.com/neomundi-io/neomundi-station-public/blob/main/START_HERE.md) ·
-[Glossary](https://github.com/neomundi-io/neomundi-station-public/blob/main/GLOSSARY.md) ·
-[Roadmap](https://github.com/neomundi-io/neomundi-station-public/blob/main/ROADMAP.md) ·
-[Pilots](mailto:contact@neomundi.io)
+**[Station — Observe & Experiment](https://github.com/neomundi-io/neomundi-station-public)** ·
+**[Runtime Measurement — Measure & Integrate](https://github.com/neomundi-io/neomundi-runtime-measurement)** ·
+[Use Cases — Applications, Pilots & Evidence](https://github.com/neomundi-io/neomundi-use-cases) ·
+[Create an Account — ControlTower](https://controltower.neomundi.io/welcome)
 
 </div>
 
 ---
 
-## Start with Station
+## Choose your path
 
 An answer alone is hard to investigate later. Station records what happened,
 the conditions of execution, what could be measured and what could not.
@@ -43,9 +42,11 @@ access to the hosted instrument is granted case by case. Its implementation is p
 
 ## Connect your tools
 
-**Station** is the product entry point. The **measurement API, Python SDK and MCP
-connector** are integration paths. The SDK and MCP remain experimental;
-completing and validating REST and SSE support for both is a planned workstream.
+**Station** is the instrument path for controlled observations, campaigns and
+evidence. **Runtime Measurement** is the developer path for integrating
+measurement into third-party systems. REST is the primary Runtime path; SSE is
+an alternative. SDK and MCP have distinct, dated qualification states—see the
+current [Runtime integration status](https://github.com/neomundi-io/neomundi-runtime-measurement#integration-status).
 
 [Metric Contract](https://github.com/neomundi-io/neomundi-metric-contract) defines
 signal semantics.

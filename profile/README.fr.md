@@ -6,25 +6,24 @@
 
 ### Quand l'IA répond, NeoMundi mesure.
 
-**Station est notre produit phare : observer les réponses de l'IA dans des
-conditions déclarées, conserver le contexte de mesure et examiner les preuves.**
+**Choisissez le parcours adapté à votre besoin : Station pour observer et
+expérimenter, ou Runtime Measurement pour mesurer et intégrer dans vos systèmes.**
 
-[![Commencer : Station](https://img.shields.io/badge/Commencer-Station-0f766e?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public)
-[![Développer : intégrations](https://img.shields.io/badge/D%C3%A9velopper-Int%C3%A9grations-2563eb?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public/blob/main/START_HERE.fr.md)
-[![Explorer : preuves](https://img.shields.io/badge/Explorer-Preuves-8b5cf6?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public/blob/main/EVIDENCE.fr.md)
-[![Participer : pilotes](https://img.shields.io/badge/Participer-Pilotes-a16207?style=flat-square)](mailto:contact@neomundi.io)
+[![Observer et expérimenter : Station](https://img.shields.io/badge/Observer_%26_exp%C3%A9rimenter-Station-0f766e?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public/blob/main/README.fr.md)
+[![Mesurer et intégrer : Runtime](https://img.shields.io/badge/Mesurer_%26_int%C3%A9grer-Runtime-2563eb?style=flat-square)](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/README_FR.md)
+[![Preuves et cas d'usage](https://img.shields.io/badge/Preuves_%26_cas_d'usage-Pilotes-8b5cf6?style=flat-square)](https://github.com/neomundi-io/neomundi-use-cases/blob/main/README_FR.md)
+[![Créer un compte](https://img.shields.io/badge/Cr%C3%A9er_un_compte-ControlTower-a16207?style=flat-square)](https://controltower.neomundi.io/welcome)
 
-**[Station](https://github.com/neomundi-io/neomundi-station-public/blob/main/README.fr.md)** ·
-[Commencer](https://github.com/neomundi-io/neomundi-station-public/blob/main/START_HERE.fr.md) ·
-[Glossaire](https://github.com/neomundi-io/neomundi-station-public/blob/main/GLOSSARY.fr.md) ·
-[Feuille de route](https://github.com/neomundi-io/neomundi-station-public/blob/main/ROADMAP.fr.md) ·
-[Pilotes](mailto:contact@neomundi.io)
+**[Station — Observer et expérimenter](https://github.com/neomundi-io/neomundi-station-public/blob/main/README.fr.md)** ·
+**[Runtime Measurement — Mesurer et intégrer](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/README_FR.md)** ·
+[Use Cases — Applications, pilotes et preuves](https://github.com/neomundi-io/neomundi-use-cases/blob/main/README_FR.md) ·
+[Créer un compte — ControlTower](https://controltower.neomundi.io/welcome)
 
 </div>
 
 ---
 
-## Commencer par Station
+## Choisissez votre parcours
 
 Une réponse seule est difficile à examiner après coup. Station consigne ce qui
 s'est passé, les conditions d'exécution, ce qui a pu être mesuré et ce qui n'a
@@ -45,9 +44,11 @@ Son implémentation est privée.
 
 ## Relier vos outils
 
-**Station** est l'entrée produit. **L'API de mesure, le SDK Python et le
-connecteur MCP** sont les voies d'intégration. Le SDK et le MCP restent
-expérimentaux ; compléter et valider REST et SSE pour chacun est un chantier prévu.
+**Station** est le parcours instrument pour les observations contrôlées, les
+campagnes et les preuves. **Runtime Measurement** est le parcours développeur
+pour intégrer la mesure dans des systèmes tiers. REST est le parcours Runtime
+principal ; SSE est une alternative. SDK et MCP ont des états de qualification
+distincts et datés — consultez le [statut Runtime actuel](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/README_FR.md#statut-des-int%C3%A9grations).
 
 [Metric Contract](https://github.com/neomundi-io/neomundi-metric-contract) définit
 le sens des signaux.
