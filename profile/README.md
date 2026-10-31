@@ -66,6 +66,18 @@ Pilot work, accumulated observations and methodological work form our evidence b
 Each source retains its protocol and limits. Earlier publications remain accessible;
 future experiments will be organized around Station.
 
+## Infrastructure & Program Support
+
+NeoMundi's independent AI observation and measurement initiative benefits from infrastructure and startup program support:
+
+- **[Infomaniak](https://www.infomaniak.com/)** — Infrastructure partner supporting the development of NeoMundi's independent AI observation instrument.
+- **[OVHcloud Startup Program](https://startup.ovhcloud.com/en/)** — NeoMundi participates in OVHcloud's startup support program.
+- **[NVIDIA Inception](https://www.nvidia.com/en-us/startups/)** — NeoMundi is a member of NVIDIA's program for innovative startups.
+
+These relationships support NeoMundi's development and do not imply certification or endorsement of its scientific results.
+
+---
+
 ## Our direction
 
 **A station for each profession**, built on a shared measurement foundation,
