@@ -53,6 +53,13 @@ signal semantics.
 [Measurement Interoperability](https://github.com/neomundi-io/neomundi-measurement-interoperability)
 defines the exchange contract. These are distinct from Station's internal record schemas.
 
+## Trust, Compliance & Data Protection
+
+NeoMundi measurements can contribute technical, timestamped evidence to an organization's compliance work; they do not determine legal compliance or provide certification. Data flows are a separate question: submitted text, evaluator processing, Station records, exports and retention depend on the selected path and deployment.
+
+- [**AI Act & GDPR — Operational Evidence**](https://github.com/neomundi-io/ai-act-rgpd) — where runtime measurements may support governance and compliance processes, with explicit legal boundaries.
+- [**Data Protection & Confidentiality**](https://github.com/neomundi-io/neomundi-io-data-protection) — the currently documented technical flows, disclosure boundaries and unresolved retention questions.
+
 ## See the evidence
 
 [**Explore all evidence →**](https://github.com/neomundi-io/neomundi-station-public/blob/main/EVIDENCE.md)
