@@ -55,6 +55,13 @@ le sens des signaux.
 [Measurement Interoperability](https://github.com/neomundi-io/neomundi-measurement-interoperability)
 définit le contrat d'échange. Ils sont distincts des schémas internes de Station.
 
+## Confiance, conformité et protection des données
+
+Les mesures NeoMundi peuvent contribuer par des preuves techniques et horodatées aux démarches de conformité d'une organisation ; elles ne déterminent pas la conformité juridique et ne constituent pas une certification. Les flux de données sont une question distincte : texte soumis, traitement par les évaluateurs, enregistrements Station, exports et conservation dépendent du parcours et du déploiement retenus.
+
+- [**AI Act & RGPD — preuves opérationnelles**](https://github.com/neomundi-io/ai-act-rgpd/blob/main/README_FR.md) — contribution possible des mesures runtime aux démarches de gouvernance et de conformité, avec des frontières juridiques explicites.
+- [**Protection des données et confidentialité**](https://github.com/neomundi-io/neomundi-io-data-protection/blob/main/README_FR.md) — flux techniques actuellement documentés, frontières de divulgation et questions de conservation non résolues.
+
 ## Examiner les preuves
 
 [**Explorer toutes les preuves →**](https://github.com/neomundi-io/neomundi-station-public/blob/main/EVIDENCE.fr.md)
