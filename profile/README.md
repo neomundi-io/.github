@@ -11,11 +11,9 @@
 [![Measurement · Measure](https://img.shields.io/badge/Measurement-Measure-2563eb?style=flat-square)](https://github.com/neomundi-io/neomundi-runtime-measurement)
 [![Station · Observe](https://img.shields.io/badge/Station-Observe-0f766e?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public)
 [![Evidence · Verify](https://img.shields.io/badge/Evidence-Verify-D4A545?style=flat-square)](https://github.com/neomundi-io/neomundi-evidence-public)
+[![Use cases](https://img.shields.io/badge/Use_cases-Explore-64748b?style=flat-square)](https://github.com/neomundi-io/neomundi-use-cases)
 
-
-**[API — Access measurement](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/QUICKSTART.md)** · **[Create an account](https://controltower.neomundi.io/welcome)**
-
-[Measurement](https://github.com/neomundi-io/neomundi-runtime-measurement) · [Station](https://github.com/neomundi-io/neomundi-station-public) · [Evidence](https://github.com/neomundi-io/neomundi-evidence-public) · [Use cases](https://github.com/neomundi-io/neomundi-use-cases)
+**[API](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/QUICKSTART.md)** · **[Create an account](https://controltower.neomundi.io/welcome)**
 </div>
 
 ---
