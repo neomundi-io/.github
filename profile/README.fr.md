@@ -8,6 +8,10 @@
 
 **Measurement → Station → Evidence**
 
+[**Measurement**](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/README_FR.md) · [**Station**](https://github.com/neomundi-io/neomundi-station-public/blob/main/README.fr.md) · [**Evidence**](https://github.com/neomundi-io/neomundi-evidence-public/blob/main/README.fr.md) · [**API**](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/QUICKSTART.md) · [**SDK**](https://github.com/neomundi-io/neomundi-python-sdk) · [**MCP**](https://github.com/neomundi-io/neomundi-measurement-mcp) · [**Cas d’usage**](https://github.com/neomundi-io/neomundi-use-cases) · [**ControlTower**](https://controltower.neomundi.io/welcome)
+
+**Accès API :** [première requête REST](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/QUICKSTART.md) · [guide d’intégration](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/API_INTEGRATION_GUIDE.md).
+
 [**Mesurer**](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/README_FR.md) · [**Observer et contextualiser**](https://github.com/neomundi-io/neomundi-station-public/blob/main/README.fr.md) · [**Vérifier les preuves**](https://github.com/neomundi-io/neomundi-evidence-public/blob/main/README.fr.md) · [**Explorer les cas d’usage**](https://github.com/neomundi-io/neomundi-use-cases/blob/main/README_FR.md) · [**Discuter d’un pilote**](mailto:contact@neomundi.io)
 
 [![Measurement](https://img.shields.io/badge/Measurement-Mesurer-2563eb?style=flat-square)](https://github.com/neomundi-io/neomundi-runtime-measurement) [![Station](https://img.shields.io/badge/Station-Observer-0f766e?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public) [![Evidence](https://img.shields.io/badge/Evidence-Vérifier-b38b37?style=flat-square)](https://github.com/neomundi-io/neomundi-evidence-public)
