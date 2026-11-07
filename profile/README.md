@@ -54,7 +54,7 @@ Qualification and availability differ by interface; consult [current integration
 
 **Create an account:** [Access NeoMundi](https://controltower.neomundi.io/welcome).
 
-**Research and validation:** [Metrology validation](https://github.com/neomundi-io/neomundi-metrology-validation) · [AI Observatory](https://github.com/neomundi-io/neomundi-ai-observatory) · [Station evidence](https://github.com/neomundi-io/neomundi-station-public/blob/main/EVIDENCE.md) · [Historical work](https://github.com/neomundi-io/neomundi-station-public/blob/main/ARCHIVES.md).
+**Research and validation:** [Hugging Face · NeoMundi Research](https://huggingface.co/neomundi-research) · [Metrology validation](https://github.com/neomundi-io/neomundi-metrology-validation) · [AI Observatory](https://github.com/neomundi-io/neomundi-ai-observatory) · [Station evidence](https://github.com/neomundi-io/neomundi-station-public/blob/main/EVIDENCE.md) · [Historical work](https://github.com/neomundi-io/neomundi-station-public/blob/main/ARCHIVES.md).
 
 **Governance and data:** [AI Act & GDPR operational evidence](https://github.com/neomundi-io/ai-act-rgpd) · [Data protection and confidentiality](https://github.com/neomundi-io/neomundi-io-data-protection). Measurements support human oversight and technical decisions; they are not certification of truth or legal compliance. Data flows and retention depend on the integration and deployment path.
 
