@@ -8,16 +8,9 @@
 
 **Measurement → Station → Evidence**
 
-**Accéder à NeoMundi : [Créer un compte / ouvrir ControlTower](https://controltower.neomundi.io/welcome)**
+**[API — Accéder à la mesure](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/QUICKSTART.md)** · **[Créer un compte](https://controltower.neomundi.io/welcome)**
 
-[**Measurement**](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/README_FR.md) · [**Station**](https://github.com/neomundi-io/neomundi-station-public/blob/main/README.fr.md) · [**Evidence**](https://github.com/neomundi-io/neomundi-evidence-public/blob/main/README.fr.md) · [**API**](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/QUICKSTART.md) · [**SDK**](https://github.com/neomundi-io/neomundi-python-sdk) · [**MCP**](https://github.com/neomundi-io/neomundi-measurement-mcp) · [**Cas d’usage**](https://github.com/neomundi-io/neomundi-use-cases) · [**ControlTower**](https://controltower.neomundi.io/welcome)
-
-**Accès API :** [première requête REST](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/QUICKSTART.md) · [guide d’intégration](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/API_INTEGRATION_GUIDE.md).
-
-[**Mesurer**](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/README_FR.md) · [**Observer et contextualiser**](https://github.com/neomundi-io/neomundi-station-public/blob/main/README.fr.md) · [**Vérifier les preuves**](https://github.com/neomundi-io/neomundi-evidence-public/blob/main/README.fr.md) · [**Explorer les cas d’usage**](https://github.com/neomundi-io/neomundi-use-cases/blob/main/README_FR.md) · [**Discuter d’un pilote**](mailto:contact@neomundi.io)
-
-[![Measurement](https://img.shields.io/badge/Measurement-Mesurer-2563eb?style=flat-square)](https://github.com/neomundi-io/neomundi-runtime-measurement) [![Station](https://img.shields.io/badge/Station-Observer-0f766e?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public) [![Evidence](https://img.shields.io/badge/Evidence-Vérifier-b38b37?style=flat-square)](https://github.com/neomundi-io/neomundi-evidence-public)
-
+[Measurement](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/README_FR.md) · [Station](https://github.com/neomundi-io/neomundi-station-public/blob/main/README.fr.md) · [Evidence](https://github.com/neomundi-io/neomundi-evidence-public/blob/main/README.fr.md) · [Cas d’usage](https://github.com/neomundi-io/neomundi-use-cases/blob/main/README_FR.md)
 </div>
 
 ---
@@ -56,7 +49,7 @@ Les niveaux de qualification et les disponibilités diffèrent selon les interfa
 
 ## Autour de la chaîne
 
-**ControlTower :** [Créer un compte](https://controltower.neomundi.io/welcome) — accéder à l’environnement NeoMundi et à ses parcours disponibles.
+**Créer un compte :** [Accéder à NeoMundi](https://controltower.neomundi.io/welcome).
 
 **Recherche et validation :** [Validation métrologique](https://github.com/neomundi-io/neomundi-metrology-validation) · [Observatoire IA](https://github.com/neomundi-io/neomundi-ai-observatory) · [Preuves Station](https://github.com/neomundi-io/neomundi-station-public/blob/main/EVIDENCE.fr.md) · [Travaux historiques](https://github.com/neomundi-io/neomundi-station-public/blob/main/ARCHIVES.fr.md).
 
