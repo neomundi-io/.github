@@ -58,6 +58,8 @@ Qualification and availability differ by interface; consult [current integration
 
 **Governance and data:** [AI Act & GDPR operational evidence](https://github.com/neomundi-io/ai-act-rgpd) · [Data protection and confidentiality](https://github.com/neomundi-io/neomundi-io-data-protection). Measurements support human oversight and technical decisions; they are not certification of truth or legal compliance. Data flows and retention depend on the integration and deployment path.
 
+**External case studies:** [NeoMundi — Oak & Sparrow](https://oakandsparrow.io/#/case-studies/neomundi). This third-party publication reflects its author's own assessment.
+
 ## Infrastructure and programme support
 
 NeoMundi benefits from infrastructure and startup-program support:

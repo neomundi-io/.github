@@ -58,6 +58,8 @@ Les niveaux de qualification et les disponibilités diffèrent selon les interfa
 
 **Gouvernance et données :** [AI Act & RGPD — preuves opérationnelles](https://github.com/neomundi-io/ai-act-rgpd) · [Protection des données et confidentialité](https://github.com/neomundi-io/neomundi-io-data-protection). Les mesures éclairent la supervision humaine et les décisions techniques ; elles ne constituent pas une certification de vérité ou de conformité juridique. Les flux et la conservation dépendent du parcours d’intégration.
 
+**Études de cas externes :** [NeoMundi — Oak & Sparrow](https://oakandsparrow.io/#/case-studies/neomundi). Cette publication externe reflète l'analyse de son auteur.
+
 ## Infrastructure et programmes de soutien
 
 NeoMundi bénéficie de soutiens en infrastructure et d’accompagnement :
