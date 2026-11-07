@@ -1,97 +1,73 @@
 <div align="center">
-
 <sub><b>English</b> · <a href="README.fr.md">Français</a></sub>
 
 # NeoMundi
+### Understand your AI. Compare. Audit. Prove.
 
-### When AI responds, NeoMundi measures.
+**NeoMundi measures AI behaviour, structures observations and makes technical evidence independently verifiable.**
 
-**Choose the path that matches your need: use Station to observe and experiment,
-or Runtime Measurement to measure and integrate in your own systems.**
+**Measurement → Station → Evidence**
 
-[![Observe & Experiment: Station](https://img.shields.io/badge/Observe_%26_Experiment-Station-0f766e?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public)
-[![Measure & Integrate: Runtime](https://img.shields.io/badge/Measure_%26_Integrate-Runtime-2563eb?style=flat-square)](https://github.com/neomundi-io/neomundi-runtime-measurement)
-[![Evidence & Use Cases](https://img.shields.io/badge/Evidence_%26_Use_Cases-Pilots-8b5cf6?style=flat-square)](https://github.com/neomundi-io/neomundi-use-cases)
-[![Create an Account](https://img.shields.io/badge/Create_an_Account-ControlTower-a16207?style=flat-square)](https://controltower.neomundi.io/welcome)
+[**Measure**](https://github.com/neomundi-io/neomundi-runtime-measurement) · [**Observe & contextualise**](https://github.com/neomundi-io/neomundi-station-public) · [**Verify the evidence**](https://github.com/neomundi-io/neomundi-evidence-public) · [**Explore use cases**](https://github.com/neomundi-io/neomundi-use-cases) · [**Discuss a pilot**](mailto:contact@neomundi.io)
 
-**[Station — Observe & Experiment](https://github.com/neomundi-io/neomundi-station-public)** ·
-**[Runtime Measurement — Measure & Integrate](https://github.com/neomundi-io/neomundi-runtime-measurement)** ·
-[Use Cases — Applications, Pilots & Evidence](https://github.com/neomundi-io/neomundi-use-cases) ·
-[Create an Account — ControlTower](https://controltower.neomundi.io/welcome)
+[![Measurement](https://img.shields.io/badge/Measurement-Measure-2563eb?style=flat-square)](https://github.com/neomundi-io/neomundi-runtime-measurement) [![Station](https://img.shields.io/badge/Station-Observe-0f766e?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public) [![Evidence](https://img.shields.io/badge/Evidence-Verify-b38b37?style=flat-square)](https://github.com/neomundi-io/neomundi-evidence-public)
 
 </div>
 
 ---
 
-## Choose your path
+## One chain, three complementary capabilities
 
-An answer alone is hard to investigate later. Station records what happened,
-the conditions of execution, what could be measured and what could not.
-Measurements, reference evaluations and human conclusions remain distinct.
+| | Product | What it contributes | Start here |
+|---|---|---|---|
+| **01 · MEASURE** | **[NeoMundi Measurement](https://github.com/neomundi-io/neomundi-runtime-measurement)** | Instrument AI responses and report behavioural signals, measurement status, evaluator metadata and coverage. | [Measurement and integration](https://github.com/neomundi-io/neomundi-runtime-measurement) |
+| **02 · OBSERVE** | **[NeoMundi Station](https://github.com/neomundi-io/neomundi-station-public)** | Run controlled campaigns, retain observations and measurements, capture their context and provenance, and export auditable records. | [Station overview](https://github.com/neomundi-io/neomundi-station-public) · [Pilot guide](https://github.com/neomundi-io/neomundi-station-public/blob/main/START_HERE.md) |
+| **03 · VERIFY** | **[NeoMundi Evidence](https://github.com/neomundi-io/neomundi-evidence-public)** | Check archive integrity, reconstruct links between artefacts, verify Ed25519 attestations and report what is demonstrated or unverified. | [Evidence README](https://github.com/neomundi-io/neomundi-evidence-public) · [User guide](https://github.com/neomundi-io/neomundi-evidence-public/blob/main/docs/EVIDENCE_USER_GUIDE.md) · [Technical demo](https://github.com/neomundi-io/neomundi-evidence-public/blob/main/docs/EVIDENCE_TECHNICAL_DEMO.md) |
 
-Station is being prepared for public launch. Its **record schemas are public**;
-access to the hosted instrument is granted case by case. Its implementation is private.
+**Qualified end-to-end example.** The frozen Q-2 experimental qualification followed one authorised real model execution through Measurement → Station → Evidence, including a genuine Ed25519 signature independently verified against the public trust reference. The technical chain passed; the **overall verdict remains PARTIAL** on specific scientific and provenance guarantees. Q-2 is a preserved **private** reference, not a publicly downloadable sample.
 
-| You want to… | Start here |
+## Access measurement through your tools
+
+**REST API is the direct integration path. SDK and MCP make measurement accessible from application and assistant workflows.** They are access interfaces to the instrument, not additional stages of the Measurement → Station → Evidence chain.
+
+| Access | For | Resource |
+|---|---|---|
+| **API** | Calling measurement services from your own software | [Runtime Measurement](https://github.com/neomundi-io/neomundi-runtime-measurement) |
+| **Python SDK** | Integrating measurements in Python applications and pipelines | [NeoMundi Python SDK](https://github.com/neomundi-io/neomundi-python-sdk) |
+| **MCP** | Accessing measurement from compatible AI tooling and assistants | [Measurement MCP](https://github.com/neomundi-io/neomundi-measurement-mcp) |
+
+Qualification and availability differ by interface; consult [current integration status](https://github.com/neomundi-io/neomundi-runtime-measurement#integration-status). [Metric Contract](https://github.com/neomundi-io/neomundi-metric-contract) describes signal semantics, and [Measurement Interoperability](https://github.com/neomundi-io/neomundi-measurement-interoperability) describes exchange contracts.
+
+## See it work — choose your next step
+
+| Your goal | Where to go |
 |---|---|
-| Understand the instrument and its current limits | [Station →](https://github.com/neomundi-io/neomundi-station-public) |
-| Explore the public documentation | [Developer and pilot guide →](https://github.com/neomundi-io/neomundi-station-public/blob/main/START_HERE.md) |
-| Integrate measurement into your own system | [API](https://github.com/neomundi-io/neomundi-runtime-measurement) · [Python SDK](https://github.com/neomundi-io/neomundi-python-sdk) · [MCP](https://github.com/neomundi-io/neomundi-measurement-mcp) |
-| Examine methods and documented work | [Validation](https://github.com/neomundi-io/neomundi-metrology-validation) · [Use cases](https://github.com/neomundi-io/neomundi-use-cases) |
-| Discuss a pilot on your own material | [contact@neomundi.io](mailto:contact@neomundi.io) |
+| **Understand the full chain** | [Station](https://github.com/neomundi-io/neomundi-station-public) → [Evidence](https://github.com/neomundi-io/neomundi-evidence-public) |
+| **Reproduce a verification** | [Evidence technical demo](https://github.com/neomundi-io/neomundi-evidence-public/blob/main/docs/EVIDENCE_TECHNICAL_DEMO.md) |
+| **Audit an attestation** | [Evidence traceability](https://github.com/neomundi-io/neomundi-evidence-public/blob/main/docs/EVIDENCE_TRACEABILITY.md) · [Validation report](https://github.com/neomundi-io/neomundi-evidence-public/blob/main/docs/EVIDENCE_VALIDATION_REPORT.md) |
+| **Explore applications** | [Use cases and pilots](https://github.com/neomundi-io/neomundi-use-cases) |
+| **Discuss your own pilot** | [contact@neomundi.io](mailto:contact@neomundi.io) |
 
-## Connect your tools
+## Beyond the core chain
 
-**Station** is the instrument path for controlled observations, campaigns and
-evidence. **Runtime Measurement** is the developer path for integrating
-measurement into third-party systems. REST is the primary Runtime path; SSE is
-an alternative. SDK and MCP have distinct, dated qualification states—see the
-current [Runtime integration status](https://github.com/neomundi-io/neomundi-runtime-measurement#integration-status).
+**ControlTower:** [Create an account](https://controltower.neomundi.io/welcome) — access to the NeoMundi environment and its connected workflows, according to current availability.
 
-[Metric Contract](https://github.com/neomundi-io/neomundi-metric-contract) defines
-signal semantics.
-[Measurement Interoperability](https://github.com/neomundi-io/neomundi-measurement-interoperability)
-defines the exchange contract. These are distinct from Station's internal record schemas.
+**Research and validation:** [Metrology validation](https://github.com/neomundi-io/neomundi-metrology-validation) · [AI Observatory](https://github.com/neomundi-io/neomundi-ai-observatory) · [Station evidence](https://github.com/neomundi-io/neomundi-station-public/blob/main/EVIDENCE.md) · [Historical work](https://github.com/neomundi-io/neomundi-station-public/blob/main/ARCHIVES.md).
 
-## Trust, Compliance & Data Protection
+**Governance and data:** [AI Act & GDPR operational evidence](https://github.com/neomundi-io/ai-act-rgpd) · [Data protection and confidentiality](https://github.com/neomundi-io/neomundi-io-data-protection). Measurements support human oversight and technical decisions; they are not certification of truth or legal compliance. Data flows and retention depend on the integration and deployment path.
 
-NeoMundi measurements can contribute technical, timestamped evidence to an organization's compliance work; they do not determine legal compliance or provide certification. Data flows are a separate question: submitted text, evaluator processing, Station records, exports and retention depend on the selected path and deployment.
+## Infrastructure and programme support
 
-- [**AI Act & GDPR — Operational Evidence**](https://github.com/neomundi-io/ai-act-rgpd) — where runtime measurements may support governance and compliance processes, with explicit legal boundaries.
-- [**Data Protection & Confidentiality**](https://github.com/neomundi-io/neomundi-io-data-protection) — the currently documented technical flows, disclosure boundaries and unresolved retention questions.
+NeoMundi benefits from infrastructure and startup-program support:
 
-## See the evidence
+- [Infomaniak](https://www.infomaniak.com/) — infrastructure partner.
+- [OVHcloud Startup Program](https://startup.ovhcloud.com/) — programme participant.
+- [NVIDIA Inception](https://www.nvidia.com/en-us/startups/) — programme member.
 
-[**Explore all evidence →**](https://github.com/neomundi-io/neomundi-station-public/blob/main/EVIDENCE.md)
-
-[Pilots](https://github.com/neomundi-io/neomundi-use-cases) ·
-[Observatory](https://github.com/neomundi-io/neomundi-ai-observatory) ·
-[Metrology and methods](https://github.com/neomundi-io/neomundi-metrology-validation) ·
-[Historical work](https://github.com/neomundi-io/neomundi-station-public/blob/main/ARCHIVES.md)
-
-Pilot work, accumulated observations and methodological work form our evidence base.
-Each source retains its protocol and limits. Earlier publications remain accessible;
-future experiments will be organized around Station.
-
-## Infrastructure & Program Support
-
-NeoMundi's independent AI observation and measurement initiative benefits from infrastructure and startup program support:
-
-- **[Infomaniak](https://www.infomaniak.com/)** — Infrastructure partner supporting the development of NeoMundi's independent AI observation instrument.
-- **[OVHcloud Startup Program](https://startup.ovhcloud.com/)** — Startup support program participant.
-- **[NVIDIA Inception](https://www.nvidia.com/en-us/startups/)** — Member of NVIDIA's program for innovative startups.
-
-These relationships support NeoMundi's development and do not imply certification or endorsement of its scientific results.
+These relationships do not imply certification or endorsement of scientific results.
 
 ## Our direction
 
-**A station for each profession**, built on a shared measurement foundation,
-with explicit protocols and evidence suited to the work.
-This is a development direction, not a claim that every business station is available.
+**A common measurement foundation, observation frameworks suited to each use case, and evidence that can be examined independently.** Industry-specific stations remain a development direction where not already qualified.
 
-Measurements inform analysis; people and consuming systems retain their decisions.
-A measurement is not a certification or a guarantee of truth.
-
-[Explore NeoMundi](https://neomundi.io) ·
-[Follow Station](https://github.com/neomundi-io/neomundi-station-public) ·
-[Contact](mailto:contact@neomundi.io)
+**[Explore NeoMundi](https://neomundi.io)** · **[Use cases](https://github.com/neomundi-io/neomundi-use-cases)** · **[Discuss a pilot](mailto:contact@neomundi.io)**
