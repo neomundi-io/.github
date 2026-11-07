@@ -8,6 +8,11 @@
 
 **Measurement → Station → Evidence**
 
+[![Measurement · Mesurer](https://img.shields.io/badge/Measurement-Mesurer-2563eb?style=flat-square)](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/README_FR.md)
+[![Station · Observer](https://img.shields.io/badge/Station-Observer-0f766e?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public/blob/main/README.fr.md)
+[![Evidence · Vérifier](https://img.shields.io/badge/Evidence-V%C3%A9rifier-D4A545?style=flat-square)](https://github.com/neomundi-io/neomundi-evidence-public/blob/main/README.fr.md)
+
+
 **[API — Accéder à la mesure](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/QUICKSTART.md)** · **[Créer un compte](https://controltower.neomundi.io/welcome)**
 
 [Measurement](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/README_FR.md) · [Station](https://github.com/neomundi-io/neomundi-station-public/blob/main/README.fr.md) · [Evidence](https://github.com/neomundi-io/neomundi-evidence-public/blob/main/README.fr.md) · [Cas d’usage](https://github.com/neomundi-io/neomundi-use-cases/blob/main/README_FR.md)
