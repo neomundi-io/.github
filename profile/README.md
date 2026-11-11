@@ -68,6 +68,18 @@ NeoMundi benefits from infrastructure and startup-program support:
 
 These relationships do not imply certification or endorsement of scientific results.
 
+## Infrastructure & Program Support
+
+NeoMundi's independent AI observation and measurement initiative benefits from infrastructure and startup program support:
+
+- **[Infomaniak](https://www.infomaniak.com/)** — Infrastructure partner supporting the development of NeoMundi's independent AI observation instrument.
+- **[OVHcloud Startup Program](https://startup.ovhcloud.com/en/)** — NeoMundi participates in OVHcloud's startup support program.
+- **[NVIDIA Inception](https://www.nvidia.com/en-us/startups/)** — NeoMundi is a member of NVIDIA's program for innovative startups.
+
+These relationships support NeoMundi's development and do not imply certification or endorsement of its scientific results.
+
+---
+
 ## Our direction
 
 **A common measurement foundation, observation frameworks suited to each use case, and evidence that can be examined independently.** Industry-specific stations remain a development direction where not already qualified.

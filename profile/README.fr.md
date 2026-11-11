@@ -68,6 +68,18 @@ NeoMundi bénéficie de soutiens en infrastructure et d’accompagnement :
 
 Ces relations ne constituent ni certification ni approbation des résultats scientifiques.
 
+## Infrastructure et programmes de soutien
+
+L'initiative indépendante de NeoMundi pour l'observation et la mesure des IA bénéficie de soutiens en matière d'infrastructure et de programmes d'accompagnement :
+
+- **[Infomaniak](https://www.infomaniak.com/fr)** — Partenaire infrastructure soutenant le développement de l'instrument indépendant d'observation des IA de NeoMundi.
+- **[OVHcloud Startup Program](https://startup.ovhcloud.com/fr/)** — NeoMundi participe au programme d'accompagnement des startups d'OVHcloud.
+- **[NVIDIA Inception](https://www.nvidia.com/fr-fr/startups/)** — NeoMundi est membre du programme de NVIDIA pour les startups innovantes.
+
+Ces relations soutiennent le développement de NeoMundi et n'impliquent ni certification ni approbation de ses résultats scientifiques.
+
+---
+
 ## Notre direction
 
 **Un socle de mesure commun, des cadres d’observation adaptés aux usages et des éléments de preuve vérifiables indépendamment.** Les stations sectorielles restent une direction de développement là où elles ne sont pas encore qualifiées.
