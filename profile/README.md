@@ -38,13 +38,14 @@
 | **Python SDK** | Integrating measurements in Python applications and pipelines | [NeoMundi Python SDK](https://github.com/neomundi-io/neomundi-python-sdk) |
 | **MCP** | Accessing measurement from compatible AI tooling and assistants | [Measurement MCP](https://github.com/neomundi-io/neomundi-measurement-mcp) |
 
-Qualification and availability differ by interface; consult [current integration status](https://github.com/neomundi-io/neomundi-runtime-measurement#integration-status). [Metric Contract](https://github.com/neomundi-io/neomundi-metric-contract) describes signal semantics, and [Measurement Interoperability](https://github.com/neomundi-io/neomundi-measurement-interoperability) describes exchange contracts.
+Qualification and availability differ by interface; consult [current integration status](https://github.com/neomundi-io/neomundi-runtime-measurement#integration-status). **[Understand the evaluators](https://github.com/neomundi-io/neomundi-metric-contract/blob/main/EVALUATORS.md)** explains what signal families can and cannot establish, including provenance, coverage and calibration limits. [Metric Contract](https://github.com/neomundi-io/neomundi-metric-contract) defines signal semantics; [Metrology Validation](https://github.com/neomundi-io/neomundi-metrology-validation) documents experimental qualification; [Measurement Interoperability](https://github.com/neomundi-io/neomundi-measurement-interoperability) describes exchange contracts.
 
 ## See it work — choose your next step
 
 | Your goal | Where to go |
 |---|---|
 | **Understand the full chain** | [Station](https://github.com/neomundi-io/neomundi-station-public) → [Evidence](https://github.com/neomundi-io/neomundi-evidence-public) |
+| **Understand and assess the evaluators** | [Evaluator guide](https://github.com/neomundi-io/neomundi-metric-contract/blob/main/EVALUATORS.md) · [Experimental qualification](https://github.com/neomundi-io/neomundi-metrology-validation) |
 | **Reproduce a verification** | [Evidence technical demo](https://github.com/neomundi-io/neomundi-evidence-public/blob/main/docs/EVIDENCE_TECHNICAL_DEMO.md) |
 | **Audit an attestation** | [Evidence traceability](https://github.com/neomundi-io/neomundi-evidence-public/blob/main/docs/EVIDENCE_TRACEABILITY.md) · [Validation report](https://github.com/neomundi-io/neomundi-evidence-public/blob/main/docs/EVIDENCE_VALIDATION_REPORT.md) |
 | **Explore applications** | [Use cases and pilots](https://github.com/neomundi-io/neomundi-use-cases) |
