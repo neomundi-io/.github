@@ -10,7 +10,7 @@
 
 [![Measurement · Measure](https://img.shields.io/badge/Measurement-Measure-2563eb?style=flat-square)](https://github.com/neomundi-io/neomundi-runtime-measurement)
 [![Station · Observe](https://img.shields.io/badge/Station-Observe-0f766e?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public)
-[![Evidence · Verify](https://img.shields.io/badge/Evidence-Verify-D4A545?style=flat-square)](https://github.com/neomundi-io/neomundi-evidence-public)
+[![Evidence · Verify](https://img.shields.io/badge/Evidence-Verify-D4A545?style=flat-square)](https://github.com/neomundi-io/neomundi-evidence-gateway)
 [![PyPI version](https://img.shields.io/pypi/v/neomundi?style=flat-square)](https://pypi.org/project/neomundi/)
 [![Use cases](https://img.shields.io/badge/Use_cases-Explore-64748b?style=flat-square)](https://github.com/neomundi-io/neomundi-use-cases)
 
@@ -25,7 +25,7 @@
 |---|---|---|---|
 | **01 · MEASURE** | **[NeoMundi Measurement](https://github.com/neomundi-io/neomundi-runtime-measurement)** | Instrument AI responses and report behavioural signals, measurement status, evaluator metadata and coverage. | [Measurement and integration](https://github.com/neomundi-io/neomundi-runtime-measurement) |
 | **02 · OBSERVE** | **[NeoMundi Station](https://github.com/neomundi-io/neomundi-station-public)** | Run controlled campaigns, retain observations and measurements, capture their context and provenance, and export auditable records. | [Station overview](https://github.com/neomundi-io/neomundi-station-public) · [Pilot guide](https://github.com/neomundi-io/neomundi-station-public/blob/main/START_HERE.md) |
-| **03 · VERIFY** | **[NeoMundi Evidence](https://github.com/neomundi-io/neomundi-evidence-public)** | Check archive integrity, reconstruct links between artefacts, verify Ed25519 attestations and report what is demonstrated or unverified. | [Evidence README](https://github.com/neomundi-io/neomundi-evidence-public) · [User guide](https://github.com/neomundi-io/neomundi-evidence-public/blob/main/docs/EVIDENCE_USER_GUIDE.md) · [Technical demo](https://github.com/neomundi-io/neomundi-evidence-public/blob/main/docs/EVIDENCE_TECHNICAL_DEMO.md) |
+| **03 · VERIFY** | **[NeoMundi Evidence](https://github.com/neomundi-io/neomundi-evidence-gateway)** | Check archive integrity, reconstruct links between artefacts, verify Ed25519 attestations and report what is demonstrated or unverified. | [Evidence README](https://github.com/neomundi-io/neomundi-evidence-gateway) · [User guide](https://github.com/neomundi-io/neomundi-evidence-gateway/blob/main/verifier/README.md) · [Technical demo](https://github.com/neomundi-io/neomundi-evidence-gateway/blob/main/verifier/README.md#verify-our-figures--the-four-commands) |
 
 **Qualified end-to-end example.** The frozen Q-2 experimental qualification followed one authorised real model execution through Measurement → Station → Evidence, including a genuine Ed25519 signature independently verified against the public trust reference. The technical chain passed; the **overall verdict remains PARTIAL** on specific scientific and provenance guarantees. Q-2 is a preserved **private** reference, not a publicly downloadable sample.
 
@@ -45,10 +45,10 @@ Qualification and availability differ by interface; consult [current integration
 
 | Your goal | Where to go |
 |---|---|
-| **Understand the full chain** | [Station](https://github.com/neomundi-io/neomundi-station-public) → [Evidence](https://github.com/neomundi-io/neomundi-evidence-public) |
+| **Understand the full chain** | [Station](https://github.com/neomundi-io/neomundi-station-public) → [Evidence](https://github.com/neomundi-io/neomundi-evidence-gateway) |
 | **Understand and assess the evaluators** | [Evaluator guide](https://github.com/neomundi-io/neomundi-metric-contract/blob/main/EVALUATORS.md) · [Experimental qualification](https://github.com/neomundi-io/neomundi-metrology-validation) |
-| **Reproduce a verification** | [Evidence technical demo](https://github.com/neomundi-io/neomundi-evidence-public/blob/main/docs/EVIDENCE_TECHNICAL_DEMO.md) |
-| **Audit an attestation** | [Evidence traceability](https://github.com/neomundi-io/neomundi-evidence-public/blob/main/docs/EVIDENCE_TRACEABILITY.md) · [Validation report](https://github.com/neomundi-io/neomundi-evidence-public/blob/main/docs/EVIDENCE_VALIDATION_REPORT.md) |
+| **Reproduce a verification** | [Evidence technical demo](https://github.com/neomundi-io/neomundi-evidence-gateway/blob/main/verifier/README.md#verify-our-figures--the-four-commands) |
+| **Audit an attestation** | [Evidence traceability](https://github.com/neomundi-io/neomundi-evidence-gateway/blob/main/verifier/spec/SPECIFICATION.md) · [Validation report](https://github.com/neomundi-io/neomundi-evidence-gateway/blob/main/references/VERIFICATION_RESULTS.md) |
 | **Explore applications** | [Use cases and pilots](https://github.com/neomundi-io/neomundi-use-cases) |
 | **Discuss your own pilot** | [contact@neomundi.io](mailto:contact@neomundi.io) |
 
