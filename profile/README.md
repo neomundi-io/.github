@@ -11,6 +11,7 @@
 [![Measurement · Measure](https://img.shields.io/badge/Measurement-Measure-2563eb?style=flat-square)](https://github.com/neomundi-io/neomundi-runtime-measurement)
 [![Station · Observe](https://img.shields.io/badge/Station-Observe-0f766e?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public)
 [![Evidence · Verify](https://img.shields.io/badge/Evidence-Verify-D4A545?style=flat-square)](https://github.com/neomundi-io/neomundi-evidence-public)
+[![PyPI version](https://img.shields.io/pypi/v/neomundi?style=flat-square)](https://pypi.org/project/neomundi/)
 [![Use cases](https://img.shields.io/badge/Use_cases-Explore-64748b?style=flat-square)](https://github.com/neomundi-io/neomundi-use-cases)
 
 **[API](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/QUICKSTART.md)** · **[Create an account](https://controltower.neomundi.io/welcome)**
@@ -35,7 +36,7 @@
 | Access | For | Resource |
 |---|---|---|
 | **API** | Calling measurement services from your own software | [Runtime Measurement](https://github.com/neomundi-io/neomundi-runtime-measurement) |
-| **Python SDK** | Integrating measurements in Python applications and pipelines | [NeoMundi Python SDK](https://github.com/neomundi-io/neomundi-python-sdk) |
+| **Python SDK** | Integrating measurements in Python applications and pipelines | [NeoMundi Python SDK](https://github.com/neomundi-io/neomundi-python-sdk) · [PyPI](https://pypi.org/project/neomundi/) · `pip install neomundi` |
 | **MCP** | Accessing measurement from compatible AI tooling and assistants | [Measurement MCP](https://github.com/neomundi-io/neomundi-measurement-mcp) |
 
 Qualification and availability differ by interface; consult [current integration status](https://github.com/neomundi-io/neomundi-runtime-measurement#integration-status). **[Understand the evaluators](https://github.com/neomundi-io/neomundi-metric-contract/blob/main/EVALUATORS.md)** explains what signal families can and cannot establish, including provenance, coverage and calibration limits. [Metric Contract](https://github.com/neomundi-io/neomundi-metric-contract) defines signal semantics; [Metrology Validation](https://github.com/neomundi-io/neomundi-metrology-validation) documents experimental qualification; [Measurement Interoperability](https://github.com/neomundi-io/neomundi-measurement-interoperability) describes exchange contracts.
