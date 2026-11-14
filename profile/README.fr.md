@@ -11,6 +11,7 @@
 [![Measurement · Mesurer](https://img.shields.io/badge/Measurement-Mesurer-2563eb?style=flat-square)](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/README_FR.md)
 [![Station · Observer](https://img.shields.io/badge/Station-Observer-0f766e?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public/blob/main/README.fr.md)
 [![Evidence · Vérifier](https://img.shields.io/badge/Evidence-V%C3%A9rifier-D4A545?style=flat-square)](https://github.com/neomundi-io/neomundi-evidence-public/blob/main/README.fr.md)
+[![PyPI version](https://img.shields.io/pypi/v/neomundi?style=flat-square)](https://pypi.org/project/neomundi/)
 [![Cas d’usage](https://img.shields.io/badge/Cas_d'usage-Explorer-64748b?style=flat-square)](https://github.com/neomundi-io/neomundi-use-cases/blob/main/README_FR.md)
 
 **[API](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/QUICKSTART.md)** · **[Créer un compte](https://controltower.neomundi.io/welcome)**
@@ -35,7 +36,7 @@
 | Accès | Pour quoi faire | Ressource |
 |---|---|---|
 | **API** | Appeler les services de mesure depuis vos logiciels | [Runtime Measurement](https://github.com/neomundi-io/neomundi-runtime-measurement) |
-| **SDK Python** | Intégrer les mesures dans les applications et pipelines Python | [NeoMundi Python SDK](https://github.com/neomundi-io/neomundi-python-sdk) |
+| **SDK Python** | Intégrer les mesures dans les applications et pipelines Python | [NeoMundi Python SDK](https://github.com/neomundi-io/neomundi-python-sdk) · [PyPI](https://pypi.org/project/neomundi/) · `pip install neomundi` |
 | **MCP** | Accéder à la mesure depuis les outils et assistants IA compatibles | [Measurement MCP](https://github.com/neomundi-io/neomundi-measurement-mcp) |
 
 Les niveaux de qualification et les disponibilités diffèrent selon les interfaces : voir le [statut des intégrations](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/README_FR.md). Le guide **[Comprendre les évaluateurs](https://github.com/neomundi-io/neomundi-metric-contract/blob/main/EVALUATORS.fr.md)** explique ce que les signaux permettent ou non d'établir, ainsi que leurs limites de provenance, de couverture et de calibration. Le [Metric Contract](https://github.com/neomundi-io/neomundi-metric-contract) définit la sémantique des signaux ; [Metrology Validation](https://github.com/neomundi-io/neomundi-metrology-validation) documente leur qualification expérimentale ; [Measurement Interoperability](https://github.com/neomundi-io/neomundi-measurement-interoperability) définit les contrats d’échange.
