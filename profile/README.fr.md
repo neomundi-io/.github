@@ -2,76 +2,156 @@
 <sub><a href="README.md">English</a> · <b>Français</b></sub>
 
 # NeoMundi
-### Comprendre vos IA. Comparer. Auditer. Prouver.
+### Savoir ce que fait votre IA. Prouver ce qui s'est passé.
 
-**NeoMundi mesure le comportement des IA, structure leurs observations et rend les preuves techniques vérifiables indépendamment.**
+**Votre application d'IA tourne. Cela ne veut pas dire que quelqu'un peut dire ce qu'elle a fait.**
+NeoMundi est l'infrastructure de mesure qui conserve une observation de chaque interaction, rend
+des signaux comportementaux avec leur provenance, et en fait une preuve qu'un tiers peut vérifier —
+sans compte sur notre plateforme.
 
-**Measurement → Station → Evidence**
+**INSTALL → TRACE → MEASURE → VERIFY → ACT**
 
-[![Measurement · Mesurer](https://img.shields.io/badge/Measurement-Mesurer-2563eb?style=flat-square)](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/README_FR.md)
-[![Station · Observer](https://img.shields.io/badge/Station-Observer-0f766e?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public/blob/main/README.fr.md)
-[![Evidence · Vérifier](https://img.shields.io/badge/Evidence-V%C3%A9rifier-D4A545?style=flat-square)](https://github.com/neomundi-io/neomundi-evidence-gateway/blob/main/README.fr.md)
-[![PyPI version](https://img.shields.io/pypi/v/neomundi?style=flat-square)](https://pypi.org/project/neomundi/)
-[![Cas d’usage](https://img.shields.io/badge/Cas_d'usage-Explorer-64748b?style=flat-square)](https://github.com/neomundi-io/neomundi-use-cases/blob/main/README_FR.md)
+[![Version PyPI](https://img.shields.io/pypi/v/neomundi?style=flat-square&label=pip%20install%20neomundi)](https://pypi.org/project/neomundi/)
+[![API de mesure](https://img.shields.io/badge/API-REST%20%2B%20SSE-2563eb?style=flat-square)](https://github.com/neomundi-io/neomundi-runtime-measurement)
+[![Evidence](https://img.shields.io/badge/Evidence-v%C3%A9rificateur%20ind%C3%A9pendant-D4A545?style=flat-square)](https://github.com/neomundi-io/neomundi-evidence-gateway)
+[![Station](https://img.shields.io/badge/Station-campagnes-0f766e?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public)
+[![Cas d'usage](https://img.shields.io/badge/Cas_d'usage-Explorer-64748b?style=flat-square)](https://github.com/neomundi-io/neomundi-use-cases)
 
-**[API](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/QUICKSTART.md)** · **[Créer un compte](https://controltower.neomundi.io/welcome)**
+**[Démarrage rapide](#démarrage-rapide)** · **[Architecture produit](https://github.com/neomundi-io/.github/blob/main/docs/PRODUCT_ARCHITECTURE.md)** · **[Créer un compte](https://controltower.neomundi.io/welcome)**
 </div>
 
 ---
 
-## Une chaîne, trois capacités complémentaires
+## Le problème
 
-| | Produit | Ce qu’il apporte | Pour commencer |
-|---|---|---|---|
-| **01 · MESURER** | **[NeoMundi Measurement](https://github.com/neomundi-io/neomundi-runtime-measurement)** | Instrumenter les réponses IA et produire des signaux comportementaux, des statuts de mesure, des métadonnées d’évaluateurs et une couverture documentée. | [Mesure et intégration](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/README_FR.md) |
-| **02 · OBSERVER** | **[NeoMundi Station](https://github.com/neomundi-io/neomundi-station-public)** | Mener des campagnes contrôlées, conserver observations et mesures, documenter leur contexte et leur provenance, exporter des dossiers auditables. | [Présentation Station](https://github.com/neomundi-io/neomundi-station-public/blob/main/README.fr.md) · [Guide pilote](https://github.com/neomundi-io/neomundi-station-public/blob/main/START_HERE.fr.md) |
-| **03 · VÉRIFIER** | **[NeoMundi Evidence](https://github.com/neomundi-io/neomundi-evidence-gateway)** | Contrôler l’intégrité des archives, relier les artefacts, vérifier les attestations Ed25519 et expliciter ce qui est démontré ou non. | [README Evidence](https://github.com/neomundi-io/neomundi-evidence-gateway/blob/main/README.fr.md) · [Mode d’emploi](https://github.com/neomundi-io/neomundi-evidence-gateway/blob/main/verifier/README.fr.md) · [Démonstration](https://github.com/neomundi-io/neomundi-evidence-gateway/blob/main/verifier/README.fr.md#contrôler-nos-chiffres--les-quatre-commandes) |
+Une fonctionnalité d'IA peut passer tous les tests et rester impossible à justifier.
 
-**Qualification réelle de bout en bout.** La qualification expérimentale Q-2, figée, a suivi une exécution autorisée de modèle à travers Measurement → Station → Evidence, avec une véritable signature Ed25519 vérifiée indépendamment à partir de la référence publique de confiance. La chaîne technique a réussi ; le **verdict global reste PARTIAL** sur certaines garanties scientifiques et de provenance. Q-2 est une référence **privée**, pas un exemple public téléchargeable.
+- **Trois semaines plus tard, un client conteste une réponse.** Vous avez une ligne de journal, pas le comportement.
+- **Votre fournisseur publie une moyenne.** Vous ne pouvez pas distinguer un signal mesuré d'un signal qui n'a jamais tourné.
+- **Un auditeur demande une preuve.** Tout ce que vous pouvez montrer vient de vous, et c'est précisément le problème.
 
-## Accéder à la mesure depuis vos outils
+NeoMundi conserve l'observation, mesure le comportement avec sa provenance attachée, et rend
+l'enregistrement vérifiable par quelqu'un qui ne vous fait pas confiance.
 
-**L’API REST constitue l’accès direct à l’instrument. Le SDK et le MCP rendent la mesure accessible depuis les applications, pipelines et assistants compatibles.** Ce sont des voies d’accès à Measurement, pas des étapes supplémentaires de la chaîne Measurement → Station → Evidence.
+## Ce que vous obtenez, en un parcours
 
-| Accès | Pour quoi faire | Ressource |
+```mermaid
+flowchart LR
+  I["INSTALL<br/>pip install neomundi"] --> T["TRACE<br/>une observation<br/>par interaction"]
+  T --> M["MEASURE<br/>5 signaux<br/>+ provenance"]
+  M --> V["VERIFY<br/>empreinte + signature<br/>sans clé"]
+  V --> A["ACT<br/>exporter · attester<br/>transmettre"]
+```
+
+| Étape | Ce qu'elle fait réellement | Disponible |
 |---|---|---|
-| **API** | Appeler les services de mesure depuis vos logiciels | [Runtime Measurement](https://github.com/neomundi-io/neomundi-runtime-measurement) |
-| **SDK Python** | Intégrer les mesures dans les applications et pipelines Python | [NeoMundi Python SDK](https://github.com/neomundi-io/neomundi-python-sdk) · [PyPI](https://pypi.org/project/neomundi/) · `pip install neomundi` |
-| **MCP** | Accéder à la mesure depuis les outils et assistants IA compatibles | [Measurement MCP](https://github.com/neomundi-io/neomundi-measurement-mcp) |
+| **INSTALL** | `pip install neomundi` — une seule dépendance d'exécution, typé, aucun hôte supposé | **Oui** — [PyPI](https://pypi.org/project/neomundi/) |
+| **TRACE** | Vous instrumentez votre propre appel. Le SDK le chronomètre, porte votre identifiant de corrélation, soumet l'interaction et dit si le serveur l'a **enregistrée** — pas seulement accusé réception. | **Oui.** Il n'existe aucune route de traçage seul : une trace est une observation mesurée, et elle est facturée. |
+| **MEASURE** | Cinq signaux comportementaux, chacun avec les empreintes de son évaluateur. Un signal non mesuré n'est **jamais** publié comme un nombre. | **Oui** — [sémantique des signaux](https://github.com/neomundi-io/neomundi-metric-contract) · [ce que les évaluateurs peuvent et ne peuvent pas établir](https://github.com/neomundi-io/neomundi-metric-contract/blob/main/EVALUATORS.md) |
+| **VERIFY** | Nous recalculons l'empreinte canonique depuis l'observation stockée et vérifions une signature Ed25519 — par des routes qui n'exigent **aucune clé d'API**. L'intégrité d'archive est contrôlée par un vérificateur **séparé et indépendant**. | **Oui** — [Evidence](https://github.com/neomundi-io/neomundi-evidence-gateway) · [`neomundi-evidence-verify`](https://pypi.org/project/neomundi-evidence-verify/) |
+| **ACT** | Aujourd'hui : auditer, exporter (PDF / JSON / CSV), attester par signature, transmettre à un tiers. | **Oui, pour ces quatre usages.** Les seuils, les alertes et la surveillance de SLA **ne font pas** partie du produit. |
 
-Les niveaux de qualification et les disponibilités diffèrent selon les interfaces : voir le [statut des intégrations](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/README_FR.md). Le guide **[Comprendre les évaluateurs](https://github.com/neomundi-io/neomundi-metric-contract/blob/main/EVALUATORS.fr.md)** explique ce que les signaux permettent ou non d'établir, ainsi que leurs limites de provenance, de couverture et de calibration. Le [Metric Contract](https://github.com/neomundi-io/neomundi-metric-contract) définit la sémantique des signaux ; [Metrology Validation](https://github.com/neomundi-io/neomundi-metrology-validation) documente leur qualification expérimentale ; [Measurement Interoperability](https://github.com/neomundi-io/neomundi-measurement-interoperability) définit les contrats d’échange.
+**Ce que VERIFY ne signifie pas.** Il établit qu'un enregistrement a été émis par cette plateforme
+et n'a pas été altéré. Il n'établit **pas** qu'une réponse d'IA était vraie. Nous tenons ces deux
+choses séparées à dessein, et toute présentation bâtie sur cette page doit le faire aussi.
 
-## Voir la chaîne fonctionner
+## Démarrage rapide
 
-| Votre objectif | Accès direct |
-|---|---|
-| **Comprendre la chaîne** | [Station](https://github.com/neomundi-io/neomundi-station-public) → [Evidence](https://github.com/neomundi-io/neomundi-evidence-gateway) |
-| **Comprendre et examiner les évaluateurs** | [Guide des évaluateurs](https://github.com/neomundi-io/neomundi-metric-contract/blob/main/EVALUATORS.fr.md) · [Qualification expérimentale](https://github.com/neomundi-io/neomundi-metrology-validation) |
-| **Reproduire une vérification** | [Démonstration technique Evidence](https://github.com/neomundi-io/neomundi-evidence-gateway/blob/main/verifier/README.fr.md#contrôler-nos-chiffres--les-quatre-commandes) |
-| **Examiner une attestation** | [Traçabilité Evidence](https://github.com/neomundi-io/neomundi-evidence-gateway/blob/main/verifier/spec/SPECIFICATION.md) · [Rapport de validation](https://github.com/neomundi-io/neomundi-evidence-gateway/blob/main/references/VERIFICATION_RESULTS.fr.md) |
-| **Explorer les applications** | [Cas d’usage et pilotes](https://github.com/neomundi-io/neomundi-use-cases) |
-| **Démarrer un pilote** | [contact@neomundi.io](mailto:contact@neomundi.io) |
+```sh
+pip install neomundi
+```
 
-## Autour de la chaîne
+```python
+import os
+from neomundi import NeoMundiClient
 
-**Créer un compte :** [Accéder à NeoMundi](https://controltower.neomundi.io/welcome).
+with NeoMundiClient(
+    api_key=os.environ["NEOMUNDI_API_KEY"],
+    base_url="https://api.neomundi.io",
+) as client:
 
-**Recherche et validation :** [Validation métrologique](https://github.com/neomundi-io/neomundi-metrology-validation) · [Observatoire IA](https://github.com/neomundi-io/neomundi-ai-observatory) · [Preuves Station](https://github.com/neomundi-io/neomundi-station-public/blob/main/EVIDENCE.fr.md) · [Travaux historiques](https://github.com/neomundi-io/neomundi-station-public/blob/main/ARCHIVES.fr.md).
+    # Vous appelez votre propre modèle. NeoMundi mesure ce qui en revient.
+    with client.trace(model_name="gpt-4o") as t:
+        answer, usage = my_llm(question)
+        t.record(prompt=question, response=answer,
+                 token_count=usage.total_tokens)
 
-**Gouvernance et données :** [AI Act & RGPD — preuves opérationnelles](https://github.com/neomundi-io/ai-act-rgpd) · [Protection des données et confidentialité](https://github.com/neomundi-io/neomundi-io-data-protection). Les mesures éclairent la supervision humaine et les décisions techniques ; elles ne constituent pas une certification de vérité ou de conformité juridique. Les flux et la conservation dépendent du parcours d’intégration.
+    r = t.record_
+    print(r.request_id)                               # la clé de corrélation
+    print(r.result.governance.decision)               # ALLOW / FLAG
+    print(r.result.format_score("g_score"))           # un None reste None
+    print(r.result.measured_signals)                  # ce qui a été mesuré
+    print(r.result.unmeasured_signals)                # et pourquoi le reste ne l'a pas été
+    print(r.result.get("log_persisted"))              # est-ce enregistré ?
+```
+
+Puis vérifiez le contrat de fil auquel l'API s'engage — **sans clé, sans compte, immédiatement** :
+
+```sh
+curl https://api.neomundi.io/v1/contracts/govern-rest-1.0.json
+```
+
+`token_count` et `latency_ms` ne sont jamais inventés à votre place : sans eux, rien n'est envoyé.
+[SDK Python](https://github.com/neomundi-io/neomundi-python-sdk) ·
+[English](https://github.com/neomundi-io/neomundi-python-sdk) ·
+[Limites connues](https://github.com/neomundi-io/neomundi-python-sdk/blob/main/KNOWN_LIMITATIONS_FR.md)
+
+## Architecture et écosystème
+
+| Composant | Rôle | Commencer ici |
+|---|---|---|
+| **SDK Python** | Transporte et expose les mesures. N'embarque aucun seuil et ne dérive aucun verdict — l'interprétation reste dans votre application. | [SDK](https://github.com/neomundi-io/neomundi-python-sdk) · [PyPI](https://pypi.org/project/neomundi/) |
+| **API de mesure** | Mesure, conserve, exporte et signe. REST post-call et proxy de génération SSE. | [Runtime Measurement](https://github.com/neomundi-io/neomundi-runtime-measurement) · [Démarrage](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/QUICKSTART.md) |
+| **MCP** | Accéder à la mesure depuis les assistants d'IA et l'outillage d'agents, avec validation des contrats de réponse. | [Measurement MCP](https://github.com/neomundi-io/neomundi-measurement-mcp) |
+| **Evidence** | Vérification indépendante : intégrité d'archive, liens entre artefacts, attestations Ed25519. Rapporte ce qui est démontré **et ce qui n'est pas éprouvé**. | [Gateway Evidence](https://github.com/neomundi-io/neomundi-evidence-gateway) · [Guide du vérificateur](https://github.com/neomundi-io/neomundi-evidence-gateway/blob/main/verifier/README.md) |
+| **Station** | Campagnes contrôlées : exécuter, conserver, capturer le contexte et la provenance, exporter des enregistrements auditables. | [Station](https://github.com/neomundi-io/neomundi-station-public) · [Guide pilote](https://github.com/neomundi-io/neomundi-station-public/blob/main/START_HERE.md) |
+| **Control Tower (web)** | Interface opérateur : console de mesure en direct, consommation, rapports, exports, contrats signés. | [Créer un compte](https://controltower.neomundi.io/welcome) |
+
+Comment tout cela s'articule, avec l'état et la limite de chaque capacité :
+**[Architecture produit](https://github.com/neomundi-io/.github/blob/main/docs/PRODUCT_ARCHITECTURE.md)** —
+et l'audit sur lequel elle repose, affirmation par affirmation :
+**[Audit fonctionnel du 2026-11-15](https://github.com/neomundi-io/.github/blob/main/docs/V2_FUNCTIONAL_AUDIT_2026-11-15.md)**.
+
+## Bénéfices métier
+
+| Usage | État | Sur quoi il repose |
+|---|---|---|
+| **AUDIT** — reconstituer, examiner, prouver | **Disponible aujourd'hui** | Une observation récupérable, la provenance par signal, l'export PDF / JSON / CSV, et deux routes de vérification publiques qui n'exigent aucune clé |
+| **SLA** — surveiller, qualifier les écarts | **Feuille de route** | La matière première existe ; il n'y a ni moteur de seuil, ni alerte, ni mesure de dérive. Ce n'est pas un produit aujourd'hui. |
+| **EU AI Act** — alimenter un dossier de conformité | **Feuille de route** | Provenance, contrats signés et observations récupérables sont de véritables entrées techniques. Il n'y a ni pack, ni revendication de couverture article par article. |
+
+La qualification des signaux et les tests d'évaluateurs étendus sont des directions de
+développement, pas des fonctionnalités. Les mesures soutiennent la supervision humaine et les
+décisions techniques ; elles ne certifient ni une vérité, ni une conformité juridique.
+
+## Par où commencer
+
+**1. [Installer le SDK](https://pypi.org/project/neomundi/)** → **2. [Explorer la documentation](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/QUICKSTART.md)** → **3. [Lancer votre première mesure](https://controltower.neomundi.io/welcome)**
+
+**Aller plus loin :** [Cas d'usage et pilotes](https://github.com/neomundi-io/neomundi-use-cases) ·
+[Qualification expérimentale](https://github.com/neomundi-io/neomundi-metrology-validation) ·
+[Contrats d'échange](https://github.com/neomundi-io/neomundi-measurement-interoperability) ·
+[Hugging Face · NeoMundi Research](https://huggingface.co/neomundi-research) ·
+[Observatoire de l'IA](https://github.com/neomundi-io/neomundi-ai-observatory)
+
+**Gouvernance et données :** [Preuves opérationnelles AI Act & RGPD](https://github.com/neomundi-io/ai-act-rgpd) ·
+[Protection des données et confidentialité](https://github.com/neomundi-io/neomundi-io-data-protection).
+Les flux de données et la rétention dépendent du chemin d'intégration et de déploiement.
+
+**Discuter d'un pilote :** [contact@neomundi.io](mailto:contact@neomundi.io)
 
 ## Infrastructure et programmes de soutien
 
-NeoMundi bénéficie de soutiens en infrastructure et d’accompagnement :
+NeoMundi bénéficie d'un soutien en infrastructure et de programmes pour startups :
 
-- [Infomaniak](https://www.infomaniak.com/) — partenaire infrastructure.
-- [OVHcloud Startup Program](https://startup.ovhcloud.com/) — participation au programme.
+- [Infomaniak](https://www.infomaniak.com/) — partenaire d'infrastructure.
+- [OVHcloud Startup Program](https://startup.ovhcloud.com/) — participant au programme.
 - [NVIDIA Inception](https://www.nvidia.com/en-us/startups/) — membre du programme.
 
-Ces relations ne constituent ni certification ni approbation des résultats scientifiques.
+Ces relations n'impliquent aucune certification ni validation de résultats scientifiques.
 
-## Notre direction
+<div align="center">
 
-**Un socle de mesure commun, des cadres d’observation adaptés aux usages et des éléments de preuve vérifiables indépendamment.** Les stations sectorielles restent une direction de développement là où elles ne sont pas encore qualifiées.
+**[Découvrir NeoMundi](https://neomundi.io)** · **[Cas d'usage](https://github.com/neomundi-io/neomundi-use-cases)** · **[Discuter d'un pilote](mailto:contact@neomundi.io)**
 
-**[Explorer NeoMundi](https://neomundi.io)** · **[Cas d’usage](https://github.com/neomundi-io/neomundi-use-cases)** · **[Discuter d’un pilote](mailto:contact@neomundi.io)**
+</div>
