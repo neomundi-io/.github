@@ -35,13 +35,12 @@ record verifiable by someone who does not trust you.
 
 ## What you get, in one journey
 
-```mermaid
-flowchart LR
-  I["INSTALL<br/>pip install neomundi"] --> T["TRACE<br/>one observation<br/>per interaction"]
-  T --> M["MEASURE<br/>5 signals<br/>+ provenance"]
-  M --> V["VERIFY<br/>hash + signature<br/>no key needed"]
-  V --> A["ACT<br/>export · attest<br/>hand over"]
-```
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/neomundi-io/.github/main/profile/assets/journey-en-dark.svg">
+    <img alt="NeoMundi product journey in five steps: INSTALL, pip install neomundi; TRACE, one observation per interaction; MEASURE, 5 signals with provenance; VERIFY, hash and signature, no key needed; ACT, export, attest and hand over." src="https://raw.githubusercontent.com/neomundi-io/.github/main/profile/assets/journey-en-light.svg" width="100%">
+  </picture>
+</p>
 
 | Step | What it actually does | Available |
 |---|---|---|
