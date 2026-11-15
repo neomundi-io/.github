@@ -35,13 +35,12 @@ l'enregistrement vérifiable par quelqu'un qui ne vous fait pas confiance.
 
 ## Ce que vous obtenez, en un parcours
 
-```mermaid
-flowchart LR
-  I["INSTALL<br/>pip install neomundi"] --> T["TRACE<br/>une observation<br/>par interaction"]
-  T --> M["MEASURE<br/>5 signaux<br/>+ provenance"]
-  M --> V["VERIFY<br/>empreinte + signature<br/>sans clé"]
-  V --> A["ACT<br/>exporter · attester<br/>transmettre"]
-```
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/neomundi-io/.github/main/profile/assets/journey-fr-dark.svg">
+    <img alt="Parcours produit NeoMundi en cinq étapes : INSTALL, pip install neomundi ; TRACE, une observation par interaction ; MEASURE, 5 signaux avec provenance ; VERIFY, empreinte et signature, sans clé ; ACT, exporter, attester, transmettre." src="https://raw.githubusercontent.com/neomundi-io/.github/main/profile/assets/journey-fr-light.svg" width="100%">
+  </picture>
+</p>
 
 | Étape | Ce qu'elle fait réellement | Disponible |
 |---|---|---|
