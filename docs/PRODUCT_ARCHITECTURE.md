@@ -1,3 +1,5 @@
+<div align="right"><a href="PRODUCT_ARCHITECTURE.fr.md">Français</a> · <b>English</b></div>
+
 # NeoMundi — product architecture
 
 **Public product architecture · 2026-11-16.** A technical map of the customer-facing product: interfaces, contracts, observable data flows, evidence and limitations. Internal deployment details and operational findings are deliberately excluded.
