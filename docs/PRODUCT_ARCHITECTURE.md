@@ -164,6 +164,7 @@ no threshold **by design** — execution authority stays in your application.
 | Python SDK | Submit and retrieve measurements; expose supported verification workflows | The SDK does not interpret scores or enforce thresholds. |
 | Measurement API — REST | Post-call measurement and retrieval (`POST /v1/govern`, `GET /v1/govern/{id}`) | Measurements are metered; persistence must be checked where reported. |
 | Measurement API — SSE | Streaming generation and evaluation (`POST /v1/govern/stream`) | Event availability depends on the published streaming contract. |
+| **RGC interoperability contract (JSON)** | [Versioned, signed measurement exchange contract](https://github.com/neomundi-io/neomundi-measurement-interoperability) for independent downstream consumers, after MEASURE | The consumer verifies provenance and integrity and retains interpretation, policy and action authority. RGC transport is not the independent Evidence archive verifier. Availability depends on the published API route, tier and contract version. |
 | Exports and signed evidence | Export observation evidence and check issuance | An export is not proof of factual correctness. |
 | Public verification endpoints | Validate supported hashes, signatures and document digests without an API key | A missing digest or `valid: null` does not constitute verification. |
 | Independent Evidence verifier | Verify supported archives separately from the measurement API | Archive correlation with an observation is not itself attested. |
