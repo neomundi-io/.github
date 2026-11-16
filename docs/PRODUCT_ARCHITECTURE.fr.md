@@ -2,6 +2,10 @@
 
 # NeoMundi — Architecture produit
 
+**Un produit ne se résume pas à ce qu’il promet. Il doit montrer ce qui rend ses capacités possibles.**
+
+C’est pourquoi nous partageons en profondeur l’architecture de NeoMundi.
+
 **Architecture produit publique · 16 novembre 2026.** Cette page cartographie la partie du produit accessible aux clients : interfaces, contrats, flux de données observables, preuves et limites. Les détails de déploiement interne et les constats d'exploitation n'y figurent volontairement pas.
 
 **INSTALL → TRACE → MEASURE → VERIFY → ACT** · 🟢 Disponible · 🟡 Partiel / périmètre limité · 🔴 Indisponible

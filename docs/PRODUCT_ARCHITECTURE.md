@@ -2,6 +2,10 @@
 
 # NeoMundi — product architecture
 
+**A product is more than what it promises. It must show what makes its capabilities possible.**
+
+That is why we share NeoMundi’s architecture in depth.
+
 **Public product architecture · 2026-11-16.** A technical map of the customer-facing product: interfaces, contracts, observable data flows, evidence and limitations. Internal deployment details and operational findings are deliberately excluded.
 
 **INSTALL → TRACE → MEASURE → VERIFY → ACT** · 🟢 Available · 🟡 Partial / scoped · 🔴 Not available
