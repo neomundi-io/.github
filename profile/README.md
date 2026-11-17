@@ -4,10 +4,10 @@
 # NeoMundi
 ### Know what your AI does. Prove what happened.
 
-**Your AI application runs. That does not mean anyone can say what it did.**
-NeoMundi is the measurement infrastructure that keeps an observation of every interaction,
+**A customer challenges an AI response. Can you reconstruct what happened and provide evidence they can check?**
+NeoMundi is the measurement infrastructure that records instrumented interactions,
 reports behavioural signals with their provenance, and turns them into evidence a third party
-can verify — without an account on our platform.
+can verify — without a NeoMundi account for the supported public verification checks.
 
 **INSTALL → TRACE → MEASURE → VERIFY → ACT**
 

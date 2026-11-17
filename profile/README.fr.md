@@ -4,10 +4,10 @@
 # NeoMundi
 ### Savoir ce que fait votre IA. Prouver ce qui s'est passé.
 
-**Votre application d'IA tourne. Cela ne veut pas dire que quelqu'un peut dire ce qu'elle a fait.**
-NeoMundi est l'infrastructure de mesure qui conserve une observation de chaque interaction, rend
+**Un client conteste une réponse de votre IA. Pouvez-vous reconstruire ce qui s'est passé et présenter des éléments contrôlables ?**
+NeoMundi est l'infrastructure de mesure qui conserve les interactions instrumentées, rend
 des signaux comportementaux avec leur provenance, et en fait une preuve qu'un tiers peut vérifier —
-sans compte sur notre plateforme.
+sans compte NeoMundi pour les contrôles publics pris en charge.
 
 **INSTALL → TRACE → MEASURE → VERIFY → ACT**
 
