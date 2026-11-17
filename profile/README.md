@@ -17,7 +17,7 @@ can verify — without a NeoMundi account for the supported public verification 
 [![Station](https://img.shields.io/badge/Station-campaigns-0f766e?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public)
 [![Use cases](https://img.shields.io/badge/Use_cases-Explore-64748b?style=flat-square)](https://github.com/neomundi-io/neomundi-use-cases)
 
-**[Quick start](#quick-start)** · **[Product architecture](https://github.com/neomundi-io/.github/blob/main/docs/PRODUCT_ARCHITECTURE.md)** · **[Create an account](https://controltower.neomundi.io/welcome)**
+**[Quick start](#quick-start)** · **[Product architecture](https://github.com/neomundi-io/.github/blob/main/docs/PRODUCT_ARCHITECTURE.md)** · **[All components](https://github.com/orgs/neomundi-io/repositories)** · **[Create an account](https://controltower.neomundi.io/welcome)**
 </div>
 
 ---
