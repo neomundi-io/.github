@@ -4,10 +4,13 @@
 # NeoMundi
 ### Savoir ce que fait votre IA. Prouver ce qui s'est passé.
 
+**Moins de suppositions. Plus de preuves.**
+
 **Un client conteste une réponse de votre IA. Pouvez-vous reconstruire ce qui s'est passé et présenter des éléments contrôlables ?**
-NeoMundi est l'infrastructure de mesure qui conserve les interactions instrumentées, rend
-des signaux comportementaux avec leur provenance, et en fait une preuve qu'un tiers peut vérifier —
-sans compte NeoMundi pour les contrôles publics pris en charge.
+NeoMundi transforme les interactions IA instrumentées en **observations auditables**, en signaux comportementaux mesurables avec leur provenance et en preuves techniques vérifiables indépendamment.
+Les contrôles publics pris en charge ne nécessitent aucun compte NeoMundi.
+
+*Une primitive de mesure. De multiples applications. De multiples infrastructures.*
 
 **INSTALL → TRACE → MEASURE → VERIFY → ACT**
 
