@@ -1,5 +1,6 @@
 <div align="center">
-<sub><b>English</b> · <a href="README.fr.md">Français</a></sub>
+
+[![English](https://img.shields.io/badge/EN-English-2563eb?style=flat-square)](README.md) · [![Français](https://img.shields.io/badge/FR-Fran%C3%A7ais-2563eb?style=flat-square)](README.fr.md)
 
 # NeoMundi
 ### Know what your AI does. Prove what happened.
@@ -20,7 +21,9 @@ Supported public verification checks require no NeoMundi account.
 [![Station](https://img.shields.io/badge/Station-campaigns-0f766e?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public)
 [![Use cases](https://img.shields.io/badge/Use_cases-Explore-64748b?style=flat-square)](https://github.com/neomundi-io/neomundi-use-cases)
 
-**[Quick start](#quick-start)** · **[Product architecture](https://github.com/neomundi-io/.github/blob/main/docs/PRODUCT_ARCHITECTURE.md)** · **[All components](https://github.com/orgs/neomundi-io/repositories)** · **[Create an account](https://controltower.neomundi.io/welcome)**
+**[Try a live demo](https://neomundi.io/demo/)** · **[Quick start](#quick-start)** · **[Explore use cases](https://github.com/neomundi-io/neomundi-use-cases)** · **[Create an account](https://controltower.neomundi.io/welcome)**
+
+[Product architecture](https://github.com/neomundi-io/.github/blob/main/docs/PRODUCT_ARCHITECTURE.md) · [All components](https://github.com/orgs/neomundi-io/repositories)
 </div>
 
 ---
