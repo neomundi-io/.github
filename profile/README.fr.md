@@ -21,7 +21,7 @@ Les contrôles publics pris en charge ne nécessitent aucun compte NeoMundi.
 [![Station](https://img.shields.io/badge/Station-campagnes-0f766e?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public)
 [![Cas d'usage](https://img.shields.io/badge/Cas_d'usage-Explorer-64748b?style=flat-square)](https://github.com/neomundi-io/neomundi-use-cases)
 
-**[Voir une démo](https://neomundi.io/fr/demonstration/)** · **[Démarrage rapide](#démarrage-rapide)** · **[Explorer les cas d'usage](https://github.com/neomundi-io/neomundi-use-cases)** · **[Créer un compte](https://controltower.neomundi.io/welcome)**
+**[Voir une démo](https://neomundi.io/fr/demo/)** · **[Démarrage rapide](#démarrage-rapide)** · **[Explorer les cas d'usage](https://github.com/neomundi-io/neomundi-use-cases)** · **[Créer un compte](https://controltower.neomundi.io/welcome)**
 
 [Architecture produit](https://github.com/neomundi-io/.github/blob/main/docs/PRODUCT_ARCHITECTURE.fr.md) · [Tous les composants](https://github.com/orgs/neomundi-io/repositories)
 
