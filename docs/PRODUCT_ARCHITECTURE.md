@@ -22,6 +22,10 @@ The diagrams are functional maps, not a disclosure of internal service topology.
 
 **Connect your AI application. Trace every interaction. Measure its behavior. Verify the evidence.**
 
+**Runtime measurement provides a foundation for monitoring and operational decision support by integrating systems.**
+
+REST measures instrumented interactions after the call; the supported SSE generation proxy exposes events according to its published contract. Repeated controlled observations support comparisons over time. Signed records support independent verification. This does not extend ACT to automatic alerts, policy enforcement or built-in production monitoring, nor establish a real-time latency guarantee.
+
 What that sentence is allowed to mean today, and nothing more:
 
 | Promise fragment | What backs it | What it does not mean |
