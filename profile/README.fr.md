@@ -7,6 +7,10 @@
 
 **Moins de suppositions. Plus de preuves.**
 
+**Mesurez le comportement de vos IA en exécution. Surveillez-le en continu au fil des interactions. Pilotez vos systèmes à partir de mesures et de preuves vérifiables.**
+
+La mesure en exécution s'appuie sur les interactions instrumentées, avec une mesure REST après appel et un proxy de génération SSE. Les politiques opérationnelles et leur application restent du ressort de l'application intégratrice.
+
 **Un client conteste une réponse de votre IA. Pouvez-vous reconstruire ce qui s'est passé et présenter des éléments contrôlables ?**
 NeoMundi transforme les interactions IA instrumentées en **observations auditables**, en signaux comportementaux mesurables avec leur provenance et en preuves techniques vérifiables indépendamment.
 Les contrôles publics pris en charge ne nécessitent aucun compte NeoMundi.
