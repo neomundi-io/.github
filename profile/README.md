@@ -7,6 +7,10 @@
 
 **Less guesswork. More evidence.**
 
+**Measure AI behavior at runtime. Monitor it continuously across interactions. Inform operational decisions with verifiable evidence.**
+
+Runtime measurement supports instrumented interactions, with post-call REST measurement and a generation proxy via SSE. Operational policies and enforcement remain with the integrating application.
+
 **A customer challenges an AI response. Can you reconstruct what happened and provide evidence they can check?**
 NeoMundi turns instrumented AI interactions into **auditable observations**, measurable behavioural signals with provenance, and independently verifiable technical evidence.
 Supported public verification checks require no NeoMundi account.
