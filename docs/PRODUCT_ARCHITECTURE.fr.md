@@ -20,6 +20,10 @@ Les diagrammes représentent les **flux fonctionnels**, pas la topologie des ser
 
 **Connecter votre application d'IA. Tracer chaque interaction. Mesurer son comportement. Vérifier les preuves.**
 
+**La mesure en exécution fournit un socle pour la surveillance et l'aide au pilotage par les systèmes intégrateurs.**
+
+REST mesure les interactions instrumentées après appel ; le proxy de génération SSE pris en charge expose des événements selon son contrat publié. Les observations contrôlées répétées permettent des comparaisons dans la durée. Les enregistrements signés permettent une vérification indépendante. Cela n'étend pas ACT aux alertes automatiques, à l'application de politiques ou à la surveillance intégrée de production, et n'établit aucune garantie de latence en temps réel.
+
 Voici ce que cette promesse signifie — et ne signifie pas — aujourd'hui :
 
 | Promesse | Ce qui la rend possible | Ce qu'elle ne signifie pas |
