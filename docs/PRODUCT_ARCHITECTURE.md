@@ -30,7 +30,7 @@ What that sentence is allowed to mean today, and nothing more:
 
 | Promise fragment | What backs it | What it does not mean |
 |---|---|---|
-| *Connect your AI application* | `pip install neomundi` → 2.1.0; one dependency; explicit host. One framework hook exists 🟡 — `langchain-neomundi`, from GitHub, **not yet on PyPI** | no hook for any framework other than LangChain; no measurement of tool calls or agent steps |
+| *Connect your AI application* | `pip install neomundi` → 2.2.0; one dependency; explicit host. **Six framework hooks are published on PyPI** 🟢 — LangChain, LiteLLM, MLflow, OpenAI Agents SDK, OpenTelemetry, Langfuse, each with a *computed* evidence level | no hook outside those six; no measurement of tool calls or agent steps as such — what is measured is the model call each host reports |
 | *Trace every interaction* | **you** instrument your call; the SDK measures latency, carries your correlation id, and reports what the server acknowledged **and recorded** | there is no trace-only route: a trace is a measured observation, and it is metered |
 | *Measure its behavior* | five signals, each with provenance and an explicit `measured` / `not_measured` state | no threshold, no verdict, no "safe" label — interpretation stays in your application |
 | *Verify the evidence* | the platform re-computes a canonical hash and verifies an Ed25519 signature, through routes that need **no key** | 🔴 it does **not** verify that the AI's answer was true |
@@ -64,7 +64,7 @@ flowchart TB
 flowchart LR
   subgraph APP["Your application"]
     A1["your LLM call"]
-    A2["neomundi SDK 2.1.0"]
+    A2["neomundi SDK 2.2.0"]
   end
   subgraph API["Measurement API — published customer endpoints"]
     R1["POST /v1/govern<br/>post-call, metered"]
@@ -107,29 +107,44 @@ flowchart LR
 mandatory — no host is ever assumed. Key format is checked locally so an invalid key cannot consume
 a quota. Typed (`py.typed`). FR/EN documentation in the repo.
 
-### Framework integrations 🟡
-One integration exists, and its scope is narrow enough to state in full.
+### Framework integrations 🟢 for six hosts, 🔴 beyond them
+Six integrations are published, each in
+[`neomundi-io/neomundi-integrations`](https://github.com/neomundi-io/neomundi-integrations),
+each attaching the measurement where the host already has a hook — a callback handler, a
+success callback, a span processor, a trace processor — so an application is instrumented
+without hand-writing a measurement call per site.
 
-`langchain-neomundi` attaches a LangChain `BaseCallbackHandler` that drives `client.trace()`, so a
-LangChain application is instrumented without hand-writing a measurement call per site. Retrieved
-documents are read from the retriever callback and carried as `rag_context`.
+| Host | Package | Attachment point | Evidence |
+|---|---|---|---|
+| LangChain | `langchain-neomundi` | `BaseCallbackHandler` | **E2** |
+| LiteLLM | `litellm-neomundi` | gateway success callback | **E2** |
+| MLflow | `mlflow-neomundi` | traced model call | **E2** |
+| OpenAI Agents SDK | `openai-agents-neomundi` | trace processor | **E2** |
+| OpenTelemetry | `otel-neomundi` | span processor | **E2** |
+| Langfuse | `langfuse-neomundi` | scores written on the trace | **E2** |
 
-**Install source, per [§8](#8-messaging--documentation-rules) rule 8:** the repository,
-`github.com/neomundi-io/langchain-neomundi`, tag `v0.1.0`. **It is not published on PyPI**, so
-`pip install langchain-neomundi` does not work today. A gated release workflow is in place; the
-publication itself will be a separate, approved act.
+**Install source, per [§8](#8-messaging--documentation-rules) rule 8:** all six are on
+**PyPI**, each verified by installing the declared version from the index into a clean
+virtual environment. None requires a GitHub install.
 
-What backs the 🟡 rather than a 🟢: it covers LangChain only, it measures LLM interactions only —
-not tool calls, not agent steps — and it is declared alpha. What is nonetheless established, by
-test and by execution rather than by README: 54 offline tests on Python 3.11–3.13 across Linux,
-Windows and macOS; and six observations submitted to production and re-read as persisted, from a
-real chain driving a real local model.
+🟢 **The evidence level is computed, not declared.** An integration advertising **E2**
+carries a proof file under `evidence/` that CI opens and reads; the numbers in it must agree
+with the claim, or the pull request does not land. **E2** means real calls executed against
+production and re-read as persisted — not a passing test suite.
 
-Three refusals are inherited from the SDK and enforced: no token count is ever invented, so a
-provider that reports none produces no observation; no exception reaches the host application; and
-every run yields an explicit outcome, so nothing is measured silently and nothing fails silently.
+🔴 **What this does not mean.** It covers those six hosts and no others. Each measures the
+**model call** its host reports; tool calls and agent steps are not measured as such. Each
+integration states its own bounds in its `LIMITATIONS.md`, and those bounds are part of the
+claim, not a caveat appended to it.
 
-Integrations for other frameworks will be built and qualified one at a time.
+Three refusals are inherited from the SDK and enforced in every one of them: no token count
+is ever invented, so a provider that publishes none yields no observation rather than a zero;
+no exception reaches the host application; and every run yields an explicit outcome, so
+nothing is measured silently and nothing fails silently.
+
+A roadmap of **candidate** hosts — verified names, Python surfaces and tracing hooks, with no
+commitment attached — is published in the library index. Integrations are built and qualified
+one at a time.
 
 ### TRACE 🟡
 `client.trace()` (where supported by the installed SDK version) is a context manager around **your** provider call. It measures the latency it can
@@ -196,6 +211,7 @@ no threshold **by design** — execution authority stays in your application.
 | Exports and signed evidence | Export observation evidence and check issuance | An export is not proof of factual correctness. |
 | Public verification endpoints | Validate supported hashes, signatures and document digests without an API key | A missing digest or `valid: null` does not constitute verification. |
 | Independent Evidence verifier | Verify supported archives separately from the measurement API | Archive correlation with an observation is not itself attested. |
+| **Framework integrations** | Attach the measurement at the host's own hook — LangChain, LiteLLM, MLflow, OpenAI Agents SDK, OpenTelemetry, Langfuse | Each covers the model call its host reports, states its own bounds in `LIMITATIONS.md`, and carries an evidence level computed from a committed proof. |
 | Control Tower / Station / MCP | Customer-facing UI, campaigns, and agent integration | Refer to each surface's published documentation for scope. |
 
 **Source of truth:** the published API contracts, SDK release documentation, and reproducible verification results. The API's measurement version and the SDK's package version are separate.

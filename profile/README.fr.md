@@ -21,6 +21,7 @@ Les contrôles publics pris en charge ne nécessitent aucun compte NeoMundi.
 
 [![Version PyPI](https://img.shields.io/pypi/v/neomundi?style=flat-square&label=pip%20install%20neomundi)](https://pypi.org/project/neomundi/)
 [![API de mesure](https://img.shields.io/badge/API-REST%20%2B%20SSE-2563eb?style=flat-square)](https://github.com/neomundi-io/neomundi-runtime-measurement)
+[![Intégrations](https://img.shields.io/badge/Int%C3%A9grations-6%20frameworks-7c3aed?style=flat-square)](https://github.com/neomundi-io/neomundi-integrations)
 [![Evidence](https://img.shields.io/badge/Evidence-v%C3%A9rificateur%20ind%C3%A9pendant-D4A545?style=flat-square)](https://github.com/neomundi-io/neomundi-evidence-gateway)
 [![Station](https://img.shields.io/badge/Station-campagnes-0f766e?style=flat-square)](https://github.com/neomundi-io/neomundi-station-public)
 [![Cas d'usage](https://img.shields.io/badge/Cas_d'usage-Explorer-64748b?style=flat-square)](https://github.com/neomundi-io/neomundi-use-cases)
@@ -107,6 +108,38 @@ curl https://api.neomundi.io/v1/contracts/govern-rest-1.0.json
 [English](https://github.com/neomundi-io/neomundi-python-sdk) ·
 [Limites connues](https://github.com/neomundi-io/neomundi-python-sdk/blob/main/KNOWN_LIMITATIONS_FR.md)
 
+
+## Vous utilisez déjà LangChain, LiteLLM, MLflow, OpenTelemetry, Langfuse ou le SDK OpenAI Agents ?
+
+**Intégrez NeoMundi à votre pile d'IA existante.** Une API de mesure. Six intégrations. Des preuves vérifiables.
+
+Vous n'écrivez pas un appel de mesure par point d'appel. Vous attachez la mesure là où votre pile
+possède déjà un point d'accroche — un rappel, un gestionnaire de rappels, un processeur de spans,
+un processeur de traces — et l'observation porte la latence et le décompte de jetons **que cet hôte
+a réellement observés**. Rien n'est inventé pour combler un trou : un décompte que le fournisseur
+n'a jamais publié est déclaré absent, pas mis à zéro.
+
+| Votre pile | Paquet | Preuve |
+|---|---|---|
+| **LangChain** | [`langchain-neomundi`](https://pypi.org/project/langchain-neomundi/) | **E2** |
+| **LiteLLM** | [`litellm-neomundi`](https://pypi.org/project/litellm-neomundi/) | **E2** |
+| **MLflow** | [`mlflow-neomundi`](https://pypi.org/project/mlflow-neomundi/) | **E2** |
+| **SDK OpenAI Agents** | [`openai-agents-neomundi`](https://pypi.org/project/openai-agents-neomundi/) | **E2** |
+| **OpenTelemetry** | [`otel-neomundi`](https://pypi.org/project/otel-neomundi/) | **E2** |
+| **Langfuse** | [`langfuse-neomundi`](https://pypi.org/project/langfuse-neomundi/) | **E2** |
+
+```sh
+pip install langchain-neomundi
+```
+
+**Le niveau de preuve est calculé, pas déclaré.** Une intégration qui annonce **E2** porte sous
+`evidence/` une preuve que la CI sait ouvrir et lire, et dont les chiffres doivent concorder avec
+ce qu'elle affirme. Sinon la PR ne passe pas.
+
+**[Bibliothèque d'intégrations](https://github.com/neomundi-io/neomundi-integrations)** ·
+**[Catalogue](https://github.com/neomundi-io/neomundi-integrations/blob/main/CATALOG_FR.md)** ·
+**[Feuille de route des hôtes candidats](https://github.com/neomundi-io/neomundi-integrations/blob/main/README_FR.md#intégrations-futures--feuille-de-route)**
+
 ## Architecture et écosystème
 
 | Composant | Rôle | Commencer ici |
@@ -114,6 +147,7 @@ curl https://api.neomundi.io/v1/contracts/govern-rest-1.0.json
 | **SDK Python** | Transporte et expose les mesures. N'embarque aucun seuil et ne dérive aucun verdict — l'interprétation reste dans votre application. | [SDK](https://github.com/neomundi-io/neomundi-python-sdk) · [PyPI](https://pypi.org/project/neomundi/) |
 | **API de mesure** | Mesure, conserve, exporte et signe. REST post-call et proxy de génération SSE. | [Runtime Measurement](https://github.com/neomundi-io/neomundi-runtime-measurement) · [Démarrage](https://github.com/neomundi-io/neomundi-runtime-measurement/blob/main/QUICKSTART.md) |
 | **Contrat d'interopérabilité RGC** | Interface JSON publiée pour transmettre des mesures runtime signées et versionnées à des systèmes indépendants. Le système destinataire vérifie et applique sa propre politique ; le contrat ne donne aucune autorité d'exécution. | [Contrat RGC · schémas, exemples et vérification](https://github.com/neomundi-io/neomundi-measurement-interoperability) |
+| **Intégrations** | Attacher la mesure là où votre framework possède déjà un point d'accroche. Six paquets publiés, chacun avec un niveau de preuve *calculé* et ses refus nommés. | [Bibliothèque d'intégrations](https://github.com/neomundi-io/neomundi-integrations) · [Catalogue](https://github.com/neomundi-io/neomundi-integrations/blob/main/CATALOG_FR.md) |
 | **MCP** | Accéder à la mesure depuis les assistants d'IA et l'outillage d'agents, avec validation des contrats de réponse. | [Measurement MCP](https://github.com/neomundi-io/neomundi-measurement-mcp) |
 | **Evidence** | Vérification indépendante : intégrité d'archive, liens entre artefacts, attestations Ed25519. Rapporte ce qui est démontré **et ce qui n'est pas éprouvé**. | [Gateway Evidence](https://github.com/neomundi-io/neomundi-evidence-gateway) · [Guide du vérificateur](https://github.com/neomundi-io/neomundi-evidence-gateway/blob/main/verifier/README.md) |
 | **Station** | Campagnes contrôlées : exécuter, conserver, capturer le contexte et la provenance, exporter des enregistrements auditables. | [Station](https://github.com/neomundi-io/neomundi-station-public) · [Guide pilote](https://github.com/neomundi-io/neomundi-station-public/blob/main/START_HERE.md) |
