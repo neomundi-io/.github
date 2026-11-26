@@ -30,7 +30,7 @@ What that sentence is allowed to mean today, and nothing more:
 
 | Promise fragment | What backs it | What it does not mean |
 |---|---|---|
-| *Connect your AI application* | `pip install neomundi` → 2.1.0; one dependency; explicit host | no framework hook, no auto-instrumentation |
+| *Connect your AI application* | `pip install neomundi` → 2.1.0; one dependency; explicit host. One framework hook exists 🟡 — `langchain-neomundi`, from GitHub, **not yet on PyPI** | no hook for any framework other than LangChain; no measurement of tool calls or agent steps |
 | *Trace every interaction* | **you** instrument your call; the SDK measures latency, carries your correlation id, and reports what the server acknowledged **and recorded** | there is no trace-only route: a trace is a measured observation, and it is metered |
 | *Measure its behavior* | five signals, each with provenance and an explicit `measured` / `not_measured` state | no threshold, no verdict, no "safe" label — interpretation stays in your application |
 | *Verify the evidence* | the platform re-computes a canonical hash and verifies an Ed25519 signature, through routes that need **no key** | 🔴 it does **not** verify that the AI's answer was true |
@@ -106,6 +106,30 @@ flowchart LR
 `pip install --upgrade neomundi` (check the currently published package version). `httpx` is the only runtime dependency. `base_url` is
 mandatory — no host is ever assumed. Key format is checked locally so an invalid key cannot consume
 a quota. Typed (`py.typed`). FR/EN documentation in the repo.
+
+### Framework integrations 🟡
+One integration exists, and its scope is narrow enough to state in full.
+
+`langchain-neomundi` attaches a LangChain `BaseCallbackHandler` that drives `client.trace()`, so a
+LangChain application is instrumented without hand-writing a measurement call per site. Retrieved
+documents are read from the retriever callback and carried as `rag_context`.
+
+**Install source, per [§8](#8-messaging--documentation-rules) rule 8:** the repository,
+`github.com/neomundi-io/langchain-neomundi`, tag `v0.1.0`. **It is not published on PyPI**, so
+`pip install langchain-neomundi` does not work today. A gated release workflow is in place; the
+publication itself will be a separate, approved act.
+
+What backs the 🟡 rather than a 🟢: it covers LangChain only, it measures LLM interactions only —
+not tool calls, not agent steps — and it is declared alpha. What is nonetheless established, by
+test and by execution rather than by README: 54 offline tests on Python 3.11–3.13 across Linux,
+Windows and macOS; and six observations submitted to production and re-read as persisted, from a
+real chain driving a real local model.
+
+Three refusals are inherited from the SDK and enforced: no token count is ever invented, so a
+provider that reports none produces no observation; no exception reaches the host application; and
+every run yields an explicit outcome, so nothing is measured silently and nothing fails silently.
+
+Integrations for other frameworks will be built and qualified one at a time.
 
 ### TRACE 🟡
 `client.trace()` (where supported by the installed SDK version) is a context manager around **your** provider call. It measures the latency it can
