@@ -28,7 +28,7 @@ Voici ce que cette promesse signifie — et ne signifie pas — aujourd'hui :
 
 | Promesse | Ce qui la rend possible | Ce qu'elle ne signifie pas |
 |---|---|---|
-| *Connecter votre application d'IA* | `pip install neomundi` ; une dépendance d'exécution ; adresse du service explicite. Un connecteur de framework existe 🟡 — `langchain-neomundi`, depuis GitHub, **pas encore sur PyPI** | Aucun connecteur pour un autre framework que LangChain ; ni les appels d'outils ni les étapes d'agent ne sont mesurés |
+| *Connecter votre application d'IA* | `pip install neomundi` ; une dépendance d'exécution ; adresse du service explicite. **Six connecteurs de framework sont publiés sur PyPI** 🟢 — LangChain, LiteLLM, MLflow, SDK OpenAI Agents, OpenTelemetry, Langfuse, chacun avec un niveau de preuve *calculé* | Aucun connecteur hors de ces six ; ni les appels d'outils ni les étapes d'agent ne sont mesurés en tant que tels — ce qui est mesuré est l'appel au modèle que chaque hôte rapporte |
 | *Tracer chaque interaction* | **Vous** instrumentez votre appel ; le SDK mesure la latence observable, transmet votre identifiant de corrélation et indique si le serveur a accusé réception **et enregistré** l'observation | Pas de route de traçage seule : une trace correspond à une observation mesurée et comptabilisée |
 | *Mesurer son comportement* | Cinq signaux, chacun accompagné de sa provenance et d'un état `measured` / `not_measured` | Pas de seuil, de verdict de sûreté ni de label « safe » : l'interprétation relève de votre application |
 | *Vérifier les preuves* | La plateforme recalcule une empreinte canonique et vérifie une signature Ed25519 via des routes **sans clé API** | 🔴 Cela ne prouve **pas** que la réponse de l'IA était vraie |
@@ -61,7 +61,7 @@ flowchart TB
 flowchart LR
   subgraph APP["Votre application"]
     A1["votre appel LLM"]
-    A2["neomundi SDK 2.1.0"]
+    A2["neomundi SDK 2.2.0"]
   end
   subgraph API["API de mesure — endpoints clients publiés"]
     R1["POST /v1/govern<br/>après appel, comptabilisé"]
@@ -103,30 +103,46 @@ flowchart LR
 
 `pip install --upgrade neomundi` (vérifier la version actuellement publiée). `httpx` est la seule dépendance d'exécution. Le paramètre `base_url` est obligatoire : aucune adresse n'est présumée. Le format de la clé est contrôlé localement afin qu'une clé invalide ne consomme pas de quota. Le SDK est typé (`py.typed`) et sa documentation existe en français et en anglais.
 
-### Connecteurs de framework 🟡
-Un seul connecteur existe, et son périmètre est assez étroit pour être énoncé en entier.
+### Connecteurs de framework 🟢 pour six hôtes, 🔴 au-delà
+Six intégrations sont publiées, toutes dans
+[`neomundi-io/neomundi-integrations`](https://github.com/neomundi-io/neomundi-integrations).
+Chacune attache la mesure là où l'hôte possède déjà un point d'accroche — un gestionnaire de
+rappels, un rappel de succès, un processeur de spans, un processeur de traces — de sorte
+qu'une application est instrumentée sans écrire un appel de mesure par site.
 
-`langchain-neomundi` branche un `BaseCallbackHandler` LangChain qui pilote `client.trace()` : une
-application LangChain est donc instrumentée sans écrire un appel de mesure par site. Les documents
-récupérés sont lus depuis le rappel du récupérateur et transportés comme `rag_context`.
+| Hôte | Paquet | Point d'accroche | Preuve |
+|---|---|---|---|
+| LangChain | `langchain-neomundi` | `BaseCallbackHandler` | **E2** |
+| LiteLLM | `litellm-neomundi` | rappel de succès de la passerelle | **E2** |
+| MLflow | `mlflow-neomundi` | appel de modèle tracé | **E2** |
+| SDK OpenAI Agents | `openai-agents-neomundi` | processeur de traces | **E2** |
+| OpenTelemetry | `otel-neomundi` | processeur de spans | **E2** |
+| Langfuse | `langfuse-neomundi` | scores écrits sur la trace | **E2** |
 
 **Source d'installation, conformément à la règle 8 du [§8](#8-règles-de-discours-et-de-documentation) :**
-le dépôt `github.com/neomundi-io/langchain-neomundi`, étiquette `v0.1.0`. **Il n'est pas publié sur
-PyPI**, donc `pip install langchain-neomundi` ne fonctionne pas aujourd'hui. Un flux de publication
-verrouillé est en place ; la publication elle-même sera un acte distinct et approuvé.
+**PyPI** pour `langchain-neomundi`, `litellm-neomundi`, `mlflow-neomundi`,
+`openai-agents-neomundi` et `otel-neomundi`. `langfuse-neomundi` est étiqueté et qualifié
+mais son envoi **attend une approbation** : il s'installe depuis **GitHub** jusque-là.
 
-Ce qui justifie le 🟡 plutôt qu'un 🟢 : il ne couvre que LangChain, il ne mesure que les interactions
-LLM — ni les appels d'outils, ni les étapes d'agent — et il est déclaré alpha. Ce qui est néanmoins
-établi, par test et par exécution plutôt que par un README : 54 tests hors ligne sur Python
-3.11–3.13 sous Linux, Windows et macOS ; et six observations soumises à la production puis relues
-comme persistées, depuis une vraie chaîne pilotant un vrai modèle local.
+🟢 **Le niveau de preuve est calculé, pas déclaré.** Une intégration qui annonce **E2** porte
+sous `evidence/` un fichier de preuve que la CI ouvre et lit ; ses chiffres doivent concorder
+avec la revendication, sinon la PR ne passe pas. **E2** signifie des appels réels exécutés
+contre la production et relus comme persistés — pas une suite de tests au vert.
 
-Trois refus sont hérités du SDK et appliqués : aucun compte de jetons n'est jamais inventé, donc un
-fournisseur qui n'en publie pas ne produit aucune observation ; aucune exception n'atteint
-l'application hôte ; et chaque exécution rend une issue explicite, donc rien n'est mesuré en silence
-et rien n'échoue en silence.
+🔴 **Ce que cela ne signifie pas.** Cela couvre ces six hôtes et aucun autre. Chacun mesure
+l'**appel au modèle** que son hôte rapporte ; les appels d'outils et les étapes d'agent ne
+sont pas mesurés en tant que tels. Chaque intégration énonce ses propres limites dans son
+`LIMITATIONS.md`, et ces limites font partie de la revendication, non d'une réserve ajoutée
+après coup.
 
-Les connecteurs pour d'autres frameworks seront construits et qualifiés un par un.
+Trois refus sont hérités du SDK et appliqués dans chacune : aucun compte de jetons n'est
+jamais inventé, donc un fournisseur qui n'en publie pas ne produit aucune observation plutôt
+qu'un zéro ; aucune exception n'atteint l'application hôte ; et chaque exécution rend une
+issue explicite, donc rien n'est mesuré en silence et rien n'échoue en silence.
+
+Une feuille de route d'hôtes **candidats** — dénominations, surfaces Python et points de
+traçage vérifiés, sans aucun engagement attaché — est publiée dans l'index de la
+bibliothèque. Les intégrations sont construites et qualifiées une par une.
 
 ### TRACE 🟡
 
@@ -175,6 +191,7 @@ Disponible aujourd'hui : export par observation (PDF / JSON / CSV), `audit_trail
 | Exports et preuves signées | Exporter les preuves d'une observation et vérifier leur émission | Un export ne démontre pas l'exactitude factuelle |
 | Routes publiques de vérification | Vérifier les empreintes, signatures et condensats documentaires pris en charge, sans clé API | Une empreinte absente ou `valid: null` ne constitue pas une vérification |
 | Vérificateur Evidence indépendant | Vérifier les archives prises en charge, séparément de l'API de mesure | La corrélation entre archive et observation n'est pas, en soi, attestée |
+| **Connecteurs de framework** | Attacher la mesure au point d'accroche de l'hôte — LangChain, LiteLLM, MLflow, SDK OpenAI Agents, OpenTelemetry, Langfuse | Chacun couvre l'appel au modèle que son hôte rapporte, énonce ses propres limites dans son `LIMITATIONS.md`, et porte un niveau de preuve calculé depuis une preuve versionnée. |
 | Control Tower / Station / MCP | Interface client, campagnes et intégration avec les agents | Se reporter à la documentation publique de chaque composant |
 
 **Sources de vérité :** contrats API publiés, documentation des versions du SDK et résultats de vérification reproductibles. La version de mesure de l'API et la version du package SDK sont deux notions distinctes.
