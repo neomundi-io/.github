@@ -126,15 +126,11 @@ n'a jamais publié est déclaré absent, pas mis à zéro.
 | **MLflow** | [`mlflow-neomundi`](https://pypi.org/project/mlflow-neomundi/) | **E2** |
 | **SDK OpenAI Agents** | [`openai-agents-neomundi`](https://pypi.org/project/openai-agents-neomundi/) | **E2** |
 | **OpenTelemetry** | [`otel-neomundi`](https://pypi.org/project/otel-neomundi/) | **E2** |
-| **Langfuse** | `langfuse-neomundi` | **E2** |
+| **Langfuse** | [`langfuse-neomundi`](https://pypi.org/project/langfuse-neomundi/) | **E2** |
 
 ```sh
 pip install langchain-neomundi
 ```
-
-⚠ `langfuse-neomundi` 0.1.0 est qualifié et étiqueté ; son envoi sur PyPI attend une approbation.
-En attendant, installez-le depuis le dépôt :
-`pip install 'git+https://github.com/neomundi-io/neomundi-integrations.git#subdirectory=integrations/langfuse'`.
 
 **Le niveau de preuve est calculé, pas déclaré.** Une intégration qui annonce **E2** porte sous
 `evidence/` une preuve que la CI sait ouvrir et lire, et dont les chiffres doivent concorder avec

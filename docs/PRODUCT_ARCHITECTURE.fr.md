@@ -120,9 +120,8 @@ qu'une application est instrumentée sans écrire un appel de mesure par site.
 | Langfuse | `langfuse-neomundi` | scores écrits sur la trace | **E2** |
 
 **Source d'installation, conformément à la règle 8 du [§8](#8-règles-de-discours-et-de-documentation) :**
-**PyPI** pour `langchain-neomundi`, `litellm-neomundi`, `mlflow-neomundi`,
-`openai-agents-neomundi` et `otel-neomundi`. `langfuse-neomundi` est étiqueté et qualifié
-mais son envoi **attend une approbation** : il s'installe depuis **GitHub** jusque-là.
+les six sont sur **PyPI**, chacune vérifiée en installant la version déclarée depuis
+l'index dans un environnement virtuel vierge. Aucune n'exige une installation depuis GitHub.
 
 🟢 **Le niveau de preuve est calculé, pas déclaré.** Une intégration qui annonce **E2** porte
 sous `evidence/` un fichier de preuve que la CI ouvre et lit ; ses chiffres doivent concorder

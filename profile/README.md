@@ -125,15 +125,11 @@ invented to fill a gap: a count the provider never published is reported as abse
 | **MLflow** | [`mlflow-neomundi`](https://pypi.org/project/mlflow-neomundi/) | **E2** |
 | **OpenAI Agents SDK** | [`openai-agents-neomundi`](https://pypi.org/project/openai-agents-neomundi/) | **E2** |
 | **OpenTelemetry** | [`otel-neomundi`](https://pypi.org/project/otel-neomundi/) | **E2** |
-| **Langfuse** | `langfuse-neomundi` | **E2** |
+| **Langfuse** | [`langfuse-neomundi`](https://pypi.org/project/langfuse-neomundi/) | **E2** |
 
 ```sh
 pip install langchain-neomundi
 ```
-
-⚠ `langfuse-neomundi` 0.1.0 is qualified and tagged; its PyPI upload is pending approval. Until it
-lands, install it from the repository:
-`pip install 'git+https://github.com/neomundi-io/neomundi-integrations.git#subdirectory=integrations/langfuse'`.
 
 **The evidence level is computed, not claimed.** An integration that advertises **E2** carries a
 proof under `evidence/` that CI opens and reads, and whose numbers must agree with what it asserts.

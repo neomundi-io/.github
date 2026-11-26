@@ -123,10 +123,9 @@ without hand-writing a measurement call per site.
 | OpenTelemetry | `otel-neomundi` | span processor | **E2** |
 | Langfuse | `langfuse-neomundi` | scores written on the trace | **E2** |
 
-**Install source, per [§8](#8-messaging--documentation-rules) rule 8:** **PyPI** for
-`langchain-neomundi`, `litellm-neomundi`, `mlflow-neomundi`, `openai-agents-neomundi` and
-`otel-neomundi`. `langfuse-neomundi` is tagged and qualified but its upload is **pending
-approval**, so it installs from **GitHub** until that completes.
+**Install source, per [§8](#8-messaging--documentation-rules) rule 8:** all six are on
+**PyPI**, each verified by installing the declared version from the index into a clean
+virtual environment. None requires a GitHub install.
 
 🟢 **The evidence level is computed, not declared.** An integration advertising **E2**
 carries a proof file under `evidence/` that CI opens and reads; the numbers in it must agree
