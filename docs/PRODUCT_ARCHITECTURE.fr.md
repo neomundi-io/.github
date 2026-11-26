@@ -28,7 +28,7 @@ Voici ce que cette promesse signifie — et ne signifie pas — aujourd'hui :
 
 | Promesse | Ce qui la rend possible | Ce qu'elle ne signifie pas |
 |---|---|---|
-| *Connecter votre application d'IA* | `pip install neomundi` ; une dépendance d'exécution ; adresse du service explicite | Pas de connexion automatique à un framework ni d'instrumentation automatique |
+| *Connecter votre application d'IA* | `pip install neomundi` ; une dépendance d'exécution ; adresse du service explicite. Un connecteur de framework existe 🟡 — `langchain-neomundi`, depuis GitHub, **pas encore sur PyPI** | Aucun connecteur pour un autre framework que LangChain ; ni les appels d'outils ni les étapes d'agent ne sont mesurés |
 | *Tracer chaque interaction* | **Vous** instrumentez votre appel ; le SDK mesure la latence observable, transmet votre identifiant de corrélation et indique si le serveur a accusé réception **et enregistré** l'observation | Pas de route de traçage seule : une trace correspond à une observation mesurée et comptabilisée |
 | *Mesurer son comportement* | Cinq signaux, chacun accompagné de sa provenance et d'un état `measured` / `not_measured` | Pas de seuil, de verdict de sûreté ni de label « safe » : l'interprétation relève de votre application |
 | *Vérifier les preuves* | La plateforme recalcule une empreinte canonique et vérifie une signature Ed25519 via des routes **sans clé API** | 🔴 Cela ne prouve **pas** que la réponse de l'IA était vraie |
@@ -102,6 +102,31 @@ flowchart LR
 ### INSTALL 🟢
 
 `pip install --upgrade neomundi` (vérifier la version actuellement publiée). `httpx` est la seule dépendance d'exécution. Le paramètre `base_url` est obligatoire : aucune adresse n'est présumée. Le format de la clé est contrôlé localement afin qu'une clé invalide ne consomme pas de quota. Le SDK est typé (`py.typed`) et sa documentation existe en français et en anglais.
+
+### Connecteurs de framework 🟡
+Un seul connecteur existe, et son périmètre est assez étroit pour être énoncé en entier.
+
+`langchain-neomundi` branche un `BaseCallbackHandler` LangChain qui pilote `client.trace()` : une
+application LangChain est donc instrumentée sans écrire un appel de mesure par site. Les documents
+récupérés sont lus depuis le rappel du récupérateur et transportés comme `rag_context`.
+
+**Source d'installation, conformément à la règle 8 du [§8](#8-règles-de-discours-et-de-documentation) :**
+le dépôt `github.com/neomundi-io/langchain-neomundi`, étiquette `v0.1.0`. **Il n'est pas publié sur
+PyPI**, donc `pip install langchain-neomundi` ne fonctionne pas aujourd'hui. Un flux de publication
+verrouillé est en place ; la publication elle-même sera un acte distinct et approuvé.
+
+Ce qui justifie le 🟡 plutôt qu'un 🟢 : il ne couvre que LangChain, il ne mesure que les interactions
+LLM — ni les appels d'outils, ni les étapes d'agent — et il est déclaré alpha. Ce qui est néanmoins
+établi, par test et par exécution plutôt que par un README : 54 tests hors ligne sur Python
+3.11–3.13 sous Linux, Windows et macOS ; et six observations soumises à la production puis relues
+comme persistées, depuis une vraie chaîne pilotant un vrai modèle local.
+
+Trois refus sont hérités du SDK et appliqués : aucun compte de jetons n'est jamais inventé, donc un
+fournisseur qui n'en publie pas ne produit aucune observation ; aucune exception n'atteint
+l'application hôte ; et chaque exécution rend une issue explicite, donc rien n'est mesuré en silence
+et rien n'échoue en silence.
+
+Les connecteurs pour d'autres frameworks seront construits et qualifiés un par un.
 
 ### TRACE 🟡
 
