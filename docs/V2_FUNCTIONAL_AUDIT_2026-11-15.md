@@ -139,7 +139,7 @@ Three different questions wear the same verb. The platform answers two of them.
 | Emit a signed RGC contract | 🟢 TIER_03 | `POST /v1/rgc/contracts/{id}`; public key at `GET /v1/rgc/jwks` (`neomundi-rgc-2026-01`, Ed25519) |
 | Monthly report | 🟢 | `GET /v1/reports`, `GET /v1/reports/snapshot` |
 | Account audit trail | 🟢 | `GET /v1/reports/audit-trail` (portal) and `/{account_id}/audit-trail` (admin) |
-| Bulk / structured export | 🟢 | portal `/structured-export`, `/zip`, `/export-data` |
+| Bulk / structured export **of measurements** | 🔴 **does not exist** | **Rectified 2026-11-27 (EVPACK-010).** This line read 🟢 and named three portal routes. **None of them exports a measurement.** `/zip` is admin **invoices** (`admin_invoices.py:108`); `/structured-export` and `/export-data` export **personal and consumption** data — `usage_events` carries six fields (`request_id`, `provider`, `model`, `decision`, `chf_debited`, `created_at`) and **no signal** (`profile.py:120-240`). The only bulk path over measurements is `GET /v1/reports/audit-trail?period=` — **7 fields, calendar month, Tier 03, portal JWT**. Tracked as `EVPACK-003` / `EVPACK-004` in `neomundi-technical-architecture`. |
 | Event stream, activity feed | 🟢 | portal `/events/stream`, `/activity-feed` |
 | Thresholds, alerting, SLA engine | 🔴 | **by design** the SDK embeds no threshold and derives no verdict; nothing in the API raises an alert |
 | Drift detection | 🔴 | `delta_g` is explicitly not a drift measure |
