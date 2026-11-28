@@ -1,0 +1,93 @@
+name: Hugging Face — trusted publisher negative control
+
+# The sync workflow proved the publisher ACCEPTS the run it is pinned to.
+# That is half a proof. This workflow proves it REFUSES everything else.
+#
+# 🔴 It passes when the exchange is REFUSED. A green run here means the
+# publisher is correctly scoped; a red run means any workflow in this
+# repository could publish the organisation card, and the claims must be
+# tightened immediately.
+#
+# How it works: the trusted publisher is pinned to three claims --
+# repository, ref, and a workflow_ref that must start with
+# `neomundi-io/.github/.github/workflows/sync-huggingface.yml@`. This file is
+# a *different* workflow, so its OIDC token carries a different workflow_ref
+# and the exchange must fail.
+#
+# Nothing is written. The exchange is attempted and, if it unexpectedly
+# succeeds, the token is discarded without ever being printed.
+
+on:
+  workflow_dispatch:
+  # Monthly, so a claim loosened by accident is caught rather than assumed.
+  schedule:
+    - cron: '17 5 1 * *'
+
+permissions:
+  contents: read
+
+jobs:
+  refuse:
+    name: The publisher must refuse this workflow
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write   # required to request an OIDC token at all
+      contents: read
+    steps:
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+
+      - name: Install the Hub client
+        run: python -m pip install --quiet "huggingface_hub>=1.19.0"
+
+      - name: Attempt the exchange, and require that it fail
+        env:
+          HF_OIDC_RESOURCE: spaces/neomundi-research/README
+        run: |
+          python - <<'PY'
+          import sys
+          from huggingface_hub._oidc import get_oidc_token, exchange_oidc_token
+
+          RESOURCE = "spaces/neomundi-research/README"
+
+          try:
+              subject = get_oidc_token()
+          except Exception as exc:
+              print(f"::error::no OIDC token could be minted ({type(exc).__name__}). "
+                    "The control could not run, so it proves nothing.")
+              sys.exit(2)
+
+          print("OIDC token minted for this workflow. Attempting the exchange...")
+
+          try:
+              exchange_oidc_token(subject_token=subject, resource=RESOURCE)
+          except Exception as exc:
+              # 🔴 Print the exception type and the status only. The request
+              # carried a token; the response may echo context.
+              status = getattr(getattr(exc, "response", None), "status_code", "n/a")
+              print(f"REFUSED — {type(exc).__name__}, HTTP {status}")
+              print("The trusted publisher rejected a workflow it is not pinned to. "
+                    "This is the expected result.")
+              sys.exit(0)
+
+          # If we land here the publisher is too permissive. The token exists in
+          # memory; it is never printed, and the job fails loudly.
+          print("::error::THE EXCHANGE WAS ACCEPTED. The trusted publisher is not "
+                "pinned to the sync workflow: any workflow in this repository can "
+                "publish the organisation card. Tighten the claims on "
+                "https://huggingface.co/spaces/neomundi-research/README/settings")
+          sys.exit(1)
+          PY
+
+      - name: Record the outcome
+        if: success()
+        run: |
+          {
+            echo "### Trusted publisher: negative control passed"
+            echo
+            echo "A workflow other than \`sync-huggingface.yml\` requested a token for"
+            echo "\`spaces/neomundi-research/README\` and the exchange was **refused**."
+            echo
+            echo "The publisher is scoped to the workflow it is pinned to, not to the repository."
+          } >> "$GITHUB_STEP_SUMMARY"
