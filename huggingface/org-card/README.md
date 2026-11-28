@@ -5,7 +5,7 @@ colorFrom: indigo
 colorTo: yellow
 sdk: static
 pinned: false
-short_description: Independent signed runtime measurement of AI behavior
+short_description: Independent, signed runtime measurement of AI behavior
 ---
 
 # NeoMundi measures. You decide.
