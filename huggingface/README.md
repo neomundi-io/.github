@@ -154,13 +154,19 @@ card is replaced.
 The card is the **only** thing this mechanism publishes, and the validation gate enforces that by
 refusing any directory holding more than `README.md`.
 
-Three Hugging Face resources exist and are **out of scope** on purpose:
+Other Hugging Face resources exist and are **out of scope** on purpose:
 
 | Resource | State | Why it is not synced |
 |---|---|---|
 | [`datasets/neomundi-research/grounded-s1`](https://huggingface.co/datasets/neomundi-research/grounded-s1) | **private** | Held pending a licence decision. It must stay private, and no automation should be able to flip that. |
-| `neomundi-lab/law-e-framework` (model) | public, legacy | Lives under the `neomundi-lab` **user** account, not the organisation. Superseded content, pending an owner decision. |
-| `neomundi-lab/law-e-framework` (dataset) | public, legacy | Same. |
+| `neomundi-lab/law-e-framework` (model and dataset) | **private — archived 2026-11-28** | Research published in 2025–2026 under the former *Neomundi-Labs* identity. It does not describe NeoMundi's current instrument, product or position, so it no longer belongs in a public showcase. Withdrawn from public view, **not deleted**: content, history and metadata are preserved on the Hub and in an offline mirror. |
+| `neomundi-ai-observatory` | public **organisation**, empty | A third NeoMundi namespace on the Hub, carrying a presentation but no model, dataset or Space. Awaiting a decision; nothing publishes to it. |
+
+The published research those archived repositories referred to remains open and citable, and is
+unaffected by this change — it lives on Zenodo under CC-BY-4.0, not on the Hub:
+[10.5281/zenodo.19385052](https://doi.org/10.5281/zenodo.19385052) ·
+[10.5281/zenodo.21250268](https://doi.org/10.5281/zenodo.21250268) ·
+[10.5281/zenodo.18483571](https://doi.org/10.5281/zenodo.18483571)
 
 Adding a resource to this mechanism means adding a directory, a target and a trusted publisher of
 its own — never widening an existing publisher's scope.
