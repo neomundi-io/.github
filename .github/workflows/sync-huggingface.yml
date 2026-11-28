@@ -1,0 +1,133 @@
+name: Sync Hugging Face organisation card
+
+# Single source of truth: huggingface/org-card/README.md in this repository.
+# The card is NOT edited on the Hub. Editing it there is overwritten by the next
+# run of this workflow, and the card itself says so.
+#
+# Authentication carries no permanent secret. The sync job proves its identity
+# to Hugging Face with a short-lived GitHub OIDC token and exchanges it for a
+# Hugging Face token that lives 60 minutes and is scoped to one repository.
+# There is no HF_TOKEN secret in this repository to leak or rotate.
+# See huggingface/README.md for the trusted publisher this expects.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'huggingface/org-card/**'
+      - 'huggingface/validate_card.py'
+      - '.github/workflows/sync-huggingface.yml'
+  workflow_dispatch:
+    inputs:
+      validate_only:
+        description: 'Run the validation gate and stop before publishing'
+        type: boolean
+        default: false
+
+# Read-only by default. The sync job raises its own id-token permission.
+permissions:
+  contents: read
+
+# Two runs publishing the same card would race on the Hub.
+concurrency:
+  group: huggingface-org-card
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    name: Validate the card
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.12'
+
+      # Refuses metadata the Hub would reject, a directory that would publish
+      # more than the card, and any link that no longer resolves.
+      - name: Validation gate
+        run: python huggingface/validate_card.py huggingface/org-card
+
+  sync:
+    name: Publish to the Hub
+    needs: validate
+    if: >-
+      vars.HF_SYNC_ENABLED == 'true' &&
+      !inputs.validate_only
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write   # required so the job can request an OIDC token
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Install the hf CLI
+        run: |
+          curl -LsSf https://hf.co/cli/install.sh | bash
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Report the CLI version
+        run: hf version
+
+      # The CLI detects GitHub Actions, mints the ID token, exchanges it for a
+      # repo-scoped Hugging Face token and uses it. HF_OIDC_RESOURCE is the only
+      # thing we set. No --delete: the Space's own .gitattributes and any Hub
+      # setting are left untouched, so only the card is replaced.
+      - name: Upload the card
+        env:
+          HF_OIDC_RESOURCE: spaces/neomundi-research/README
+        run: |
+          hf upload neomundi-research/README huggingface/org-card \
+            --repo-type space \
+            --commit-message "Sync org card from ${GITHUB_REPOSITORY}@${GITHUB_SHA:0:7}"
+
+      # Publishing is not the same as being served. Compare what the Hub now
+      # returns with what this commit holds, byte for byte.
+      - name: Verify what the Hub serves
+        run: |
+          set -euo pipefail
+          served=$(mktemp)
+          # Give the Hub a moment to make the new revision the served one.
+          for attempt in 1 2 3 4 5; do
+            curl -fsSL -o "$served" \
+              https://huggingface.co/spaces/neomundi-research/README/raw/main/README.md
+            if cmp -s "$served" huggingface/org-card/README.md; then
+              echo "Served card is byte-identical to this commit."
+              exit 0
+            fi
+            echo "Attempt ${attempt}: served card differs, retrying in 10s."
+            sleep 10
+          done
+          echo "::error::the card served by the Hub does not match this commit"
+          diff <(cat huggingface/org-card/README.md) "$served" || true
+          exit 1
+
+      - name: Summary
+        run: |
+          {
+            echo "### Hugging Face organisation card synced"
+            echo
+            echo "- Source: \`huggingface/org-card/README.md\` @ \`${GITHUB_SHA:0:7}\`"
+            echo "- Target: <https://huggingface.co/neomundi-research>"
+            echo "- Space:  <https://huggingface.co/spaces/neomundi-research/README>"
+            echo "- Auth:   GitHub OIDC trusted publisher, no stored token"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  skipped:
+    name: Publishing disabled
+    needs: validate
+    if: vars.HF_SYNC_ENABLED != 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Explain why nothing was published
+        run: |
+          {
+            echo "### Card validated, not published"
+            echo
+            echo "The repository variable \`HF_SYNC_ENABLED\` is not \`true\`, so the"
+            echo "sync job did not run. This is the expected state until the"
+            echo "trusted publisher is configured on the Hub."
+            echo
+            echo "See \`huggingface/README.md\` for the two steps that enable it."
+          } >> "$GITHUB_STEP_SUMMARY"
+          echo "HF_SYNC_ENABLED is not 'true'; validation only."
